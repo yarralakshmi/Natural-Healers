@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Muscular Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+             padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"💪 The muscular system powers every move — from walking to blinking — by working with bones to create motion, strength, and stability.";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿💚Natural remedies for healthy Muscular system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html">Digestive System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo muscular tips.jpeg" style="height:150px; width:150px;"></img>
+    <a href="#a1">🦴Skeletal Muscles</a>
+    <a href="#a2">🌊Smooth Muscles</a>
+	<a href="#a3">❤️Cardiac Muscle</a>
+	  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Skeletal Muscles health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🥬 1. Spinach-Moringa Power Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>1 tsp moringa powder</li>
+<li>½ banana</li>
+<li>½ cup coconut water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides magnesium and iron → supports muscle contraction</li>
+<li>Moringa is rich in amino acids and calcium</li>
+<li>May improve endurance and reduce fatigue</li>
+</ul><hr>
+<h3>🍵 2. Fenugreek Seed Recovery Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp fenugreek seeds</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil seeds for 10 minutes. Strain and sip after physical activity.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Fenugreek supports testosterone and muscle repair</li>
+<li>May reduce post-exercise soreness</li>
+<li>Traditionally used to boost strength and stamina</li>
+</ul><hr>
+<h3>🧄 3. Garlic-Ginger Anti-Spasm Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ inch fresh ginger (grated)</li>
+<li>1 tsp ghee or sesame oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm rice or apply externally to sore muscles.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic and ginger improve circulation and reduce inflammation</li>
+<li>Ghee nourishes tissues and supports recovery</li>
+<li>May ease muscle spasms and stiffness</li>
+</ul><hr>
+<h3>🍋 4. Lemon-Basil Electrolyte Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Juice of ½ lemon</li>
+<li>4–5 fresh basil leaves</li>
+<li>1 cup water</li>
+<li>Pinch of rock salt</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Crush basil and mix with lemon juice, water, and salt. Sip after workouts.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Replenishes lost electrolytes</li>
+<li>Basil supports muscle immunity and reduces oxidative stress</li>
+<li>May prevent cramps and dehydration</li>
+</ul><hr>
+<h3>🥜 5. Peanut-Date Energy Bites</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp roasted peanuts</li>
+<li>3 soft dates</li>
+<li>1 tsp sesame seeds</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend into a sticky dough and roll into small balls. Eat 1–2 daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Peanuts provide protein and healthy fats</li>
+<li>Dates offer potassium and magnesium</li>
+<li>Sesame seeds add zinc for muscle repair</li>
+</ul><hr>
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Smooth Muscles health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Chamomile-Cumin Relaxation Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ tsp cumin seeds</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep both ingredients in hot water for 10–15 minutes. Strain and sip before bedtime.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile calms smooth muscle spasms (especially in the gut and uterus)</li>
+<li>Cumin supports digestion and reduces bloating</li>
+<li>May ease menstrual cramps and intestinal discomfort</li>
+</ul><hr>
+<h3>🥬 2. Papaya-Ginger Digestive Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup ripe papaya</li>
+<li>½ inch fresh ginger</li>
+<li>½ cup coconut water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients until smooth. Drink fresh in the morning.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Papaya contains papain → supports smooth muscle digestion</li>
+<li>Ginger improves circulation and reduces spasms</li>
+<li>May soothe intestinal and uterine contractions</li>
+</ul><hr>
+<h3>🌿 3. Valerian Root Sleep Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried valerian root</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip 30 minutes before sleep.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Valerian relaxes smooth muscles via calming the nervous system</li>
+<li>May reduce tension in blood vessels and digestive tract</li>
+<li>Supports restful sleep and muscle recovery</li>
+</ul><hr>
+<h3>🍋 4. Lemon Balm & Fennel Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried lemon balm</li>
+<li>½ tsp fennel seeds</li>
+<li>1½ cups hot water.</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip after meals.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon balm calms involuntary muscle contractions</li>
+<li>Fennel reduces gas and supports gut motility</li>
+<li>May help with IBS and uterine cramping</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Coriander Warm Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tsp crushed coriander seeds</li>
+<li>1½ cups water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip warm once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves blood vessel tone and circulation</li>
+<li>Coriander supports smooth muscle detox and relaxation</li>
+<li>May reduce vascular tension and digestive spasms</li>
+</ul>
+
+</section>
+<section id="a3">
+ <h2>✨✨Discover natural remedies to support Cardiac Muscle health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Hibiscus-Garlic Heart Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried hibiscus petals</li>
+<li>1 clove garlic (crushed)</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep hibiscus and garlic in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Hibiscus helps lower blood pressure and supports heart rhythm</li>
+<li>Garlic improves circulation and reduces arterial stiffness</li>
+<li>May enhance cardiac muscle oxygenation</li>
+</ul><hr>
+<h3>🥬 2. Beetroot-Cinnamon Circulation Booster</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup beetroot juice</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1 tsp lemon juice</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and drink fresh in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Beetroot increases nitric oxide → improves blood flow to cardiac tissue</li>
+<li>Cinnamon supports glucose meta- bolism and reduces inflammation</li>
+<li>May strengthen heart contractions and reduce fatigue</li>
+</ul><hr>
+<h3>🌿 3. Ashwagandha-Coconut Milk Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp ashwagandha powder</li>
+<li>½ cup warm coconut milk</li>
+<li>Optional: 1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip before bedtime 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Ashwagandha is an adaptogen → supports cardiac resilience under stress</li>
+<li>Coconut milk provides healthy fats for heart cell membranes</li>
+<li>May reduce cortisol-related strain on cardiac muscles</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Flaxseed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect cardiac tissue</li>
+<li>Flaxseed offers omega-3s → reduce inflammation and improve elasticity</li>
+<li>May support heart rhythm and reduce oxidative stress</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Tulsi (Holy Basil) Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>5 fresh tulsi leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep garlic and tulsi in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic enhances cardiac output and reduces plaque formation</li>
+<li>Tulsi supports heart immunity and reduces stress-induced damage</li>
+<li>May improve heart rate variability and muscle tone</li>
+</ul>
+
+
+
+</section>
+
+
+
+  </main>
+
+  <footer>
+      <p>🌿"Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength." 🌿💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html">Digestive System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

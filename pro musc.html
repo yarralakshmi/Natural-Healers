@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Inside the Muscular Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(0, 0, 0, 0.85);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: zoomOutFade 2.5s ease forwards;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px #1b5e20;
+    }
+
+    @keyframes zoomOutFade {
+      0% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(3); opacity: 0.5; }
+      100% { transform: scale(5); opacity: 0; visibility: hidden; }
+    }
+
+    .page-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+      color: white;
+      padding: 40px 20px 20px;
+      position: relative;
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"💪 Muscular System – Movers of the Body";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      max-width: 300px;
+      background-color: var(--dark-panel);
+      padding: 20px;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 255, 102, 0.4);
+    }
+
+    nav h3 {
+      color: var(--earth);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    nav img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px #81c784;
+    }
+nav img:hover {
+      transform: scale(1.03);
+    }
+
+    article {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 255, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+    }
+
+    article h2, article h3 {
+      color: #c5e1a5;
+      margin-bottom: 10px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0f2f1;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.03);
+    }
+
+    ol {
+      margin-left: 20px;
+      color: #a5d6a7;
+      font-size: 17px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #66bb6a, #aed581);
+      margin: 30px 0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #ff4081, #fbc02d, #4dd0e1);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-style: italic;
+      font-size: 18px;
+      box-shadow: 0 -4px 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .footer-links a {
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 8px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .header-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <h1>🦾Muscular System</h1>
+  </div>
+
+  <header>
+    <h1>Inside the Muscular Journey 🌿</h1>
+    <div class="header-buttons">
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" >Indoor plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html">Outdoor plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html">🌿 Discover Plant-Based Healing Tips</a>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <section>
+      <nav>
+        <img src="C:\Users\yarra\Downloads\indo muscular system.jpeg" style="height:250px">
+        <h3 id="a">Choose:</h3>
+<p>Here, the muscular system is catigorized into three parts:</p>
+        <a href="#skeletal">🦾 Skeletal Muscles </a>
+        <a href="#card">🫀 Cardiac Muscle</a>
+        <a href="#smooth">🌀 Smooth Muscles </a>
+<a href="#video">🎥Video Source</a>
+      </nav>
+
+  
+  <article>
+<h2>💪⚙️ Introduction to the Muscular System</h2>
+<p>The muscular system is your body’s built-in power network—it helps you move, smile, breathe, and even digest your food! Muscles are stretchy tissues that contract and relax to create motion. Whether you're typing, walking, or laughing, muscles are making it happen . You’ve got skeletal muscles that attach to bones and help you move (like lifting a plant pot ), smooth muscles that handle internal actions like digestion, and cardiac muscle, which keeps your heart pumping strong .</p>
+<p>With over 600 muscles, this system doesn’t just keep you active—it keeps you alive and thriving. It's a silent force that powers your every step, hug, blink, and breath . Think of it as your body’s engine room—compact, efficient, and always ready to flex!</p>
+<hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Skeletal Muscles – Movers Under Command.jpeg" alt="Skeletal Muscles – Movers Under Command" style="float:right; width:250px;">
+
+<div style="margin-left: 50px;">
+<h1 id="skeletal">🔸🦾 Skeletal Muscles – Movers Under Command:</h1>
+<p>
+Skeletal muscles  are your body’s action stars—they attach to bones and let you move on command, whether you’re stretching, lifting, typing, or chasing a runaway leaf . These muscles work voluntarily, meaning you control them using your brain , and they contract in pairs so one pulls while the other relaxes. Connected to bones by strong tendons , they team up with joints  to keep your movements smooth, strong, and coordinated. Whether you're dancing, coding, or gardening, skeletal muscles power every move with strength and precision ⚙️💪.</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type='***'>
+<li>Biceps – Flexes the arm</li>
+<li>Triceps – Extends the arm</li>
+<li>Quadriceps – Straightens the leg</li>
+<li>Hamstrings – Bends the knee</li>
+<li>Deltoid – Raises the arm</li>
+<li>Pectorals – Moves the chest area</li>
+<li>Abdominals – Stabilizes the core</li>
+<li>Gluteals – Moves the hip and thigh</li>
+<li>Calf muscles (Gastrocnemius & Soleus) – Helps with walking/running</li></ol>
+</div>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+
+
+<p>
+<img src="C:\Users\yarra\Downloads\Cardiac Muscle – Heart’s Power Core.jpeg" alt="🫀 Cardiac Muscle – Heart’s Power Core" style="float:left; width:250px;">
+
+<h1></h1>
+<h1 id="card">🔸🫀 Cardiac Muscle – Heart’s Power Core</h1></p>
+
+
+<p>
+✨The cardiac muscle 🫀 is your heart’s exclusive powerhouse—designed to contract and relax nonstop, keeping blood flowing through every corner of your body. Unlike other muscles, it works involuntarily, meaning it doesn’t wait for you to think about it—it just keeps going 💓. It's super strong and rhythmic, with special cells that send electrical signals to coordinate each heartbeat . Found only in the walls of the heart, cardiac muscle cells are linked like a teamwork chain, making sure every beat is smooth and synchronized. It’s your body's natural metronome—loyal, tireless, and absolutely vital!</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type=''>
+<li>Cardiac muscle tissue – Located only in the walls of the heart</li></ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+
+<p>
+<img src="C:\Users\yarra\Downloads\Smooth Muscles – Silent Inner Operators.jpeg" alt="🌀 Smooth Muscles – Silent Inner Operators" style="float:right; width:250px;">
+
+<h1></h1>
+<h1 id="smooth">🔸🌀 Smooth Muscles – Silent Inner Operators</h1></p>
+<h1>  </h1>
+
+<p>Smooth muscles 🌀 are the quiet heroes inside your body—working automatically without you ever having to think about them. They’re found in places like your stomach 🥗, intestines, blood vessels 💧, and airways 🌬️. Unlike skeletal muscles, you don’t control them consciously; they gently contract and relax to move food through digestion, regulate blood pressure, and keep your breathing steady 🫁. These muscles are slow, steady, and tireless—perfect for long-term jobs that keep your internal systems running smoothly. Think of them as your body’s whispering workers, always on duty but never demanding attention 😄⚙️.
+✨</p>
+<h1>🔹 Key Components</h1>
+<ol type='***'>
+<li>Wall of digestive organs</li>
+<li>Blood vessels</li>
+<li>Respiratory Tract</li>
+<li>Urinary Bladder</li>
+<li>Uterus</li>
+<li>Iris of the Eye</li>
+</ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+<hr>
+    <h3 id="video">🎥 Watch: The Muscular System Explained</h3>
+<iframe width="660" height="515" src=https://www.bing.com/search?q=muscular%20system%20telugu%20badi&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=muscular%20system%20telugu%20badi&sc=5-27&sk=&cvid=5AB6E293CA234D20B3CBFD1079C5C408></iframe><hr>    
+
+<p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+
+    </article>
+</section>
+
+<footer>
+ 
+<h3>Line of the slide/page</h3>
+<p>:
+
+💪🧠 "Muscles don’t brag—they just lift, leap, and dance like nobody’s watching. So fuel your hustle, stretch those limits, and remember: even your smile is powered by muscle!"</p>
+<div class="footer-links">
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" >Indoor plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html">Outdoor plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html">🌿 Discover Plant-Based Healing Tips</a>
+      </div>
+
+</footer>
+
+</body>
+</html>

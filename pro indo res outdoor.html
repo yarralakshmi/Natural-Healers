@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Respiratory Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Outdoor Plants That Support Respiratory Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prores indoor .html" class="footer-button">Indoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\respirstory outdoor.jpeg" style="height:250px;" class="falling-image">
+   <a href="#Eucalyptus">Eucalyptus</a>
+    <a href="#Tulsi">Tulsi</a>
+    <a href="#Thyme">Thyme</a>
+    <a href="#Oregano">Clove </a>
+    <a href="#Mullein">Mullein</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴 Respiratory Allies in Your Living Space</h2>
+    <p>The respiratory system benefits greatly from several natural medicinal plants that support lung health, ease breathing, and fight infections. Eucalyptus is widely used for clearing nasal and chest congestion, especially in steam therapy. Tulsi (Holy Basil) is another powerful herb known to reduce cough, asthma symptoms, and respiratory infections through its anti-inflammatory and immune-boosting properties.</p>
+</div> 
+<!--Eucalyptus -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\eucalyptus plant.jpeg" style="width:250px; float:right;height:250px;" class="falling-image">
+<h2 id="Eucalyptus">🌿1.Eucalyptus:</h2>
+<p>🌱Eucalyptus is an important medicinal plant widely valued for its therapeutic, aromatic, and environmental benefits. It plays a crucial role in respiratory health, as its leaves and oil contain compounds like eucalyptol that help relieve cough, clear congestion, and soothe irritated airways.</p>
+<h1 style="left-padding:0px;">🔹 Eucalyptus – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🫁 Clears airways, helps with colds & flu.</li>
+      <li>💪 Eases muscle aches and joint pain.</li>
+      <li>🧼 Acts as a natural disinfectant.</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res eucalyp outdoor.html" class="plant-button">Learn More About Eucalyptus</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Tulsi -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\tulasi.jpeg" style="width:250px; height:250px;float:left;">
+<h2 id="Tulsi">🌿2.Tulsi:</h2>
+<p>🌱Tulasi, also known as Holy Basil, holds immense importance in both traditional medicine and spiritual practices, especially in Indian culture. It is revered as a sacred plant and is often grown in homes for its spiritual significance, believed to purify the environment and ward off negative energy.</p>
+<h1 style="left-padding:0px;">🔹Tulsi– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🛡️Rich in antioxidants and micronutrients that strengthen the immune system.</li>
+      <li>🦠Antibacterial & Antiviral</li>
+      <li>💗Helps lower blood pressure and cholesterol levels.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res tulsi outdoor.html" class="plant-button">Explore Tulsi Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Thyme -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\thyme plant.jpeg" style="width:250px; float:right;height:250px;">
+<h2 id="Thyme">🌿3.Thyme</h2>
+<p>🌱Thyme is an important medicinal and culinary herb valued for its powerful healing properties and rich aromatic flavor. Traditionally used in ancient Greek, Roman, and Egyptian medicine, thyme has long been recognized for its antibacterial, antifungal, and expectorant qualities.</p>
+<h1 style="left-padding:0px;">🔹Thyme – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🦠Natural antibacterial, antiviral, and antifungal properties.</li>
+      <li>🫁Supports Respiratory Health</li>
+      <li>💚Improves Digestion</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res thyme outdoor.html" class="plant-button"> Thyme Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!-- Clove  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo res outdoor clove.jpeg" style="width:250px;height:250px; float:left;">
+<h2 id="Oregano">🌿4.Clove :</h2>
+<p>🌱Clove is a fragrant spice derived from the flower buds of the Syzygium aromaticum tree, native to the Maluku Islands of Indonesia. Known for its pungent aroma and warm, slightly sweet flavor, clove has been valued for centuries in both culinary and medicinal traditions. It contains a compound called eugenol, which is responsible for many of its therapeutic properties. Clove is widely used in traditional medicine systems such as Ayurveda and Unani for its carminative, antimicrobial, and digestive-enhancing abilities. It plays a significant role in soothing gastrointestinal discomforts, preventing bloating, and stimulating digestive enzymes. Apart from its digestive benefits, clove is often used in dental care and is known for its pain-relieving and anti-inflammatory actions.</p>
+<h1 style="left-padding:0px;">🔹Clove – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+       <li><b>Enhances digestion:</b> Clove promotes enzyme secretion, helping break down food efficiently. </li>
+<li><b>Eases sore throat:</b> Soothes throat irritation and reduces inflammation.</li>
+<li><b>Fights infections:</b> Possesses antimicrobial properties that combat respiratory infections.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor Clove.html" class="plant-button"> Clove Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- Mullein -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\mullien plant.jpeg" style="width:250px; height:250px;float:right;">
+<h2 id="Mullein">🌿5.Mullein:</h2>
+<p>🌱Mullein (Verbascum thapsus) is an important medicinal plant known for its powerful benefits to the respiratory system. Traditionally used in ancient Greek, Roman, and Native American medicine, mullein has long been valued for its ability to soothe irritated lungs, reduce coughing, and clear excess mucus.</p>
+<h1 style="left-padding:0px;">🔹Mullein – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>🫁Supports Lung & Respiratory Health.</li>
+      <li>🦠 Antibacterial & Antiviral.</li>
+      <li>💧 Moisturizes & Soothes Skin.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor mullein.html" class="plant-button"> Explore Mullein</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+  “outdoor medicinal plants that are especially useful for supporting the respiratory system, and are commonly found or grown in gardens or open areas.” 🪴💚</p>
+  <br>
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

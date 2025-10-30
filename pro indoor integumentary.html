@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Integumentary Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Integumentary System:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"  class="footer-button">Outdoor Plants</a>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Body Systems</a>
+   <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo integu indoor.jpeg" class="falling-image">
+   <a href="#Lavender Plant">Lavender Plant</a>
+    <a href="#Rosemary Lilly">Rosemary Lilly</a>
+    <a href="#Chamomile Plant">Chamomile Plant</a>
+    <a href="#Boston Fern">Boston Fern</a>
+    <a href="#gerbera Daisy">gerbera Daisy</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Integumentary Allies in Your Living space</h2>
+    <p>The integumentary system is a vital organ network that includes the skin, hair, nails, sweat glands, and sebaceous (oil) glands, working together to protect and regulate the body. As the largest organ system, the skin acts as a physical barrier against environmental threats like pathogens, toxins, and UV radiation. It also helps maintain body temperature, fluid balance, and enables sensory perception.</p>
+</div> 
+<!-- Lavender Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\lavendar.jpeg" style="width:250px; float:right;" class="falling-image">
+<h2 id="Lavender Plant">🌿1.Lavender Plant:</h2>
+<p>🌱 Lavender (Lavandula angustifolia) is a fragrant herb native to the Mediterranean, cherished for centuries for its calming scent and therapeutic properties. Historically used by Egyptians, Greeks, and Romans for purification, healing, and perfumery, lavender has evolved into a modern wellness staple. Its vibrant purple flowers and soothing aroma make it a favorite in gardens, teas, essential oils, and skincare products.</p>
+<h1 style="left-padding:0px;">🔹Lavender Plant – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>😌 The soothing aroma of lavender calms the mind, reduces nervous tension, and promotes relaxation.</li>
+      <li>🩺 Supports Respiratory Health</li>
+      <li>🏡 Beautiful & Fragrant Decor</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu indoor Lavender.html" class="plant-button">Learn More About Lavender Plant</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Rosemary Lilly -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\rosemary lilly.jpeg" style="width:250px; float:left;">
+<h2 id="Rosemary Lilly">🌿2.Rosemary Lilly:</h2>
+<p>🌱 Rosemary (Salvia rosmarinus, formerly Rosmarinus officinalis) is a woody, evergreen herb native to the Mediterranean region, long celebrated for its aromatic leaves and therapeutic properties. Its name—“dew of the sea”—reflects both its coastal origins and its refreshing scent. Historically, rosemary was revered by ancient Greeks and Romans for enhancing memory, purifying spaces, and symbolizing fidelity. Over centuries, it became a staple in herbal medicine, culinary traditions, and spiritual rituals.</p>
+<h1 style="left-padding:0px;">🔹Rosemary Lilly– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🧠 The aroma stimulates brain activity, improving focus, clarity, and memory.</li>
+      <li>🔥 Anti-inflammatory Properties.</li>
+      <li>🦠 Fights infections and is great for natural cleaning or herbal remedies.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo inegu indoor rosemary.html" class="plant-button">Explore Rosemary Lilly Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Chamomile Plant-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\The Chamomile Plant.jpeg" style="width:250px; float:right;">
+<h2 id="Chamomile Plant">🌿3.Chamomile Plant:</h2>
+<p>🌱 Chamomile (Matricaria chamomilla or Chamaemelum nobile) is a daisy-like herb native to Europe and Western Asia, cherished for its calming properties and delicate floral aroma. Used for thousands of years in traditional medicine systems like Ayurveda, Unani, and European herbalism, chamomile has been a go-to remedy for soothing the mind, body, and skin. Ancient Egyptians dedicated it to the sun god Ra for its healing powers, while Greek and Roman physicians prescribed it for digestive and inflammatory ailments.</p>
+<h1 style="left-padding:0px;">🔹Chamomile Plant– Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>😌 Reduces Stress & Anxiety.</li>
+      <li>🧴 Soothes Skin Conditions.</li>
+      <li>💆‍♀️ Relieves Headaches & Migraines.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor chamomile.html" class="plant-button"> Chamomile Plant Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!-- Boston Fern -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\The Boston Fern.jpeg" style="width:250px; float:left;">
+<h2 id="Boston Fern">🌿4.Boston Fern:</h2>
+<p>🌱 The Boston Fern: A Verdant Guardian of Indoor Wellness</strong>
+<p>The Boston Fern (Nephrolepis exaltata) is a lush, arching plant native to tropical and subtropical regions, especially the Americas and Africa. With its feathery fronds and elegant form, it has long been admired for both its aesthetic charm and environmental benefits. Introduced to Western horticulture in the 19th century, it quickly became a staple in Victorian homes and botanical gardens.</p>
+<h1 style="left-padding:0px;">🔹Boston Fern– Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>💧 Releases moisture into the air, making it great for dry environments and relieving dry skin, throat, and nose.</li>
+      <li>🌿 Supports Respiratory Health.</li>
+      <li>✨ Helps filter out airborne microbes and dust particles, improving indoor air hygiene.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor Boston Fern.html" class="plant-button"> Boston Fern Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- gerbera Daisy -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\The Gerbera Daisy.jpeg" style="width:250px; float:right;">
+<h2 id="gerbera Daisy">🌿5.gerbera Daisy:</h2>
+<p>🌱 The Gerbera Daisy (Gerbera jamesonii) is a vibrant flowering plant native to South Africa, celebrated for its bold colors and cheerful appearance. Discovered in 1884 near Barberton by Scotsman Robert Jameson and named after German botanist Traugott Gerber, this daisy quickly gained global popularity. Its radiant blooms, ranging from pink and orange to red and white, have made it one of the top five most beloved cut flowers worldwide.</p>
+<h1 style="left-padding:0px;">🔹 gerbera Daisy – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>🌿 Boosts Oxygen Levels at Night</li>
+      <li>🧠 Bright colors stimulate the mind and help improve focus, creativity, and productivity.</li>
+      <li>🌸 Available in vibrant shades like red, pink, orange, yellow, and white — adds cheer to any space.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor Gerbera Daisy.html" class="plant-button"> Explore gerbera Daisy</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+   "The integumentary system includes the skin, hair, nails, and associated glands. It protects the body"🪴💚
+  </p>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

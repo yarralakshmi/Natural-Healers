@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Reproductive Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Reproductive  System:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor.html" class="footer-button">Outdoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+
+
+  
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo repro outdoor ani.jpeg" class="falling-image">
+   <a href="#Ginger">Ginger</a>
+    <a href="#False Unicorn Root">castor bean plant</a>
+    <a href="#Lemon Verbena">Lemon Verbena</a>
+    <a href="#red Clover">red Clover</a>
+    <a href="#nettle">nettle</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Reproductive Allies in Your Living Space</h2>
+    <p> Ginger (Zingiber officinale), False Unicorn Root (Chamaelirium luteum), Lemon Verbena (Aloysia citrodora), Red Clover (Trifolium pratense), and Nettle (Urtica dioica) form a well-rounded herbal group that naturally supports reproductive health. Ginger enhances circulation and eases menstrual discomfort, while False Unicorn Root acts as a uterine tonic, helping regulate cycles and boost fertility</p>
+</div> 
+<!-- Ginger -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\ginger.jpeg" style="width:250px; float:right;" class="falling-image">
+<h2 id="Ginger">🌿1.Ginger:</h2>
+<p>🌱 Ginger is a powerhouse root that supports reproductive health through its anti-inflammatory, circulatory, and hormone-balancing properties. Rich in bioactive compounds like gingerols, shogaols, and zingerone, it helps regulate menstrual cycles, ease discomfort, and improve fertility outcomes.</p>
+<h1 style="left-padding:0px;">🔹Ginger – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🤢 Relieves Nausea & Motion Sickness.</li>
+      <li>🔥 Anti-Inflammatory Power.</li>
+      <li>🧠 Boosts Brain Function.</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor ginger.html" class="plant-button">Learn More About Ginger </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- castor bean plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro indoor Castor Bean Plant .jpeg" style="width:250px; float:left;">
+<h2 id="False Unicorn Root">🌿2.🌿 “Nature’s Bold Healer: The Castor Bean Chronicle”</h3><p>The Castor Bean Plant (*Ricinus communis*) is a botanical marvel that bridges ancient tradition and modern wellness. Native to the Ethiopian region and widely cultivated across India, this fast-growing shrub is known for its dramatic star-shaped leaves and vibrant seed pods. Historically revered for its potent oil, castor has been used since 4000 BCE in Egyptian rituals and Ayurvedic therapies. Its seeds, though toxic in raw form, yield castor oil—a substance rich in ricinoleic acid, prized for its anti-inflammatory, detoxifying, and reproductive health-supporting properties. In holistic practices, castor oil packs are applied to the abdomen to stimulate circulation, balance hormones, and support uterine health. Whether grown as an ornamental showpiece or harvested for its therapeutic oil, the castor bean plant stands as a symbol of resilience, regeneration, and the enduring power of nature’s pharmacy.</p> </p>
+<h1 style="left-padding:0px;">🔹False Unicorn Root– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+    <li>🤱 Helps prevent miscarriage by supporting uterine tone and reducing inflammation.</li>
+<li>🌿 Eases hot flashes, mood swings, and hormonal shifts during menopause.</li><li>🤰 Believed to enhance fertility by improving blood flow to reproductive organs.</li>    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor castor bean plant.html" class="plant-button">Explore Castor Bean Plant</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Lemon Verbena -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Lemon Verbena.jpeg" alt="Aloe Vera succulent" style="width:250px; float:right;">
+<h2 id="Lemon Verbena">🌿3.Lemon Verbena:</h2>
+<p>🌱 Lemon Verbena is a fragrant herb known for its calming, anti-inflammatory, and antioxidant properties, making it a gentle yet effective ally for reproductive health. Rich in compounds like verbascoside, citral, and flavonoids, it helps reduce oxidative stress and hormonal fluctuations that can affect menstrual comfort and fertility.</p>
+<h1 style="left-padding:0px;">🔹Lemon Verbena – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🌬️ Aids Digestion</li>
+      <li>😌 Reduces Stress & Anxiety</li>
+      <li>💪 Anti-Inflammatory Effects</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor lemon verbena.html" class="plant-button"> Lemon Verbena Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+<!-- red Clover-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Red Clover.jpeg" style="width:250px; float:left;">
+<h2 id="red Clover">🌿4.red Clover:</h2>
+<p>🌱 Red Clover is a nutrient-rich herb celebrated for its phytoestrogenic properties, making it a gentle yet effective ally for hormonal balance and fertility support. Its high content of isoflavones—plant compounds that mimic estrogen—helps regulate menstrual cycles, ease menopausal symptoms.</p>
+<h1 style="left-padding:0px;">🔹red Clover – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+       <li>🩸 Purifies the Blood.</li>
+      <li>🧬 Supports Bone Health.</li>
+      <li>🧘 Calms the Nervous System.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor red clover.html" class="plant-button">red Clover Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--nettle -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Nettle.jpeg" style="width:250px; float:right;">
+<h2 id="nettle">🌿5.nettle:</h2>
+<p>🌱Nettle is a nutrient-dense herb that supports reproductive health through its iron-rich profile, hormone-balancing compounds, and anti-inflammatory effects. Traditionally used in Ayurvedic, European, and Native American medicine, nettle nourishes the reproductive system by improving blood quality, reducing oxidative stress,</p>
+<h1 style="left-padding:0px;">🔹nettle – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>👩‍🦰 Supports Reproductive Health.</li>
+      <li>🧘‍♀️ Boosts Energy & Reduces Fatigue.</li>
+      <li>🌱 Supports Healthy Skin & Hair.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor nettle.html" class="plant-button"> Explore nettle </a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer>
+<p>   "Indoor plants may not directly act on reproductive organs like medicines do, but many of them create a healing environment" 🪴💚
+  </p>
+0
+
+</footer>
+</body>
+</html>

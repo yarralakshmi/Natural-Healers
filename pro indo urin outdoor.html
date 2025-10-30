@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Urinary Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Outdoor Plants That Support Urinary Health:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html" class="footer-button">Indoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to Urinary System</a>
+
+
+
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo outdoor urinary system ani.jpeg" class="falling-image">
+   <a href="#Eucalyptus"> Punarnava (Boerhavia diffusa) </a>
+    <a href="#Tulsi">Varuna (Crataeva nurvala) </a>
+    <a href="#Thyme">Gokshura (Tribulus terrestris) </a>
+    <a href="#Oregano">Corn Silk (Stigma maydis) </a>
+    <a href="#Mullein">Bamboo Leaves (Bambusa arundinacea)</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🌿 Nature's Support for Urinary Vitality</h2>
+
+<p>Shatavari (Asparagus racemosus), known for its cooling and soothing nature, supports healthy urinary flow and helps maintain the moisture balance of the urinary tract. Maca Root (Lepidium meyenii), though more renowned for its energy-boosting effects, also contributes to urinary wellness by supporting hormonal balance that indirectly benefits bladder function. Kanchanar (Bauhinia variegata) is traditionally valued for its detoxifying properties and is believed to help maintain the structural and functional health of the urinary system. Licorice Root (Glycyrrhiza glabra) acts as a gentle anti-inflammatory and demulcent, helping to ease irritation and support mucous membrane integrity in the urinary tract. Nigella (Nigella sativa, commonly called Kalonji) offers antioxidant and antimicrobial support that helps protect the urinary system from infections and promotes overall urinary tract health.
+
+
+
+
+
+
+
+
+</p>
+</div> 
+<!-- Punarnava (Boerhavia diffusa) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Punarnava (Boerhavia diffusa) .jpeg"       style="width:250px; float:right;" class="falling-image">
+<h2 id="Eucalyptus">🌿 Punarnava (Boerhavia diffusa)</h2>
+<p>it is a well-regarded herb in traditional Ayurvedic medicine, known for its powerful rejuvenating and detoxifying properties. The name "Punarnava" translates to renewed or revived, reflecting its core function of revitalizing the body. It is primarily used to support the urinary system, helping to flush out excess fluids and reduce water retention. Punarnava is also valued for promoting healthy liver function and aiding in natural detoxification processes. Additionally, it helps manage inflammation, making it useful in supporting joint health and overall well-being. With its gentle yet effective action, Punarnava is often included in formulations aimed at restoring balance and vitality in the body.
+
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹 Punarnava  – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>🌿 Helps maintain healthy kidney and urinary function by promoting natural diuresis.</li>
+<li>🛡️ Supports liver detoxification and enhances internal cleansing processes.</li>
+<li>🦴 Reduces inflammation and supports joint comfort naturally.</li>
+     
+
+
+
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Punarnava.html"    class="plant-button">Learn More About  Punarnava </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!--- Varuna (Crataeva nurvala)  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Varuna (Crataeva nurvala) .jpeg"    style="width:250px; float:left;">
+<h2 id="Tulsi">🌿 Varuna (Crataeva nurvala)</h2>
+<p>Varuna is a revered herb in Ayurvedic medicine, traditionally used to support urinary health. It is especially valued for its ability to maintain a clear urinary tract and assist in the proper flow of urine. Known for its litholytic (stone-breaking) properties, Varuna helps dissolve and prevent the formation of kidney and bladder stones. It also supports bladder tone and reduces inflammation, promoting a healthier and more comfortable urinary system.
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Varuna – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul><li>💧 Promotes healthy urine flow and supports urinary tract function.</li>
+<li>🪨 Helps prevent and break down kidney and bladder stones naturally.</li>
+<li>🛡️ Reduces inflammation and supports bladder wall health.</li>
+      
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor  Varuna.html"         class="plant-button">Explore Varuna </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!--Gokshura (Tribulus terrestris)-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Gokshura.jpeg"    style="width:250px; float:right;">
+<h2 id="Thyme">🌿 Gokshura (Tribulus terrestris)</h2>
+<p>Gokshura is a highly esteemed herb in Ayurvedic and Unani systems of medicine, primarily known for its powerful diuretic and rejuvenating effects on the urinary system. The plant supports the kidneys by encouraging the elimination of toxins through increased urine output without disturbing electrolyte balance. It also strengthens the bladder and soothes irritation, making it beneficial in managing urinary discomfort. In addition to its urinary actions, Gokshura is often used to enhance vitality and improve reproductive health, showing its versatility as a tonic herb. Its anti-inflammatory properties help reduce swelling and inflammation in the urinary tract, making it particularly useful in cases of urinary tract infections or kidney disorders.
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Gokshura - Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>💧 Acts as a natural diuretic and promotes smooth urine flow.</li>
+<li>🛡️ Soothes the urinary tract and supports bladder health.</li>
+<li>⚖️ Supports kidney function and maintains fluid balance.</li>
+      
+
+
+
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Gokshura.html"          class="plant-button"> Insights Gokshura </a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!-- Corn Silk (Stigma maydis)-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Corn Silk.jpeg" style="width:250px; float:left;">
+<h2 id="Oregano">🌿 Corn Silk (Zea mays)</h2>
+<p>Corn Silk, the soft, silky threads that grow on the ears of corn, is a gentle yet effective herbal remedy for urinary system support. It has been used for centuries in folk medicine to relieve irritation of the urinary tract and promote detoxification through improved urination. Corn Silk contains plant compounds like flavonoids and potassium salts that contribute to its soothing and diuretic effects. It is especially beneficial in easing symptoms of urinary tract infections, cystitis, and inflammation of the bladder. Its mild action makes it suitable for all age groups and long-term use when aiming to maintain a healthy urinary flow and internal cleansing.
+
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Corn Silk  – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>💦 Promotes urine flow and helps flush toxins from the urinary tract.</li>
+<li>🌾 Soothes irritation in the bladder and urinary pathways.</li>
+<li>🛡️ Supports comfort during urinary tract infections or inflammation.</li>
+       
+
+
+
+
+</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Corn Silk.html"   class="plant-button">Explore Corn Silk </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--Bamboo Leaves (Bambusa arundinacea) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Bamboo Leaves .jpeg" style="width:250px; float:right;">
+<h2 id="Mullein">🌿🌿 Bamboo Leaves (Bambusa vulgaris)</h2>
+<p>Bamboo Leaves, though less known in mainstream herbalism, have long been used in traditional Asian medicine for their cooling and detoxifying properties. They help regulate the urinary system by reducing internal heat and promoting urination, which facilitates the removal of toxins from the body. Rich in silica and other antioxidants, bamboo leaves also aid in preventing urinary discomfort and supporting the kidneys’ natural cleansing functions. Their calming nature makes them effective in cases of urinary burning or irritation, especially during hot climates or conditions that increase internal heat.
+
+
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Bamboo Leaves – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>🌿 Helps detoxify the urinary system and supports kidney health.</li>
+<li>💧 Promotes urine output and helps remove excess body heat.</li>
+<li>🛡️ Maintains healthy bladder and reduces urinary discomfort.</li>
+      
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Bamboo Leaves .html" class="plant-button"> Explore Bamboo Leaves</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+   🌿 “Just as healthy roots flush out excess water to help plants thrive under the sun, a clear urinary system keeps the body balanced, vibrant, and full of life.”
+
+
+
+</p>
+  <br>
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to Urinary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a></footer>
+</body>
+</html>

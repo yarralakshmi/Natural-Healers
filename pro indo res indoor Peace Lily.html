@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Peace Lily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Pease Lilly Plants That Support Respiratory Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prores indoor .html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html" class="footer-button">🌿Respiratory Tips</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo res indoor Pease Lilly ani.jpeg"   style= " width:250px;height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Peace Lily.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Pease Lilly</h2>
+<p>🌱 The Peace Lily, scientifically known as Spathiphyllum, is a graceful and elegant indoor plant admired for its glossy green leaves and distinctive white blooms that symbolize peace and purity. Native to the tropical regions of the Americas and Southeast Asia, it has become one of the most popular houseplants worldwide due to its beauty and low-maintenance nature. Peace Lilies are also renowned for their air-purifying qualities, as highlighted by NASA’s Clean Air Study, effectively filtering toxins such as benzene, formaldehyde, and carbon monoxide from the air. Thriving in low to medium light conditions, they are well-suited for homes, offices, and shaded spaces. Symbolically, the Peace Lily is associated with calmness, healing, and spiritual harmony, making it not only a decorative plant but also a meaningful presence in any environment.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo res indoor Pease Lilly history.jpeg"  style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Pease Lilly</h2>
+ <h3>🌱 Origins & Early Recognition</h3>
+<p> The Peace Lily (Spathiphyllum wallisii) traces its roots to the tropical rainforests of Central and South America, especially Colombia and Venezuela. Indigenous communities admired its graceful white bracts and lush green leaves, often associating it with purity, tranquility, and renewal. Though not widely cultivated in ancient times, it grew naturally along shaded forest floors, thriving in warm, humid environments with dappled sunlight. European botanists first documented the Peace Lily in the 19th century, introducing it into ornamental gardening and indoor plant collections.</p> 
+
+<h3>🌸 Cultural & Symbolic Importance</h3> 
+<p> Across cultures, the Peace Lily soon came to represent harmony, hope, and healing. Its elegant white bloom, resembling a flag of peace, earned it a place in ceremonies of remembrance, spirituality, and mourning. In Christianity, it became a symbol of the Virgin Mary’s purity and was often kept in churches and homes as a sign of protection and serenity. Over time, it grew into a universal emblem of compassion, renewal, and everlasting peace.</p> 
+
+<h3>💮 Traditional Names & Symbolism</h3> 
+<p> The Peace Lily is also known as the “White Sail Plant,” reflecting its sail-like spathe that rises gracefully above the foliage. In many traditions, it is considered a messenger of peace and a plant that absorbs negative energy. In Feng Shui, it is believed to purify spaces and restore balance, symbolizing calmness and spiritual healing. Its association with inner peace and resilience has made it a common gift during times of transition or loss.</p> 
+
+<h3>🌏 Journey into Homes & Gardens</h3> 
+<p> Introduced to Europe in the mid-1800s, the Peace Lily quickly became a beloved ornamental plant due to its beauty and adaptability to indoor conditions. By the 20th century, it was widely popular across North America and Asia, not only for its decorative appeal but also for its ability to thrive in low light. NASA’s Clean Air Study (1989) further boosted its reputation by highlighting its capacity to remove toxins like benzene, formaldehyde, and carbon monoxide from the air, making it both a symbolic and practical household companion.</p> 
+
+<h3>🌼 Modern Reverence & Uses</h3> 
+<p>Today, the Peace Lily is cherished worldwide as one of the most popular indoor plants. Beyond its symbolism of peace, purity, and rebirth, it serves a functional role in improving indoor air quality and bringing greenery to modern living spaces. It is often gifted during milestones, memorials, or housewarmings, carrying with it a message of care and well-being. From sacred symbols to scientific validation, the Peace Lily’s journey reflects a blend of ancient reverence and modern admiration, ensuring its place as a timeless plant of harmony and healing.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo res indoor Pease Lilly growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Preferred Environment & Climate</h3>
+ <p> Peace Lily (Spathiphyllum wallisii) thrives in warm, humid conditions similar to its native tropical rainforests of Central and South America. Ideal temperatures range between 18 °C and 27 °C, making it perfect for indoor cultivation. It does not tolerate cold drafts or frost, so in cooler regions, it should be kept indoors year-round. Bright, indirect light is best—direct sunlight can scorch its leaves, while too little light may reduce flowering.</p> 
+
+<h3>🌱 Soil Composition & Preparation</h3>
+ <p> For healthy growth, Peace Lily requires rich, well-draining soil that retains some moisture without becoming soggy. A mix of standard potting soil blended with perlite, peat moss, or coconut coir works well. The soil pH should remain slightly acidic, between 5.8 and 6.5, which mimics its natural forest floor habitat. Before planting, enrich the soil with organic compost to provide essential nutrients.</p>
+
+<h3>🌿 Propagation & Planting Steps</h3> 
+<p> Peace Lily is most commonly propagated through division. Mature plants naturally form clumps, which can be separated carefully into smaller sections, each with healthy roots and leaves. These divisions are then repotted into fresh soil. Propagation by seed is rare and less successful. When planting, ensure the crown of the plant (where leaves meet roots) is kept just above soil level to prevent rotting.</p> 
+
+<h3>🪴 Potting, Spacing & Light Needs</h3> 
+<p> When grown indoors, Peace Lily thrives in medium to large containers with good drainage holes. The plant prefers slightly snug pots, which encourage flowering, but it should be repotted every 1–2 years to refresh the soil. Place the plant in a location with filtered sunlight, such as near a north- or east-facing window. Avoid placing it in direct midday sun, which can scorch the leaves.</p> 
+
+<h3>💧 Watering, Humidity & Care</h3> 
+<p> Peace Lily loves consistently moist soil but is sensitive to overwatering. Water when the top 2–3 cm of soil feels dry, using filtered or distilled water to avoid leaf browning caused by chlorine or fluoride in tap water. High humidity levels (above 50%) keep the plant vibrant—regular misting, pebble trays, or humidifiers can help maintain moisture. Yellowing leaves often indicate overwatering, while drooping leaves signal the need for more water.</p> 
+
+<h3>🛡️ Common Pests & Disease Prevention</h3> 
+<p> Peace Lily is relatively hardy but can be affected by pests like spider mites, mealybugs, or aphids. These can be controlled with neem oil or gentle insecticidal soap. Overwatering may lead to root rot, while low humidity can cause leaf tips to brown. Regularly wipe leaves with a damp cloth to remove dust and keep them breathing well. Avoid overcrowding plants, which can encourage fungal problems.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo res indoor Pease Lilly benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+<li>💨 Purifies indoor air by removing harmful toxins like benzene, formaldehyde, trichloroethylene, and ammonia.</li>
+
+<li>😴 Enhances sleep quality by improving air freshness and reducing airborne irritants.</li>
+
+<li>🧘 Promotes emotional calm with its gentle white blooms and lush foliage, ideal for meditation spaces.</li>
+
+<li>👀 Visually soothing—its elegant form reduces mental fatigue and adds serenity to any room.</li>
+
+<li>🌬️ Increases humidity, helping relieve dry skin, sinus irritation, and respiratory discomfort.</li>
+
+<li>🌿 Acts as a natural mold fighter by absorbing mold spores through its leaves and roots.</li>
+
+<li>🏡 Thrives in low light and shaded areas, making it perfect for bedrooms, bathrooms, and offices.</li>
+
+<li>🪴 Easy to care for—requires minimal maintenance, making it ideal for beginners and busy lifestyles.</li>
+
+<li>🎍 Symbol of peace and healing, often used in spiritual and wellness settings to promote harmony.</li>
+
+<li>⚠️ Mildly toxic to pets 🐶🐱 if ingested—best placed out of reach in homes with curious companions.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>" 🌿The Peace Lily whispers calmness into the air, purifying spaces and filling hearts with harmony and hope.💨💚"</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html"  class="footer-button">← Back to Respiratory System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prores indoor .html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

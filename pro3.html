@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>🌿 Indoor Plants</title>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: no-repeat center center fixed;
+      background-size: cover;
+      color: #4e342e;
+    }
+
+    header {
+      position: relative;
+      background: linear-gradient(to right, #388e3c, #66bb6a);
+      padding: 60px 20px 40px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      z-index: 1;
+      padding: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    article {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .magic-image {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: floatIn 2.2s ease forwards;
+    }
+
+    @keyframes floatIn {
+      0% {
+        transform: translateY(-60px) scale(1.05);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(20px) scale(1.02);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    h2, h3 {
+      color: #388e3c;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5d4037;
+      margin-bottom: 15px;
+    }
+
+    .button-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    /* 🌈 Stylish System Buttons */
+    .system-button {
+      position: relative;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Different colors for each system */
+    .system-button:nth-child(1) { background: linear-gradient(135deg, #ff7043, #ffab91); }
+    .system-button:nth-child(2) { background: linear-gradient(135deg, #42a5f5, #90caf9); }
+    .system-button:nth-child(3) { background: linear-gradient(135deg, #66bb6a, #a5d6a7); }
+    .system-button:nth-child(4) { background: linear-gradient(135deg, #ab47bc, #ce93d8); }
+    .system-button:nth-child(5) { background: linear-gradient(135deg, #ef5350, #ef9a9a); }
+    .system-button:nth-child(6) { background: linear-gradient(135deg, #5c6bc0, #9fa8da); }
+    .system-button:nth-child(7) { background: linear-gradient(135deg, #26a69a, #80cbc4); }
+    .system-button:nth-child(8) { background: linear-gradient(135deg, #8d6e63, #bcaaa4); }
+    .system-button:nth-child(9) { background: linear-gradient(135deg, #ffa726, #ffcc80); }
+    .system-button:nth-child(10) { background: linear-gradient(135deg, #f06292, #f8bbd0); }
+    .system-button:nth-child(11) { background: linear-gradient(135deg, #29b6f6, #81d4fa); }
+
+    /* Hover effect: Pop-up animation */
+    .system-button:hover {
+      transform: scale(1.15);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+
+    .plant-dropdown {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background-color: #f1f8e9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      display: none;
+      min-width: 160px;
+      z-index: 3;
+    }
+
+    /* Show dropdown when button is active */
+    .system-button.active .plant-dropdown {
+      display: block;
+    }
+
+    /* 🌱 Stylish Plant Buttons */
+    .plant-dropdown a {
+      display: block;
+      padding: 8px 12px;
+      margin: 5px 0;
+      font-size: 15px;
+      font-weight: bold;
+      color: #2e7d32;
+      background: #dcedc8;
+      border-radius: 20px;
+      text-decoration: none;
+      text-align: left;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .plant-dropdown a:hover {
+      background: linear-gradient(135deg, #a5d6a7, #c8e6c9);
+      color: #1b5e20;
+      transform: translateX(5px) scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .plant-dropdown a:hover::before {
+      content: "🌱";
+      position: absolute;
+      left: -22px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #a5d6a7, #f8bbd0);
+      padding: 30px 20px;
+      text-align: center;
+      color: #4e342e;
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .top-nav {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .bottom-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        flex-direction: column;
+      }
+
+      .button-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-image: url('C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg');">
+
+  <header>
+    <h1>🌿 Indoor Plants: Nature’s Open-Hearted Gifts 🌿</h1>
+    <div class="top-nav">
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="nav-button">Home Page</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro2.html" class="nav-button">Outdoor Plants</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="nav-button">Body Systems</a>
+    </div>
+  </header>
+
+  <section>
+    <article>
+      <img src="C:\Users\yarra\Downloads\indoor plants ani.jpeg" class="magic-image">
+
+
+
+<h3>🌳 Nature’s Living Architecture</h3>  
+<p>Outdoor plants are more than greenery—they’re the living framework of our environment. From towering trees to creeping vines, they shape the contours of our landscapes, soften the harshness of concrete, and invite life into every corner. Whether in a backyard, balcony, or roadside verge, they transform space into sanctuary.</p>
+
+
+
+<h3>🌿 Companions of Climate & Culture</h3>  
+<p>These plants are deeply woven into the rhythm of the seasons and the soul of local traditions. Neem trees that shade village squares, hibiscus blooms offered in morning prayers, or tulsi grown near doorsteps—they’re not just botanical specimens, but cultural icons. Supporting them means honoring heritage and healing the planet simultaneously.</p>
+
+
+
+<h3>🌞 Wellness Without a Prescription</h3>  
+<ul>
+  <li><b>🌬️ Breath of Fresh Air:</b> Outdoor plants purify the air, reduce pollutants, and cool the surroundings—no pills required.</li>
+  <li><b>🧘 Mindful Moments:</b> Tending to plants or simply sitting among them lowers stress, improves focus, and nurtures emotional balance.</li>
+  <li><b>🐝 Biodiversity Boost:</b> They attract pollinators, support ecosystems, and keep nature’s cycles alive and buzzing.</li>
+</ul>
+
+
+
+<h3>🌱 How to Be a Plant Ally</h3>  
+<ul>
+  <li><b>🌾 Grow Native:</b> Choose plants that belong to your region—they’re resilient, low-maintenance, and ecologically supportive.</li>
+  <li><b>💧 Water with Intention:</b> Use rainwater, mulch, and smart irrigation to conserve resources while keeping plants healthy.</li>
+  <li><b>🌍 Create Micro-Habitats:</b> Add bird feeders, butterfly plants, or shaded corners to welcome wildlife and enrich biodiversity.</li>
+</ul>
+
+
+
+<h3>🌼 The Green Legacy You Leave</h3>  
+<p>Supporting outdoor plants is a quiet act of rebellion against urban sterility. It’s a promise to future generations—a legacy of shade, oxygen, and beauty. Whether you plant a single sapling or cultivate a wild garden, you’re shaping a world that breathes better, feels deeper, and lives longer.</p>
+
+
+      <h3>🌿 Explore Plants by Body System</h3>
+      <div class="button-list">
+        <div class="system-button">
+         ✨ Digestive
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo diges indoor Spinach.html">🌿Spinach</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo digest indoor Coriander.html">🌿Coriander</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo diges indoor Fennel .html">🌿Fennel</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo diges indoor parsley.html">🌿Parsley</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo diges indoor Fenugreek .html">🌿Fenugreek</a>
+          </div>
+        </div>
+        <div class="system-button">
+          🌬️ Respiratory
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Spider Plant.html">🌿Spider Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Peace Lily.html">🌿Pease Lilly</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Snake Plant.html">🌿Snake Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor English Ivy.html">🌿English Ivy</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Areca Palm.html">🌿Areca Palm</a>
+          </div>
+        </div>
+        <div class="system-button">
+          💅Integumentary
+          <div class="plant-dropdown">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu indoor Lavender.html">🌿Lavender Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo inegu indoor rosemary.html">🌿Rosemary Lilly</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor chamomile.html">🌿Chamomile Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor Boston Fern.html">🌿Boston Fern</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ indoor Gerbera Daisy.html">🌿gerbera Daisy</a>            
+          </div>
+        </div>
+        <div class="system-button">
+         🦴 Skeletal
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Nirgunda.html">🌿Nirgunda plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Dwarf Neem.html">🌿Dwarf Neem</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Curry leaf.html">🌿Curry Leaf Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Gotu Kola.html">🌿Gotu Kola</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor marigold.html">🌿Marigold plant</a>
+          </div>
+        </div>
+        <div class="system-button">
+         💪 Muscular
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo mus indoor lemongrass.html">🌿Lemongrass</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo mus indoor  Eleuthero.html">🌿Eleuthero</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo mus indoor  Ginseng Ficus.html">🌿Ginseng Ficus</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo mus indoor  Rhodiola.html">🌿Rhodiola</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc indoor Shilajit.html">🌿Shilajit</a>
+          </div>
+        </div>
+        <div class="system-button">
+         🧠 Nervous
+          <div class="plant-dropdown">
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv indoor ZZ plant.html">🌿ZZ plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv indoor Elephant Ear.html">🌿Elephant Ear Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor Irish Moss.html">🌿Irish Moss</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor Philodendron.html">🌿Philodendron</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor Rubber Plant.html">🌿Rubber Plant</a>
+          </div>
+        </div>
+        <div class="system-button">
+         ❤️ Cardiovascular
+          <div class="plant-dropdown">
+           <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card indoor hibiscus.html">🌿Hibiscus</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card indoor  garlic.html">🌿Garlic</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card indoor betel leaf.html">🌿Betel Leaf</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card indoor tulbaghia.html">🌿Tulbaghia</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card indoor lemon balm.html">🌿Lemon Balm</a>
+          </div>
+        </div>
+        <div class="system-button">
+          💧Lymphatic
+          <div class="plant-dropdown">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp indoor Reishi Mushroom .html">🌿Reishi Mushroom</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp indoor  Guduchi .html">🌿Guduchi</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp indoor  Burdock.html">🌿Burdock</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp indoor Cleavers.html">🌿Cleavers</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp indoor  Laxmi Kamal.html">🌿Laxmi Kamal</a>           
+          </div>
+        </div>
+        <div class="system-button">
+         🧬 Endocrine
+          <div class="plant-dropdown">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Valerian plant .html">🌿valerian</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Brahmi.html">🌿Brahmi</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Oregano.html">🌿Oregano Plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Sage.html">🌿Sage</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Coccinia grandis .html">🌿Coccinia grandis</a>           
+          </div>
+        </div>
+        <div class="system-button">
+        🌸Reproductive
+          <div class="plant-dropdown">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor ginger.html">🌿Ginger</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor castor bean plant.html">🌿Castor bean plant</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor lemon verbena.html">🌿Lemon Verbena</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor red clover.html">🌿Red Clover</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro indoor nettle.html">🌿Nettle</a>          
+          </div>
+        </div>
+        <div class="system-button">
+           🌊Urinary
+          <div class="plant-dropdown">
+           <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pron indo urin indoor Calathea.html">🌿Calathea</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor chinese evergreen.html">🌿Chinese Evergreen</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor pilea peperomiodies.html">🌿Pilea Peperomioides</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor Prayer Plant.html">🌿Prayer Plant</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor  Ponitail palm.html">🌿Ponytail Palm</a>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </article>
+  </section>
+
+  <footer>
+    <p>🌞"Grow a plant, and you grow a remedy. In every leaf, a quiet lesson; in every root, a gentle cure. Let your home be your first pharmacy—green, mindful, and alive.” 🌱✨</p>
+    <div class="bottom-nav">
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="nav-button">Home Page</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro2.html" class="nav-button">Outdoor Plants</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="nav-button">Body Systems</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle dropdown on click
+    document.querySelectorAll('.system-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        // prevent link clicks from toggling parent
+        if (e.target.tagName.toLowerCase() === 'a') return;
+
+        this.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

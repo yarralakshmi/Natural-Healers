@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Turmeric Plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:light;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Turmeric Plants That Support Skeletal Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button"> Back to Plants</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\turmeric.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to Grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo turmeric .jpeg" style="width:250px; float:right;">
+ 
+
+ <h2 id="intro">🪴The Introduction of Turmeric</h2>
+  <p> Turmeric offers a wide range of health benefits. Its main compound, curcumin, is known for strong anti-inflammatory and antioxidant effects, which help reduce chronic inflammation and protect against cell damage. Turmeric supports digestive health, boosts liver function, and promotes healthy metabolism. It may also improve brain function, reduce the risk of heart disease, and help manage conditions like arthritis and diabetes.</p> 
+<p>
+Turmeric (Curcuma longa) is a perennial herbaceous plant belonging to the ginger family, Zingiberaceae. Native to South Asia, particularly India, turmeric is best known for its vibrant yellow-orange rhizomes, which are used both as a spice and for medicinal purposes. The plant thrives in warm, humid climates and grows to about 3 to 5 feet in height, producing large, broad leaves and pale yellow or white flowers. Turmeric has been cultivated for thousands of years and plays a significant role in traditional Ayurvedic and Chinese medicine, as well as in culinary traditions across Asia. Its active compound, curcumin, is renowned for its anti-inflammatory, antioxidant, and healing properties, making turmeric a valuable plant both in ancient healing systems and modern wellness practices.</p>
+    
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo turmeric history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Turmeric</h3>
+ <h3>🌱 Origins and Botanical Background</h3>
+        <p> Turmeric (Curcuma longa), native to India and Southeast Asia, has been used for over 4,000 years. It played a key role in ancient Indian Ayurvedic medicine for treating various ailments and was significant in Hindu rituals and ceremonies. As trade expanded, turmeric spread to China, the Middle East, Africa, and Europe, where it was known as "Indian saffron." Today, it is valued globally for its culinary use and medicinal properties, especially its active compound, curcumin.</p>
+
+<h3>🕊️ Ancient Egyptian Use</h3>
+<p>As early as 4000 years, it played a key role in ancient Indian Ayurvedic medicine for treating various ailments and was significant in Hindu rituals and ceremonies. As trade expanded, turmeric spread to China, the Middle East, Africa, and Europe, where it was known as "Indian saffron." </p>
+
+<h3>🏛️ Greek and Roman Traditions</h3>
+    <p>In Roman times, turmeric was sometimes used as a dye and in herbal medicine for treating skin conditions, digestive issues, and inflammation, although it was not widely cultivated in the region. The Romans valued exotic spices and remedies from the East, and turmeric was among the luxury items traded across their vast empire. It was also appreciated for its preservative and aromatic qualities, though it never reached the widespread culinary use it had in India.</p>
+  
+<h3>📜 Medieval Herbalism in Europe</h3>
+    <p>During the medieval period in Europe, herbalism was a central component of medical practice, blending ancient Greek, Roman, and Arabic knowledge with local traditions. Turmeric (Curcuma longa), though not native to Europe, gradually entered the European materia medica through trade with the Arab world and India, particularly during the Crusades and through the flourishing spice trade.</p>
+    
+<h3>🔬 Scientific Recognition and Taxonomy</h3>
+    <p>Turmeric (Curcuma longa) gained formal scientific recognition during the age of exploration and scientific classification in taxonomy.</p> 
+    
+<h3>⚗️ Rise in European Medicine</h3>
+    <p>By the 17th century, turmeric began appearing in European pharmacopoeias and botanical texts, often referred to as Curcuma or “Indian saffron.” Physicians and apothecaries valued it for its anti-inflammatory, digestive, and wound-healing properties. It was commonly prescribed for jaundice, liver disorders, and skin ailments, often as part of compound remedies or poultices.</p>
+    
+<h3>🌎 Transatlantic Expansion and Farming</h3>
+    <p>In the Americas, turmeric was not a staple crop but was grown on a small scale, primarily in botanical gardens, herbal farms, and by apothecaries or settlers familiar with its uses. It was also sometimes grown by enslaved Africans who carried traditional herbal knowledge and used turmeric in folk medicine and spiritual practices.</p>
+    
+<h3>🏭 Industrial Era Applications</h3>
+    <p>During the Industrial Era, particularly from the 18th to the early 20th century, turmeric (Curcuma longa) found new and expanded uses beyond traditional medicine, driven by technological advancements, scientific inquiry, and global trade. With the rise of industrialization and the growth of pharmacology, food processing, and textile manufacturing, turmeric’s vibrant color and therapeutic properties made it a valuable commodity in several industries.</p>
+    
+<h3>🌟 Modern-Day Relevance</h3>
+    <p>In modern times, turmeric (Curcuma longa) has experienced a remarkable resurgence in global popularity, transcending its traditional roots to become a staple in health, culinary, cosmetic, and pharmaceutical industries. With growing interest in natural remedies and wellness, turmeric has gained recognition for its potent therapeutic properties, especially due to its active compound curcumin, which is known for its anti-inflammatory, antioxidant, antimicrobial, and anticancer potential.</p>
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo turmeric growing.jpeg" style= "  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+        <p>Turmeric (Curcuma longa) is a tropical perennial plant best known for its vibrant yellow rhizomes, which are widely used as a spice and in traditional medicine. It is relatively easy to grow in warm, humid climates with plenty of rainfall or consistent watering. To grow turmeric, start with fresh turmeric rhizomes (roots) that have healthy, visible buds or "eyes.</p>
+  
+<h3>☀️ **Ideal Growing Conditions</h3>
+<p>Turmeric thrives in warm, humid climates with temperatures between 20°C to 35°C and ample rainfall (1000–2000 mm annually). It prefers well-drained, fertile loamy or sandy soil, rich in organic matter, with a slightly acidic to neutral pH (5.5 to 7.0). Turmeric requires partial to full sunlight and a frost-free environment. It grows best when planted at the start of the monsoon season and requires 7–9 months to mature before harvest.</p>
+
+<h3>🧬 **Propagation Methods</h3> 
+  <p>Turmeric is primarily propagated vegetatively through rhizomes, not seeds. Healthy, mature rhizomes are selected and cut into small pieces, each with at least one or two buds or “eyes.” These pieces, known as seed rhizomes, are then planted about 5–7 cm deep in well-prepared soil.</p>
+  
+<h3>🌾 **Soil Preparation</h3>
+  <p>Proper soil preparation is essential for healthy turmeric growth and high yield. Turmeric prefers loamy or sandy loam soil that is well-drained, loose, and rich in organic matter. The soil should have a pH between 5.5 and 7.0.</p>
+  
+<h3>💧 **Watering and Maintenance</h3>
+<p>Keep the soil <b>consistently moist</b>, requires moderate, regular watering—typically once every 7–10 days depending on rainfall and soil type.</p>
+<ul><li>Regular watering</li>  
+<li>Irrigate more frequently or <b>organic fertilizer</b></li>
+<li>Maintanance tasks</li>
+</ul>
+
+<h3>🚫 **Managing Growth and Spread</h3> 
+<p>Turmeric is a clump-forming plant that grows from underground rhizomes and does not spread aggressively. However, proper management ensures healthy development and higher yields.</p>
+
+
+<h3>✂️ **Harvesting Tips</h3> 
+  <p>*Harvesting Tips for Turmeric (in Paragraph):*
+
+Turmeric is typically harvested 7 to 9 months after planting, once the leaves and stems begin to yellow and dry, signaling that the rhizomes have matured. The best time for harvesting is usually in late winter or early spring, depending on the planting schedule. To harvest, the soil should be loosened gently using a spade or fork to avoid damaging the rhizomes, which are then carefully lifted from the ground. The harvested clumps are cleaned of soil, and the finger rhizomes are separated from the mother rhizomes. After thorough washing, the rhizomes are boiled for 30 to 45 minutes, which enhances their color and aroma while reducing their raw odor. Following boiling, they are sun-dried for about 10 to 15 days until completely hardened. Proper drying ensures long shelf life and preserves medicinal quality. Once dried, turmeric should be stored in airtight containers in a cool, dry place to prevent mold and pest infestation.</p>
+  
+<h3>🌿 **Uses and Benefits</h3>
+<p>Once harvested, turmeric can be used in:</p>
+<ull><li>Used in Ayurveda, Unani, and traditional Chinese medicine for treating inflammation, digestive issues, respiratory problems, and skin conditions.</li>  
+<li>Medicinal preparations for digestion and headache relief.<li>
+  <li>Boosts Immunity</li>
+<li>Agricultural Uses</li>
+</ul>
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo turmeric benefits.jpeg"  style= "  width:250px; float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Peppermint</h3>
+    <ul>
+  <li><b>Boosts immunity:</b>Fights infections with natural antimicrobial properties.</li>
+  <li><b>Improves heart health:</b>Helps maintain healthy cholesterol levels and improves blood flow.</li>
+ <li><b>Supports brain health:</b>Enhances memory and may reduce risk of neurodegenerative diseases.</li>
+<li><b>Anti-inflammatory:</b> Reduces inflammation in the body, helpful for arthritis and chronic conditions.</li>
+<li><b>Antioxidant-rich:</b>Protects cells from damage and slows aging..</li>
+ <li><b>Aids digestion:</b>Stimulates bile production, eases bloating, gas, and indigestion.</li>
+ <li><b>Reduces Nausea:</b>  Peppermint tea or essential oil aromatherapy can help reduce nausea, especially motion sickness or morning sickness during pregnancy (in small, safe amounts).</li>
+<li><b>Boosts Energy & Focus:</b> The invigorating scent of peppermint can help improve alertness, concentration, and mental clarity, especially when used in aromatherapy.</li>
+      <li><b>Improves Skin Health:</b> Peppermint oil has a soothing and cooling effect on irritated skin and can help treat itching, inflammation, and acne when properly diluted.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+
+
+<footer>
+  <p>🍃 "Peppermint, nature's whisper of clarity—cool to the senses, warm to the soul."</p>
+
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

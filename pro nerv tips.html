@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Nervous Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+ 
+            padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🧠 Nervous System – The Body's Control Room, Sending Signals & Sensing the World!";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿Natural remedies for healthy Nervous system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html">Nervous System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo nervous tips.jpeg" style="height:200px;width:150px;"></img>
+    <a href="#a1">🧠Brain</a>
+    <a href="#A">🧠Cerebrum</a>
+<a href="#B">⚖️Cerebellum</a>
+<a href="#C">👉Brainstem-<br>midbrain</a>
+<a href="#D">🌊pons</a>
+<a href="#E">💓medulla<br>oblongata</a>
+    <a href="#a2">🪜Spinal<br> Cord</a>
+	<a href="#a3">🧵Cranial<br>Nerves</a>
+	<a href="#a4">🧶Spinal<br> Nerves</a>
+	<a href="#a5">👁️Eyes</a>
+<a href="#a5.2">👂Ears</a>
+<a href="#a5.3">👃Nose</a>
+<a href="#a5.5">👅Tongue</a>
+<a href="#a5.4">✋Skin</a>
+	<a href="#a6">🧩Ganglia</a>
+	<a href="#a7">🧻Meninges</a>
+	<a href="#a8">🧭Autonomic<br> Nerve<br> Centers</a>
+	<a href="#a9">⚡Peripheral<br> Nerves</a>
+
+  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Brain health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Sage & Lemon Balm Memory Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried sage</li>
+<li>½ tsp dried lemon balm</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep herbs in hot water for 10 minutes. Strain and sip in the morning or before study/work.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sage may enhance cognitive function and memory</li>
+<li>Lemon balm calms nerves and supports mental clarity</li>
+<li>May improve focus and reduce brain fog</li>
+</ul><hr>
+<h3>🥬 2. Spinach-Walnut Brain Boost Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>1 tbsp walnuts</li>
+<li>½ banana</li>
+<li>½ cup almond milk</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides folate and antioxidants</li>
+<li>Walnuts are rich in omega-3s → support brain cell membranes</li>
+<li>May improve memory and reduce oxidative stress</li>
+</ul><hr>
+<h3>🌿 3. Gotu Kola & Tulsi Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried gotu kola</li>
+<li>5 fresh tulsi (holy basil) leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gotu kola may enhance mental clar- ity and reduce oxidative stress</li>
+<li>Tulsi supports neuroprotection and stress resilience</li>
+<li>May improve circulation to the brain</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Flaxseed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect brain cells</li>
+<li>Flaxseed offers omega-3s and lignans</li>
+<li>May support neurotransmitter balance and - reduce inflammation</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Cinnamon Brain Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1 cup warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep garlic and cinnamon in warm water for 10 minutes. Strain and sip once daily.</p>
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves cerebral blood flow</li>
+<li>Cinnamon may protect against neurodegeneration</li>
+<li>May enhance memory and reduce mental fatigue</li>
+</ul>
+</section>
+<section id="A">
+
+<h2>✨✨🧠 Discover natural remedies to support Cerebrum health—boost memory, focus, and emotional balance: ✨✨</h2>
+
+<h3>🥭 1. Mango-Blueberry Memory Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup ripe mango</li>
+  <li>¼ cup blueberries (fresh or frozen)</li>
+  <li>½ cup coconut water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend until creamy. Enjoy 3 times a week.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Mango provides vitamin B6, vital for neurotransmitters</li>
+  <li>Blueberries improve memory and protect neurons</li>
+  <li>Supports cerebral blood flow and learning ability</li>
+</ul>
+<hr>
+
+<h3>🌿 2. Brahmi & Ashwagandha Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried Brahmi powder</li>
+  <li>½ tsp Ashwagandha powder</li>
+  <li>1 cup warm milk (or almond milk)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Stir powders into warm milk and drink before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Brahmi enhances memory, concentration, and intellect</li>
+  <li>Ashwagandha reduces stress and balances mood</li>
+  <li>Supports regeneration of nerve cells in the cerebrum</li>
+</ul>
+<hr>
+
+<h3>🥜 3. Walnut & Fig Morning Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 walnuts (soaked overnight)</li>
+  <li>1 dried fig (soaked overnight)</li>
+  <li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Eat soaked walnuts and fig in the morning with honey.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Walnuts are rich in omega-3 fatty acids → boost cerebral function</li>
+  <li>Figs provide natural glucose → fuel for brain activity</li>
+  <li>Promotes alertness and reduces brain fatigue</li>
+</ul>
+<hr>
+
+<h3>🍵 4. Rosemary Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried rosemary</li>
+  <li>1 cup hot water</li>
+  <li>½ tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep rosemary in hot water for 8 minutes. Strain and add lemon juice.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Rosemary improves concentration and memory</li>
+  <li>Boosts blood flow to the cerebrum</li>
+  <li>Enhances mental clarity and alertness</li>
+</ul>
+<hr>
+
+<h3>🥛 5. Turmeric Golden Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp turmeric powder</li>
+  <li>1 cup warm milk (or oat milk)</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Stir turmeric and black pepper into warm milk. Drink at night.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric’s curcumin protects brain cells from degeneration</li>
+  <li>Black pepper improves absorption</li>
+  <li>Supports memory, focus, and mood regulation in the cerebrum</li>
+</ul>
+</section>
+<section id="B">
+
+<h2>✨✨⚖️ Discover natural remedies to support Cerebellum health—enhance balance, coordination, and movement harmony: ✨✨</h2>
+
+<h3>🥦 1. Broccoli-Carrot Steamed Bowl</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup broccoli florets</li>
+  <li>½ cup sliced carrots</li>
+  <li>Pinch of rock salt & black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steam vegetables lightly for 5–6 minutes. Sprinkle with salt and pepper before eating.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Broccoli provides antioxidants for nerve protection</li>
+  <li>Carrots supply beta-carotene → supports motor neuron health</li>
+  <li>Improves coordination and eye-hand balance</li>
+</ul>
+<hr>
+
+<h3>🌿 2. Ginkgo Biloba & Green Tea Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried ginkgo biloba leaves</li>
+  <li>½ tsp green tea leaves</li>
+  <li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep both herbs in hot water for 7–8 minutes. Strain and sip.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ginkgo improves circulation to the cerebellum</li>
+  <li>Green tea enhances alertness and neural coordination</li>
+  <li>Supports fine motor movements</li>
+</ul>
+<hr>
+
+<h3>🥜 3. Almond-Black Sesame Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 soaked almonds</li>
+  <li>1 tsp roasted black sesame seeds</li>
+  <li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Crush almonds, mix with sesame and honey. Eat in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Almonds strengthen the nervous system</li>
+  <li>Sesame seeds provide calcium → vital for motor coordination</li>
+  <li>Improves balance and reflexes</li>
+</ul>
+<hr>
+
+<h3>🍋 4. Lemon-Ginger Balance Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp grated ginger</li>
+  <li>Juice of ½ lemon</li>
+  <li>1 cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix ginger and lemon in warm water. Drink once daily in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ginger enhances circulation and nerve signaling</li>
+  <li>Lemon provides vitamin C → supports neurotransmitter activity</li>
+  <li>Helps with steadiness and physical balance</li>
+</ul>
+<hr>
+
+<h3>🥛 5. Milk with Nutmeg Pinch</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm milk</li>
+  <li>Pinch of nutmeg powder</li>
+  <li>½ tsp honey (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Stir nutmeg into warm milk. Drink before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Nutmeg calms the nervous system</li>
+  <li>Supports cerebellar function in sleep-related motor learning</li>
+  <li>Promotes smooth coordination and balance</li>
+</ul>
+
+
+
+
+</section>
+<section id="C">
+
+<h2>✨✨👁️ Discover natural remedies to support Midbrain health—boost alertness, sensory processing, and movement control: ✨✨</h2>
+
+<h3>🥒 1. Cucumber-Mint Cooling Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cucumber (sliced)</li>
+  <li>5 fresh mint leaves</li>
+  <li>1 cup cold water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend cucumber and mint with cold water. Drink once daily in summer or after fatigue.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Hydrates brainstem nerves for better signaling</li>
+  <li>Mint refreshes and improves sensory clarity</li>
+  <li>Supports midbrain alertness</li>
+</ul>
+<hr>
+
+<h3>🌿 2. Brahmi-Gotu Kola Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried brahmi leaves</li>
+  <li>½ tsp dried gotu kola</li>
+  <li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep herbs in hot water for 8 minutes. Strain and sip in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Brahmi enhances focus & neural transmission</li>
+  <li>Gotu kola improves circulation to the midbrain</li>
+  <li>Reduces stress-related fog</li>
+</ul>
+<hr>
+
+<h3>🥕 3. Carrot-Beetroot Vision Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup chopped carrots</li>
+  <li>½ cup beetroot pieces</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Juice carrots & beetroot together. Drink fresh in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Carrots improve vision → directly linked to midbrain</li>
+  <li>Beetroot increases nitric oxide → boosts blood flow</li>
+  <li>Enhances sensory-motor pathways</li>
+</ul>
+<hr>
+
+<h3>🧄 4. Garlic-Turmeric Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>¼ tsp turmeric powder</li>
+  <li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix ingredients into a paste. Take 2–3 times a week.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves brainstem circulation</li>
+  <li>Turmeric reduces oxidative stress in neural pathways</li>
+  <li>Protects against neurodegeneration</li>
+</ul>
+<hr>
+
+<h3>🥛 5. Warm Milk with Saffron</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm milk</li>
+  <li>2 saffron strands</li>
+  <li>½ tsp honey (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Soak saffron strands in warm milk for 5 minutes. Drink before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Saffron supports neurotransmitter balance</li>
+  <li>Improves vision & alertness</li>
+  <li>Supports midbrain sleep-wake regulation</li>
+</ul>
+
+
+</section>
+<section id="D">
+<h2>✨✨🌊 Discover natural remedies to support Pons health—enhancing breathing rhythm, calm sleep, and sensory balance: ✨✨</h2>
+
+<h3>🍵 1. Chamomile-Lavender Sleep Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried chamomile flowers</li>
+  <li>½ tsp dried lavender buds</li>
+  <li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep herbs in hot water for 10 minutes. Strain and sip before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Chamomile promotes relaxation & sleep</li>
+  <li>Lavender calms the nervous system</li>
+  <li>Supports pons in regulating sleep cycles</li>
+</ul>
+<hr>
+
+<h3>🥭 2. Mango-Banana Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ ripe mango</li>
+  <li>½ banana</li>
+  <li>½ cup coconut water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Banana provides magnesium → relaxes nerves</li>
+  <li>Mango supports serotonin balance</li>
+  <li>Helps regulate mood & pons-related calmness</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Tulsi-Ginger Steam Inhalation</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 tulsi (holy basil) leaves</li>
+  <li>1 small slice ginger</li>
+  <li>2 cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Boil tulsi and ginger in water. Inhale steam for 5–7 minutes.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Clears nasal passages & eases breathing</li>
+  <li>Tulsi enhances respiratory resilience</li>
+  <li>Supports pons in regulating breath rhythm</li>
+</ul>
+<hr>
+
+<h3>🥛 4. Warm Almond Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm almond milk</li>
+  <li>¼ tsp nutmeg powder</li>
+  <li>1 tsp honey (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix nutmeg into warm almond milk. Drink before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Nutmeg promotes deep restful sleep</li>
+  <li>Almonds provide calming magnesium</li>
+  <li>Supports pons in sleep-wake cycle regulation</li>
+</ul>
+<hr>
+
+<h3>🧄 5. Garlic-Honey Breathing Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>1 tsp honey</li>
+  <li>½ cup lukewarm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix crushed garlic and honey in lukewarm water. Drink once daily.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves respiratory health</li>
+  <li>Honey soothes throat and nerves</li>
+  <li>Supports pons in maintaining smooth breathing</li>
+</ul>
+
+
+</section>
+<section id="E">
+
+<h2>✨✨💓 Discover natural remedies to support Medulla Oblongata health—strengthening heartbeat, breath, and vital balance: ✨✨</h2>
+
+<h3>🍵 1. Hibiscus-Lemon Heart Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp dried hibiscus petals</li>
+  <li>½ tsp lemon juice</li>
+  <li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep hibiscus in hot water for 8 minutes. Strain and add lemon juice. Sip warm.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Hibiscus helps regulate blood pressure</li>
+  <li>Lemon supports vascular health</li>
+  <li>Assists medulla in controlling circulation</li>
+</ul>
+<hr>
+
+<h3>🥑 2. Avocado-Spinach Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ ripe avocado</li>
+  <li>1 cup spinach</li>
+  <li>½ cup coconut water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend until creamy. Drink in the morning 3 times a week.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Avocado provides potassium for heart rhythm</li>
+  <li>Spinach supports oxygen supply & circulation</li>
+  <li>Strengthens medulla-regulated cardiac control</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Basil-Ginger Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 fresh basil leaves</li>
+  <li>1 small slice ginger</li>
+  <li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep basil and ginger in hot water for 10 minutes. Strain and sip.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Basil enhances respiratory health</li>
+  <li>Ginger supports circulation & blood flow</li>
+  <li>Balances medulla’s breathing regulation</li>
+</ul>
+<hr>
+
+<h3>🍯 4. Honey-Cinnamon Vital Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp honey</li>
+  <li>¼ tsp cinnamon powder</li>
+  <li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix honey and cinnamon in warm water. Drink once daily.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Honey supports immunity & energy</li>
+  <li>Cinnamon aids blood pressure balance</li>
+  <li>Supports medulla in cardiovascular function</li>
+</ul>
+<hr>
+
+<h3>🥛 5. Warm Turmeric Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm milk (dairy or plant-based)</li>
+  <li>½ tsp turmeric powder</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Stir turmeric and black pepper into warm milk. Drink before bed.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric reduces inflammation & improves circulation</li>
+  <li>Black pepper enhances nutrient absorption</li>
+  <li>Supports medulla in maintaining vital reflexes</li>
+</ul>
+
+</section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Spinal Cord health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Licorice Root & Ashwagandha Nerve Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried licorice root</li>
+<li>½ tsp ashwagandha powder</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep both herbs in hot water for 10 minutes. Strain and sip before bedtime 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Licorice supports adrenal balance and reduces spinal inflammation</li>
+<li>Ashwagandha promotes nerve regeneration and stress resilience</li>
+<li>May help protect spinal cord tissue from oxidative damage</li>
+</ul><hr>
+<h3>🥬 2. Broccoli-Carrot Bone Broth Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup chopped broccoli</li>
+<li>½ cup chopped carrots</li>
+<li>2 cups bone broth</li>
+<li>Pinch of turmeric</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 20 minutes. Blend or strain and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bone broth provides collagen and glycine for spinal support</li>
+<li>Broccoli and carrots offer antioxidants and vitamin K</li>
+<li>May strengthen vertebrae and nourish spinal tissues</li>
+</ul><hr>
+<h3>🌿 3. Gotu Kola & Brahmi Brain-Spine Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried gotu kola</li>
+<li>½ tsp dried brahmi</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gotu kola improves circulation to the spinal cord</li>
+<li>Brahmi enhances nerve signaling and memor- y</li>
+<li>May support spinal cord healing and clarity</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Sesame Oil Back Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp sesame oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently along the spine 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts blood flow and collagen production</li>
+<li>Sesame oil nourishes connective tissue and reduces stiffness</li>
+<li>May ease spinal tension and support flexibility</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Flaxseed Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect spinal nerves</li>
+<li>Flaxseed offers omega-3s and lignans</li>
+<li>May reduce inflammation and support spinal cord resilience</li>
+</ul>
+          </section>
+
+    <section id="a3">
+ <h2>✨✨Discover natural remedies to support Cranial Nerves health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Celery-Ginger Nerve Tonic (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 stalk celery</li>
+<li>½ inch fresh ginger</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 3–4 times a week.
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Celery contains nervine compounds → calms and nourishes cranial nerves</li>
+<li>Ginger improves circulation to facial and sensory nerves</li>
+<li>May reduce nerve inflammation and support taste/smell recovery</li>
+</ul><hr>
+<h3>🌿 2. Rosemary & Clove Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried rosemary</li>
+<li>2 whole cloves</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add herbs to hot water. Lean over the bowl with a towel over your head for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Rosemary may stimulate cranial nerve activity (especially olfactory and optic)</li>
+<li>Clove is antimicrobial and supports nerve detox</li>
+<li>May ease sinus pressure and enhance sensory clarity</li>
+</ul><hr>
+<h3>🧄 3. Garlic-Mustard Oil Ear Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp mustard oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and gently massage around ears and jawline.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves blood flow to auditory and facial nerves</li>
+<li>Mustard oil supports nerve conductivity and warmth</li>
+<li>May reduce ear tension and support hearing-related cranial nerves</li>
+</ul><hr>
+<h3>🍋 4. Lemon Balm & Tulsi Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried lemon balm</li>
+<li>5 fresh tulsi (holy basil) leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon balm calms overstimulated cranial nerves</li>
+<li>Tulsi supports neuroprotection and stress resilience</li>
+<li>May help with facial nerve tension and emotional balance</li>
+</ul><hr>
+<h3>🥬 5. Spinach-Walnut Brain Boost Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>1 tbsp walnuts</li>
+<li>½ banana</li>
+<li>½ cup almond milk</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink 3–4 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides folate and antioxidants for nerve repair</li>
+<li>Walnuts offer omega-3s → support cranial nerve membranes</li>
+<li>May improve coordination, reflexes, and sensory processing</li>
+</ul>
+
+     
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Spinal Nerves health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Celery-Carrot Nerve Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 stalk celery</li>
+<li>1 medium carrot</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Celery contains nervine compounds → calms and nourishes spinal nerves</li>
+<li>Carrot provides beta-carotene and antioxidants</li>
+<li>May reduce nerve irritation and support spinal cord signaling</li>
+</ul><hr>
+<h3>🥬 2. Spinach-Mustard Seed Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>½ tsp crushed mustard seeds</li>
+<li>2 cups water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer for 10–15 minutes. Blend or strain and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach offers magnesium and folate → essential for nerve repair</li>
+<li>Mustard seeds stimulate circulation and reduce stiffness</li>
+<li>May support spinal nerve conductivity and reduce inflammation</li>
+</ul><hr>
+<h3>🌿 3. Brahmi-Ginger Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried brahmi</li>
+<li>½ inch fresh ginger</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Brahmi enhances nerve regeneration and clarity</li>
+<li>Ginger improves blood flow to spinal tissues</li>
+<li>May ease nerve pain and support recovery</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Coconut Oil Back Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp virgin coconut oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently along the spine 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation and collagen production</li>
+<li>Coconut oil nourishes and protects spinal nerve sheaths</li>
+<li>May reduce tension and support flexibility</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Flaxseed Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect spinal nerve endings</li>
+<li>Flaxseed offers omega-3s and lignans</li>
+<li>May reduce inflammation and support nerve resilience</li>
+</ul>
+
+    </section>
+
+    <section id="a5">
+      <h2>✨✨Discover natural remedies to support Sensory Organs health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3 style="color:pink;">👁️ Eyes (Sight)</h3>
+<p><b style="color:#90caf9;">1.Triphala Eye Wash</b>
+<li>Soak ½ tsp Triphala powder in warm water overnight. Strain and use as an eye rinse.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Cleanses eyes</li>
+<li> reduces inflammation</li>
+<li> supports vision clarity.</li></ul>
+<p><b style="color:#90caf9;">Cucumber-Rose Compress</b>
+Place chilled cucumber slices soaked in rose water over closed eyes for 10 minutes.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Soothes tired eyes</li>
+<li> reduces puffiness</li>
+<li> cools excess heat (Pitta).</li>
+<ul>
+
+ <hr> 
+<h3>🌸 2. Triphala Eye Wash</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>½ tsp Triphala powder</li>  
+  <li>1 cup distilled or boiled cooled water</li>  
+</ul>  
+  <br>  
+  <p><b style="color:#90caf9;">Preparation:</b>  
+Soak Triphala powder in water overnight. Strain through fine cloth. Use as an eye rinse or compress.  
+</p>  
+  <br>  
+  <h3 style="color:green;">Benefits:</h3>  
+  <ul>  
+  <li>Triphala rejuvenates ocular tissues</li>  
+  <li>Reduces eye strain and dryness</li>  
+  <li>Supports vision clarity and detoxification</li>  
+</ul>  
+  <hr>  
+  <br>  
+  
+<h3>🌸 3. Carrot–Amla Vision Tonic</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>½ cup fresh carrot juice</li>  
+  <li>1 tbsp amla juice (or powder mixed in water)</li>  
+</ul>  
+  <br>  
+  <p><b style="color:#90caf9;">Preparation:</b>  
+Mix both juices and consume in the morning on an empty stomach.  
+</p>  
+  <br>  
+  <h3 style="color:green;">Benefits:</h3>  
+  <ul>  
+  <li>Carrots provide beta-carotene → converted to Vitamin A</li>  
+  <li>Amla is rich in Vitamin C → supports retinal health</li>  
+  <li>Improves night vision and reduces oxidative stress</li>  
+</ul>  
+  <hr>  
+  <br>  
+  
+<h3>🌸 4. Rosewater–Cucumber Compress</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>2 tbsp pure rosewater</li>  
+  <li>2 slices fresh cucumber</li>  
+</ul>  
+  <br>    
+<p><b style="color:#90caf9;">Preparation:</b>  
+Dip cucumber slices in rosewater and place over closed eyes for 10–15 minutes.  
+</p>  
+<br>    
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Rosewater soothes and hydrates eye tissues</li>  
+  <li>Cucumber reduces puffiness and refreshes tired eyes</li>  
+  <li>Calms inflammation and supports tear balance</li>  
+</ul>  
+<hr>  
+<br>  
+  
+<h3>🌸 5. Almond–Saffron Milk</h3>  
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>5 soaked almonds (peeled)</li>  
+  <li>1 cup warm milk (or plant-based alternative)</li>  
+  <li>2 strands saffron</li>  
+</ul>   
+<br>  
+  
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend almonds into milk, add saffron, and drink before bedtime.  
+</p>  
+ <br>  
+ <h3 style="color:green;">Benefits:</h3>  
+ <ul>  
+  <li>Almonds support optic nerve health</li>  
+  <li>Saffron enhances retinal sensitivity and circulation</li>  
+  <li>Improves overall eye strength and visual acuity</li>  
+</ul>  
+ <hr>  
+ <br>  
+ <h3>🌸 6. Spinach–Flax Smoothie</h3>  
+ <h3 style="color:pink;">Ingredients:</h3>  
+ <ul>  
+  <li>½ cup fresh spinach leaves</li>  
+  <li>1 tsp ground flaxseed</li>  
+  <li>½ banana</li>  
+  <li>1 cup water or coconut water</li>  
+</ul>  
+ <br>  
+ <p><b style="color:#90caf9;">Preparation:</b>  
+Blend all ingredients into a smooth drink. Consume mid-morning or as a light breakfast.  
+</p>  
+ <br>  
+  <h3 style="color:green;">Benefits:</h3>   
+<ul>  
+  <li>Spinach provides lutein and zeaxanthin → protect retina</li>  
+  <li>Flaxseed offers omega-3s for tear production and vessel health</li>  
+  <li>Supports macular integrity and reduces dryness</li>  
+</ul>  
+  <hr>  
+
+</section>
+<section id="a5.2">
+
+<h3 style="color:pink;">👂 Ears (Hearing)</h3>
+<p><b style="color:#90caf9;">1.Sesame Oil Ear Massage</b>Warm 1 tsp sesame oil and gently massage around the outer ear and behind the lobes.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Nourishes auditory nerves</li>
+<li> calms Vata</li>
+<li>improves circulation.</li>
+</ul>
+<p><b style="color:#90caf9;">Tulsi-Garlic Steam Inhalation</b> Boil tulsi leaves and crushed garlic in water. Inhale steam for 5 minutes.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Clears ear congestion</li>
+<li> supports immunity</li> 
+<li>enhances hearing clarity.</li>
+<ul>
+<hr>
+
+<h3>🌸 2. Garlic–Sesame Oil Drops</h3>  
+<h4 style="color:gray;">   
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 clove garlic (crushed)</li>  
+  <li>2 tbsp sesame oil</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Warm gently until garlic browns. Strain and cool. Use 2–3 drops in the ear (only if eardrum is intact).</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Reduces earache and inflammation</li>  
+  <li>Improves circulation in the auditory canal</li>  
+  <li>Natural antimicrobial support</li>  
+</ul>  
+
+<hr>  
+
+
+
+<h3>🌸 3. Tulsi Steam Inhalation</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>5–6 fresh tulsi leaves</li>  
+  <li>2 cups boiling water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Add tulsi to hot water. Inhale steam with a towel over your head for 5–10 minutes.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Clears sinus pressure affecting ears</li>  
+  <li>Supports Eustachian tube drainage</li>  
+  <li>Boosts immunity and reduces congestion</li>  
+</ul>  
+
+<hr>  
+
+
+
+<h3>🌸 4. Coconut Oil + Camphor Massage</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>2 tbsp warm coconut oil</li>  
+  <li>A pinch of edible camphor</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and massage gently around the outer ear, jawline, and neck.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Stimulates lymphatic drainage</li>  
+  <li>Relieves ear tension and fullness</li>  
+  <li>Improves circulation to inner ear structures</li>  
+</ul>  
+
+<hr>  
+
+
+
+<h3>🌸 5. Lemon–Ginger Detox Drink</h3>  
+<h4 style="color:gray;">  
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 cup warm water</li>  
+  <li>1 tsp grated ginger</li>  
+  <li>Juice of ½ lemon</li>  
+</ul>  
+<br>  
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep ginger in warm water, add lemon, and sip in the morning.</p>  
+<br>  
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Reduces inflammation affecting auditory pathways</li>  
+  <li>Supports lymphatic detox and fluid balance</li>  
+  <li>Improves circulation to the inner ear</li>  
+</ul>  
+<hr>  
+
+
+<h3>🌸 6. Brahmi–Almond Brain Tonic</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>½ tsp Brahmi powder</li>  
+  <li>1 cup warm almond milk</li>  
+  <li>A pinch of cardamom</li>  
+</ul>  
+<br>  
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and drink before bed.</p>  
+<br>  
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Enhances auditory nerve function</li>  
+  <li>Supports sound processing and memory</li>  
+  <li>Calms the nervous system and improves hearing clarity</li>  
+</ul>  
+</section>
+<section id="a5.3">
+
+<h3 style="color:pink;">👃 Nose (Smell)
+<p><b style="color:#90caf9;">1.Ajwain Steam Therapy</b>Add 1 tsp crushed ajwain (carom seeds) to boiling water. Inhale steam for 5 minutes.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Opens nasal passages</li>
+<li> stimulates olfactory nerves</li> 
+<li>relieves sinus pressure.</li>
+</ul>
+<p><b style="color:#90caf9;">Ghee Nasya (Nasal Lubrication)</b>Apply 1 drop of warm cow’s ghee into each nostril in the morning.</p>
+<h3 style="color:green;">Benefits:</h3><ul>
+<li> Moisturizes nasal tissues</li>
+<li> improves smell sensitivity</li>
+<li>calms the mind.</li>
+</ul><hr>
+
+
+<h3>🌸 2. Neti Salt Rinse</h3>  
+<h4 style="color:gray;"> 
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>¼ tsp non-iodized salt</li>  
+  <li>1 cup warm distilled water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Use a neti pot to gently rinse nasal passages. Lean forward and tilt head sideways while pouring.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Flushes out allergens and pollutants</li>  
+  <li>Clears mucus and congestion</li>  
+  <li>Supports sinus drainage and breathing ease</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 3. Turmeric–Honey Paste</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>½ tsp turmeric powder</li>  
+  <li>1 tsp raw honey</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix into a paste and consume once daily, especially during seasonal changes.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Reduces nasal inflammation</li>  
+  <li>Supports immune response to allergens</li>  
+  <li>Helps prevent sinus infections</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 4. Eucalyptus Steam Therapy</h3>  
+<h4 style="color:gray;">
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>3–4 drops eucalyptus oil</li>  
+  <li>1 bowl hot water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Add oil to hot water. Inhale steam with a towel over your head for 5–10 minutes.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Opens nasal passages and sinuses</li>  
+  <li>Relieves congestion and pressure</li>  
+  <li>Antimicrobial and refreshing</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 5. Ginger–Tulsi Infusion</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 tsp grated ginger</li>  
+  <li>5 tulsi leaves</li>  
+  <li>1½ cups water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil ingredients for 5–7 minutes. Strain and sip warm.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Reduces nasal inflammation and allergy response</li>  
+  <li>Supports sinus and throat health</li>  
+  <li>Boosts immunity and respiratory clarity</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 6. Mustard Oil Nasya</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>2 drops warm mustard oil</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Apply 1–2 drops into each nostril in the morning. Lie back briefly to allow absorption.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Lubricates nasal tissues and prevents dryness</li>  
+  <li>Protects against seasonal irritants</li>  
+  <li>Balances Vata and clears subtle channels</li>  
+</ul>  
+
+</section>
+<section id="a5.5">
+
+<h3 style="color:pink;">👅 Tongue (Taste)</h3>
+<p><b style="color:#90caf9;">1. Coconut Oil Pulling</b>Swish 1 tbsp coconut oil in your mouth for 10–15 minutes, then spit and rinse.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Detoxifies oral tissues</li>
+<li> enhances taste perception</li>
+<li> supports oral hygiene.</li>
+<ul>
+<p><b style="color:#90caf9;">Mint-Clove Mouth Rinse</b>Boil 5 mint leaves and 2 cloves in water. Cool and use as a mouth rinse.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Refreshes taste buds</li>
+<li> reduces inflammation</li>
+<li> supports oral nerve endings.</li>
+
+
+<h3>🌸 2. Copper Tongue Scraping</h3>  
+<h4 style="color:gray;">  
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 copper tongue scraper</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Gently scrape tongue from back to front each morning before brushing. Rinse scraper after use.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Removes ama (toxins) and oral buildup</li>  
+  <li>Enhances taste sensitivity and digestion</li>  
+  <li>Balances oral microbiome</li>  
+</ul>  
+
+<hr>  
+
+<h3>🌸 3. Triphala Mouth Rinse</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>½ tsp Triphala powder</li>  
+  <li>1 cup warm water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and let sit for 5 minutes. Swish in mouth for 30 seconds, then spit out.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Reduces inflammation and oral bacteria</li>  
+  <li>Stimulates digestive enzymes via tongue receptors</li>  
+  <li>Supports gum and tongue tissue health</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 4. Aloe–Mint Gel Rub</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 tsp fresh aloe vera gel</li>  
+  <li>2 crushed mint leaves</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and gently rub over tongue surface. Leave for 1–2 minutes, then rinse.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Soothes irritation and dryness</li>  
+  <li>Refreshes taste buds and oral tissues</li>  
+  <li>Hydrates and cools the tongue</li>  
+</ul>  
+
+<hr>  
+
+<h3>🌸 5. Clove–Cardamom Chew</h3>  
+<h4 style="color:gray;">
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 clove</li>  
+  <li>1 green cardamom pod</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Chew slowly after meals for 2–3 minutes. Spit or swallow as preferred.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Freshens breath and clears oral bacteria</li>  
+  <li>Stimulates taste buds and salivary flow</li>  
+  <li>Supports digestive signaling via tongue receptors</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 6. Neem–Turmeric Paste</h3>  
+<h4 style="color:gray;"> 
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>½ tsp neem powder</li>  
+  <li>¼ tsp turmeric powder</li>  
+  <li>1 tsp water</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix into a paste. Apply gently to tongue for 30 seconds, then rinse thoroughly.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Detoxifies tongue and oral cavity</li>  
+  <li>Fights microbial buildup</li>  
+  <li>Supports oral immunity and taste clarity</li>  
+</ul>  
+
+</section>
+<section id="a5.4">
+<h3 style="color:pink;">✋ Skin (Touch)</h3>
+<p><b style="color:#90caf9;">1.Aloe-Vetiver Cooling Gel</b>Mix 1 tbsp fresh aloe vera gel with a pinch of vetiver powder. Apply to skin.</p>
+<h3 style="color:green;">Benefits:</h3><ul><li> Soothes irritated skin</li>
+<li> enhances tactile sensitivity</li>
+<li> hydrates deeply.</li>
+</ul>
+<p><b style="color:#90caf9;">Turmeric-Milk Body Rub</b>Mix 1 tsp turmeric with 2 tbsp warm milk. Apply and rinse after 10 minutes.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li> Improves skin tone supports nerve endings</li>
+<li> reduces inflammation.</li>
+</ul><hr>
+
+
+<h3>🌸 2. Neem–Turmeric Face Mask</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 tsp neem powder</li>  
+  <li>½ tsp turmeric powder</li>  
+  <li>1 tsp rosewater or aloe gel</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix into a paste. Apply to clean face for 10–15 minutes. Rinse with lukewarm water.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Purifies pores and reduces acne</li>  
+  <li>Soothes inflammation and redness</li>  
+  <li>Supports skin immunity and clarity</li>  
+</ul>  
+
+<hr>  
+
+<h3>🌸 3. Aloe–Cucumber Hydration Gel</h3>  
+<h4 style="color:gray;">
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>2 tbsp fresh aloe vera gel</li>  
+  <li>1 tbsp cucumber juice</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend and apply as a light gel to face and neck. Leave on or rinse after 20 minutes.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Deeply hydrates and cools skin</li>  
+  <li>Reduces puffiness and irritation</li>  
+  <li>Supports skin elasticity and moisture balance</li>  
+</ul>  
+
+<hr>  
+
+<h3>🌸 4. Sandalwood–Milk Radiance Pack</h3>  
+<h4 style="color:gray;">  
+
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 tsp sandalwood powder</li>  
+  <li>2 tsp raw milk</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix into a smooth paste. Apply to face and leave for 15 minutes. Rinse gently.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Brightens complexion and evens tone</li>  
+  <li>Soothes heat and irritation</li>  
+  <li>Supports skin softness and radiance</li>  
+</ul>  
+
+<hr>  
+
+<h3>🌸 5. Flaxseed–Honey Scrub</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>1 tsp ground flaxseed</li>  
+  <li>1 tsp raw honey</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and massage gently onto damp skin in circular motions. Rinse after 5 minutes.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Removes dead skin cells naturally</li>  
+  <li>Provides omega-3s for skin repair</li>  
+  <li>Boosts glow and smoothness</li>  
+</ul>  
+
+<hr>  
+
+
+<h3>🌸 6. Saffron–Almond Night Elixir</h3>  
+<h4 style="color:gray;"><h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>5 soaked almonds (peeled and crushed)</li>  
+  <li>2 strands saffron</li>  
+  <li>1 tbsp warm milk or almond milk</li>  
+</ul>  
+
+<br>  
+
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend into a smooth paste. Apply as a night mask or massage into skin before sleep.</p>  
+
+<br>  
+
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Repairs skin overnight</li>  
+  <li>Improves tone and texture</li>  
+  <li>Supports collagen and glow</li>  
+</ul>  
+
+<hr>
+
+    </section>
+
+    <section id="a6">
+     <h2>✨✨Discover natural remedies to support Ganglia health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Green Tea & Brahmi Brain Brew</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 green tea bag</li>
+<li>½ tsp dried brahmi (Bacopa monnieri)</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep both in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Green tea contains L-theanine → supports nerve signaling</li>
+<li>Brahmi enhances ganglionic transmission and memory</li>
+<li>May improve autonomic nerve balance and reduce oxidative stress</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Coconut Oil Nerve Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp virgin coconut oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently along the spine and neck 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation to gangli- a-rich areas</li>
+<li>Coconut oil nourishes nerve sheaths and reduces inflammation</li>
+<li>May support parasympathetic ganglia and reduce tension</li>
+</ul><hr>
+<h3>🥬 3. Spinach-Walnut Smoothie (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>1 tbsp walnuts</li>
+<li>½ banana</li>
+<li>½ cup almond milk</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides magnesium and folate → essential for ganglionic signaling</li>
+<li>Walnuts offer omega-3s for nerve membrane integrity</li>
+<li>May support sympathetic ganglia and reduce stress-related damage</li>
+</ul><hr>
+<h3>🌿 4. Gotu Kola & Tulsi Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried gotu kola</li>
+<li>5 fresh tulsi (holy basil) leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gotu kola improves microcirculation to ganglia</li>
+<li>Tulsi calms autonomic nerve centers and reduces cortisol</li>
+<li>May enhance ganglionic resilience and clarity</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Flaxseed Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect nerve clusters</li>
+<li>Flaxseed offers omega-3s and lignans for anti-inflammatory support</li>
+<li>May reduce ganglionic irritation and support neurotransmission</li>
+</ul>
+
+    </section>
+
+    <section id="a7">
+      <h2>✨✨Discover natural remedies to support Meninges health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Giloy-Tulsi Brain Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried giloy powder or fresh stem (crushed)</li>
+<li>5 fresh tulsi leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil giloy and tulsi in water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Giloy is a powerful anti-inflammatory and immune modulator</li>
+<li>Tulsi supports neuroprotection and fights viral threats</li>
+<li>May reduce inflammation in meninges and boost brain resilience</li>
+</ul><hr>
+<h3>🥬 2. Amla-Almond Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fresh amla pulp or juice</li>
+<li>2 soaked almonds (peeled and crushed)</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Amla is rich in vitamin C → strengthens blood vessels in meninges</li>
+<li>Almonds offer vitamin E and healthy fats for membrane integrity</li>
+<li>May support antioxidant defense and reduce oxidative stress</li>
+</ul><hr>
+<h3>🌿 3. Brahmi-Honey Brain Balm</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried brahmi powder</li>
+<li>1 tsp raw honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume directly or with warm water before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Brahmi enhances cerebral circulation and calms inflammation</li>
+<li>Honey supports immune balance and brain tissue nourishment</li>
+<li>May protect meninges from stress-related damage</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Ghee Warm Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tsp ghee (clarified butter)</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves blood flow and reduces microbial load</li>
+<li>Ghee nourishes brain tissues and supports myelin sheath health</li>
+<li>May ease tension and inflammation around meninges</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Basil Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of ½ lemon</li>
+<li>5 fresh basil leaves</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add ingredients to hot water. Lean over with a towel over your head and inhale steam for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains limonene → supports detox and circulation</li>
+<li>Basil clears sinuses and may reduce pressure around meninges</li>
+<li>May ease headaches and improve oxygenation to brain membranes</li>
+</ul>
+
+    </section>
+
+    <section id="a8">
+     <h2>✨✨Discover natural remedies to support Sensory Autonimic Nerve centers health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Chamomile-Valerian Nerve-Calming Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ tsp dried valerian root</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10–15 minutes. Strain and sip before bedtime.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile relaxes smooth muscles and calms sensory-autonomic signals</li>
+<li>Valerian supports parasympathetic nerve tone and sleep regulation</li>
+<li>May reduce overstimulation and improve vagal balance</li>
+</ul><hr>
+<h3>🥬 2. Celery-Coriander Detox Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 stalk celery</li>
+<li>½ tsp coriander seeds (soaked overnight)</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Celery contains nervine compounds → calms autonomic nerve centers</li>
+<li>Coriander supports digestion and internal sensory signaling</li>
+<li>May reduce bloating, palpitations, and nerve-related gut tension</li>
+</ul><hr>
+<h3>🌿 3. Gotu Kola & Shankhpushpi Brain-Nerve Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried gotu kola</li>
+<li>½ tsp dried shankhpushpi</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gotu kola improves microcirculation to autonomic ganglia</li>
+<li>Shankhpushpi calms sensory overload and supports neurotransmitter balance</li>
+<li>May enhance clarity, reduce anxiety, and support internal nerve tone</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Mustard Oil Chest & Abdomen Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp mustard oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently over chest, abdomen, and neck 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation to autonomic nerve hubs</li>
+<li>Mustard oil stimulates vagal and enteric nerve endings</li>
+<li>May ease digestive spasms, heart rate irregularities, and tension</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Basil Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of ½ lemon</li>
+<li>5 fresh basil leaves</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add ingredients to hot water. Inhale steam for 5–7 minutes under a towel.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains limonene → supports detox and nerve clarity</li>
+<li>Basil calms autonomic nerve centers and reduces inflammation</li>
+<li>May ease sinus pressure, improve breath regulation, and soothe internal stress.</li>
+</li><ul>
+
+
+</section>
+
+<section id="a9">
+
+
+
+<!-- 🌟 Peripheral Nerves Remedies -->
+<h2>✨✨Discover natural remedies to support Peripheral Nerves (Somatic Nerves) and promote a resilient nervous system:✨✨</h2>
+
+<h3>🌰 1. Almond-Milk Nerve Soother</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 soaked almonds</li>
+  <li>1 cup warm milk (dairy or plant-based)</li>
+  <li>1 pinch turmeric</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend soaked almonds with warm milk and turmeric. Drink before bedtime.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Almonds provide vitamin E for nerve insulation</li>
+  <li>Turmeric reduces nerve inflammation</li>
+  <li>May support repair of damaged nerve tissues</li>
+</ul>
+<hr>
+
+<h3>🌿 2. Ashwagandha-Calm Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp ashwagandha root powder</li>
+  <li>1 tsp chamomile flowers</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep herbs in hot water for 10 minutes. Strain and sip once daily in the evening.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ashwagandha reduces stress on nerves</li>
+  <li>Chamomile soothes anxiety and muscle tension</li>
+  <li>May enhance nerve resilience and calm the system</li>
+</ul>
+<hr>
+
+<h3>🥭 3. Mango Leaf Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>3 tender mango leaves</li>
+  <li>1½ cups water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Boil leaves in water for 5 minutes. Strain and drink once daily.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Mango leaves support nerve conductivity</li>
+  <li>May regulate blood sugar that affects nerve health</li>
+  <li>Strengthens peripheral nerve communication</li>
+</ul>
+<hr>
+
+<h3>🥒 4. Cucumber-Coriander Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cucumber</li>
+  <li>10 coriander leaves</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend cucumber and coriander leaves with water. Drink in the morning.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Cucumber hydrates and cools nerve tissues</li>
+  <li>Coriander supports electrolyte balance</li>
+  <li>May reduce nerve irritation and tingling</li>
+</ul>
+<hr>
+
+<h3>🍯 5. Honey-Poppy Seed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp poppy seeds</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Grind poppy seeds into a fine paste and mix with honey. Take once daily in the evening.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Poppy seeds calm nerve excitability</li>
+  <li>Honey provides natural neuro-supportive nutrients</li>
+  <li>May improve sleep quality and nerve relaxation</li>
+</ul>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿"Look to the nervous system as the key to maximum health."
+ 🌿💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html">Nervous System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

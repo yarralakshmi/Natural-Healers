@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Lymphatic Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+ 
+            padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🧬 Drainage & Defense Network";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿Natural remedies for healthy Lymphatic system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html">Lymphatic System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo luymphatic tips.jpeg" style="height:150px;width:150px;"></img>
+    <a href="#a1">🧬 Bone Marrow</a>
+    <a href="#a2">🧁Lymph Nodes</a>
+    <a href="#a3">🍇Spleen</a>
+    <a href="#a4">🍒Tonsils <br>&<br>Andenoids</a>
+    <a href="#a5">🧃MALT</a>
+<a href="#a6">✨Peyer’s<br> patches</a>
+<a href="#a7">🌀Appendix<br> (immune role)</a>
+<a href="#a8">🌸Thymus</a>
+
+	  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Bone Marrow health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Wheatgrass & Lemon Chlorophyll Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fresh wheatgrass juice</li>
+<li>Juice of ½ lemon</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<li>Wheatgrass is rich in chlorophyll → mimics hemoglobin and supports blood cell production</li>
+<li>Lemon enhances iron absorption and detoxifies bone marrow</li>
+<li>May boost stem cell activity and oxygen delivery</li>
+</ul><hr>
+<h3>🥬 2. Spinach-Lentil Iron Boost Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>½ cup cooked lentils</li>
+<li>¼ tsp cumin seeds</li>
+<li>2 cups water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer for 15 minutes. Blend or enjoy chunky.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach and lentils provide iron, folate, and plant protein</li>
+<li>Cumin aids digestion and mineral absorption</li>
+<li>May support red blood cell formation and marrow vitality</li>
+</ul><hr>
+<h3>🌿 3. Beetroot-Carrot Detox Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup beetroot</li>
+<li>½ cup carrot</li>
+<li>½ inch ginger</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Beetroot improves nitric oxide flow → enhances marrow circulation</li>
+<li>Carrots offer beta-carotene and antioxidants</li>
+<li>May reduce oxidative stress and support stem cell regeneration</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Turmeric Immunity Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp ghee or warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts white blood cell produc- tion and detox pathways</li>
+<li>Turmeric reduces inflammation and protects marrow DNA</li>
+<li>May enhance immune cell output and marrow resilience</li>
+</ul><hr>
+<h3>🍋 5. Amla-Almond Vitality Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fresh amla pulp or juice</li>
+<li>2 soaked almonds (peeled and crushed)</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Amla is rich in vitamin C → supports iron absorption and antioxidant defense</li>
+<li>Almonds offer vitamin E and healthy fats for marrow cell membranes</li>
+<li>May improve platelet production and stem cell health</li>
+</ul>
+
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Lymph Nodes health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Chamomile-Echinacea Immune Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ tsp dried echinacea root or leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily for 1–2 weeks.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile calms inflammation and supports lymphatic flow</li>
+<li>Echinacea boosts white blood cell activity and immune defense</li>
+<li>May reduce lymph node congestion and improve drainage</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Castor Oil Neck Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp cold-pressed castor oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and gently massage around neck and jawline 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and fights infection</li>
+<li>Castor oil stimulates lymphatic movement and reduces swelling</li>
+<li>May ease tension and support lymph node detox</li>
+</ul><hr>
+<h3>🍋 3. Lemon Peel & Parsley Detox Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tbsp fresh parsley (finely chopped)</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect lymphatic vessels</li>
+<li>Parsley is a natural diuretic and supports lymph cleansing</li>
+<li>May reduce fluid retention and support immune clarity</li>
+</ul><hr>
+<h3>🌿 4. Cleavers & Dandelion Root Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried cleavers herb</li>
+<li>½ tsp dried dandelion root</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily for 1–2 weeks.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Cleavers stimulate lymphatic drainage</li>
+<li>Dandelion root supports liver detox → indirectly benefits lymph nodes</li>
+<li>May reduce swelling and improve immune resilience</li>
+</ul><hr>
+<h3>🧂 5. Sea Salt & Apple Cider Vinegar Gargle (Neck Lymph Support)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp sea salt</li>
+<li>1 tsp raw apple cider vinegar</li>
+<li>1 cup warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and gargle for 30 seconds, then spit. Repeat 2–3 times daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sea salt cleanses throat and lymphatic tissue</li>
+<li>Apple cider vinegar balances pH and supports microbial defense</li>
+<li>May ease sore lymph nodes and reduce inflammation</li>
+</ul>
+
+
+
+          </section>
+
+    <section id="a3">
+ <h2>✨✨Discover natural remedies to support Spleen health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Dandelion Root & Ginger Liver-Spleen Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried dandelion root</li>
+<li>½ inch fresh ginger</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Dandelion supports liver detox → reduces spleen burden</li>
+<li>Ginger improves circulation and reduces inflammation</li>
+<li>May ease spleen congestion and support immune cleansing</li>
+</ul><hr>
+<h3>🥬 2. Codonopsis & Carrot Vitality Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried codonopsis root (or “poor man’s ginseng”)</li>
+<li>½ cup chopped carrots</li>
+<li>2 cups water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer for 20 minutes. Strain or blend and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Codonopsis boosts spleen qi and energy</li>
+<li>Carrots offer beta-carotene and antioxidants</li>
+<li>May improve digestion and spleen vitality</li>
+</ul><hr>
+<h3>🌿 3. Licorice-Cinnamon Herbal Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp licorice root powder</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Licorice harmonizes spleen function and soothes inflammation</li>
+<li>Cinnamon supports digestion and blood sugar balance</li>
+<li>May reduce spleen fatigue and support immune tone</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Cabbage Poultice (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>2 cabbage leaves (warmed in water)</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Place garlic between cabbage leaves and apply to upper left abdomen for 20 minutes.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and reduces swelling</li>
+<li>Cabbage offers sulfur compounds → anti-inflammatory</li>
+<li>May ease spleen tenderness and support lymphatic drainage</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Schisandra Berry Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>½ tsp dried schisandra berries</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel detoxifies and supports blood flow</li>
+<li>Schisandra is a spleen tonic in Traditional Chinese Medicine</li>
+<li>May enhance resilience and reduce oxidative stress</li>
+</ul>
+
+
+
+
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Tonsils & Adenoids health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Chamomile-Thyme Throat Soother Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ tsp dried thyme</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip warm 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile calms inflammation and soothes throat tissues</li>
+<li>Thyme offers antibacterial support for tonsils and adenoids</li>
+<li>May reduce swelling and ease congestion</li>
+</ul><hr>
+h3>🧄 2. Garlic-Honey Immunity Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tsp raw honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume directly or with warm water in the morning.
+<p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic fights bacteria and viruses</li>
+<li>Honey coats and protects throat tissues</li>
+<li>May prevent infections and support lymphatic drainage</li>
+</ul><hrr>
+<h3>🍋 3. Lemon Peel & Turmeric Gargle</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>¼ tsp turmeric powder</li>
+<li>1 cup warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and gargle for 30 seconds, then spit. Use 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect mucosal tissue</li>
+<li>Turmeric reduces inflammation and supports healing</li>
+<li>May clear mucus and reduce tonsil/adenoid irritation</li>
+</ul><hr>
+<h3>🌿 4. Holy Basil & Ginger Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>5 fresh tulsi (holy basil) leaves</li>
+<li>½ inch fresh ginger (sliced)</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add herbs to hot water. Inhale steam under a towel for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Tulsi boosts immunity and calms inflamed tissues</li>
+<li>Ginger improves circulation and clears nasal passages</li>
+<li>May ease adenoid swelling and soothe throat congestio- n</li>
+</ul><hr>
+<h3>🥬 5. Cabbage-Carrot Detox Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup chopped cabbage</li>
+<li>½ cup chopped carrot</li>
+<li>2 cups water</li>
+<li>Pinch of cumin</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer for 15 minutes. Blend or sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Cabbage supports lymphatic cleansing</li>
+<li>Carrots offer antioxidants for tissue repair</li>
+<li>May reduce chronic inflammation and support tonsil/adenoid health</li>
+</ul><hr>
+
+
+
+
+    </section>
+<section id="a5">
+<h2>✨✨Discover natural remedies to support MALT health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Slippery Elm & Licorice Root Mucosal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp slippery elm bark powder</li>
+<li>½ tsp licorice root powder</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Slippery elm soothes mucosal linings and supports gut MALT</li>
+<li>Licorice root reduces inflammation and boosts immune response</li>
+<li>May protect against leaky gut and respiratory irritation</li>
+</ul><hr>
+<h3>🥬 2. Fermented Carrot & Ginger Gut Booster</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup grated carrot</li>
+<li>½ inch fresh ginger (grated)</li>
+<li>½ tsp sea salt</li>
+<li>1 cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Pack ingredients into a jar. Let ferment at room temperature for 3–5 days. Eat 1 tbsp daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Fermentation supports probiotic growth → nourishes gut-associated MALT</li>
+<li>Ginger improves digestion and reduces inflammation</li>
+<li>May enhance mucosal immunity and microbial balance</li>
+</ul><hr>
+<h3>🌿 3. Chamomile-Fennel Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ tsp fennel seeds</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add herbs to hot water. Inhale steam under a towel for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile calms mucosal inflammation in nasal and lung MALT</li>
+<li>Fennel supports respiratory and digestive immunity</li>
+<li>May ease congestion and improve mucosal defense</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Yogurt Immune Dip</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ cup plain probiotic-rich yogurt</li>
+<li>Pinch of cumin</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a dip or side dish.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts lymphoid tissue activity and antimicrobial defense</li>
+<li>Yogurt supports gut flora and mucosal immunity</li>
+<li>May enhance MALT function in the digestive tract</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Turmeric Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect mucosal cells</li>
+<li>Turmeric reduces inflammation and supports lymphoid tissue</li>
+<li>May improve MALT resilience and antioxidant defense</li>
+</ul>
+ 
+
+
+</section>
+ <section id="a6">
+<h2>✨✨🌿 Discover natural remedies to support Peyer’s Patches — strengthen gut immunity and balance intestinal health: ✨✨</h2>
+
+<h3>🌿 1. Ginger–Tulsi Digestive Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp grated ginger</li>
+  <li>5 tulsi (holy basil) leaves</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep ginger and tulsi in hot water for 10 minutes. Strain and sip after meals.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ginger enhances gut motility and reduces inflammation</li>
+  <li>Tulsi boosts intestinal immunity</li>
+  <li>Supports Peyer’s patches in defending the gut</li>
+</ul>
+<hr>
+
+<h3>🌿 2. Turmeric–Black Pepper Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm milk (plant or dairy)</li>
+  <li>½ tsp turmeric powder</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix turmeric and pepper into milk and drink before bed.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric supports anti-inflammatory gut immunity</li>
+  <li>Black pepper enhances turmeric absorption</li>
+  <li>Strengthens gut barrier for Peyer’s patch activity</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Probiotic Yogurt–Flax Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup probiotic-rich yogurt</li>
+  <li>1 tsp ground flaxseed</li>
+  <li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix flaxseed and honey into yogurt. Eat as a snack or with breakfast.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Probiotics feed gut-friendly bacteria</li>
+  <li>Flaxseed provides fiber for gut health</li>
+  <li>Supports Peyer’s patches in microbial defense</li>
+</ul>
+<hr>
+
+<h3>🌿 4. Garlic–Cumin Digestive Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>½ tsp cumin seeds</li>
+  <li>1 cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep garlic and cumin in warm water for 5–7 minutes. Strain and drink once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic acts as a natural antimicrobial</li>
+  <li>Cumin stimulates digestion and reduces bloating</li>
+  <li>Boosts intestinal immunity with Peyer’s patches</li>
+</ul>
+<hr>
+
+<h3>🌿 5. Aloe Vera–Mint Gut Soother</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp fresh aloe vera gel</li>
+  <li>5 mint leaves</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend aloe vera gel with mint and water. Drink fresh once or twice a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Aloe vera cools and heals intestinal lining</li>
+  <li>Mint supports digestion and reduces gut stress</li>
+  <li>Helps Peyer’s patches maintain immune balance</li>
+</ul>
+
+
+</section>
+<section id="a7">
+<h2>✨✨🌀 Discover natural remedies to support the Appendix — your gut’s hidden immune guardian: ✨✨</h2>
+
+<h3>🌀 1. Triphala Herbal Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp Triphala powder</li>
+  <li>1 cup warm water</li>
+  <li>1 tsp honey (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix Triphala in warm water and let sit for 5 minutes. Drink at night before sleep.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Supports gut cleansing and microbial balance</li>
+  <li>Boosts intestinal immunity</li>
+  <li>May protect the appendix’s immune reservoir function</li>
+</ul>
+<hr>
+
+<h3>🌀 2. Buttermilk–Cumin Digestive Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup fresh buttermilk</li>
+  <li>½ tsp roasted cumin powder</li>
+  <li>Pinch of rock salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix all ingredients and sip after meals.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Improves gut flora and digestion</li>
+  <li>Cumin reduces bloating and inflammation</li>
+  <li>Helps appendix maintain microbial balance</li>
+</ul>
+<hr>
+
+<h3>🌀 3. Tulsi–Ginger Herbal Brew</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 tulsi (holy basil) leaves</li>
+  <li>½ tsp grated ginger</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep tulsi and ginger in hot water for 10 minutes. Strain and drink warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Tulsi boosts immune defense in the gut</li>
+  <li>Ginger reduces intestinal inflammation</li>
+  <li>Supports appendix immune resilience</li>
+</ul>
+<hr>
+
+<h3>🌀 4. Aloe Vera–Turmeric Elixir</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp aloe vera juice</li>
+  <li>½ tsp turmeric powder</li>
+  <li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix all and drink once daily, preferably morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Aloe vera soothes intestinal lining</li>
+  <li>Turmeric strengthens immunity</li>
+  <li>May protect appendix from infections</li>
+</ul>
+<hr>
+
+<h3>🌀 5. Fermented Rice Water (Kanji)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup rice</li>
+  <li>2 cups water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Cook rice in water, let the water ferment overnight. Drink the next morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Rich in probiotics → nourishes gut microbes</li>
+  <li>Helps restore intestinal health after infections</li>
+  <li>Supports appendix in maintaining healthy gut flora</li>
+</ul>
+
+</section>
+<section id="a8">
+<h2>✨✨🌸 Nourish your Thymus — the training ground of immunity, for lifelong protection: ✨✨</h2>
+
+<h3>🌸 1. Tulsi–Licorice Immunity Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 fresh tulsi (holy basil) leaves</li>
+  <li>½ tsp licorice root powder</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep tulsi and licorice in hot water for 8–10 minutes. Strain and sip warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Tulsi boosts immune defense</li>
+  <li>Licorice supports thymus activity and T-cell function</li>
+  <li>Helps fight infections naturally</li>
+</ul>
+<hr>
+
+<h3>🌸 2. Sunlight–Morning Breathing Ritual</h3>
+<h3 style="color:pink;">Practice:</h3>
+<ul>
+  <li>Expose chest to early morning sunlight (5–10 min)</li>
+  <li>Take slow deep breaths → inhale positivity, exhale stress</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Do this daily at sunrise, preferably in open air.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Sunlight stimulates Vitamin D → essential for thymus health</li>
+  <li>Breathing reduces stress that weakens immunity</li>
+  <li>Supports thymus rejuvenation</li>
+</ul>
+<hr>
+
+<h3>🌸 3. Ashwagandha–Milk Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp ashwagandha powder</li>
+  <li>1 cup warm milk (or almond milk)</li>
+  <li>½ tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix ashwagandha in warm milk, add honey, and drink before bedtime.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Strengthens immune system and reduces stress</li>
+  <li>Nourishes thymus function</li>
+  <li>Improves vitality and energy</li>
+</ul>
+<hr>
+
+<h3>🌸 4. Moringa–Lemon Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup moringa leaves (or powder)</li>
+  <li>2 cups vegetable broth</li>
+  <li>1 tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Cook moringa leaves in broth, squeeze lemon before serving. Consume warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Moringa is rich in antioxidants and immune nutrients</li>
+  <li>Lemon adds Vitamin C → thymus booster</li>
+  <li>Protects against oxidative stress</li>
+</ul>
+<hr>
+
+<h3>🌸 5. Ginger–Turmeric Golden Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp grated ginger</li>
+  <li>¼ tsp turmeric powder</li>
+  <li>½ cup warm water</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix all, let sit for 2 minutes, and drink quickly as a shot.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric and ginger fight inflammation</li>
+  <li>Black pepper enhances absorption</li>
+  <li>Supports thymus immunity and resilience</li>
+</ul>
+
+</section>
+     </main>
+
+  <footer>
+    <p>🌿"The lymphatic system is the river of life that cleanses, protects, and renews every cell it touches."💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html">Lymphatic System</a>
+              <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

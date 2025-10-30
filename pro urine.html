@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Inside the Urinary Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(0, 0, 0, 0.85);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: zoomOutFade 2.5s ease forwards;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px #1b5e20;
+    }
+
+    @keyframes zoomOutFade {
+      0% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(3); opacity: 0.5; }
+      100% { transform: scale(5); opacity: 0; visibility: hidden; }
+    }
+
+    .page-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+      color: white;
+      padding: 40px 20px 20px;
+      position: relative;
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content: "🌊The Body’s Filtration & Waste Disposal Unit";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      max-width: 300px;
+      background-color: var(--dark-panel);
+      padding: 20px;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 255, 102, 0.4);
+    }
+
+    nav h3 {
+      color: var(--earth);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    nav img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px #81c784;
+    }
+nav img:hover {
+      transform: scale(1.03);
+    }
+
+    article {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 255, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+    }
+
+    article h2, article h3 {
+      color: #c5e1a5;
+      margin-bottom: 10px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0f2f1;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.03);
+    }
+
+    ol {
+      margin-left: 20px;
+      color: #a5d6a7;
+      font-size: 17px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #66bb6a, #aed581);
+      margin: 30px 0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #ff4081, #fbc02d, #4dd0e1);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-style: italic;
+      font-size: 18px;
+      box-shadow: 0 -4px 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .footer-links a {
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 8px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .header-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <h1>🌊 Urinary System</h1>
+  </div>
+
+  <header>
+    <h1>Inside the Urinary Journey 🌿</h1>
+    <div class="header-buttons">
+      <div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html">Outdoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html">Tips</a>
+
+    </div>
+  </header>
+
+  <div class="page-content">
+    <section>
+      <nav>
+        <img src="C:\Users\yarra\Downloads\indo urinary system.jpeg" style="height:250px">
+        <h3 id="a">Choose:</h3>
+<p>Here, the Urinary system is catigorized into three parts:</p>
+        <a href="#1">🚰Filtration and Urine Formation (Kidneys)</a>
+        <a href="#2">🚦 Urine Transport System</a>
+        <a href="#3">🚽 Elimination and Regulation</a>
+<a href="#video">🎥Video Source</a>
+      </nav>
+
+  
+  <article>
+<h2>🌊  Introduction to the Urinary System:</h2>
+<p>The urinary system, also known as the excretory system, plays a vital role in maintaining the body’s internal balance. It removes waste products, especially nitrogenous wastes like urea, from the blood and helps regulate water, salts, and pH levels. This system ensures that the body stays free from toxic substances and maintains a healthy fluid balance.
+
+It consists of a set of organs that filter blood, produce urine, and eliminate it from the body. Without this system, waste would accumulate to dangerous levels, affecting nearly every other organ system.</p>
+<hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Filtration and Urine Formation (Kidneys).jpeg" alt="🚰 1. Filtration and Urine Formation (Kidneys)" style="float:right;width:250px;">
+
+<div style="margin-left: 50px;">
+<h1 id="1">🔸🚰 Filtration and Urine Formation (Kidneys):</h1>
+<p>The filtration and urine formation phase takes place in the kidneys, which are paired, bean-shaped organs located in the lower back on either side of the spine. Their primary role is to filter blood and form urine through millions of functional units called nephrons. Each nephron consists of a glomerulus, a tiny bundle of capillaries, and a Bowman’s capsule that collects the filtered fluid. This fluid then travels through renal tubules, where essential nutrients, ions, and water are reabsorbed, while waste products are left behind to form urine. The kidneys also maintain electrolyte balance, regulate blood pressure via the renin-angiotensin system, and stimulate red blood cell production through the hormone erythropoietin. The key components here include: kidneys, nephrons, glomeruli, Bowman’s capsule, renal tubules, renal arteries and veins, renin, and erythropoietin.</p>
+<ol type='***'>
+<li>Kidneys</li>
+<li>Nephrons</li>
+<li>Renal tubules</li>
+</ol>
+
+</div>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+
+<p>
+<img src="C:\Users\yarra\Downloads\urine tranport system.jpeg" alt="🚦 2. Urine Transport System" style="float:left;width:250px;">
+
+<h1 id="2">🔸🚦 Urine Transport System</h1>
+<p>Once urine is formed, the transport system takes over. Ureters, slender muscular tubes, carry urine from each kidney to the urinary bladder using wave-like contractions known as peristalsis. The bladder is a stretchable, hollow organ that temporarily stores urine until it's ready to be released. Its walls are lined with detrusor muscle, which contracts during urination to push urine out. The process is regulated by sphincter muscles—the internal sphincter operates involuntarily, while the external sphincter offers voluntary control. Together, these parts allow precise management of urine flow and prevent leakage. Key components of this section include: ureters, urinary bladder, detrusor muscle, internal sphincter, and external sphincter.</p>
+<h1>  </h1>
+
+<p>
+✨Hormones – Chemical Messengers</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type=''>
+<li>Ureters</li>
+<li>Urinary bladder</li>
+<li>Urethra</li>
+</ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Elimination and Regulation.jpeg"alt="🚽 3. Elimination and Regulation" style="float:right;width:250px;">
+
+<h1 id="3">🔸🚽 3. Elimination and Regulation</h1></p>
+
+<p>The final phase of the system involves elimination and regulation, centered on the urethra—the tube that expels urine from the bladder to the outside of the body. In males, the urethra also serves as a conduit for semen, while in females, it’s shorter and solely used for urination. The act of urination, or micturition, is controlled by signals between the bladder, spinal cord, and brain, coordinating muscle contraction and relaxation. This phase not only removes waste but helps maintain fluid and pH balance. When functioning optimally, it supports systemic detox and hydration. Key components here include: urethra, nervous control centers, and the overall micturition reflex..</p>
+<h1>🔹 Key Components</h1>
+<ol type='***'>
+<li>Kidneys</li>
+<li>ADH (Antidiuretic Hormone)</li>
+<li>Aldosterone</li>
+<li>Erythropoietin</li>
+</ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+<h3 id="video">🎥 Watch: The Skeletal System Explained</h3>
+<iframe width="660" height="515" src=https://www.bing.com/videos/riverview/relatedvideo?q=animated+urinary+system+form+telugu+badi&&view=riverview&mmscn=mtsc&mid=97B6A60EA3E75BE6881897B6A60EA3E75BE68818&&aps=0&FORM=VMSOVR></iframe><hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+    
+<hr>
+
+    </article>
+</section>
+
+<footer>
+ 
+<h3>Line of the slide/page</h3>
+<p>“Your body’s built-in purification system doesn’t just remove waste—it teaches you the art of release, renewal, and resilience. Let go, flush out, and keep flowing forward.” 💧🌿✨</p>
+<div class="footer-links">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html">Outdoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html">Tips</a>
+
+      </div>
+
+</footer>
+
+</body>
+</html>

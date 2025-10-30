@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Urinary Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+ 
+            padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🚽Body's Filtration & Waste Exit";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿Natural remedies for healthy Urinary system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html">Urinary System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo urinary tips.jpeg" style="height:150px;width:150px;"></img>
+<a href="#a1">🫘 Kidneys</a>
+<a href="#a2">🧵Ureters</a>
+<a href="#a3">🫙Urinary<br> Bladder</a>
+<a href="#a4">🚿Urethra</a>
+<a href="#a5">🧬Renal Pelvis</a>
+<a href="#a6">👉Nephrons</a>
+	  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Kidneys health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍵 1. Corn Silk Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp dried corn silk (from organic corn)</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep corn silk in hot water for 10–15 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Natural diuretic → helps flush toxins from kidneys</li>
+<li>May reduce urinary tract inflammation</li>
+<li>Supports gentle cleansing without overhydration</li>
+</ul><hr>
+<h3>🥬 2. Cucumber-Mint Detox Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 medium cucumber</li>
+<li>A handful of fresh mint leaves</li>
+<li>½ cup water</li>
+<li>Optional: 1 tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients until smooth. Strain and drink fresh in the morning.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Hydrating and cooling → supports kidney filtration</li>
+<li>Mint soothes urinary tract and reduces bloating</li>
+<li>May help prevent kidney stone formation</li>
+</ul><hr>
+<h3>🌿 3. Parsley Seed Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp parsley seeds</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Boil parsley seeds in water for 5–10 minutes. Strain and sip once daily for 3–5 days.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Stimulates kidney function and urine flow</li>
+<li>May help reduce water retention</li>
+<li>Traditionally used for kidney stone prevention</li>
+</ul><hr>
+<h3>🍠 4. Roasted Beetroot Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 medium beetroot (peeled and sliced)</li>
+<li>A pinch of cumin or black pepper</li>
+<li>Optional: drizzle of olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Roast beet slices until tender. Enjoy as a snack or side dish.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Rich in betaine → supports kidney detox pathways</li>
+<li>Improves blood flow and reduces oxidative stress</li>
+<li>May help lower blood pressure and support filtration</li>
+</ul><hr>
+<h3>🍋 5. Lemon-Baking Soda Alkalizing Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Juice of ½ lemon</li>
+<li>¼ tsp baking soda</li>
+<li>1 cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix lemon juice and baking soda in water. Stir well and drink once weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Helps alkalize urine → may reduce kidney stone risk</li>
+<li>Supports pH balance and gentle detox</li>
+<li>May relieve mild urinary discomfort</li>
+</ul>
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Ureters health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍵 1. Hibiscus Flower Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried hibiscus petals</li>
+<li>1½ cups hot water</li>
+<ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep petals in hot water for 10–15 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Natural diuretic → promotes urine flow through ureters</li>
+<li>Antioxidant-rich → may reduce oxidative stress</li>
+<li>Supports urinary tract cleansing and pH balance</li>
+</ul><hr>
+<h3>🥬 2. Celery Seed Detox Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp celery seed powder</li>
+<li>1 cup warm water</li>
+<li>Optional: 1 tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix celery seed powder into warm water. Sip slowly in the morning, 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Celery seed supports kidney and ureter detox</li>
+<li>May reduce inflammation and fluid retention</li>
+<li>Helps flush out uric acid and toxins</li>
+</ul><hr>
+<h3>🌿 3. Basil-Tulsi Leaf Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>5 fresh basil or tulsi leaves</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep leaves in hot water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Antimicrobial and anti-inflammatory</li>
+<li>May soothe ureteral irritation</li>
+<li>Supports urinary tract immunity</li>
+</ul><hr>
+<h3>🍋 4. Lemon-Coriander Alkalizing Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Juice of ½ lemon</li>
+<li>1 tbsp fresh coriander juice</li>
+<li>1 cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix all ingredients and drink on an empty stomach 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon alkalizes urine → may reduce ureter discomfort</li>
+<li>Coriander supports detox and reduces inflammation</li>
+<li>Helps prevent mineral buildup and stone formation</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Cumin Herbal Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp cumin seeds</li>
+<li>1 cup hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Boil garlic and cumin in water for 10 minutes. Strain and sip warm once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic fights infection and improves circulation</li>
+<li>Cumin supports digestion and urinary flow</li>
+<li>May help reduce ureteral swelling and discomfort</li>
+</ul>
+          </section>
+
+    <section id="a3">
+ <h2>✨✨Discover natural remedies to support Urinary Bladder health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍵 1. Marshmallow Root Mucilage Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp dried marshmallow root</li>
+<li>1½ cups cold water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Soak marshmallow root in cold water overnight. Strain and sip slowly throughout the day.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Coats and soothes bladder lining</li>
+<li>Reduces irritation and inflammation</li>
+<li>Supports mucosal tissue healing</li>
+</ul><hr>
+<h3>🥬 2. Watermelon Seed Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp dried watermelon seeds</li>
+<li>2 cups boiling water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Crush seeds and steep in boiling water for 15 minutes. Strain and drink once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Natural diuretic → promotes bladder flus- hing</li>
+<li>May help reduce urinary retention</li>
+<li>Supports detox and hydration</li>
+</ul><hr>
+<h3>🌿 3. Buchu Leaf Herbal Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried buchu leaves</li>
+<li>1 cup hot water</li>
+</ul>
+<p><b style="color:90caf9;">Preparation:</b>
+Steep leaves in hot water for 10 minutes. Strain and sip once daily for 5–7 days.</p>
+<h3 style="color:#green;">Benefits:</h3>
+<ul><li>Traditionally used for bladder infections</li>
+<li>Anti-inflammatory and antimicrobial</li>
+<li>May improve bladder tone and comfort</li>
+</ul><hr>
+<h3>🍋 4. Lemon Balm & Fennel Seed Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried lemon balm</li>
+<li>½ tsp fennel seeds</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep both ingredients in hot water for 10 minutes. Strain and sip before bedtime.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Calms bladder spasms and urgency</li>
+<li>Fennel supports urinary flow and digestion</li>
+<li>May ease nighttime urination discomfort</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Curd Immunity Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove raw garlic (crushed)</li>
+<li>2 tbsp plain curd (unsweetened)</li>
+<li>Optional: pinch of black salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix garlic into curd and consume on an empty stomach 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic fights bladder infections and boosts immunity</li>
+<li>Curd supports gut flora → indirectly benefits bladder health</li>
+<li>May reduce inflammation and odor</li>
+</ul>
+
+
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Urethra health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Apple Cider Vinegar Diluted Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp raw, unfiltered apple cider vinegar</li>
+<li>1 cup warm water</li>
+<li>Optional: 1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip slowly in the morning, 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>ACV has antimicrobial properties</li>
+<li>May help balance urinary pH</li>
+<li>Supports gentle cleansing of the urethra</li>
+</ul><hr>
+<h3>🌿 2. Baking Soda Alkalizing Flush</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>¼ tsp baking soda</li>
+<li>1 cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Stir well and drink once weekly on an empty stomach.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Helps neutralize excess acidity in urine</li>
+<li>May reduce urethral burning sensation</li>
+<li>Supports urinary comfort</li>
+</ul><hr>
+<h3>🧄 3. Garlic-Yogurt Immunity Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove raw garlic (crushed)</li>
+<li>2 tbsp plain unsweetened yogurt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume on an empty stomach 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic fights infection and inflammation</li>
+<li>Yogurt supports gut and urinary flora</li>
+<li>May help prevent urethral irritation</li>
+</ul><hr>
+<h3>🍋 4. Lemon-Cucumber Hydration Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Juice of ½ lemon</li>
+<li>½ cucumber (blended)</li>
+<li>1 cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend and sip fresh in the morning.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon alkalizes urine and supports detox</li>
+<li>Cucumber hydrates and cools urinary tract</li>
+<li>May soothe urethral lining</li>
+</ul><hr>
+<h3>🌿 5. Uva Ursi Leaf Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried uva ursi leaves</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes, strain, and sip once daily for 3–5 days.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Traditionally used for urinary tract cleansing</li>
+<li>Antimicrobial and anti-inflammatory</li>
+<li>May help prevent urethral infections</li>
+</ul>
+
+
+
+    </section>
+<section id="a5">
+<h2>✨✨Discover natural remedies to support Renal Pelvis health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Dandelion Root & Corn Silk Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried dandelion root</li>
+<li>1 tbsp dried corn silk</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep both herbs in hot water for 10–15 minutes. Strain and sip once daily for 5–7 days.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Dandelion supports kidney detox and bile flow</li>
+<li>Corn silk soothes urinary tract lining, including the renal pelvis</li>
+<li>May reduce inflammation and fluid retention</li>
+</ul><hr>
+<h3>🥬 2. Cabbage & Carrot Broth</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup chopped cabbage</li>
+<li>½ cup chopped carrot</li>
+<li>2 cups water</li>
+<li>Optional: pinch of cumin or turmeric</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Simmer vegetables in water for 20 minutes. Strain and sip warm as a broth.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Rich in antioxidants and sulfur compounds</li>
+<li>Supports kidney filtration and renal pelvis cleansing</li>
+<li>May help reduce oxidative stress</li>
+</ul><hr>
+<h3>🌿 3. Guduchi (Giloy) Herbal Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp guduchi powder (or fresh stem juice)</li>
+<li>½ cup warm water</li>
+<li>Optional: 1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip once daily on an empty stomach for 7 days.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Ayurvedic adaptogen → supports renal immunity</li>
+<li>May reduce inflammation in renal pelvis and calyces</li>
+<li>Helps regulate urinary flow and detox</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Parsley Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of ½ lemon (organic)</li>
+<li>1 tsp fresh parsley leaves</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep lemon peel and parsley in hot water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains limonene → supports kidney cleansing</li>
+<li>Parsley is a natural diuretic and anti-inflammatory</li>
+<li>May help prevent mineral buildup in renal pelvis</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Cumin Detox Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp cumin seeds</li>
+<li>1½ cups water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Boil garlic and cumin in water for 10 minutes. Strain and sip warm once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and fights infection</li>
+<li>Cumin supports digestion and urinary detox</li>
+<li>May reduce swelling and congestion in renal pelvis</li>
+</ul>    </section>
+<section id="a6">
+
+<h2>✨✨💧🌱 Support Your Nephrons — the body’s natural filters that purify and balance your blood: ✨✨</h2>
+
+<h3>💧🌱 1. Barley Water</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp barley</li>
+  <li>3 cups water</li>
+  <li>Lemon juice (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil barley in water until reduced to half, strain, and drink 1–2 cups daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Flushes toxins and supports nephron function</li>
+  <li>Prevents stone formation</li>
+  <li>Hydrates and cools the urinary system</li>
+</ul>
+<hr>
+
+<h3>💧🌱 2. Coriander Seed Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp coriander seeds</li>
+  <li>1 cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil coriander seeds in water for 10 minutes, strain, and drink warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Cleanses kidney tubules</li>
+  <li>Reduces nephron inflammation</li>
+  <li>Improves urine output</li>
+</ul>
+<hr>
+
+<h3>💧🌱 3. Coconut Water</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>Fresh coconut water (1 glass)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Drink tender coconut water once daily in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Hydrates kidneys and nephrons</li>
+  <li>Flushes toxins naturally</li>
+  <li>Maintains electrolyte balance</li>
+</ul>
+<hr>
+
+<h3>💧🌱 4. Pomegranate Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup fresh pomegranate juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Consume freshly prepared juice (without added sugar) daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Rich in antioxidants to protect nephron tissues</li>
+  <li>Improves kidney blood flow</li>
+  <li>Prevents oxidative damage</li>
+</ul>
+<hr>
+
+<h3>💧🌱 5. Parsley Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 handful fresh parsley</li>
+  <li>2 cups water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil parsley leaves in water for 5–10 minutes, strain, and sip warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Acts as a gentle diuretic</li>
+  <li>Clears waste products from nephrons</li>
+  <li>Supports overall kidney health</li>
+</ul>
+
+
+</section>
+     </main>
+
+  <footer>
+    <p>🌿"Flush out the doubt — your body’s strength begins with clean flow and quiet resilience.</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html">Urinary System</a>
+              <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+</div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

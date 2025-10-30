@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Endocrine Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Endocrine  System:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html" class="footer-button">Outdoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\endocrine indoor.jpeg"  class="falling-image">
+   <a href="#valerian(valeriana officinalis)">valerian(valeriana officinalis)</a>
+    <a href="#Brahmi(bacopa monnieri)">Brahmi(bacopa monnieri)</a>
+    <a href="#Oregano Plant">Oregano Plant</a>
+    <a href="#Sage(salivia officinalis)">Sage(salivia officinalis)</a>
+    <a href="#Arujuna Tree">Coccinia grandis (Ivy Gourd / Tindora)</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Endocrine Allies in Your Living Space</h2>
+    <p>Valerian, Brahmi, Oregano, Sage, and arjuna tree are potent herbal allies that support endocrine health through stress regulation, hormonal balance, and glandular resilience. Valerian calms the nervous system and may aid estrogen and cortisol modulation; Brahmi enhances pituitary function and balances the HPA axis for thyroid support; Oregano helps reduce oxidative stress and stabilizes insulin and progesterone activity.</p>
+</div> 
+<!-- Valerian -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\valerian.jpeg" style="width:250px; height:250px; float:right;" class="falling-image">
+<h2 id="Valerian (Valeriana officinalis) ">🌿1.Valerian (Valeriana officinalis) :<h2/>
+<p>🌱 valerian is widely known for its calming effects, but it also plays a subtle yet meaningful role in supporting the endocrine system. By enhancing GABA activity in the brain, valerian helps regulate stress responses via the hypothalamic-pituitary-adrenal (HPA) axis, which influences cortisol production and adrenal function.</p>
+<h1 style="left-padding:0px;">🔹Valerian  – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>😴 Improves Sleep Quality</li>
+      <li>🧠 Supports Mental Clarity</li>
+      <li>🧬 Antioxidant & Anti-inflammatory</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Valerian plant .html" class="plant-button">Learn More About Valerian  </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Brahmi  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Brahmi (Bacopa monnieri).jpeg" style="width:250px; height:250px;  float:left;">
+<h2 id="Brahmi(bacopa monnieri)">🌿2.Brahmi(bacopa monnieri):</h2>
+<p>🌱 Brahmi is a revered adaptogenic herb in Ayurveda, known for its ability to support the neuroendocrine system by modulating stress responses and enhancing hormonal resilience. It influences the hypothalamic-pituitary-adrenal (HPA) axis.</p>
+<h1 style="left-padding:0px;">🔹Brahmi– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>⚖️ Useful in managing symptoms of depression and emotional imbalance.</li>
+      <li>👁️ Enhances Eye Health</li>
+      <li>❤️Helps lower blood pressure and promotes circulation.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Brahmi.html" class="plant-button">Explore Brahmi Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Oregano Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Oregano (Origanum vulgare).jpeg" style="width:250px; height:250px;  float:right;">
+<h2 id="Oregano Plant">🌿3.Oregano Plant:</h2>
+<p>🌱 Oregano is more than a flavorful herb—it’s a potent endocrine-supporting botanical packed with antioxidants like carvacrol and thymol. These compounds help reduce oxidative stress, a key disruptor of hormonal balance, and support the function of glands like the thyroid, pancreas, and adrenal glands.</p>
+<h1 style="left-padding:0px;">🔹Oregano Plant – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🦠 Strong Antibacterial Properties</li>
+      <li>🍽️ Improves Digestion</li>
+      <li>🌿 Helps fight fungal infections like candida.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Oregano.html" class="plant-button"> Oregano Plant Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Sage -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Sage (Salvia officinalis).jpeg" style="width:250px; height:250px;  float:left;">
+<h2 id="Sage(salivia officinalis)">🌿4.Sage(salivia officinalis):</h2>
+<p>🌱 Sage is a time-honored herb with powerful effects on hormonal balance and glandular function. Rich in phytoestrogens and antioxidants like rosmarinic acid, it helps regulate estrogen levels, making it especially beneficial during menopause. Sage also supports the thyroid and adrenal glands, aiding in cortisol modulation and metabolic stability.</p>
+<h1 style="left-padding:0px;">🔹Sage – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+       <li>⚖️ Balances Hormones in Women</li>
+      <li>🦠Fights infections and boosts immunity naturally. </li>
+      <li>🌿raditionally used in smudging to cleanse energy and the environment.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Sage.html" class="plant-button">Sage Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--Coccinia grandis (Ivy Gourd / Tindora)-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo indoor Coccinia grandis (Ivy Gourd  Tindora) .jpeg"  style="width:250px; height:250px;  float:right;">
+<h2 id="Arujuna Tree">🌿5. Coccinia grandis (Ivy Gourd / Tindora):</h2>
+<p>🌱 Coccinia grandis, commonly known as Ivy Gourd or Tindora, is a fast-growing perennial climber native to tropical regions including India. Widely used in Indian cuisine, its tender fruits and leaves are also valued in traditional medicine. Rich in antioxidants, vitamins, and bioactive compounds, Ivy Gourd supports metabolic and endocrine health, especially in managing blood sugar and hormonal balance. It thrives in warm climates and is often grown in kitchen gardens and small farms.</p>
+
+<h1 style="left-padding:0px;">🔹Arujuna Tree – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+     <li>🩺 Supports Blood Sugar Regulation</li>
+     <li>🧬 Promotes Healthy Liver & Pancreatic Function</li>
+     <li>🍃 Used in Ayurveda for Endocrine Balance</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo indoor Coccinia grandis .html" class="plant-button"> Explore Arujuna Tree</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer>
+   <p>"Indoor plants can positively influence the endocrine system, which is responsible for producing and regulating hormones in the body. Though plants don’t directly replace hormones, they support hormonal balance naturally by reducing stress"🪴💚
+  </p>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

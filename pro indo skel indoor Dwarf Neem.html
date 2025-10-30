@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Dwarf Neem plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Dwarf Neem Plants That Support Skeletal Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Dwarf Neem.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor dwarf neem .jpeg" style="width:250px; float:right;">
+ style="width:250px; float:right;">
+
+ <h2 id="intro">🪴The Introduction of Dwarf neem</h2>
+  <p>Dwarf Neem is a compact and bushy variant of the traditional Neem tree, known for its incredible medicinal benefits. Unlike the towering Neem tree, the dwarf variety is suitable for smaller gardens, patios, and container growing, making it accessible for urban dwellers. It retains all the healing attributes of regular Neem—antibacterial, antifungal, antiviral, and insecticidal. Dwarf Neem leaves, oil, and bark are used in Ayurvedic treatments for skin conditions, digestion, immunity, and oral health. Its natural pest-repelling properties also make it a valuable addition to any organic garden.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor dwarf neem history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Dwarf Neem</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+<p>
+Neem (<em>Azadirachta indica</em>) is native to the Indian subcontinent and thrives in tropical and semi-arid regions. It belongs to the Mahogany family (Meliaceae), known for its durable wood and medicinal properties. Neem trees are evergreen, fast-growing, and drought-resistant, making them ideal for reforestation and soil conservation. The dwarf variety is a cultivated form designed for home gardens, balconies, and small urban spaces. Despite its compact size, it retains all the therapeutic and ecological benefits of the full-sized tree, including pest resistance and air purification.
+</p>
+
+<h3>🕊️ Ancient Egyptian Use</h3>
+<p>
+Although Neem was not indigenous to Egypt, ancient Egyptians used antiseptic oils from trees like cedar and frankincense in embalming and healing rituals. Some historical texts and trade records suggest that Neem oil may have been imported through long-distance trade routes connecting India and North Africa. Its antibacterial and antifungal properties would have made it a valuable commodity for preservation and medicinal use.
+</p>
+
+<h3>🏛️ Greek and Roman Traditions</h3>
+<p>
+Neem is not prominently featured in classical Greek and Roman texts, but the Mediterranean region was a hub for botanical exchange. Through trade with India and the Middle East, similar medicinal trees and herbal knowledge were introduced. These influences enriched Greco-Roman herbalism, especially in treating inflammation, skin disorders, and digestive issues. Neem-like remedies may have been used under different names or formulations.
+</p>
+
+<h3>📜 Medieval Herbalism in Europe</h3>
+<p>
+During the medieval period, Arab scholars and traders played a crucial role in transmitting botanical knowledge across continents. Neem was introduced to the Middle East and later to Europe, where it gained recognition for its ability to treat skin diseases, infections, and wounds. It was often included in herbal manuscripts and apothecary recipes, valued for its antiseptic and healing properties. Its use spread through trade routes and scholarly exchanges between Islamic and European medical traditions.
+</p>
+
+<h3>🔬 Scientific Recognition and Taxonomy</h3>
+<p>
+Neem was formally classified as <em>Azadirachta indica</em> in the 18th century by European botanists. The genus name "Azadirachta" is derived from Persian, meaning "noble or free tree," reflecting its revered status in traditional medicine. Scientific studies began to explore its phytochemical composition, revealing compounds like azadirachtin, nimbin, and salannin—potent agents against pests and pathogens. This marked the beginning of Neem’s integration into modern pharmacology and agricultural science.
+</p>
+
+<h3>⚗️ Rise in European Medicine</h3>
+<p>
+During the colonial era, European botanists in India observed Neem’s widespread use in Ayurvedic medicine and traditional farming. Its effectiveness as a natural pesticide and remedy for skin ailments led to its inclusion in European herbal treatments. Apothecaries began using Neem extracts in tinctures, ointments, and balms for conditions such as eczema, ulcers, and fevers. Its reputation as a "village pharmacy" in India intrigued scientists and herbalists alike.
+</p>
+
+<h3>🌎 Transatlantic Expansion and Farming</h3>
+<p>
+Neem was introduced to Africa, Southeast Asia, and the Caribbean through colonial and agricultural exchanges. Its adaptability to various climates and soil types made it a valuable addition to local farming practices. The dwarf Neem variety was later developed to meet the needs of urban gardeners and small-scale farmers. It offers all the benefits of the traditional tree—pest control, medicinal leaves, and shade—in a compact, manageable form suitable for domestic cultivation.
+</p>
+
+<h3>🏭 Industrial Era Applications</h3>
+<p>
+With the rise of industrialization, Neem oil found commercial applications in cosmetics, soaps, shampoos, and natural pesticides. Its bioactive compounds proved effective against a wide range of agricultural pests, leading to its adoption in organic farming. Neem-based products became popular for their eco-friendly and non-toxic nature, aligning with growing environmental awareness. Its versatility made it a staple in both personal care and sustainable agriculture.
+</p>
+
+<h3>🌟 Modern-Day Relevance</h3>
+<p>
+Today, dwarf Neem is celebrated in urban gardening and sustainable living. It serves as a natural air purifier, insect repellent, and medicinal resource. Its compact size makes it ideal for rooftop gardens, balconies, and indoor courtyards. Researchers continue to explore Neem’s potential in antiviral treatments, cancer therapy, and biodegradable pest control. As environmental concerns grow, Neem stands out as a symbol of green innovation and holistic wellness.
+</p>
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor dwarf neem growing.jpeg" style= "  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+ <h3>☀️ <strong>Ideal Growing Conditions</strong></h3>
+<p>
+Neem thrives in hot, dry, or semi-tropical climates with full sun exposure. It grows best in temperatures ranging from 20°C to 40°C and is highly drought-tolerant once established. The plant prefers open areas with good airflow and can withstand harsh sunlight, making it ideal for arid and semi-arid regions.
+</p>
+
+<h3>🧬 <strong>Propagation Methods</strong></h3>
+<p>
+Neem is commonly propagated through seeds or stem cuttings. Fresh seeds should be sown directly into the soil, as they lose viability quickly. Stem cuttings can be rooted in warm, humid conditions, though success rates vary. For dwarf varieties, propagation through cuttings is more practical for maintaining compact growth.
+</p>
+
+<h3>🌾 <strong>Soil Preparation</strong></h3>
+<p>
+While Neem can grow in poor, dry, or rocky soils, it performs best in well-draining loamy soil enriched with organic matter. The ideal pH range is between 6.0 and 7.5. Adding compost improves fertility and supports healthy root development. Neem is resilient and can tolerate nutrient-poor conditions, but enriched soil enhances leaf production and overall vigor.
+</p>
+
+<h3>💧 <strong>Watering and Maintenance</strong></h3>
+<p>
+Water Neem lightly and allow the soil to dry out between watering sessions. Overwatering can lead to root rot, especially in containers. Once established, Neem requires minimal maintenance and is highly drought-resistant. Mulching helps retain moisture and suppress weeds in younger plants.
+</p>
+<ul>
+  <li>Water only when topsoil is dry</li>
+  <li>Apply compost or <strong>organic fertilizer</strong> during active growth</li>
+  <li>Prune occasionally to shape and promote bushy growth</li>
+</ul>
+
+<h3>🚫 <strong>Managing Growth and Spread</strong></h3>
+<p>
+The dwarf Neem variety is compact and well-suited for pots, patios, and small gardens. It is easy to manage and responds well to regular trimming. Pruning helps maintain its size, encourages dense foliage, and prevents legginess. Container planting also helps control root spread and simplifies relocation.
+</p>
+
+<h3>✂️ <strong>Harvesting Tips</strong></h3>
+<p>
+Neem leaves can be harvested year-round for medicinal, cosmetic, or insect-repellent use. Pick mature leaves for maximum potency. Seed collection is done when the fruit turns yellow and soft, indicating ripeness. Seeds can be used for oil extraction or propagation.
+</p>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor dwarf neem  benefits.jpeg"  style= "  width:250px; float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Dwarf Neem</h3>
+    
+      <ul>
+  <li>🦴 <b>Bone Strengthening:</b> Rich in calcium and phosphorus, neem supports bone mineralization and skeletal integrity.</li>
+  <li>🔥 <b>Anti-inflammatory Action:</b> Helps reduce joint inflammation, making it beneficial for arthritis and other bone-related conditions.</li>
+  <li>🛡️ <b>Antioxidant Protection:</b> Neem’s flavonoids and tannins protect bone cells from oxidative stress and degeneration.</li>
+  <li>🧬 <b>Supports Cartilage Health:</b> Bioactive compounds help maintain cartilage elasticity and reduce wear in joints.</li>
+  <li>🧘 <b>Pain Relief:</b> Traditionally used to alleviate bone and joint pain through topical applications and herbal infusions.</li>
+  <li>💊 <b>Bone Detoxification:</b> Neem aids in cleansing toxins that may accumulate in bone tissues, supporting overall skeletal health.</li>
+  <li>🧠 <b>Neuromuscular Support:</b> Contains magnesium and potassium, which help regulate muscle contractions and bone-nerve coordination.</li>
+  <li>🌱 <b>Bone Healing Acceleration:</b> Neem oil and leaf extract promote faster healing of fractures and bone injuries.</li>
+  <li>🩺 <b>Osteoporosis Prevention:</b> Its phytoestrogen-like compounds may help reduce bone loss in aging individuals.</li>
+  <li>🧴 <b>Topical Bone Care:</b> Neem-based balms and oils are used in traditional medicine to massage joints and bones, improving circulation and flexibility.</li>
+</ul>
+
+
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌱"Rooted in purity and resilience, Dwarf Neem strengthens your bones with nature’s quiet power—building a foundati
+
+
+</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>  
+</footer>
+</body>
+</html>

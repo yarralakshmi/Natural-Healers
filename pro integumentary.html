@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Inside the Digestive Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(0, 0, 0, 0.85);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: zoomOutFade 2.5s ease forwards;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px #1b5e20;
+    }
+
+    @keyframes zoomOutFade {
+      0% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(3); opacity: 0.5; }
+      100% { transform: scale(5); opacity: 0; visibility: hidden; }
+    }
+
+    .page-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+      color: white;
+      padding: 40px 20px 20px;
+      position: relative;
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content: "🧴– Your Body’s Natural Armor";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      max-width: 300px;
+      background-color: var(--dark-panel);
+      padding: 20px;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 255, 102, 0.4);
+    }
+
+    nav h3 {
+      color: var(--earth);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    nav img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px #81c784;
+    }
+nav img:hover {
+      transform: scale(1.03);
+    }
+
+
+    article {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 255, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+    }
+
+    article h2, article h3 {
+      color: #c5e1a5;
+      margin-bottom: 10px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0f2f1;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.03);
+    }
+
+    ol {
+      margin-left: 20px;
+      color: #a5d6a7;
+      font-size: 17px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #66bb6a, #aed581);
+      margin: 30px 0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #ff4081, #fbc02d, #4dd0e1);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-style: italic;
+      font-size: 18px;
+      box-shadow: 0 -4px 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .footer-links a {
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 8px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .header-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <h1>Integumentary System 🌿</h1>
+  </div>
+
+  <header>
+    <h1>Inside the Integumentary Journey 🌿</h1>
+    <div class="header-buttons">
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+ 
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html">🌿 Discover Plant-Based Healing Tips</a>
+
+    </div>
+  </header>
+
+  <div class="page-content">
+    <section>
+      <nav>
+        <img src="C:\Users\yarra\Downloads\indo integumentary.jpeg" style="height:250px">
+        <h3 id="a">Choose:</h3>
+<p>Here, the integumentary system is catigorized into three parts:</p>
+        <a href="#skin">🧴Skin</a>
+        <a href="#Accessory">💅  Accessory Structures</a>
+        <a href="#sensory">🛡️ Sensory & Immune Functions</a>
+<a href="#video">🎥Video Source</a>
+      </nav>
+
+  <article>
+<h2>🧴🛡️ Introduction to the Integumentary System</h2>
+<p>The integumentary system is like your body's personal shield and style team. It includes the skin, hair, nails, and glands that protect you from germs, sunlight, and injuries. Your skin is the largest organ of your body—it keeps everything inside safe and helps control your temperature, like a built-in air conditioner 🌬️. It also lets you feel things, like warmth, pressure, or pain, thanks to tiny nerve endings that send signals to your brain 🧠.</p>
+<p>
+Besides protection, this system also helps remove waste through sweat, makes natural oils to keep your skin soft , and grows hair and nails as part of its handy toolkit . It’s always working silently, repairing damage, growing new cells, and keeping you looking sharp and safe—like your body’s outer superhero suit 🦸‍♀️✨.</p>
+<hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Skin – Surface Shield & Sensory Center.jpeg" alt="Skin – Surface Shield & Sensory Center" style="float:left; width:250px;">
+
+<h1 id="skin"></h1><div style="margin-left: 50px;">
+<h1>🔸🧴 Skin – Surface Shield & Sensory Center:</h1></p>
+<p>
+ The skin is the largest and most visible organ of the human body, acting as both a protective barrier and a highly sensitive communication center. It shields us from harmful bacteria, UV radiation, and physical injuries while preventing water loss and maintaining internal balance. The skin is made up of three main layers: the epidermis, which provides a tough, waterproof outer layer; the dermis, which contains nerves, blood vessels, and glands; and the hypodermis, a fatty layer that insulates and cushions the body. Not only does the skin protect, but it also allows us to feel the world through millions of nerve endings that detect temperature, touch, pressure, and pain. With its ability to repair itself, regulate heat, and sense danger, the skin serves as a dynamic surface shield and sensory hub essential to survival.⚡.</p>
+
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol>
+<li>Epidermis (outermost layer)</li>
+<li>Dermis (middle layer)</li>
+<li>Sweat Glands</li>
+<li>Hypodermis (subcutaneous layer)</li>
+</ol>
+</div>
+<hr><p><a href="#a" style="color:pink;">Choose the links</a></p><hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Accessory Structures – Protective Add-ons.jpeg" alt="Accessory Structures – Protective Add-ons" style="float:right; width:250px;">
+
+<h1 id="Accessory">🔸💅  Accessory Structures – Protective Add-ons</h1></p>
+
+<p>
+✨The accessory structures of the integumentary system are specialized parts that extend from the skin and enhance its protective, regulatory, and functional roles. These include hair, nails, sweat glands, and sebaceous (oil) glands. Hair helps trap heat and shields sensitive areas like the scalp, eyes, and nostrils. Nails protect the fingertips and assist in grasping objects with precision. Sweat glands play a key role in regulating body temperature through perspiration, helping to cool the body during heat or activity. Sebaceous glands secrete sebum, a natural oil that moisturizes the skin and hair while forming a barrier against bacteria. Though small in size, these accessory structures work together as protective add-ons, supporting the skin’s defenses and maintaining overall skin health and hygiene.</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type=''>
+<li>Hair</li>
+<li>nails</li>
+<li>Oil Glangs(Sebaceous Glands)</li>
+<li>Sweat Glands(Sudoriferous Glands)</li>
+<li>Hair Follicles</li>
+</ol>
+<hr><p><a href="#a" stylle="color:pink;">Choose the links</a></p><hr>
+<p>
+<img src="C:\Users\yarra\Downloads\Sensory & Immune Functions – Defenders & Messengers.jpeg"🛡️ 3. Sensory & Immune Functions – Defenders & Messengers" style="float:left; width:250px;">
+
+<h1></h1>
+<h1 id="sensory">🔸🛡️  Sensory & Immune Functions – Defenders & Messengers</h1>
+
+</p>
+<p>
+✨Beyond its role as a physical barrier, the integumentary system also acts as a sensitive detector and first line of immune defense. Embedded within the skin are millions of nerve endings and sensory receptors that allow us to feel touch, pain, temperature, pressure, and vibration—helping us respond to the environment instantly and safely. At the same time, immune cells such as Langerhans cells, located in the epidermis, constantly patrol the skin’s surface, identifying and fighting off harmful microbes. Blood vessels and lymphatic vessels in the dermis also support this immune response, helping with wound healing and transporting immune cells when needed. Together, these sensory and immune components function as the body’s messengers and defenders, working silently to protect, alert, and maintain overall health🛡️.</p>
+<h1>🔹 Key Components</h1>
+<ol type='***'>
+<li>Nerve Endings and Receptors (touch, pain, pressure, temperature)</li>
+<li>Immune Cells (Langerhans cells in epidermis)</li>
+<li>Blood Vessels in the dermis</li>
+<li>Langerhans Cells</li>
+<li>Lymphatic Vessels</li>
+</ol>
+<hr><p><a href="#a" style="color:pink;">Choose the links</a></p><hr>
+<h3 id="video">🎥 Watch: The Integumentary System Explained</h3>
+<iframe width="660" height="515" src=https://www.bing.com/videos/riverview/relatedvideo?q=telugubadi+integumentory+system&mid=C8F2E479B591ABE07C6FC8F2E479B591ABE07C6F&FORM=VIRE></iframe>
+<hr><p><a href="#a" style="color:pink;">Choose the links</a></p><hr>
+
+
+    </article>
+</section>
+
+<footer>
+ 
+<h3>Line of the slide/page</h3>
+<p>
+😄🛡️ "Don’t sweat the small stuff—unless your sweat glands say otherwise. Wear your skin like armor, your nails like claws, and your hair like your victory crown. You’re built to shine and protect!"</p>
+<div class="footer-links">
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+ 
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html">🌿 Discover Plant-Based Healing Tips</a>      </div>
+
+</footer>
+
+</body>
+</html>

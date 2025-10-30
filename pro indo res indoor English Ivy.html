@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿English Ivy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 English Ivy Plant Plants That Support Respiratory Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prores indoor .html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo res indoor english ivy ani.jpeg"   style= " width:250px;height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\English Ivy.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to English Ivy</h2>
+<p>🌱 The English Ivy is a classic, fast-growing climbing vine admired for its lush, evergreen foliage and elegant trailing nature. Native to Europe and Western Asia, it has become a popular indoor and outdoor plant, often seen adorning walls, fences, and hanging baskets. English Ivy is well-known for its air-purifying qualities, as it can filter pollutants such as benzene, formaldehyde, and mold spores, making it beneficial for respiratory health. Its graceful green leaves not only enhance indoor aesthetics but also symbolize eternity, fidelity, and protection in various cultures. Hardy and adaptable, English Ivy thrives in a variety of conditions, bringing both beauty and health benefits to living spaces.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo res english ivy  indoor history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of English Ivy</h2>
+ <h3>🌱 Mythical Roots & Ancient Recognition</h3>
+<p> English Ivy (Hedera helix), native to Europe and Western Asia, has been cherished since ancient times for its evergreen beauty and symbolic meanings. In Greek and Roman cultures, ivy was sacred to Dionysus (Bacchus), the god of wine and celebration, often used to weave crowns for revelers and poets. Ancient Druids also regarded ivy as a mystical plant, symbolizing eternal life due to its ability to remain green throughout the year, even in the harshest winters. Archaeological findings reveal ivy carvings on temple walls, mosaics, and sculptures, showing its deep integration into early cultural and religious practices.</p> 
+
+<h3>🌸 Cultural & Spiritual Symbolism</h3> 
+<p> In European folklore, English Ivy symbolized fidelity, love, and friendship, as it clings firmly to walls and trees—representing steadfastness and attachment. It was used in wedding rituals as a sign of eternal bonds. In Christian symbolism, ivy represented eternal life and resurrection, often used to decorate churches and gravesites during winter festivals. In ancient Rome, victorious generals and athletes were often crowned with ivy wreaths, marking it as a symbol of honor and achievement. Its intertwining growth habit also made it a metaphor for connection, unity, and resilience across many cultures.</p> 
+
+<h3>💮 Traditional Names & Sacred Associations</h3> 
+<p> Known by names such as “Bindwood,” “Lovestone,” and “Evergreen Vine,” English Ivy has long carried symbolic weight. Its ability to grow persistently on walls and stones linked it with endurance and immortality. Poets and artists often praised ivy as a plant of memory and loyalty, while healers recognized it for its medicinal properties in soothing respiratory ailments and skin conditions. In herbal traditions, it was sometimes referred to as the “plant of fidelity,” reflecting its reputation as a guardian of homes and sacred spaces.</p> 
+
+<h3>🌏 Spread Across Lands & Traditions</h3> 
+<p> English Ivy’s journey beyond Europe began through trade and exploration. Romans and medieval herbalists spread it across the Mediterranean, where it became part of monastery gardens and folk medicine practices. In later centuries, European settlers carried ivy to the Americas, where it became a popular ornamental ground cover and climbing plant for estates, universities, and gardens. Its association with tradition, wisdom, and heritage made it especially prominent on old college campuses, where ivy became a symbol of knowledge and academic prestige, giving rise to the term “Ivy League.</p> 
+
+<h3>🌼 Modern Reverence & Everyday Uses</h3> 
+<p> Today, English Ivy is valued both as a decorative and functional plant. Cultivated worldwide, it is admired for its lush green foliage and air-purifying properties, making it a popular choice for indoor spaces. In modern landscaping, it is used to cover walls, fences, and garden beds, enhancing natural beauty while preventing soil erosion. Beyond its ornamental charm, it continues to hold medicinal value in herbal remedies for respiratory relief and skincare. English Ivy, once entwined with myth, ritual, and tradition, has seamlessly transitioned into the modern era as a plant symbolizing resilience, beauty, and timeless connection between nature and human culture.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo res english ivy  indoor growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Preferred Climate & Light Conditions</h3>
+ <p> English Ivy (Hedera helix) thrives in cool to moderate climates, preferring temperatures between 10 °C and 25 °C. It grows best in regions with mild summers and winters, but it can tolerate both cold snaps and warm spells once established. Outdoors, it flourishes in shaded or partially shaded areas, though it can adapt to full sun if the soil stays moist. Indoors, it prefers bright, indirect light—direct sun can scorch its delicate leaves, while too little light may cause leggy growth.</p> 
+
+<h3>🌱 Soil Preferences & Ground Preparation</h3>
+ <p> This hardy climber adapts to a variety of soils but grows best in fertile, moist, well-draining loam. Ideal soil pH ranges from slightly acidic to neutral (6.0–7.5). Before planting, enrich the soil with compost or organic matter to improve nutrient content and aeration. When grown in containers, choose a high-quality potting mix with good drainage capacity. Mulching around the base helps retain moisture, regulate temperature, and suppress weeds.</p> 
+
+<h3>🌿 Propagation Methods & Planting Practices</h3> 
+<p> English Ivy is most commonly propagated through stem cuttings. Select healthy stems with 3–4 leaves, cut just below a node, and place the cuttings in water or directly into moist potting soil until roots develop. It can also be propagated by layering, where a low-growing stem is pinned to the soil until it roots naturally. For outdoor planting, set young plants 30–45 cm apart to allow them to spread and cover walls, trellises, or ground surfaces.</p> 
+
+<h3>🪴 Spacing, Growth Habits & Support</h3> 
+<p> As a vigorous climber, English Ivy uses aerial rootlets to cling to walls, fences, and tree trunks. In gardens, provide structures such as trellises, pergolas, or walls for vertical growth, or let it sprawl as a lush groundcover. Space plants generously to prevent overcrowding, which can lead to poor airflow and fungal issues. Indoors, use hanging baskets or tall containers to showcase its trailing vines.</p> 
+
+<h3>💧 Watering Needs & Humidity Care</h3> 
+<p> Keep the soil consistently moist but never soggy. Water thoroughly when the top 2–3 cm of soil becomes dry. Outdoors, established plants are relatively drought-tolerant, but young ivies need regular watering to develop strong roots. Indoors, maintain moderate humidity by misting occasionally, especially in air-conditioned or heated rooms where the air tends to be dry. Overwatering should be avoided as it can lead to root rot.</p> 
+
+<h3>🛡️ Pest & Disease Protection</h3> 
+<p> English Ivy is generally resilient but may be susceptible to spider mites, aphids, and mealybugs, especially in dry indoor conditions. Regularly wipe the leaves or rinse with water to discourage pests. Fungal diseases such as leaf spot or root rot may occur due to poor air circulation or waterlogged soil. To prevent this, provide adequate spacing, good drainage, and proper airflow. If infestations occur, organic neem oil sprays or insecticidal soap can be used safely.</p>
+<h3>🌿 Pruning, Training & Maintenance</h3>
+<p> Regular pruning helps maintain the plant’s shape, encourages bushier growth, and prevents it from becoming invasive. Trim back overgrown vines during spring and summer when growth is most active. For indoor plants, pinch back the tips to encourage branching and prevent legginess. Outdoors, ivy should be carefully managed to keep it from overtaking trees or structures, as it can become invasive if unchecked. With proper care, English Ivy will reward you with lush greenery year-round.</p>
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo res english ivy indoor benefits.jpeg"  style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+<li>💨 Removes airborne toxins like formaldehyde, benzene, and mold spores, improving indoor air quality.</li>
+
+<li>🌬️ Helps reduce airborne fecal particles and allergens, making it beneficial for homes with pets.</li>
+
+<li>😴 Cleaner air can ease breathing and support better sleep, especially in enclosed spaces.</li>
+
+<li>🧘 Its trailing vines and lush greenery create a calming, grounding atmosphere.</li>
+
+<li>👀 Visually refreshing—its cascading form adds elegance and reduces mental fatigue.</li>
+
+<li>🌿 Known for its antimicrobial properties, especially against mold in humid environments.</li>
+
+<li>🏡 Thrives in hanging baskets or vertical planters, making it ideal for space-saving indoor gardens.</li>
+
+<li>🪴 Easy to grow and propagate—perfect for beginners and plant lovers who enjoy sharing cuttings.</li>
+
+<li>🎍 Symbol of fidelity and eternal life in various cultures, often used in healing and spiritual spaces.</li>
+
+<li>⚠️ Toxic to pets 🐶🐱 and humans if ingested—best placed out of reach in homes with children or animals.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿English Ivy teaches us resilience—purifying our air while weaving beauty and strength into every space.💨💚"</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html"  class="footer-button">← Back to Respiratory System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prores indoor .html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

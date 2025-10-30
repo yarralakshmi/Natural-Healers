@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>🌿 Outdoor Plants</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: no-repeat center center fixed;
+      background-size: cover;
+      color: #4e342e;
+    }
+
+    header {
+      position: relative;
+      background: linear-gradient(to right, #388e3c, #66bb6a);
+      padding: 60px 20px 40px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      z-index: 1;
+      padding: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    article {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .magic-image {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: floatIn 2.2s ease forwards;
+    }
+
+    @keyframes floatIn {
+      0% {
+        transform: translateY(-60px) scale(1.05);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(20px) scale(1.02);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    h2, h3 {
+      color: #388e3c;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5d4037;
+      margin-bottom: 15px;
+    }
+
+    .button-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    /* 🌈 Stylish System Buttons */
+    .system-button {
+      position: relative;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Different colors for each system */
+    .system-button:nth-child(1) { background: linear-gradient(135deg, #ff7043, #ffab91); }
+    .system-button:nth-child(2) { background: linear-gradient(135deg, #42a5f5, #90caf9); }
+    .system-button:nth-child(3) { background: linear-gradient(135deg, #66bb6a, #a5d6a7); }
+    .system-button:nth-child(4) { background: linear-gradient(135deg, #ab47bc, #ce93d8); }
+    .system-button:nth-child(5) { background: linear-gradient(135deg, #ef5350, #ef9a9a); }
+    .system-button:nth-child(6) { background: linear-gradient(135deg, #5c6bc0, #9fa8da); }
+    .system-button:nth-child(7) { background: linear-gradient(135deg, #26a69a, #80cbc4); }
+    .system-button:nth-child(8) { background: linear-gradient(135deg, #8d6e63, #bcaaa4); }
+    .system-button:nth-child(9) { background: linear-gradient(135deg, #ffa726, #ffcc80); }
+    .system-button:nth-child(10) { background: linear-gradient(135deg, #f06292, #f8bbd0); }
+    .system-button:nth-child(11) { background: linear-gradient(135deg, #29b6f6, #81d4fa); }
+
+    /* Hover effect: Pop-up animation */
+    .system-button:hover {
+      transform: scale(1.15);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+
+    .plant-dropdown {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background-color: #f1f8e9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      display: none;
+      min-width: 160px;
+      z-index: 3;
+    }
+
+    /* Show dropdown when button is active */
+    .system-button.active .plant-dropdown {
+      display: block;
+    }
+
+    /* 🌱 Stylish Plant Buttons */
+    .plant-dropdown a {
+      display: block;
+      padding: 8px 12px;
+      margin: 5px 0;
+      font-size: 15px;
+      font-weight: bold;
+      color: #2e7d32;
+      background: #dcedc8;
+      border-radius: 20px;
+      text-decoration: none;
+      text-align: left;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .plant-dropdown a:hover {
+      background: linear-gradient(135deg, #a5d6a7, #c8e6c9);
+      color: #1b5e20;
+      transform: translateX(5px) scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .plant-dropdown a:hover::before {
+      content: "🌱";
+      position: absolute;
+      left: -22px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #a5d6a7, #f8bbd0);
+      padding: 30px 20px;
+      text-align: center;
+      color: #4e342e;
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .top-nav {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .bottom-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        flex-direction: column;
+      }
+
+      .button-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-image: url('C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg');">
+
+  <header>
+    <h1>🌿 Outdoor Plants: Nature’s Open-Hearted Gifts 🌿</h1>
+    <div class="top-nav">
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="nav-button">Home Page</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro3.html" class="nav-button">Indoor Plants</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="nav-button">Body Systems</a>
+    </div>
+  </header>
+
+  <section>
+    <article>
+      <img src="C:\Users\yarra\Downloads\outdoor plants ani.jpeg" style="width:1500px;"class="magic-image">
+
+<h3>🌳 Nature’s Living Architecture</h3>  
+<p>Outdoor plants are more than greenery—they’re the living framework of our environment. From towering trees to creeping vines, they shape the contours of our landscapes, soften the harshness of concrete, and invite life into every corner. Whether in a backyard, balcony, or roadside verge, they transform space into sanctuary.</p>
+
+
+
+<h3>🌿 Companions of Climate & Culture</h3>  
+<p>These plants are deeply woven into the rhythm of the seasons and the soul of local traditions. Neem trees that shade village squares, hibiscus blooms offered in morning prayers, or tulsi grown near doorsteps—they’re not just botanical specimens, but cultural icons. Supporting them means honoring heritage and healing the planet simultaneously.</p>
+
+
+
+<h3>🌞 Wellness Without a Prescription</h3>  
+<ul>
+  <li><b>🌬️ Breath of Fresh Air:</b> Outdoor plants purify the air, reduce pollutants, and cool the surroundings—no pills required.</li>
+  <li><b>🧘 Mindful Moments:</b> Tending to plants or simply sitting among them lowers stress, improves focus, and nurtures emotional balance.</li>
+  <li><b>🐝 Biodiversity Boost:</b> They attract pollinators, support ecosystems, and keep nature’s cycles alive and buzzing.</li>
+</ul>
+
+
+
+<h3>🌱 How to Be a Plant Ally</h3>  
+<ul>
+  <li><b>🌾 Grow Native:</b> Choose plants that belong to your region—they’re resilient, low-maintenance, and ecologically supportive.</li>
+  <li><b>💧 Water with Intention:</b> Use rainwater, mulch, and smart irrigation to conserve resources while keeping plants healthy.</li>
+  <li><b>🌍 Create Micro-Habitats:</b> Add bird feeders, butterfly plants, or shaded corners to welcome wildlife and enrich biodiversity.</li>
+</ul>
+
+
+
+<h3>🌼 The Green Legacy You Leave</h3>  
+<p>Supporting outdoor plants is a quiet act of rebellion against urban sterility. It’s a promise to future generations—a legacy of shade, oxygen, and beauty. Whether you plant a single sapling or cultivate a wild garden, you’re shaping a world that breathes better, feels deeper, and lives longer.</p>
+
+
+
+      <h3>🌿 Explore Plants by Body System</h3>
+      <div class="button-list">
+        <div class="system-button">
+         ✨Digestive
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor amla.html">🌿Indian Gooseberry (Amla)</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor mint.html">🌿Peppermint</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro triphala digestive outdoor.html">🌿Triphala</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo slippery elm outdoor.html">🌿Slippery Elm</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor marshmallow root.html">🌿Marshmallow Root</a>
+          </div>
+        </div>
+        <div class="system-button">
+         🌬️ Respiratory
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res eucalyp outdoor.html">🌿Eucalyptus</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res tulsi outdoor.html">🌿Tulsi</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res thyme outdoor.html">🌿Thyme</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor Clove.html">🌿Clove </a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor mullein.html">🌿Mullein</a>
+          </div>
+        </div>
+        <div class="system-button">
+          💅Integumentary
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo  integ outdoor Manjistha.html">🌿Manjistha</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ outdoor  Neem Bark .html">🌿Neem Bark</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ outdoor Aloe Candelabra.html">🌿Aloe Candelabra </a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ outdoor Bhringraj.html">🌿Bhringraj</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integ outdoor Bakuchi.html">🌿Bakuchi</a>
+          </div>
+        </div>
+        <div class="system-button">
+          🦴Skeletal
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor comfery.html">🌿Comfrey</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor turmeric.html">🌿Turmeric</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor boswellia.html">🌿Boswellia</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor dandelion.html">🌿Dandelion</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor skullcap.html">🌿Skullcap</a>
+          </div>
+        </div>
+        <div class="system-button">
+         💪 Muscular
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc malabar nut out.html"🌿>Malabar Nut</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor country mallow.html">🌿Country Mallow</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor devil's cotton.html">🌿Devil's Cotton</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor camel thron.html">🌿Camel Thron</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor malakangini.html">🌿Malakangini</a>
+          </div>
+        </div>
+        <div class="system-button">
+         🧠 Nervous
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv outdoor rauwlifia serpentina.html">🌿Rauwolfia Serpentina</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv outdoor mucuna pruriens.html">🌿Mucuna Pruriens</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv outdoor acorus calamus.html">🌿Acorus Calamus</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv outdoor aegle maemelos.html">🌿Aegle Maemelos</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerv outdoor annona squamosa.html">🌿Annona Squamosa</a>
+          </div>
+        </div>
+        <div class="system-button">
+          ❤️Cardiovascular
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor Terminalia Bellerica.html">🌿Terminalia Bellerica</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor Ginkgo Biloba.html">🌿Ginkgo Biloba</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor Hawthorn.html">🌿Hawthorn</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor Olive Tree .html">🌿Olive Tree </a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor Drumstick Tree.html">🌿Drumstick Tree</a>
+          </div>
+        </div>
+        <div class="system-button">
+          💧Lymphatic
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor  Bougainvillea.html">🌿Bougainvillea</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor moring glory (ipomoea).html">🌿Morning Glory</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor turbose.html">🌿Tuberose</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo outdoor lymp shahtoot.html">🌿Shahtoot</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor madhu kamini .html">🌿Madhu Kamini</a>
+
+          </div>
+        </div>
+        <div class="system-button">
+         🧬 Endocrine
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor shatavari.html">🌿Shatavari</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor maca root.html">🌿Maca Root</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor kanchanar.html">🌿Kanchanar</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor Licorice Root.html">🌿Licorice Root</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor Nigella.html">🌿Nigella</a>
+          </div>
+        </div>
+        <div class="system-button">
+         🌸Reproductive
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor ashwagandha.html">🌿Ashwagandha</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor Lodhra.html">🌿Lodhra</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor arjuna tree.html">🌿Arjuna Tree</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro ashoka outdoor.html">🌿Ashoka</a>
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro false unicorn root outdoor.html">🌿False Unicorn Root</a>
+          </div>
+        </div>
+        <div class="system-button">
+         🌊 Urinary
+          <div class="plant-dropdown">
+            <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Punarnava.html">🌿Punarnava</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor  Varuna.html">🌿Varuna</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Gokshura.html">🌿Gokshura</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Corn Silk.html">🌿Corn Silk</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor Bamboo Leaves .html">🌿Bamboo Leaves</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </article>
+  </section>
+
+  <footer>
+    <p>🌞 "Outdoor plants make their own medicine—sunlight boosts their healing compounds, so basically, they photosynthesize like champs and chill like sages." 🌱✨</p>
+    <div class="bottom-nav">
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="nav-button">Home Page</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro3.html" class="nav-button">Indoor Plants</a>
+      <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="nav-button">Body Systems</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle dropdown on click
+    document.querySelectorAll('.system-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        // prevent link clicks from toggling parent
+        if (e.target.tagName.toLowerCase() === 'a') return;
+
+        this.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

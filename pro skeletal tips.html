@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Skeletal Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+             padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🦴 The skeletal system forms Human body’s strong, supportive framework — protecting organs, enabling movement, and storing vital minerals.";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿💚Natural remedies for healthy Skeletal system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html">Skeletal System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo skeletal tips.jpeg" style="height:150px; width:150px;"></img>
+    <a href="#a1">🦴Bones</a>
+    <a href="#a2">🧊Cartilage</a>
+	<a href="#a3">🪢 Ligament</a>
+	<a href="#a4">🪝Tendons</a>
+	<a href="#a5">⚙️Joints</a>
+	<a href="#a6">🦴Bone marrow</a>
+        <a href="#a7">🦴Periosteum</a>
+  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Bones health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🥬 1. Sesame Seed & Date Energy Balls</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp sesame seeds (roasted)</li>
+<li>3 soft dates (pitted)</li>
+<li>1 tsp ghee or coconut oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients into a sticky dough. Roll into small balls and enjoy 1–2 daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Sesame seeds are rich in calcium and zinc</li>
+<li>Dates provide magnesium and natural sweetness</li>
+<li>Supports bone density and joint lubrication</li>
+</ul><hr>
+<h3>🍵 2. Moringa Leaf Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried moringa leaves</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep leaves in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Moringa is packed with calcium, iron, and vitamin K</li>
+<li>May improve bone strength and reduce inflammation<li>
+<li>Traditionally used to support skeletal health</li>
+</ul><hr>
+<h3>🧄 3. Garlic-Turmeric Bone Boost Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp warm milk or ghee</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water or rice once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and collagen production</li>
+<li>Turmeric reduces bone inflammation</li>
+<li>May support bone healing and f- lexibility</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Eggshell Calcium Powder</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of 1 organic lemon (dried)</li>
+<li>1 cleaned, dried eggshell</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Grind both into a fine powder. Mix ¼ tsp into smoothies or yogurt 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Eggshells are a natural source of bioavailable calcium</li>
+<li>Lemon peel contains vitamin C and limonene</li>
+<li>Supports bone mineralization and antioxidant protection</li>
+</ul><hr>
+<h3>🥥 5. Coconut Water & Chia Seed Hydration Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh coconut water</li>
+<li>1 tsp chia seeds</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Soak chia seeds in coconut water for 15 minutes.Stir and sip slowly.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Coconut water provides electrolytes for bone hydration</li>
+<li>Chia seeds offer omega-3s and magnesium</li>
+<li>May help reduce bone stiffness and improve flexibility</li>
+</ul>
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Cartilage health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍊 1. Knox Gelatin & Orange Juice Cartilage Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 packet unflavored gelatin (Knox or similar)</li>
+<li>½ cup fresh orange juice</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Dissolve gelatin in warm water, then mix with orange juice. Drink once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gelatin provides amino acids for cartilage repair</li>
+<li>Orange juice is rich in vitamin C → boosts collagen synthesis</li>
+<li>May improve joint cushioning and flexibility</li>
+</ul><hr>
+<h3>🥬 2. Parsley-Carrot Bone Broth</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup chopped carrots</li>
+<li>A handful of fresh parsley</li>
+<li>2 cups bone broth</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 20 minutes. Strain and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bone broth is rich in collagen and glycine</li>
+<li>Parsley adds vitamin K → supports cartilage mineralization</li>
+<li>Carrots provide beta-carotene for tissue resilience</li>
+</ul><hr>
+<h3>🌿 3. Green Tea & Lemon Peel Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 green tea bag</li>
+<li>Peel of ½ lemon (organic)</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep both in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Green tea contains polyphenols → reduce cartilage breakdown</li>
+<li>Lemon peel adds bioflavonoids for antioxidant protection</li>
+<li>May help slow cartilage degeneration</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Turmeric Anti-Inflammatory Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp ghee or warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and collagen formation</li>
+<li>Turmeric’s curcumin reduces joint inflammation</li>
+<li>May support cartilage healing and pain relief</li>
+</ul><hr>
+<h3>🥜 5. Walnut-Date Energy Bites</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp walnuts</li>
+<li>3 soft dates</li>
+<li>1 tsp sesame seeds</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend into a sticky dough and roll into small balls. Eat 1–2 daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Walnuts provide omega-3s → reduce cartilage inflammation</li>
+<li>Dates offer magnesium and potassium for joint support</li>
+<li>Sesame seeds add zinc for tissue repair</li>
+</ul>
+</section>
+<section id="a3">
+ <h2>✨✨Discover natural remedies to support Ligaments health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🥬 1. Spinach-Walnut Smoothie (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>1 tbsp walnuts</li>
+<li>½ banana</li>
+<li>½ cup almond milk</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides magnesium and vitamin K → supports ligament elasticity</li>
+<li>Walnuts offer omega-3s → reduce inflammation</li>
+<li>May help prevent ligament strain and support recovery</li>
+</ul><hr>
+<h3>🍵 2. Bone Broth & Ginger Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup homemade bone broth</li>
+<li>½ inch fresh ginger (grated)</li>
+<li>Pinch of turmeric</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 10 minutes. Sip warm once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bone broth is rich in collagen amino acids</li>
+<li>Ginger and turmeric reduce inflammation</li>
+<li>Supports ligament repair and joint lubrication</li>
+</ul><hr>
+<h3>🌿 3. Fenugreek Seed & Lemon Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp fenugreek seed powder</li>
+<li>Juice of ½ lemon</li>
+<li>1 cup warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip slowly in the morning, 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Fenugreek may boost testosterone and tissue regeneration</li>
+<li>Lemon provides vitamin C → essential for collagen synthesis</li>
+<li>May improve ligament strength and healing</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Sesame Oil Joint Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp sesame oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently around joints and ligaments 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and collagen formation</li>
+<li>Sesame oil nourishes connective tissue</li>
+<li>May reduce stiffness and support ligament flexibility</li>
+</ul><hr>
+<h3>🍊 5. Orange Peel & Flaxseed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ orange</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water or apply externally over joints.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Orange peel contains bioflavonoids → support collagen integrity</li>
+<li>Flaxseed offers omega-3s and lignans</li>
+<li>May help reduce ligament inflammation and promote resilience</li>
+</ul>
+
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Tendons health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+
+<h3>🍍 1. Pineapple-Turmeric Anti-Inflammatory Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup fresh pineapple chunks</li>
+<li>¼ tsp turmeric powder</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients and drink fresh in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Pineapple contains bromelain → reduces tendon inflammation</li>
+<li>Turmeric supports healing and collagen protection</li>
+<li>May ease stiffness and promote recovery</li>
+</ul><hr>
+<h3>🥬 2. Collagen-Rich Bone Broth with Parsley</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 cups homemade bone broth</li>
+<li>1 tbsp chopped fresh parsley</li>
+<li>Optional: pinch of black pepper</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer broth with parsley for 10 minutes. Sip warm once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bone broth provides glycine and proline → key f- or tendon repair</li>
+<li>Parsley adds vitamin K and antioxidants</li>
+<li>May improve elasticity and reduce micro-tears</li>
+</ul><hr>
+<h3>🌿 3. Ashwagandha-Milk Tonic (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp ashwagandha powder</li>
+<li>1 cup warm milk (cow or plant-based)</li>
+<li>Optional: 1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and drink before bedtime 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Ashwagandha is an adaptogen → supports tissue resilience</li>
+<li>May reduce stress-related inflammation in tendons</li>
+<li>Promotes restful recovery and hormonal balance</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Castor Oil Joint Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp castor oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage gently around tendon areas 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation and collagen formation</li>
+<li>Castor oil penetrates deeply and reduces swelling</li>
+<li>May ease tendon stiffness and support flexibility</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Flaxseed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water or apply externally over joints.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect connective tissue</li>
+<li>Flaxseed offers omega-3s and lignans</li>
+<li>May reduce tendon inflammation and promote strength</li>
+</ul>
+
+
+
+
+    </section>
+
+    <section id="a5">
+      <h2>✨✨NDiscover natural remedies to support Joints health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+
+<h3>🥥 1. Coconut Water & Chia Seed Hydration Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh coconut water</li>
+<li>1 tsp chia seeds</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Soak chia seeds in coconut water for 15 minutes. Stir and sip slowly.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li> Hydrates joints and connective tissues</li>
+<li>Chia seeds provide omega-3s and magnesium</li>
+<li>May reduce stiffness and improve joint flexibility</li>
+</ul><hr>
+<h3>🍵 2. Licorice Root & Cinnamon Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried licorice root</li>
+<li>½ tsp cinnamon powder</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep both ingredients in hot water for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Licorice root reduces inflammation and supports adrenal balance</li>
+<li>Cinnamon improves circulation and joint comfort</li>
+<li>May ease joint swelling and stiffness</li>
+</ul><hr>
+<h3>🥬 3. Okra & Lemon Joint Cleanser</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 fresh okra pods (sliced)</li>
+<li>Juice of ½ lemon</li>
+<li>1 cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Soak okra slices in water overnight. In the morning, add lemon juice and drink on an empty stomach.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Okra mucilage lubricates joints</li>
+<li>Lemon alkalizes and supports collagen synthesis</li>
+<li>May help reduce joint friction and discomfort</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Ghee Anti-Stiffness Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tsp ghee (clarified butter)</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation and collagen production</li>
+<li>Ghee nourishes joints and reduces dryness</li>
+<li>May improve joint mobility and reduce pain</li>
+</ul><hr>
+<h3>🍠 5. Sweet Potato & Black Sesame Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup boiled sweet potato (mashed)</li>
+<li>1 tsp roasted black sesame seeds</li>
+<li>Optional: pinch of cinnamon</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a warm snack or side dish.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sweet potato provides beta-carotene and magnesium</li>
+<li>Black sesame seeds are rich in calcium and zinc</li>
+<li>May strengthen joints and reduce oxidative stress</li>
+</ul>
+
+
+</section>
+<section id="a6">
+<h2>✨✨🦴 Discover natural remedies to support Bone Marrow — strengthen blood cell production, immunity, and vitality: ✨✨</h2>
+
+<h3>🦴 1. Sesame–Date Energy Balls</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 pitted dates</li>
+  <li>2 tbsp sesame seeds</li>
+  <li>1 tsp ghee</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend dates, sesame seeds, and ghee. Roll into small balls and eat 1 daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Dates provide natural iron for RBC support</li>
+  <li>Sesame seeds are rich in calcium and zinc for bone health</li>
+  <li>Boosts marrow strength and vitality</li>
+</ul>
+<hr>
+
+<h3>🦴 2. Moringa–Spinach Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup fresh spinach</li>
+  <li>1 tbsp moringa powder or leaves</li>
+  <li>2 cups water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Cook spinach and moringa in water for 5–7 minutes. Blend into a warm soup.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Moringa stimulates blood formation in bone marrow</li>
+  <li>Spinach adds folate and iron</li>
+  <li>Improves immunity and cell regeneration</li>
+</ul>
+<hr>
+
+<h3>🦴 3. Ashwagandha–Milk Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp ashwagandha powder</li>
+  <li>1 cup warm milk</li>
+  <li>½ tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix ashwagandha into warm milk, add honey, and drink before bedtime.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ashwagandha revitalizes bone marrow function</li>
+  <li>Supports healthy blood production</li>
+  <li>Enhances stamina and reduces fatigue</li>
+</ul>
+<hr>
+
+<h3>🦴 4. Black Sesame–Jaggery Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp roasted black sesame seeds</li>
+  <li>1 tsp jaggery</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Crush sesame seeds with jaggery and eat after meals.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Boosts hemoglobin and marrow nourishment</li>
+  <li>Rich in minerals like calcium and iron</li>
+  <li>Strengthens overall vitality</li>
+</ul>
+<hr>
+
+<h3>🦴 5. Beetroot–Carrot Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ beetroot</li>
+  <li>1 carrot</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot and carrot with water. Drink fresh 3–4 times a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot improves bone marrow oxygenation</li>
+  <li>Carrots add antioxidants and vitamin A</li>
+  <li>Supports new cell formation and resilience</li>
+</ul>
+</section>
+<section id="a7">
+
+<h2>✨✨🦴 Discover natural remedies to support Periosteum — nourish bone covering, strengthen growth, and enhance healing: ✨✨</h2>
+
+<h3>🦴 1. Turmeric–Ghee Bone Balm</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp turmeric powder</li>
+  <li>1 tsp warm ghee</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix turmeric with ghee and consume daily with warm milk.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric reduces inflammation around bone coverings</li>
+  <li>Ghee nourishes periosteal tissues</li>
+  <li>Supports faster bone healing</li>
+</ul>
+<hr>
+
+<h3>🦴 2. Sesame–Almond Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp sesame seeds</li>
+  <li>3 almonds (soaked overnight, peeled)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Grind sesame seeds and almonds. Consume as a paste in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Rich in calcium and magnesium for periosteum health</li>
+  <li>Improves mineral supply to bone coverings</li>
+  <li>Strengthens bone repair</li>
+</ul>
+<hr>
+
+<h3>🦴 3. Moringa–Fenugreek Curry</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup moringa leaves</li>
+  <li>1 tsp fenugreek seeds</li>
+  <li>1 tsp olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Sauté fenugreek in oil, add moringa leaves, and cook lightly. Eat with meals.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Moringa provides calcium and antioxidants</li>
+  <li>Fenugreek strengthens connective tissues</li>
+  <li>Supports periosteum regeneration</li>
+</ul>
+<hr>
+
+<h3>🦴 4. Bone-Broth with Herbs</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup homemade bone broth</li>
+  <li>½ tsp ginger</li>
+  <li>½ tsp black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Simmer bone broth with ginger and pepper. Drink warm once a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Provides collagen and minerals to periosteum</li>
+  <li>Improves blood supply to bones</li>
+  <li>Speeds up bone healing and protection</li>
+</ul>
+<hr>
+
+<h3>🦴 5. Beetroot–Sesame Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ beetroot</li>
+  <li>1 tbsp sesame seeds</li>
+  <li>½ cup coconut water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot and sesame seeds with coconut water. Drink twice a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot enhances circulation to periosteum</li>
+  <li>Sesame enriches bone mineral density</li>
+  <li>Promotes periosteum resilience and strength</li>
+</ul>
+
+</section>
+
+  </main>
+
+  <footer>
+      <p>🌿"The bones of the skeleton which support the body can become the bars of the cage which imprison the spirit." 🌿💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html">Skeletal System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

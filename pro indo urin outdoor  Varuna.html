@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Varuna (Crataeva nurvala) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Varuna  Plants That Support Urinary Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prourine indoor.html"class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to urinary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo urin outdoor varuna (crataeva nurvala) ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo urin outdoor Varuna (Crataeva nurvala) .jpeg"    style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌊 Varuna: The Aquatic Guardian of Herbal Healing</h2>
+
+<p>Varuna, scientifically known as Crataeva nurvala, is a revered medicinal tree deeply rooted in the ancient healing traditions of Ayurveda. Found commonly along riverbanks and in moist deciduous forests of India, this herb is renowned for its strong affinity with the urinary system. Traditionally used to support kidney and bladder health, Varuna is especially noted for its role in breaking down kidney stones and easing urinary discomfort. With its bark being the most therapeutically potent part, Varuna embodies the harmony between nature and water—cleansing, balancing, and rejuvenating the inner systems of the body. Its legacy as a gentle yet effective herbal remedy continues to flow through the stream of natural wellness practices.
+
+</p>
+    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Varuna (Crataeva nurvala) history.jpeg"        style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Varuna tree</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+<p>Varuna, scientifically known as Crataeva nurvala, is a deciduous, medium-sized tree native to the Indian subcontinent and Southeast Asia. It belongs to the Capparaceae family and thrives near riverbanks, wetlands, and moist deciduous forests. The tree is recognized by its smooth, grey bark, trifoliate leaves, and fragrant white flowers that bloom in clusters. In traditional Indian botany, Varuna has been long associated with water and purification, often growing near sacred groves and temple surroundings. Its bark is the primary part used medicinally, treasured for its cleansing and balancing properties, especially in relation to the urinary system.</p>
+
+<h3>🕊️ Ancient Use in Traditional Healing</h3>
+<p>Varuna has been an important component of Ayurvedic medicine since ancient times, particularly for its role in supporting urinary tract health. It is prominently featured in Ayurvedic texts like the Charaka Samhita and Sushruta Samhita for its ability to dissolve kidney stones, clear urinary obstructions, and balance the body's fluid metabolism. It was traditionally used in formulations aimed at treating urological disorders, inflammation, and bladder infections. Known as a mutravirechana dravya (urinary eliminator), it was often prepared in decoction or powder form to promote kidney and bladder function while reducing toxins from the system.</p>
+
+<h3>🏛️ Recognition in Folk and Regional Medicine</h3>
+<p>In rural and regional healing traditions across India, Varuna was widely recognized as a “stone-breaker” herb. Traditional healers in villages would administer bark infusions to treat painful urination, gravel in the urine, or bladder discomfort. It was also used to support menstrual health and hormonal balance in women. In Unani medicine, Varuna bark was employed to treat urogenital conditions, abdominal bloating, and even liver congestion. Its widespread acceptance across different healing systems reflects its trust as a versatile herb capable of both preventive and curative action.</p>
+
+<h3>🌍 Spread and Exchange of Herbal Knowledge</h3>
+<p>While Varuna is most deeply rooted in the Indian medical tradition, its therapeutic reputation gradually reached other parts of Asia and was noted by European colonial herbalists. During the colonial period, its use in managing lithiasis (stone formation) gained attention among early pharmacologists and physicians exploring indigenous Indian remedies. Over time, it found a place in several polyherbal formulations, including globally marketed Ayurvedic blends, aimed at detoxification and kidney health. Its significance expanded through increasing global interest in natural treatments for urological concerns.</p>
+
+<h3>🏡 Role in Village Life and Ecology</h3>
+<p>Varuna trees often grow near ponds and canals in Indian villages, where they help stabilize soil and provide shade. The bark is harvested with care, often during specific seasons, and sun-dried for household use or trade in local herbal markets. Its medicinal value made it an essential plant in the rural pharmacopoeia, with many families relying on it for common urinary and abdominal ailments. Its ecological role in protecting riparian zones and supporting biodiversity adds to its holistic importance in village ecosystems and sustainable land practices.</p>
+
+<h3>🌟 Modern-Day Research and Applications</h3>
+<p>Modern research has substantiated many of Varuna’s traditional uses, especially in the management of kidney stones, urinary tract infections, and prostate disorders. The bark contains bioactive compounds such as lupeol, betulin, and varunol, which exhibit anti-inflammatory, anti-lithic, and antimicrobial properties. It is a key ingredient in several herbal formulations used today in the management of urinary calculi and as a renal tonic. As awareness grows around natural urological health support, Varuna continues to gain recognition as an important herb that bridges the wisdom of ancient healing with modern phytotherapy.</p>
+
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo urin outdoor Varuna (Crataeva nurvala)  growing.jpeg"     style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+ <h3>☀️ Ideal Growing Conditions</h3>
+<p>Varuna, also known as Crataeva nurvala, prefers warm and humid tropical climates for optimal growth. It thrives in regions with average temperatures between 25°C and 35°C and performs best in areas that receive ample sunlight throughout the day. This deciduous tree is commonly found along riverbanks and moist deciduous forests, making it well-suited to areas with seasonal rainfall and good moisture availability during its early development.</p>
+
+<h3>🧬 Propagation Methods</h3>
+<p>Varuna is commonly propagated through seeds, which should be collected from mature fruits during the dry season. The seeds require pre-treatment, such as soaking in warm water for 24 hours, to break dormancy and enhance germination. Seedlings can be transplanted when they reach a height of about 20 to 30 cm. In some cases, propagation through root suckers or stem cuttings is also practiced for faster establishment in herbal gardens or agroforestry systems.</p>
+
+<h3>🌾 Soil Preparation</h3>
+<p>Varuna grows well in loamy to clayey soils with good drainage and a slightly acidic to neutral pH range of 6.0 to 7.5. The soil should be enriched with organic compost or farmyard manure prior to planting to provide essential nutrients. Deep plowing of the planting area is recommended to accommodate the tree’s strong root system. The use of raised beds or mounds can help prevent waterlogging in areas with heavy or poorly drained soils.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+<p>Young Varuna plants need consistent watering during the initial growing phase, especially during dry spells. Once established, the tree becomes moderately drought-tolerant but will benefit from occasional watering in prolonged dry conditions. Mulching around the base helps in moisture retention and temperature regulation. Regular weeding and the application of organic mulch support healthier growth during the first two years of establishment.</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+<p>Varuna trees grow moderately fast and may reach up to 10 meters in height under favorable conditions. Pruning is typically done to remove dead or diseased branches and to shape the canopy. In plantation settings or small gardens, spacing of 4 to 5 meters between plants is recommended to avoid overcrowding. The tree is relatively pest-resistant, but occasional monitoring is advised to control leaf-eating insects or fungal issues during the monsoon season.</p>
+
+<h3>✂️ Harvesting Tips</h3>
+<p>The bark of the Varuna tree, which holds most of its medicinal value, is typically harvested from mature trees after 4 to 5 years of growth. Harvesting should be done sustainably by removing only small strips of bark to avoid harming the tree. The bark is then dried in shade and stored in airtight containers. Fruits and leaves can also be collected during their respective seasons for use in traditional remedies, ensuring the plant remains productive year after year.</p>
+
+
+
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo urin outdoor Varuna (Crataeva nurvala) benefits.jpeg"      style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of </h3>
+<ul>
+
+<li><b>🩺 Bladder and Kidney Support:</b> Promotes the healthy functioning of both the urinary bladder and kidneys, aiding in overall urinary wellness.</li>
+<li><b>🪨 Stone Breakdown and Removal:</b> Assists in breaking down and flushing out kidney and urinary stones, helping prevent blockages and discomfort.</li>
+<li><b>💧 Natural Diuretic Action:</b> Encourages regular and smooth urine flow, supporting the body’s natural detoxification process.</li>
+<li><b>🔥 Anti-inflammatory Relief:</b> Helps reduce inflammation and soothe irritation in the urinary tract, offering comfort during infections or flare-ups.</li>
+<li><b>🛡️ UTI and Prostatitis Management:</b> Supports the body in managing urinary tract infections and prostatitis with its antimicrobial and soothing properties.</li>
+<li><b>⚖️ Bladder Tone and Control:</b> Strengthens bladder muscles and may help relieve symptoms of urinary incontinence and urgency.</li>
+<li><b>🧼 Detoxification Support:</b> Enhances the elimination of waste materials through urine, promoting internal cleansing and balance.</li>
+<li><b>❄️ Cooling Comfort:</b> Offers relief from painful or burning urination through its naturally cooling and calming effects.</li>
+<li><b>🔁 Prevents Stone Recurrence:</b> May help reduce the recurrence of kidney or bladder stones when used regularly as part of a wellness routine.</li>
+<li><b>🧬 Cellular Protection:</b> Shields urinary tract tissues from oxidative damage and microbial stress, supporting long-term urinary health.</li>
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+🫗 “Like the roots of Varuna clearing the streams within, let us embrace inner purification and move freely toward vitality and strength.”
+
+
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to Urinary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

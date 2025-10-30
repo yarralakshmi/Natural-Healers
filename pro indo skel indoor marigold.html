@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Marigold plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Marigold Plants That Support Skeletal Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html"  class="footer-button"> Back to Plants</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor marigold ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor marigold .jpeg"  style="width:250px; float:right;">
+ style="width:250px; float:right;">
+
+ <h2 id="intro">🪴The Introduction of Marigold</h2>
+  <p>Marigold is a bright, cheerful flowering plant recognized not only for its vibrant blossoms but also for its insect-repelling and medicinal properties. Widely grown in gardens for ornamental purposes, marigold flowers are also used in traditional medicine for treating wounds, skin irritations, and inflammation. The plant contains compounds like lutein and flavonoids with strong anti-inflammatory and antimicrobial effects. Additionally, marigolds are excellent companion plants, known to repel pests and improve soil health in vegetable gardens.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor marigold history.jpeg"style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Marigold plant</h3>
+ <h3>🌱 Origins and Botanical Background</h3>
+    <p>Marigolds belong to the genus Tagetes in the Asteraceae family. Native to Central and South America, especially Mexico, they are annual or perennial flowering plants known for their vibrant orange, yellow, and red blooms. The name “marigold” comes from “Mary’s Gold,” referring to its use in early Christian festivals dedicated to the Virgin Mary. While Tagetes erecta (African marigold) and Tagetes patula (French marigold) are most common today, the plant’s cultural and medicinal history is deeply rooted in Mesoamerican civilizations.
+</p>
+
+<h3>🕊️ Ancient Egyptian Use</h3>
+    <p>Marigolds were revered by the Aztecs, who called them cempōhualxōchitl (“twenty flowers”) in Nahuatl, possibly referencing their numerous petals or abundance. They used the flowers in religious rituals, as offerings to the gods, and as part of herbal medicine for skin conditions, digestive issues, and as an insect repellent. The flowers were also used to honor the dead, a tradition still present in Mexico’s Día de los Muertos celebrations.
+</p>
+
+<h3>🏛️ Greek and Roman Traditions</h3>
+    <p>Spanish explorers brought marigolds to Europe in the 16th century. The plant quickly became popular in monastic gardens, both for its beauty and medicinal potential. Early European herbalists used marigold flowers to treat wounds, reduce inflammation, and improve skin health. It was also employed in cooking as a saffron substitute, earning it the nickname “poor man’s saffron.”
+</p>
+
+<h3>📜 Medieval Herbalism in Europe</h3>
+    <p>By the 17th century, marigolds were well established in European herbal medicine. Nicholas Culpeper, a famous herbalist, described them as strengthening the heart and spirits, driving away melancholy, and helping with smallpox and measles. Dried petals were added to broths and soups for both medicinal and culinary purposes.
+</p>
+
+<h3>🔬 Scientific Recognition and Taxonomy</h3>
+        <p>Carl Linnaeus formally classified Tagetes in 1753. Over time, botanists identified multiple species within the genus, noting their pesticidal and nematocidal properties. The flowers’ bright pigments were recognized for their lutein content, important for eye health.
+</p>
+
+<h3>⚗️ Rise in European Medicine</h3>
+    <p>Marigolds spread widely through colonial trade networks. In India, they became deeply integrated into cultural and religious life, especially in Hindu worship and festivals like Diwali, weddings, and temple offerings. In Africa, marigolds were adopted as companion plants in agriculture due to their pest-repelling properties.
+</p>
+
+<h3>🌎 Transatlantic Expansion and Farming</h3>
+    <p>In modern agriculture, marigolds are used for biological pest control, as certain species produce thiophenes—natural compounds that deter nematodes and other pests. In the cosmetics and food industries, marigold extracts are valued for their natural coloring and antioxidant properties.
+</p>
+
+<h3>🌟 Modern-Day Relevance</h3>
+    <p>Today, marigolds are grown worldwide for ornamental beauty, pest management, and medicinal extracts. In Mexico, they retain deep spiritual importance during Día de los Muertos. In India, garlands of marigolds symbolize purity, prosperity, and divine blessings. They are also key in natural eye supplements due to their high lutein content.
+</p>
+    
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor marigold growing.jpeg" style= "  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+
+<h2>🌼 Cultivation, Care, and Uses of Marigold</h2>
+
+<h3>☀️ Ideal Growing Conditions</h3>
+<p>
+  Marigolds thrive in full sunlight and warm climates, ideally between 20°C and 30°C, making them perfect for summer gardens. They are highly tolerant of heat and dry conditions once established but sensitive to frost, so planting should occur only after the risk of cold weather has passed. In cooler regions, marigolds can be started indoors and transplanted once the soil warms. These hardy annuals are known for their vibrant blooms and ability to flourish in less-than-perfect soil, making them a favorite among both beginner gardeners and experienced horticulturists.
+</p>
+
+<h3>🧬 Propagation Methods</h3>
+<p>
+  Marigolds are primarily propagated by seeds, which are easy to handle and germinate quickly—typically within 5 to 7 days under warm, moist conditions. Seeds can be sown directly into garden beds or started indoors 4 to 6 weeks before the last frost date. For best results, sow seeds about 1/4 inch deep in well-prepared soil and keep them lightly moist until seedlings emerge. Once sprouted, thin the seedlings to ensure proper spacing and airflow, which helps prevent fungal diseases and promotes healthy growth.
+</p>
+
+<h3>🌾 Soil Preparation</h3>
+<p>
+  Marigolds prefer loamy, well-draining soil enriched with moderate organic matter. A slightly acidic to neutral pH between 6.0 and 7.0 is ideal. While they tolerate poor soils, overly rich soil can lead to leggy growth and fewer blooms. Before planting, loosen the soil and mix in compost or aged manure to improve texture and nutrient availability. Avoid heavy clay or waterlogged areas, as marigolds are prone to root rot in poorly drained conditions.
+</p>
+
+<h3>💧 Watering and Maintenance</h3>
+<p>
+  Water marigolds when the top inch of soil feels dry, as they prefer consistent moisture but dislike soggy roots. During hot spells, deep watering once or twice a week is usually sufficient, and mulching around the base helps retain moisture and suppress weeds. Deadheading—removing spent flowers—encourages continuous blooming and prevents the plant from diverting energy into seed production. Regular maintenance keeps the plant bushy and vibrant. Key practices include regular watering during dry spells, pruning to promote bushy growth and prevent legginess, and deadheading to extend the flowering season.
+</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+<p>
+  Marigolds are non-invasive and easy to manage, growing in compact mounds without aggressive spreading. To control height and spread, space plants 8 to 18 inches apart depending on the variety. Taller types may benefit from staking or wind protection. Pruning dead flowers and trimming back overgrown stems helps maintain shape and encourages new blooms. Their tidy growth habit makes them excellent border plants or companions in vegetable gardens, contributing both beauty and function.
+</p>
+
+<h3>✂️ Harvesting Tips</h3>
+<p>
+  Harvest marigold flowers when they are fully open and vibrant, ideally in the morning after the dew has evaporated to preserve their color and potency. Use sharp scissors or garden shears to snip flowers cleanly. Flowers can be used fresh or dried for teas, tinctures, and skincare products. To dry, spread them in a single layer on a mesh screen in a warm, shaded area with good airflow, then store dried petals in airtight containers away from light and moisture to maintain their quality.
+</p>
+
+<h3>🌿 Uses and Benefits</h3>
+<p>
+  Marigolds offer a wide range of practical and medicinal benefits. Their strong scent acts as a natural pest repellent, deterring aphids, nematodes, and other garden pests, making them ideal companion plants in vegetable gardens. Calendula extracts are used in creams, balms, and oils to soothe rashes, burns, and minor wounds due to their antiseptic and anti-inflammatory properties. Dried petals are steeped to make calming herbal teas that support digestion and skin health. Petals are also used to create vibrant yellow-orange dyes for textiles and cosmetics. Traditionally, marigolds have been used to treat ulcers, eczema, and muscle pain through both topical and internal preparations. Whether grown for beauty, utility, or healing, marigolds are a powerful addition to any garden, symbolizing vitality, protection, and natural wellness.
+</p>
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor marigold benefits.jpeg"  style= "  width:250px; float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Marigold</h3>
+    <ul>
+      
+  <li>🦴 <b>Bone Healing Support:</b> Marigold promotes wound and tissue repair, aiding recovery from fractures and bone injuries.</li>
+  <li>🔥 <b>Anti-inflammatory Action:</b> Reduces joint inflammation and pain, beneficial for arthritis and other skeletal conditions.</li>
+  <li>🛡️ <b>Antioxidant Protection:</b> Rich in carotenoids like lutein and zeaxanthin, which protect bone cells from oxidative stress.</li>
+  <li>🧬 <b>Collagen Production:</b> Stimulates collagen synthesis, essential for bone matrix strength and flexibility.</li>
+  <li>💊 <b>Joint Mobility:</b> Helps maintain joint lubrication and reduces stiffness, improving skeletal movement.</li>
+  <li>🌱 <b>Tissue Regeneration:</b> Encourages regeneration of connective tissues such as ligaments and tendons.</li>
+  <li>🩺 <b>Bone Detoxification:</b> Assists in clearing toxins from bone tissues, promoting skeletal health.</li>
+  <li>🧴 <b>Topical Relief:</b> Marigold-infused oils and creams are used to massage joints and bones, enhancing circulation and reducing discomfort.</li>
+  <li>🧠 <b>Neuromuscular Support:</b> Supports nerve function and muscle coordination essential for skeletal balance.</li>
+  <li>🌸 <b>Osteoporosis Prevention:</b> Its anti-inflammatory and antioxidant compounds may help reduce bone loss in aging individuals.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🦴"Let your bones bloom with healing—Marigold’s golden touch restores strength, soothes pain, and renews the foundation that carries you forward."
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>🌿 Medicinal Plants</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #4e342e;
+    }
+
+    header {
+      background: linear-gradient(to right, #388e3c, #66bb6a);
+      padding: 50px;
+      text-align: center;
+      color: white;
+      font-size: 42px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .top-nav a {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav a:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    article {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .magic-image {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: floatIn 2.2s ease forwards;
+    }
+
+    @keyframes floatIn {
+      0% { transform: translateY(-60px) scale(1.05); opacity: 0; }
+      50% { transform: translateY(20px) scale(1.02); opacity: 0.5; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    h2, h3 {
+      color: #388e3c;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5d4037;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #a5d6a7, #f8bbd0);
+      padding: 20px;
+      text-align: center;
+      color: #4e342e;
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+    .footer-links {
+      margin-top: 15px;
+    }
+
+    .footer-links a {
+      display: inline-block;
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 8px 14px;
+      margin: 0 5px;
+      border-radius: 6px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    /* Search box */
+    .search-box {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .search-box input {
+      padding: 10px;
+      width: 60%;
+      border-radius: 8px;
+      border: 1px solid #81c784;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      padding: 10px 18px;
+      margin-left: 8px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(to right, #aed581, #81c784);
+      color: #1b5e20;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .search-box button:hover {
+      background: #66bb6a;
+      box-shadow: 0 0 8px #4caf50;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+      }
+
+      .top-nav {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .top-nav a {
+        margin: 5px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>🌿 Medicinal Plants: Nature’s Gentle Healers 🌿</header>
+
+<nav class="top-nav">
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro2.html">🌿Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro3.html">🌿Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html">Body Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+</nav>
+
+<section>
+  <article>
+    <img src="code/medical plants.png">
+    <h3>🌱 Introduction to Medicinal Plants</h3>
+    <p>Medicinal plants offer natural healing powered by leaves, roots, and flowers. They support immunity, digestion, calm, and rejuvenation—without synthetic chemicals. These botanicals are ancient allies, blending tradition with science for whole-body balance.</p>
+
+    <h2>🪴 Introduction to Outdoor Plants</h2>
+    <p>Outdoor plants thrive in open air—gardens, forests, roadsides—and bless our environment with beauty, balance, and essential benefits for the planet and our wellbeing.</p>
+    <h2>🌱 Origins of Earth’s Verdant Wonders</h2>
+    <p>The story of plant life on Earth is one of ancient resilience, transformation, and evolutionary brilliance. Here's a beautifully structured overview of how it all began:</p>
+
+    <h2>🧬 1. The Earliest Life – Precursors to Plants</h2>
+    <p>- Around 3.5 billion years ago, simple microbial life began in Earth’s oceans.
+    These early life forms included cyanobacteria, which could photosynthesize—laying the biochemical groundwork for future plant evolution.
+    </p>
+
+    <h2>🌊 2. Algae: The Aquatic Ancestors</h2>
+    <p>True plants evolved from green algae, a group of photosynthetic organisms thriving in water.
+    This transition occurred about 1 billion years ago in shallow seas, where green algae adapted structures for light absorption and nutrient exchange.
+    </p>
+
+    <h2>🌿 3. First Land Plants – The Great Leap</h2>
+    <p>About 470 million years ago, plants made the bold move to land.
+    The pioneers were bryophytes (like mosses), small and non-vascular, surviving in moist environments.
+    This stage was vital in forming soil and altering the Earth’s atmosphere by increasing oxygen levels.
+    </p>
+
+    <h2>🌳 4. Vascular Plants – Growing Taller and Stronger</h2>
+    <p>Around 400 million years ago, vascular systems evolved, enabling plants to transport water and nutrients efficiently.
+    This led to ferns and clubmosses, and soon after, the emergence of seed plants like conifers.
+    </p>
+
+    <h2>🌼 5. Blossoming of Diversity – The Flowering Plants</h2>
+    <p>Around 140 million years ago, angiosperms (flowering plants) appeared, revolutionizing ecosystems.
+    Their symbiosis with pollinators like bees and butterflies led to rapid diversification, shaping the vibrant landscapes we see today.
+    </p>
+
+    <h2>🌍 6. Plants and the Evolution of Life Itself</h2>
+    <p>Plants have shaped climate, soils, and the oxygen-rich atmosphere.
+    They’re central to every food web and remain vital to human and planetary health, both in ancient ecosystems and modern medicine.
+    </p>
+
+    <!-- Search box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Search for a body part (e.g., Cartilage, Heart, Lungs)">
+      <button onclick="searchPart()">Search</button>
+    </div>
+
+  </article>
+</section>
+
+<footer>
+  🌿 "Medicinal plants: proof that nature went to pharmacy school before we invented pills—still curing, still thriving, still leafing us amazed." 😄
+  <div class="footer-links">
+    <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro2.html">🌿Outdoor Plants</a>
+    <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro3.html">🌿Indoor Plants</a>
+    <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html">Body Systems</a>
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>  
+</div>
+</footer>
+<script>
+  // System mapping: part → one or more system pages
+  const systemMap = {
+    /* ---------------- LYMPHATIC SYSTEM ---------------- */
+    "bone marrow": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html",
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "lymph nodes": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "spleen": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "tonsils": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "adenoids": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "malt": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "peyer’s patches": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html"
+    },
+    "appendix": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html",
+      "Digestive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+    },
+    "thymus": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html",
+      "Endocrine System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"
+    },
+"lymphatic system": {
+      "Lymphatic System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro lymp tips.html",
+},
+    /* ---------------- SKELETAL SYSTEM ---------------- */
+    "bones": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "cartilage": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "ligament": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "tendons": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "joints": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+    "periosteum": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+"skeletal system": {
+      "Skeletal System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro skeletal tips.html"
+    },
+
+    /* ---------------- CARDIOVASCULAR SYSTEM ---------------- */
+    "blood": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+    "heart": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+    "arteries": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+    "veins": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+    "capillaries": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+    "blood vessels": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html",
+      "Integumentary System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"
+    },
+"RBCs": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"WBCs": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"platelets": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"plasma": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"venules": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"arterioles": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+"coronary vessels": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+    },
+  
+"cardiovascular system": {
+      "Cardiovascular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro cardio tips.html"
+},
+    /* ---------------- MUSCULAR SYSTEM ---------------- */
+    "skeletal muscles": {
+      "Muscular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro mus tips.html"
+    },
+    "smooth muscles": {
+      "Muscular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro mus tips.html"
+    },
+    "cardiac muscle": {
+      "Muscular System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro mus tips.html"
+    },
+
+    /* ---------------- NERVOUS SYSTEM ---------------- */
+    "brain": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "cerebrum": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "cerebellum": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "pons": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "medulla oblongata": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "brainstem": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+"midbrain": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+
+    "spinal cord": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "cranial nerves": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "spinal nerves": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "sensory organs": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html",
+"Integumrntary system":"C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"
+    },
+"eyes": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+"ears": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+"nose": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html",
+"Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+
+    },
+"tongue": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html",
+ "Digestive System":"C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html"   
+ },
+"skin": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html",
+"Integumentary system":"C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"
+    },
+
+    "ganglia": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "meninges": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+    "autonomic nerve centers": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+"peripheral nerves": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+"nervous system": {
+      "Nervous System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro nerv tips.html"
+    },
+
+    /* ---------------- REPRODUCTIVE SYSTEM ---------------- */
+    "ovaries": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html",
+ "Endocrine System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"
+},
+ "fimbriae": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "fallopian tubes": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "endometrium": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "cervix": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "vagina": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "vulva": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "placenta": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "clitoris": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "labia majora & labia minora": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+
+
+
+ "uterus": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "testes": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html",
+      "Endocrine System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"
+    },
+
+    "mammary glands": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html",
+      "Integumentary System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"
+    },
+
+ "scrotum": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "epididymis": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "vas deferens": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "seminal vesicles": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "prostate glands": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "bulbourethral glands": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "penis": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "glans penis": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+ "prepuce(foreskin)": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+    "urethra": {
+      "Urinary System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html",
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"
+    },
+"female reproductive system": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+"male reproductive system": {
+      "Reproductive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro repro tips.html"},
+
+    /* ---------------- RESPIRATORY SYSTEM ---------------- */
+    "lungs": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"nasal cavity": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"oral cavity": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html",
+"mouth":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+    },
+"pharynx": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html",
+"Digestive system":"C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html"
+    },
+"throat": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"larynx": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"voice box": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"traches": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"windpipe": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"bronchi": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"brochioles": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"alveoli": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"alveolies": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"pulmonary capillaries": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"diaphragm": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"pleura": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"intercostal muscles": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+"respiratory system": {
+      "Respiratory System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro res tips.html"
+    },
+
+    /* ---------------- DIGESTIVE SYSTEM ---------------- */
+    "pancreas": {
+      "Digestive System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html",
+      "Endocrine System": "C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"
+    },
+"teeth": {
+      "Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"     },
+"salivary glands":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"esophagus":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"stomach":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"Liver":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"gallbladder":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"small intestine":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"large intestine":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"rectum":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"anus":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},   
+"omentum":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"mesentery":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+"digestive system":{"Digestive System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro digestive indoor tips.html"
+},
+/* ---------------- INTEGUMENTARY SYSTEM ---------------- */
+    "hair":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"
+},
+ "nails":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"sweat glands":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"sebaceous glands":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"oil glands":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"ceruminous glands":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"sensory nerve endings":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"dermis":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"epidermis":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"
+},
+    
+"hypodermis":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"},
+    
+"integumentary system":{"Integumentary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro intrgu tips.html"
+},
+    /* ---------------- ENDOCRINE SYSTEM ---------------- */
+    "hypothalamus":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},
+      "pituitary gland":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},
+"pineal gland":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},
+ "thyroid gland":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},
+"parathyroid glands":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},  
+"adrenal glands":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"}, 
+"endocrine system":{"Endocrine System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro endo tips.html"},
+      /* ---------------- URINARY SYSTEM ---------------- */
+    "kidneys":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+   "ureters":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+"urinary bladder":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+"urethra":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+"renal pelvis":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+"nephrons":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"},
+"urinary system":{"Urinary System":"C:/Users/yarra/OneDrive/ドキュメント/html/pro urin tips.html"}
+
+
+ 
+  };
+
+  function searchPart() {
+    let input = document.getElementById("searchInput").value.trim().toLowerCase();
+    if (systemMap[input]) {
+      const systems = systemMap[input];
+      const systemNames = Object.keys(systems);
+
+      if (systemNames.length === 1) {
+        // direct redirect
+        window.location.href = systems[systemNames[0]];
+      } else {
+        // show system selection popup
+        showPopup(input, systems);
+      }
+    } else {
+      alert("⚠️ Part not found in system mapping. Please try another term.");
+    }
+  }
+
+  function showPopup(part, systems) {
+    let popup = document.createElement("div");
+    popup.style.position = "fixed";
+    popup.style.top = "50%";
+    popup.style.left = "50%";
+    popup.style.transform = "translate(-50%, -50%)";
+    popup.style.background = "#fff";
+    popup.style.padding = "20px";
+    popup.style.borderRadius = "10px";
+    popup.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+    popup.style.zIndex = "1000";
+
+    let title = document.createElement("h3");
+    title.innerText = `‘${part}’ belongs to multiple systems. Choose one:`;
+    popup.appendChild(title);
+
+    for (let system in systems) {
+      let btn = document.createElement("button");
+      btn.textContent = system;
+      btn.style.display = "block";
+      btn.style.margin = "10px 0";
+      btn.style.padding = "10px";
+      btn.style.width = "100%";
+      btn.style.border = "none";
+      btn.style.borderRadius = "6px";
+      btn.style.background = "#81c784";
+      btn.style.color = "#1b5e20";
+      btn.style.fontWeight = "bold";
+      btn.style.cursor = "pointer";
+      btn.onclick = () => { window.location.href = systems[system]; };
+      popup.appendChild(btn);
+    }
+
+    let cancelBtn = document.createElement("button");
+    cancelBtn.textContent = "Cancel";
+    cancelBtn.style.display = "block";
+    cancelBtn.style.marginTop = "10px";
+    cancelBtn.style.width = "100%";
+    cancelBtn.style.background = "#ccc";
+    cancelBtn.onclick = () => document.body.removeChild(popup);
+    popup.appendChild(cancelBtn);
+
+    document.body.appendChild(popup);
+  }
+</script>
+
+
+
+
+</body>
+</html>

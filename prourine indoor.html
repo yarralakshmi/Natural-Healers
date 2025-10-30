@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Endocrine Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Endocrine  System:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin outdoor.html" class="footer-button">Outdoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to Urinary System</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\urinary inndoor.jpeg" class="falling-image">
+   <a href="#Calathea">Calathea</a>
+    <a href="#Chinese Evergreen">Chinese Evergreen</a>
+    <a href="#Pilea Peperomioides">Pilea Peperomioides</a>
+    <a href="#Ponytail Plant">Prayer Plant</a>
+    <a href="#Ponytail Palm">Ponytail Palm</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Urinary  Allies in Your Living Space</h2>
+    <p> These five indoor beauties — Calathea, Chinese Evergreen, Pilea Peperomioides, Prayer Plant, and Ponytail Palm — may not be urinary system heroes in the medicinal sense, but they work quietly behind the scenes to create an environment that supports hydration, detox, and stress relief, all of which are crucial for urinary wellness. Through air purification, moisture release, and stress reduction.</p>
+</div> 
+<!--Calathea -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\calathea.jpeg" style="width:250px; float:right;" class="falling-image">
+<h2 id="Calathea">🌿1.Calathea:</h2>
+<p>🌱 Calathea, with its lush foliage and rhythmic leaf movements, is more than just a decorative delight — it’s a natural air purifier and humidity booster that creates a healthier indoor environment. By releasing moisture through transpiration, it helps maintain optimal humidity levels.</p>
+<h1 style="left-padding:0px;">🔹Calathea – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🌬️ Calathea helps remove toxins from indoor air like formaldehyde and benzene. </li>
+      <li>🧘‍♀️Stress Reduction</li>
+      <li>🌸 Non-toxic to cats and dogs, unlike many other indoor plants.</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pron indo urin indoor Calathea.html" class="plant-button">Learn More About Calathea </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Chinese Evergreen -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Chinese Evergreen (Aglaonema).jpeg" style="width:250px; float:left;">
+<h2 id="Chinese Evergreen">🌿2.Chinese Evergreen:</h2>
+<p>🌱 The Chinese Evergreen (Aglaonema) is a beloved houseplant known for its lush, variegated foliage and serene presence. Beyond its aesthetic appeal, it plays a subtle yet impactful role in enhancing indoor wellness. Its ability to thrive in low light and tolerate neglect makes it ideal for busy households, while its air-purifying qualities help remove toxins like formaldehyde and benzene from the environment.</p>
+<h1 style="left-padding:0px;">🔹Chinese Evergreen– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🌑 Perfect for dim corners or offices with minimal sunlight.</li>
+      <li>😊 Its vibrant leaves bring color and positivity to your space.</li>
+      <li>🧘 Creates a calming atmosphere, supporting mental wellness and relaxation.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor chinese evergreen.html" class="plant-button">Explore Chinese Evergreen Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Pilea Peperomioides -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Pilea Peperomioides.jpeg" style="width:250px; float:right;">
+<h2 id="Pilea Peperomioides">🌿3.Pilea Peperomioides:</h2>
+<p>🌱 Pilea Peperomioides, also known as the Chinese Money Plant, is a charming houseplant celebrated for its coin-shaped leaves and easygoing nature. While it doesn’t have direct medicinal ties to the urinary system, it plays a subtle role in supporting overall wellness through its environmental impact.</p>
+<h1 style="left-padding:0px;">🔹Pilea Peperomioides – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>💨 Helps cleanse indoor air by absorbing toxins and increasing oxygen</li>
+      <li>🪙 Often called the "Money Plant", it is believed to attract prosperity and wealth.</li>
+      <li>🌞 Adds a stylish, modern vibe to any indoor setting, perfect for home or office  </li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor pilea peperomiodies.html" class="plant-button">Pilea Peperomioides  Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Prayer Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Prayer Plant.jpeg"style="width:250px; float:left;">
+<h2 id="Ponytail Plant">🌿4.Prayer Plant:</h2>
+<p>🌱 The Prayer Plant (Maranta leuconeura) is a tropical gem that thrives in warm, humid environments — and while it’s not a direct remedy for urinary issues, it plays a subtle supporting role in overall hydration and wellness. By releasing moisture through its leaves and purifying indoor air, it helps maintain a balanced atmosphere that encourages proper hydration,</p>
+<h1 style="left-padding:0px;">🔹Prayer Plant – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>🏠 Compact and elegant, perfect for desks, shelves, or cozy corners in your home or office.</li>
+<li>🎍 Often associated with strength, renewal, and long life—an ideal plant for cultivating positive energy and spiritual balance.</li>
+<li>🧘 Reduces stress by creating a calming atmosphere with its gentle leaf movements and lush, soothing foliage.</li>
+           </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor Prayer Plant.html" class="plant-button">Prayer Plam Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- Ponytail Palm -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Ponytail Palm.jpeg"  style="width:250px; float:right;">
+<h2 id="Ponytail Palm">🌿5.Ponytail Palm:</h2>
+<p>🌱The Ponytail Palm (Beaucarnea recurvata) may not be a direct remedy for urinary health, but it plays a quiet supporting role in overall wellness by enhancing your indoor environment. Its bulbous trunk stores water, making it a symbol of hydration  a key factor in kidney and bladder function.</p>
+<h1 style="left-padding:0px;">🔹Ponytail Palm – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>💧 Drought-Tolerant</li>
+      <li>🏡 Low-Maintenance</li>
+      <li>🎋 Adds a modern, decorative touch with its bold trunk and flowing leaves — a natural indoor art piece.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo urin indoor  Ponitail palm.html" class="plant-button"> Explore Ponytail Palm </a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+   "Indoor plants can support the urinary system indirectly by promoting hydration, reducing stress, detoxifying the air"🪴💚
+  </p>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urine.html" class="footer-button">← Back to Urinary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro urin tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

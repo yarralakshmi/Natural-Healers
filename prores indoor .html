@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Respiratory Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Respiratory System:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res outdoor.html" class="footer-button">Outdoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo res indoor ani.jpeg" class="falling-image">
+   <a href="#Spider Plant">Spider Plant</a>
+    <a href="#Pease Lilly">Pease Lilly</a>
+    <a href="#Snake Plant">Snake Plant</a>
+    <a href="#English Ivy">English Ivy</a>
+    <a href="#Areca Palm">Areca Palm</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Respiratory Allies in Your Living Space</h2>
+    <p> Certain indoor plants act as natural respiratory allies, keeping the air fresh and supporting healthy breathing. Tulasi (Holy Basil) strengthens the lungs and helps fight colds and coughs, while Lemon Balm soothes allergies and clears congestion. The calming aroma of Lavender relaxes the airways, and Chamomile reduces respiratory inflammation and eases congestion. Peppermint (Mint) opens nasal passages and relieves sinus pressure, whereas Tulbaghia (Society Garlic) has long been valued for easing asthma and sinus troubles. Rosemary enhances lung capacity and overall breathing comfort, while Aloe Vera purifies indoor air and provides soothing benefits. Together, these plants create a healthier living space, making each breath feel lighter, fresher, and more refreshing.</p>
+</div> 
+<!-- Spider Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\spider plant.jpeg" style="width:250px;height:250px; float:right;" class="falling-image">
+<h2 id="Spider Plant">🌿1.Spider Plant:</h2>
+<p>🌱 The Spider Plant, scientifically known as Chlorophytum comosum, is one of the most popular and resilient indoor plants worldwide. Native to tropical and southern Africa, it is admired for its long, arching green leaves with white stripes and its ability to produce small plantlets, often called “spiderettes,” that dangle from the mother plant like little spiders—giving it its common name.Spider Plants are celebrated not only for their easy care and adaptability, but also for their air-purifying qualities, as they absorb toxins such as formaldehyde and xylene from the environment. Thriving in indirect sunlight and requiring minimal attention, this plant is often recommended for beginners. Beyond their beauty and low maintenance, Spider Plants are considered symbols of good health, protection, and positive energy, making them a cherished addition to homes, offices, and gardens.</p>
+<h1 style="left-padding:0px;">🔹Spider Plant – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🌬️ Increases oxygen levels indoors, making breathing fresher and easier.</li>
+      <li>😴 Improves air quality in bedrooms, supporting deeper and more restful sleep.</li>
+      <li>🌈 In Feng Shui and Vastu, Spider Plants are believed to attract protection, prosperity, and good health</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Spider Plant.html" class="plant-button">Learn More About Spider Plant </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!--  Pease Lilly -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Peace Lily.jpeg" style="width:250px; height:250px;float:left;">
+<h2 id="Pease Lilly">🌿2.Pease Lilly:</h2>
+<p>🌱 The Peace Lily, scientifically known as Spathiphyllum, is a graceful and popular indoor plant admired for its lush, dark green leaves and elegant white blooms that resemble a hooded flower. Native to the tropical regions of the Americas and Southeast Asia, it thrives in shaded, humid environments, making it an ideal houseplant.Known as a symbol of peace, purity, and healing, the Peace Lily is often kept in homes, offices, and sacred spaces. It is especially valued for its air-purifying qualities, as it can remove toxins like benzene, formaldehyde, and ammonia from the air, creating a cleaner and healthier living space.</p>
+<h1 style="left-padding:0px;">🔹Pease Lilly – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🧘Its soothing presence promotes peace of mind and reduces mental fatigue.</li>
+      <li>👀 Its lush greenery and white blooms provide visual relaxation and refresh tired eyes.</li>
+      <li>🏡 Naturally increases moisture in the air, helping ease dry skin and respiratory irritation.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Peace Lily.html" class="plant-button">Explore Pease Lilly Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Snake Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Snake Plant.jpeg" style="width:250px; height:250px;float:right;">
+<h2 id="Snake Plant">🌿3.Snake Plant:</h2>
+<p>🌱The Snake Plant, popularly known as Mother-in-Law’s Tongue, is one of the most resilient and striking indoor plants. Native to West Africa, it is recognized by its tall, upright, sword-like leaves with unique green patterns and yellow edges. Highly adaptable, it thrives in low light, requires little water, and can tolerate a wide range of conditions, making it a favorite for both beginners and experienced plant lovers.Beyond its beauty, the Snake Plant is valued for its air-purifying abilities, as it absorbs toxins such as benzene, formaldehyde, and trichloroethylene, while also releasing oxygen even at night—a rare quality among plants. Symbolically, it is believed to bring protection, strength, and positive energy into living spaces. With its blend of elegance, toughness.</p>
+<h1 style="left-padding:0px;">🔹Snake Plant– Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>💨Removes harmful toxins like benzene, formaldehyde, and xylene from the air.</li>
+      <li>🌬️Cleaner air helps reduce breathing difficulties and respiratory irritation.</li>
+      <li>🏡 Requires minimal care while still improving air quality and home health.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Snake Plant.html" class="plant-button"> Snake Plant Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!-- English Ivy -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\English Ivy.jpeg" style="width:250px; float:left;height:250px;">
+<h2 id="English Ivy">🌿4.English Ivy:</h2>
+<p>🌱 The English Ivy, scientifically known as Hedera helix, is a fast-growing, evergreen climbing plant native to Europe and Western Asia. Famous for its lush, trailing vines and star-shaped green leaves, it is widely admired as both a decorative houseplant and an outdoor ground cover. Its ability to climb walls, fences, and trellises makes it a symbol of everlasting life, resilience, and attachment.Indoors, English Ivy is celebrated as one of the best natural air purifiers, effectively reducing airborne mold, toxins, and allergens. Thriving in moderate light and humidity, it is a versatile plant that adapts well to hanging baskets, shelves, and vertical displays. Beyond its beauty, it holds cultural and medicinal significance, long used in traditional remedies for respiratory and skin ailments. With its graceful greenery and health-supporting qualities, English Ivy is cherished as both an ornamental and healing plant.</p>
+<h1 style="left-padding:0px;">🔹English Ivy – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+       <li>🧘 ts trailing vines and calming greenery create a soothing indoor environment.</li>
+      <li>🌈 In culture, it represents strength, loyalty, and everlasting life.</li>
+      <li>😴 Cleaner air can help reduce allergies and promote restful sleep.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor English Ivy.html" class="plant-button"> English Ivy Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- Areca Palm -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Areca Palm.jpeg" style="width:250px; float:right;height:250px;">
+<h2 id="Areca Palm">🌿5.Areca Palm:</h2>
+<p>🌱 The Areca Palm, also known as the Butterfly Palm or Golden Cane Palm, is a popular indoor and outdoor ornamental plant native to Madagascar. With its elegant, feathery, arching fronds and clumping golden-green stems, it brings a tropical charm to homes, offices, and gardens. Loved for its lush appearance, it is often grown in pots and as a natural screen or decorative accent.Beyond its beauty, the Areca Palm is recognized as one of the best natural air purifiers, absorbing toxins like formaldehyde, benzene, and carbon monoxide, while also acting as a natural humidifier.</p>
+<h1 style="left-padding:0px;">🔹Areca Palm – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>💨 Removes harmful indoor pollutants like benzene, formaldehyde, and carbon monoxide.</li>
+      <li>😴 Cleaner, oxygen-rich air helps create a restful environment for better sleep.</li>
+      <li>🌬️ Releases moisture into the air, preventing dry skin, throat irritation, and respiratory issues.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo res indoor Areca Palm.html" class="plant-button"> Explore Areca Palm</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer>
+   <p>"The respiratory system is the rhythm of life, where every breath nourishes the body and refreshes the soul🌿✨."</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res .html" class="footer-button">← Back to Respiratory System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro res tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

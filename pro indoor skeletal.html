@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Indoor plants for Skeletal Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Indoor Plants That Support Skeletal System:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button">Outdoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo skel indoor.jpeg" class="falling-image">
+   <a href="#Moringa plant">Nirgunda plant</a>
+    <a href="#Dwarf Neem">Dwarf Neem</a>
+    <a href="#Curry Leaf Plan">Curry Leaf Plant</a>
+    <a href="#Gotu Kola ">Gotu Kola </a>
+    <a href="#Marigold ">Marigold plant</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Skeletal Allies in Your Living Space</h2>
+    <p> Indoor plants aren’t just decorative—they can play a subtle but meaningful role in supporting skeletal health. While they don’t directly strengthen bones like calcium-rich foods or weight-bearing exercise, certain plants contribute to bone wellness through indirect pathways. Many herbs and leafy greens grown indoors—such as Moringa,Nirgundi, Fenugreek, and Curry Leaf—contain essential nutrients like calcium, magnesium, and vitamin K, .</p>
+</div> 
+<!-- Nirgunda plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant .jpeg" style="width:250px; float:right;" class="falling-image">
+<h2 id="Moringa plant">🌿1.Nirgundi plant:</h2>
+<p>Nirgundi (*Vitex negundo*), often called the "Five-leaved Chaste Tree," is a powerful yet understated medicinal shrub native to India and Southeast Asia. Celebrated in Ayurveda for its potent anti-inflammatory, analgesic, and antioxidant properties, Nirgundi has long been used to treat joint pain, arthritis, and musculoskeletal disorders. Its leaves, roots, and seeds are rich in bioactive compounds that support bone strength, reduce swelling, and accelerate healing of fractures and sprains. Whether applied as an oil, brewed into a decoction, or used in poultices, Nirgundi offers holistic skeletal support while promoting flexibility, mobility, and overall vitality—making it a timeless ally in natural wellness.
+</p>
+<h1 style="left-padding:0px;">🔹Nirgunda plant – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+  <li>💪 Strengthens bones with natural calcium and anti-inflammatory compounds.</li>
+  <li>🌿 Reduces oxidative stress, protecting joints and cartilage from degeneration.</li>
+  <li>💉 Helps manage arthritis and joint pain by balancing Vata dosha and reducing inflammation.</li>
+</ul>
+</div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Nirgunda.html" class="plant-button">Learn More About Nirgunda plant  </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Dwarf Neem -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor dwarf neem .jpeg" style="width:250px; float:left;">
+<h2 id="Dwarf Neem">🌿2.Dwarf Neem:</h2>
+<p>🌱The Dwarf Neem (Azadirachta indica) is a miniature version of the traditional neem tree, tailored for urban and indoor gardening. Native to the Indian subcontinent, neem has been revered for over 4,000 years in Ayurvedic medicine as a “village pharmacy,” used to treat skin disorders, fevers, infections, and digestive issues.</p>
+<h1 style="left-padding:0px;">🔹Dwarf Neem– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🛡️Neem leaves are rich in antioxidants and help strengthen the immune system. </li>
+      <li>🌾 Cleanses the blood and supports liver function.</li>
+      <li>🦷 Promotes Oral Health</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Dwarf Neem.html" class="plant-button">Explore Dwarf Neem Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Curry Leaf Plant -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\curry leaf.jpeg" style="width:250px; float:right;">
+<h2 id="Curry Leaf Plant">🌿3.Curry Leaf Plant:</h2>
+<p>🌱 The Curry Leaf Plant (Murraya koenigii) is native to the Indian subcontinent, where it has been cherished for over 2,000 years in Ayurvedic medicine and culinary traditions. Known as Kadi Patta or Kari Patta, its leaves are rich in essential oils, antioxidants, and minerals like calcium, iron, and phosphorus—making it a flavorful and therapeutic addition to both meals and wellness routines.</p>
+<h1 style="left-padding:0px;">🔹Curry Leaf Plant – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🍛 Enhances Flavor & Nutrition.</li>
+      <li>💇 Improves Hair Health.</li>
+      <li>🌿 Anti-Inflammatory & Antimicrobial.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Curry leaf.html" class="plant-button"> Curry Leaf Plant Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Gotu Kola -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\Gotu Kola (Centella asiatica).jpeg" style="width:250px; float:left;">
+<h2 id="Gotu Kola">🌿4.Gotu Kola:</h2>
+<p>🌱 Gotu Kola (Centella asiatica) is a revered medicinal plant native to Asia and the South Pacific, with deep roots in Ayurveda, Traditional Chinese Medicine, and Southeast Asian healing systems. Known as Mandukaparni in Sanskrit and sometimes referred to as Brahmi, it has been used for over 2,000 years to support mental clarity, skin health, and circulatory function. Rich in triterpenoids like asiaticoside and madecassoside, Gotu Kola is celebrated for its ability to enhance collagen production,</p>
+<h1 style="left-padding:0px;">🔹Gotu Kola – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+       <li>😌 acts as an adaptogen to calm the mind and reduce mental fatigue.</li>
+      <li>🌱 Promotes collagen production for faster wound healing and helps with eczema and psoriasis.</li>
+      <li>🧘Useful in treating insomnia, anxiety, and neurological disorders.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor Gotu Kola.html" class="plant-button">Gotu Kola Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- Marigold -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor marigold .jpeg" style="width:250px; float:right;">
+<h2 id="Marigold">🌿5.Marigold:</h2>
+<p>🌱 Calendula officinalis, commonly known as Marigold or Pot Marigold, is a vibrant flowering herb native to southern Europe and Asia, long celebrated for its medicinal and ornamental value. Used for centuries in Ayurveda, Unani, and European herbalism, calendula was revered for treating wounds.</p>
+<h1 style="left-padding:0px;">🔹Marigold – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>🌿Prevents infections and supports healthy skin repair.</li>
+      <li>💧 Keeps the skin soft, moisturized, and radiant.</li>
+      <li>🦠 Fights Fungal Infections.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skel indoor marigold.html" class="plant-button">  Explore Marigold</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+   "indoor plants can indirectly support the skeletal system (bones, joints, cartilage) by enhancing overall health."🪴💚
+  </p>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html"  class="footer-button">Home page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+</footer>
+</body>
+</html>

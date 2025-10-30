@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Lodhra plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Lodhra Plants That Support Reproductive Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro outdoor Lodhra ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro outdoor Lodhra.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🪴Introduction to Lodhra (Symplocos racemosa)</h2>
+
+<p>Lodhra, scientifically known as Symplocos racemosa, is a revered medicinal plant in traditional Ayurvedic medicine, widely recognized for its therapeutic properties. Native to the Indian subcontinent, this deciduous tree is commonly found in moist forests and hilly regions. The bark of the Lodhra tree is particularly valued for its astringent, anti-inflammatory, and healing properties. It has been traditionally used in managing various health conditions, especially those related to the female reproductive system, skin health, and digestive balance. Lodhra is also considered beneficial in promoting wound healing and reducing excessive secretions in the body. With a long history of use in classical formulations, Lodhra continues to play a vital role in natural healing practices.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro outdoor Lodhra history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Ashwagandha</h3>
+<h3>🌿 Ancient Agricultural Use</h3> 
+<p>Lodhra (Symplocos racemosa) was traditionally found in the dense forests and moist deciduous regions of the Indian subcontinent. Though not widely cultivated as an agricultural crop, it was often protected and revered by ancient communities due to its valuable medicinal bark. Its presence near temple groves and herbal gardens highlighted its importance in early agrarian life.</p> 
+
+<h3>🌸 Traditional Healing Herb</h3> 
+<p>Lodhra has been a cornerstone of Ayurvedic medicine for centuries, particularly recognized for its effectiveness in treating gynecological disorders. Ancient Ayurvedic texts like the Charaka Samhita and Sushruta Samhita praised its ability to pacify Pitta and Kapha doshas. It was traditionally used to manage excessive bleeding, uterine disorders, skin ailments, and eye infections.</p> 
+
+<h3>🍀 Symbolic and Folklore Significance</h3> 
+<p>In Ayurvedic lore, Lodhra was often referred to as a “friend of women” due to its ability to support female reproductive health. It held sacred value among herbalists and healers, symbolizing purity and healing. It was also used in various traditional rituals and offerings, especially in forest-dwelling communities.</p> 
+
+<h3>🌎 Spread and Cultural Integration</h3> 
+<p>While primarily used in India and parts of Southeast Asia, knowledge of Lodhra spread through ancient trade routes and the migration of healing traditions. Its applications were integrated into Siddha and Unani systems of medicine as well, where it continued to be utilized for its astringent and anti-inflammatory benefits.</p>
+
+ <h3>🧪 Modern Herbal Interest</h3> 
+<p>Today, Lodhra is gaining renewed attention in the field of herbal medicine and natural wellness. Its bark is studied for anti-inflammatory, anti-oxidant, and hormonal balancing properties. Often used in formulations for skincare and women's health, Lodhra represents the continuity of ancient wisdom in modern botanical science.</p>    
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro outdoor Lodhra growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>🏞️ Climate and Location</h3> 
+<p>Lodhra thrives in tropical and subtropical climates, typically found in the moist deciduous forests of India and Southeast Asia. It prefers regions with moderate to high humidity and temperatures ranging between 20°C to 30°C. A semi-shaded location with indirect sunlight, such as forest edges or garden areas protected from harsh sun, is ideal for its healthy growth.</p> 
+
+<h3>🌍 Soil Requirements</h3> 
+<p>Lodhra grows best in slightly acidic to neutral, well-drained loamy or sandy loam soils rich in organic matter. It prefers soil that stays moist but not waterlogged. Enriching the soil with compost or leaf mold helps mimic its natural forest-floor environment. Avoid heavy clay or saline soils for optimal development.</p> 
+
+<h3>🌱 Propagation Through Seeds</h3> 
+<p>Lodhra is commonly propagated through seeds, which are collected from ripe fruits during the fruiting season. The seeds can be sown directly or started in nursery beds. To enhance germination, soak the seeds in water for 24 hours before sowing. Sow them 1–2 cm deep in moist soil, and ensure consistent watering until germination occurs, typically within 3 to 4 weeks.</p> 
+
+<h3>🌿 Transplanting Seedlings</h3> 
+<p>Once the seedlings attain a height of 25 to 35 cm, they are ready for transplanting. The ideal time for transplanting is early in the monsoon season when moisture levels are high. Plant each seedling with a spacing of about 3 to 4 meters apart to allow for sufficient root spread and canopy growth.</p> 
+
+<h3>💧 Watering and Maintenance</h3> 
+<p>Young Lodhra plants require regular watering to maintain consistent soil moisture. Mulching around the base helps conserve water and suppress weed growth. As the tree matures, it becomes moderately drought-tolerant but still benefits from occasional deep watering during dry spells. Minimal pruning is necessary—only to remove damaged or weak branches.</p> 
+
+<h3>🛡️ Pest and Disease Resistance</h3> 
+<p>Lodhra is generally resistant to common pests and diseases. However, it may occasionally attract fungal infections in overly damp conditions. Ensure proper spacing for air circulation and avoid overwatering. Organic treatments such as neem oil sprays or compost teas can be used to maintain plant health if needed.</p>
+
+
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro outdoor Lodhra beneffits.jpeg"  style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul><li>🫀 Strengthens heart muscles and improves overall cardiovascular function</li>
+<li>🌸 Supports female reproductive health by managing menstrual disorders and uterine issues</li>
+<li>🩸 Acts as a natural astringent, helping reduce excessive bleeding and discharge</li>
+<li>🌿 Promotes skin health by treating acne, pimples, and other inflammatory conditions</li>
+<li>🧘‍♀️ Balances Pitta and Kapha doshas, promoting internal calmness and harmony</li>
+<li>👁️ Useful in treating eye disorders due to its anti-inflammatory and soothing effects</li>
+<li>🦠 Possesses antibacterial properties that help fight infections and promote faster healing</li>
+<li>🧪 Detoxifies the blood and supports liver function for overall metabolic balance</li>
+<li>💪 Strengthens bodily tissues and supports natural recovery from wounds or injuries</li>
+<li>🛡️ Enhances immunity and resilience against seasonal illnesses</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌸 “Like a silent guardian, Lodhra nurtures the strength within—balancing, healing, and empowering the feminine from root to blossom.”</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

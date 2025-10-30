@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Nirgundi (Vitex negundo) plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>Nirgundi (Vitex negundo) Plants That Support Skeletal Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo skeletal outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant .jpeg" style="width:250px; float:right;">
+ style="width:250px; float:right;">
+
+ <h2 id="intro">🪴The Introduction of Nirgundi</h2>
+  <p>
+Nirgundi (*Vitex negundo*), commonly known as the Five-leaved Chaste Tree, is a powerful Ayurvedic herb widely recognized for its benefits to the skeletal system. Native to India, it has been traditionally used to treat joint pain, arthritis, and musculoskeletal inflammation. Rich in anti-inflammatory compounds like flavonoids and terpenoids, Nirgundi helps reduce swelling, ease stiffness, and promote mobility in affected joints. Its leaves and roots are often used in oils, decoctions, or poultices to relieve pain and support bone and muscle recovery. Whether applied topically or consumed in controlled doses, Nirgundi serves as a natural ally in maintaining skeletal strength and flexibility.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Nirgundi</h3>
+ <h3>🌱 Origins and Botanical Background</h3>
+<p>
+Nirgundi (<em>Vitex negundo</em>), commonly known as the Five-leaved Chaste Tree, is a hardy aromatic shrub native to the Indian subcontinent and Southeast Asia. It belongs to the Lamiaceae family and thrives in tropical and subtropical climates, often found along riverbanks, forest edges, and wastelands. Revered in Ayurveda as “Sindhuvara,” Nirgundi has been used for centuries to treat a wide range of ailments, especially those related to inflammation, pain, and reproductive health. Its leaves, roots, bark, and seeds are all medicinally valuable, and the plant is cultivated both for traditional healing and ecological benefits.
+</p>
+
+### <h3>🕊️ Ancient Egyptian Use</h3>
+<p>
+There is no direct evidence of Nirgundi being used in ancient Egypt. However, Egyptian herbal traditions included aromatic and anti-inflammatory plants for treating wounds and pain, which aligns with Nirgundi’s known properties. Given its widespread use in Asia, it’s plausible that knowledge of the plant reached North Africa through trade and cultural exchange in later centuries.
+</p>
+
+### <h3>🏛️ Greek and Roman Traditions</h3>
+<p>
+Nirgundi was known to Greek and Roman physicians under the broader category of chaste trees. Roman wives reportedly used its leaves to reduce sexual desire, giving rise to the name "chaste tree." Classical texts by Hippocrates and Dioscorides mention its use in regulating menstruation, easing childbirth, and treating uterine disorders. Decoctions of the fruit and plant were also used in sitz baths for diseases of the uterus and muscle pain.
+</p>
+
+### <h3>📜 Medieval Herbalism in Europe</h3>
+<p>
+During the Middle Ages, Nirgundi—often referred to as Monk’s Pepper or Cloister Pepper—was used in European monasteries to suppress libido and maintain celibacy. It appeared in herbal manuals for treating rheumatism, skin conditions, and menstrual irregularities. Though not widely cultivated due to climate limitations, its dried parts were traded and used in tinctures and salves.
+</p>
+
+### <h3>🔬 Scientific Recognition and Taxonomy</h3>
+<p>
+The genus <em>Vitex</em> was formally classified by Carl Linnaeus in 1753, with <em>Vitex negundo</em> recognized for its medicinal value. Later taxonomic revisions placed it in the Lamiaceae family. Scientific studies have identified active compounds such as casticin, agnuside, and flavonoids, which exhibit anti-inflammatory, analgesic, and antimicrobial effects. These findings validated its traditional uses and spurred interest in pharmacological research.
+</p>
+
+### <h3>⚗️ Rise in European Medicine</h3>
+<p>
+In the 18th and 19th centuries, European botanists and colonial physicians began studying Nirgundi in India and Southeast Asia. It was used to treat joint pain, respiratory issues, and skin infections. Nirgundi oil and leaf extracts were incorporated into European herbal remedies, especially for arthritis and muscle spasms. Its versatility made it a valuable addition to colonial medical kits.
+</p>
+
+### <h3>🌎 Transatlantic Expansion and Farming</h3>
+<p>
+Nirgundi spread to Africa, the Caribbean, and parts of Central America through colonial trade and botanical exchanges. It adapted well to warm, humid climates and was integrated into local healing traditions. In some regions, it was used as a natural insect repellent and for treating livestock ailments. Its cultivation expanded due to its resilience and broad therapeutic applications.
+</p>
+
+### <h3>🏭 Industrial Era Applications</h3>
+<p>
+During the industrial era, Nirgundi was used in oils, balms, and poultices for treating rheumatism, wounds, and inflammation. Its essential oil was explored for use in natural pesticides and antiseptic formulations. Though not commercialized on the scale of other herbs, it remained a staple in traditional medicine and was included in Ayurvedic and Unani pharmacopoeias.
+</p>
+
+### <h3>🌟 Modern-Day Relevance</h3>
+<p>
+Today, Nirgundi is gaining renewed attention as a natural remedy for joint pain, anxiety, and skin disorders. It is available in the form of capsules, oils, teas, and topical creams. Ayurvedic practitioners recommend it for conditions like arthritis, sciatica, and reproductive imbalances. Its anti-inflammatory and analgesic properties make it a popular choice in holistic wellness. Ongoing research continues to explore its potential in managing chronic diseases and enhancing musculoskeletal health.
+</p>
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant growing.jpeg" style= "  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+  <h2>🌿 Cultivation and Practical Uses of Nirgundi</h2>
+
+<h3>☀️ Ideal Growing Conditions</h3>
+<p>
+Nirgundi thrives in warm, tropical to subtropical climates with full sun exposure. Ideal temperatures range from 20°C to 35°C. It is drought-tolerant once established and can handle brief dry spells. While it prefers moderate humidity, it should be protected from frost, especially during early growth. In cooler regions, it can be grown in containers and moved indoors during winter.
+</p>
+
+<h3>🧬 Propagation Methods</h3>
+<p>
+Nirgundi can be propagated through seeds, stem cuttings, or root suckers. Seeds should be soaked in warm water for 24 hours before sowing to improve germination. Stem cuttings (6–8 inches long) taken from healthy branches root well in moist, well-draining soil under indirect light. Root suckers from mature plants can also be separated and replanted for quick establishment.
+</p>
+
+<h3>🌾 Soil Preparation</h3>
+<p>
+This plant prefers well-draining sandy loam or loamy soil with a neutral pH between 6.5 and 7.5. It can tolerate poor or dry soils but performs best when enriched with organic compost or aged manure. Avoid heavy clay or waterlogged conditions, which can lead to root rot. Raised beds or containers with good drainage are ideal for home cultivation.
+</p>
+
+<h3>💧 Watering and Maintenance</h3>
+<p>
+Young Nirgundi plants require regular watering to establish roots. Once mature, they are relatively drought-resistant and need watering only when the topsoil dries out. Overwatering should be avoided. Pruning helps maintain a bushy shape, encourages new growth, and prevents legginess. Organic fertilizer or compost can be applied every 6–8 weeks during the growing season.
+</p>
+<ul>
+  <li>Water moderately, allowing soil to dry slightly between sessions</li>
+  <li>Apply compost or <strong>organic fertilizer</strong> during active growth</li>
+  <li>Prune regularly to shape and stimulate foliage</li>
+</ul>
+
+<h3>🚫 Managing Growth and Spread</h3>
+<p>
+Nirgundi is a manageable shrub that responds well to pruning. It can grow up to 4 meters tall if left unchecked, but regular trimming keeps it compact and suitable for small gardens or containers. Pinching young shoots encourages branching and denser foliage. In landscape settings, it can be used as a hedge or border plant.
+</p>
+
+<h3>✂️ Harvesting Tips</h3>
+<p>
+Leaves can be harvested once the plant is well-established, typically from the second year onward. For medicinal use, pick mature leaves during early summer when their potency is highest. Roots are harvested in late summer or autumn and dried for later use. Frequent leaf harvesting encourages fresh growth and maintains plant vitality.
+</p>
+
+
+<h3>🌿 Uses and Benefits</h3>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo skel indoor Nirgunda plant benefits.jpeg"  style= "  width:250px; float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Moringa</h3>
+  <ul>
+  <li>🦴 <b>Bone Strengthening:</b> Nirgundi supports bone density and strength through its calcium-rich profile and anti-inflammatory action.</li>
+  <li>🔥 <b>Anti-inflammatory Action:</b> Its potent anti-inflammatory compounds help reduce joint swelling and stiffness, especially in arthritis and rheumatism.</li>
+  <li>🛡️ <b>Antioxidant Protection:</b> Flavonoids and phenols in Nirgundi protect bone tissues from oxidative damage and degeneration.</li>
+  <li>🧬 <b>Cartilage Support:</b> Helps maintain joint flexibility and cartilage health, reducing wear and tear in aging joints.</li>
+  <li>🧘 <b>Pain Relief:</b> Traditionally used in oils and poultices to relieve bone and muscle pain, especially in sciatica and sprains.</li>
+  <li>💊 <b>Bone Detoxification:</b> Aids in flushing out toxins from bone tissues, promoting cleaner and healthier skeletal function.</li>
+  <li>🧠 <b>Neuromuscular Balance:</b> Supports coordination between bones and muscles, easing spasms and improving mobility.</li>
+  <li>🌱 <b>Fracture Recovery:</b> Nirgundi leaf paste and oil are used to accelerate healing of fractures and bone injuries.</li>
+  <li>🩺 <b>Osteoarthritis Management:</b> Used in Ayurvedic formulations to manage chronic joint conditions and slow cartilage degradation.</li>
+  <li>🧴 <b>Topical Bone Care:</b> Nirgundi-based balms and oils are massaged into joints to enhance circulation and reduce inflammation.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🦴“Like the quiet strength of its leaves, Nirgundi nurtures the bones not with force, but with wisdom—restoring movement, easing pain, and reminding the body of its natural resilience.”
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor skeletal.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeltal.html" class="footer-button">← Back to Skeletal System</a>
+
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro skeletal tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>  
+
+</footer>
+</body>
+</html>

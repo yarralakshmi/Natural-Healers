@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Integumentary Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+             padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🧍‍♂️Your body's first line of defense";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.1s, transform 0.1s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿Natural remedies for healthy Integumentary system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html">Integumentary System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo integumentary system .jpeg" style="height:150px; width:150px;"></img>
+    <a href="#a1">🧍‍♀️Skin</a>
+    <a href="#a2">💇‍♀️ Hair</a>
+	<a href="#a3">💅Nails</a>
+	<a href="#a4">💧Sweat Glands</a>
+	<a href="#a5">💧Sebaceous (oil)<br>Glands</a>
+	<a href="#a6">🟤Ceruminous<br> Glands</a>
+	<a href="#a7">⚪Mammary <br> Glands</a>
+	<a href="#a8">🟣Sensory Nerve <br>Endings</a>
+	<a href="#a9">🔴Blood <br>Vessels</a>
+	<a href="#a11">✨Dermis</a>
+	<a href="#a12">✨Epidermis</a>
+	<a href="#a13">✨Hypodermis<br>(skin layers)</a>
+
+  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨🖐️Discover natural remedies to support Skin health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍵 1. Chamomile-Rice Water Toner</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 chamomile tea bag or 1 tsp dried chamomile</li>
+<li>½ cup rice water (from soaked or boiled rice)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep chamomile in rice water for 15 minutes. Cool and store in a spray bottle. Use as a facial mist or toner after cleansing.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile calms inflammation and redness</li>
+<li>Rice water tightens pores and brigh- tens skin</li>
+<li>Gentle hydration and toning for all skin types</li>
+</ul><hr>
+<h3>🥬 2. Spinach-Honey Face Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>A handful of fresh spinach leaves</li>
+<li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend spinach into a paste and mix with honey. Apply to clean skin and leave for 15 minutes. Rinse with cool water.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach is rich in vitamins A & C → supports skin repair</li>
+<li>Honey moisturizes and fights bacteria</li>
+<li>May help reduce dullness and uneven tone</li>
+</ul><hr>
+<h3>🧊 3. Cucumber-Turmeric Ice Cubes</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cucumber (blended)</li>
+<li>¼ tsp turmeric powder</li>
+<li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>Mix all ingredients and pour into an ice tray. Freeze and use one cube to gently massage the face.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Cools and soothes irritated skin</li>
+<li>Turmeric reduces inflammation and pigmentation</li>
+<li>Refreshes and tightens pores</li>
+</ul><hr>
+<h3>🍠 4. Sweet Potato Peel Scrub</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peels from 1 boiled sweet potato</li>
+<li>1 tsp oats or rice flour</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mash peels and mix with oats. Gently scrub onto damp skin for 2–3 minutes, then rinse.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Sweet potato contains beta-carotene → boosts skin glow</li>
+<li>Natural exfoliation without harsh abrasives</li>
+<li>May help reduce blemishes and dryness</li>
+</ul><hr>
+<h3>🌿 5. Fenugreek Seed Gel</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fenugreek seeds</li>
+<li>1 cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Soak seeds overnight. Blend into a gel and apply to face for 15 minutes. Rinse with lukewarm water.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Fenugreek is anti-inflammatory and antioxidant-rich</li>
+<li>Helps reduce acne and fine lines</li>
+<li>Leaves skin soft and balanced</li>
+</ul>
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Hair health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍠 1. Sweet Potato & Yogurt Hair Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup boiled sweet potato (mashed)</li>
+<li>2 tbsp plain yogurt</li>
+<li>1 tsp olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients into a smooth paste. Apply to damp hair and scalp. Leave for 30 minutes, then rinse with lukewarm water.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Sweet potato is rich in beta-carotene → promotes hair growth</li>
+<li>Yogurt adds protein and moisture</li>
+<li>Olive oil seals in hydration and shine</li>
+</ul><hr>
+<h3>🌿 2. Black Tea Rinse for Strength & Shine</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 black tea bags</li>
+<li>2 cups boiling water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep tea bags in boiling water for 15 minutes. Cool and pour over clean hair. Leave for 10 minutes, then rinse with plain water.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Caffeine may reduce hair shedding</li>
+<li>Adds natural shine and darkens hair slightly</li>
+<li>Strengthens hair strands</li>
+</ul><hr>
+<h3>🥥 3. Coconut Milk & Fenugreek Scalp Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>¼ cup coconut milk</li>
+<li>1 tsp fenugreek seed powder</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and massage into scalp. Leave for 20 minutes, then rinse with mild shampoo.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Coconut milk nourishes follicles</li>
+<li>Fenugreek reduces dandruff and boosts growth</li>
+<li>May improve scalp circulation</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Aloe Vera Scalp Scrub</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of ½ lemon (grated)</li>
+<li>2 tbsp fresh aloe vera gel</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and gently massage into scalp for 5 minutes. Leave for 10 more minutes, then rinse.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel exfoliates and clarifies</li>
+<li>Aloe vera soothes and hydrates</li>
+<li>May reduce scalp buildup and itching</li>
+</ul><hr>
+<h3>🧄 5. Garlic-Honey Hair Strengthening Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 cloves garlic (crushed)</li>
+<li>1 tbsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and apply to scalp only. Leave for 10–15 minutes, then rinse thoroughly with shampoo.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts blood flow and collagen production</li>
+<li>Honey is antimicrobial and moisturizing</li>
+<li>May reduce hair fall and improve follicle health</li>
+</ul>
+          </section>
+
+    <section id="a3">
+ <h2>     ✨✨Discover natural remedies to support Nails health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍅 1. Tomato Juice & Rosemary Nail Soak</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp fresh tomato juice</li>
+<li>2 drops rosemary essential oil</li>
+<li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix all ingredients and soak fingertips for 10 minutes. Rinse and moisturize afterward.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Tomato is rich in biotin and antioxidants → supports nail growth</li>
+<li>Rosemary improves circulation to nail beds</li>
+<li>May help strengthen brittle nails</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Infused Olive Oil Massage</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>2 tbsp olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Warm olive oil and infuse with garlic for 10 minutes. Strain and massage into nails and cuticles before bed.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic is antimicrobial → helps prevent nail infections</li>
+<li>Olive oil deeply moisturizes and strengthens</li>
+<li>May reduce yellowing and brittleness.</li>
+</ul><hr>
+<h3>🍊 3. Orange Peel Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of 1 orange (grated)</li>
+<li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend into a paste and apply to nails for 10 minutes. Rinse with lukewarm water.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Vitamin C boosts collagen → improves nail texture</li>
+<li>Natural exfoliation and shine enhancer</li>
+<li>May help lighten nail stains</li>
+</ul><hr>
+<h3>🌿 4. Nettle Leaf Tea (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried nettle leaves</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes, strain, and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Rich in minerals like iron and silica → supports nail formation</li>
+<li>May reduce nail ridges and flaking</li>
+<li>Nourishes nails from within</li>
+</ul><hr>
+<h3>🥥 5. Coconut Milk & Oat Nail Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp coconut milk</li>
+<li>1 tsp ground oats</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and apply to nails and cuticles. Leave for 15 minutes, then rinse.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Coconut milk hydrates and softens</li>
+<li>Oats soothe and exfoliate gently</li>
+<li>May improve nail flexibility and reduce cracking</li>
+</ul>
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Sweat Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Sage & Green Tea Cooling Rinse</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried sage leaves</li>
+<li>1 green tea bag</li>
+<li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep both in hot water for 15 minutes. Cool and use as a rinse for underarms, feet, or scalp.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Sage contains tannins → helps regulate sweat gland activity</li>
+<li>Green tea calms inflammation and reduces odor</li>
+<li>May reduce excessive sweating naturally</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Lemon Detox Shot (Internal Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove raw garlic (crushed)</li>
+<li>Juice of ½ lemon</li>
+<li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip slowly in the morning, 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation and detox pathways</li>
+<li>Lemon alkalizes and suppo- rts sweat gland balance</li>
+<li>May reduce body odor and excessive sweating</li>
+</ul><hr>
+<h3>🧊 3. Black Tea Ice Cubes for Pore Tightening</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 black tea bag</li>
+<li>1 cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep tea, cool, and pour into ice tray. Use cubes to gently rub over sweaty areas.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Tannic acid tightens pores and reduces sweat output</li>
+<li>Cooling effect soothes irritated skin</li>
+<li>May help shrink overactive sweat glands</li>
+</ul><hr>
+<h3>🌿 4. Neem & Aloe Vera Antibacterial Gel</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp neem leaf powder or paste</li>
+<li>1 tbsp fresh aloe vera gel</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and apply to sweat-prone areas after showering. Leave on for 15 minutes, then rinse.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Neem fights bacteria and fungal buildup</li>
+<li>Aloe hydrates and calms sweat gland irritation</li>
+<li>May prevent clogged pores and odor</li>
+</ul><hr>
+<h3>🍅 5. Tomato-Cucumber Juice (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ ripe tomato</li>
+<li>½ cucumber</li>
+<li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Blend and drink fresh in the morning 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lycopene in tomato supports skin and gland health</li>
+<li>Cucumber hydrates and cools the body</li>
+<li>May help regulate sweat production and reduce heat.</li>
+</ul>
+
+    </section>
+
+    <section id="a5">
+      <h2>✨✨NDiscover natural remedies to support Sebaceous (oil) Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Green Tea & Witch Hazel Facial Mist</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 green tea bag</li>
+<li>1 tsp witch hazel extract</li>
+<li>½ cup water</li></ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Steep green tea in hot water, cool, and mix with witch hazel. Pour into a spray bottle and mist onto clean skin 1–2 times daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Green tea reduces sebum and inflammation</li>
+<li>Witch hazel tightens pores and prevents clogging</li>
+<li>May help regulate oil production naturally</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Turmeric Spot Treatment</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>¼ tsp turmeric powder</li>
+<li>1 tsp aloe vera gel</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and apply to oily or cyst-prone areas for 10 minutes. Rinse with lukewarm water.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic is antimicrobial → fights bacteria in blocked glands</li>
+<li>Turmeric reduces swelling and redness</li>
+<li>Aloe soothes and hydrates without clogging pores</li>
+</ul><hr>
+<h3>🥥 3. Coconut Oil & Tea Tree Steam Facial</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp virgin coconut oil</li>
+<li>2 drops tea tree oil</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Apply coconut oil to face, add tea tree oil to hot water, and steam face for 5–7 minutes. Pat dry gently.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Coconut oil softens hardened sebum</li>
+<li>Tea tree oil clears bacteria and supports gland healt</li>
+<li>Steam opens pores for deep cleansing</li>
+</ul><hr>
+<h3>🍵 4.Sandalwood Paste for Oil Control</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp pure sandalwood powder</li>
+<li>Rose water (as needed to make a paste)</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a smooth paste and apply to the T-zone or oily areas. Leave for 15 minutes and rinse with cool water.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sandalwood soothes and cools inflamed skin</li>
+<li>Absorbs excess oil without over-drying</li>
+<li>May help prevent acne from blocked glands</li>
+</ul><hr>
+<h3>🌿 5. Amla (Gooseberry) & Yogurt Scalp Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp amla powder or fresh amla pulp</li>
+<li>2 tbsp plain yogurt</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and apply to scalp. Leave for 30 minutes, then rinse thoroughly.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Amla strengthens follicles and controls oil secretion</li>
+<li>Yogurt nourishes scalp without greasiness</li>
+<li>May help balance sebaceous activity in scalp skin</li>
+</ul>
+
+ </section>
+
+    <section id="a6">
+     <h2> ✨✨Discover natural remedies to support Ceruminous Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍯 1. Warm Honey & Tulsi Oil Ear Drop (External Use Only)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp raw honey</li>
+<li>2 drops tulsi (holy basil) oil</li>
+<li>1 tsp warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix ingredients and use a clean dropper to place 1–2 drops in the outer ear canal (not deep inside). Tilt head for 2 minutes, then wipe gently.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Honey is antimicrobial and soothing</li>
+<li>Tulsi oil supports immune defense in the ear canal</li>
+<li>Helps maintain healthy cerumen balance</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Mustard Oil Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp mustard oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and cool. Apply 1–2 drops externally near the ear canal opening.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic fights bacteria and fungi</li>
+<li>Mustard oil lubricates and softens hardened wax</li>
+<li>May prevent ceruminous gland blockage</li>
+</ul><hr>
+<h3>🍵 3. Chamomile Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp dried chamomile flowers</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add chamomile to hot water. Lean over the bowl with a towel over your head for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Steam opens pores and softens wax</li>
+<li>Chamomile calms inflammation and irritation</li>
+<li>Supports natural glandular drainage</li>
+</ul><hr>
+<h3>🥥 4. Coconut Oil & Clove Massage (External Use Only)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp virgin coconut oil</li>
+<li>1 clove (crushed)</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with clove for 5 minutes. Strain and cool. Massage gently around the outer ear (not inside).
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Coconut oil moisturizes and protects</li>
+<li>Clove is antimicrobial and analgesic</li>
+<li>May reduce swelling and support gland health</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Olive Oil Ear Balm</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tbsp olive oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with lemon peel for 10 minutes. Strain and cool. Apply a drop externally near the ear canal opening.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains limonene → supports detox</li>
+<li>Olive oil softens wax and nourishes skin</li>
+<li>May help prevent buildup and irritation</li>
+</ul>
+
+</section>
+
+    <section id="a7">
+      <h2>✨✨Discover natural remedies to support Mammary Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🌿 **1. Warm Castor Oil Pack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2–3 tablespoons of castor oil</li>
+<li>Clean cotton cloth</li>
+<li>Plastic wrap & warm towel</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>
+Warm the castor oil slightly (not hot). Soak the cloth in the oil and place it on the breasts. Cover with plastic wrap, then place a warm towel on top.Leave for 20–30 minutes. Repeat 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Improves blood and lymph circulation</li>
+<li>Reduces minor inflammation</li>
+<li>Supports detox of tissues</li>
+</ul><hr>
+<h3> 🥬2. Cabbage Leaf Compress</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li> 2 large green cabbage leaves</li>
+<li>Cold water (optional)</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>Wash and chill cabbage leaves in the fridge.Place leaves on the breasts and relax for 15–20 minutes.Remove and clean skin if needed.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li> Reduces swelling or tenderness</li>
+<li>Soothes engorged or sore tissue</li>
+<li>Useful for nursing discomfort</li>
+</ul><hr>
+<h3>🥥 3. Coconut or Olive Oil Breast Massage</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li> 1–2 teaspoons of virgin coconut oil or olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>Warm the oil slightly in your hands. Gently massage breasts in circular, upward motions. Continue for 5–10 minutes daily or every other day.</p>
+</ul>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Enhances lymphatic drainage</li>
+<li> Keeps skin hydrated and soft</li>
+<li>Supports hormonal balance through stimulation</li>
+</ul><hr>
+<h3>🌱4. Herbal Tea – Fenugreek or Fennel</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li> 1 tsp fenugreek seeds or fennel seeds</li>
+<li> 1 cup hot water</li
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>Steep seeds in hot water for 10–15 minutes.Strain and drink once daily. Optional: Add honey for taste.
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Balances female hormones</li>
+<li>Supports healthy lactation</li>
+<li>May aid in relieving PMS or breast tenderness</li>
+</ul><hr>
+<h3>🥣 5. Flaxseed Add-on</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li> 1 tablespoon ground flaxseed</li>
+<li> Yogurt, smoothie, or salad</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>Add ground flaxseed to your meal daily. Do not cook—consume raw for best results.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li> Rich in lignans (phytoestrogens)</li>
+<li>Supports hormone balance</li>
+<li>Provides anti-inflammatory omega-3s</li>
+</ul>
+
+    </section>
+
+    <section id="a8">
+     <h2> ✨✨Discover natural remedies to support Sensory Nerve Endings health and hormonal harmony—your body’s balance starts from the inside:✨✨</h1>
+<h3>🍠 1. Sweet Potato & Flaxseed Smoothie (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup boiled sweet potato</li>
+<li>1 tsp ground flaxseed</li>
+<li>½ cup almond milk</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sweet potato is rich in vitamin B6 → supports neurotransmitter function</li>
+<li>Flaxseed provides omega-3s → reduce nerve inflammation</li>
+<li>May improve nerve signal transmission and sensory clarity</li>
+</ul><hr>
+<h3>🌿 2. Celery-Carrot Juice for Nerve Cooling</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 stalk celery</li>
+<li>1 medium carrot</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Celery contains nervine compounds → calms overstimulated nerves</li>
+<li>Carrot is rich in antioxidants and beta-carotene</li>
+<li>May help reduce tingling and burning sensations</li>
+</ul><hr>
+<h3>🍵 3. Chamomile-Ginger Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried chamomile flowers</li>
+<li>½ inch fresh ginger</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10–15 minutes. Strain and sip before bed.
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Chamomile soothes nerve endings and reduces sensitivity</li>
+<li>Ginger improves circulation to peripheral nerves</li>
+<li>May ease nerve-related discomfort and promote restful sleep</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Mustard Oil Foot Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp mustard oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and massage into feet and hands 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts blood flow and nerve regeneration</li>
+<li>Mustard oil stimulates sensory nerve endings</li>
+<li>May reduce numbness and improve tactile response</li>
+</ul><hr>
+<h3>🍋 5. Lemon Balm & Coconut Oil Balm (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried lemon balm</li>
+<li>2 tbsp virgin coconut oil</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Infuse lemon balm in warm coconut oil for 15 minutes. Strain and apply to hands, feet, or affected areas.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon balm calms nerve irritation and hypersensitivity</li>
+<li>Coconut oil nourishes and protects skin and nerve endings</li>
+<li>May help with tingling, burning, or prickling sensations</li>
+    </ul></section>
+
+<section id="a9">
+<h2>✨✨Discover natural remedies to support Blood Vessels health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Beetroot-Ginger Circulation Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup fresh beetroot juice</li>
+<li>½ inch fresh ginger (grated)</li>
+<li>1 tsp lemon juice</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix all ingredients and sip slowly in the morning, 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Beetroot boosts nitric oxide → relaxes and widens blood vessels</li>
+<li>Ginger improves circulation and reduces inflammation</li>
+<li>May help lower blood pressure and improve vessel flexibility</li>
+</ul><hr>
+<h3>🧄 2. Garlic-Milk Vascular Elixir</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>3 cloves garlic (crushed)</li>
+<li>1 cup warm milk (cow or plant-based)</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil garlic in milk for 5 minutes. Cool slightly and drink before bedtime.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic reduces arterial stiffness and LDL cholesterol</li>
+<li>May improve endothelial function and prevent plaque buildup</li>
+<li>Supports overall cardiovascular health</li>
+</ul><hr>
+<h3>🌿 3. Turmeric-Coconut Oil Paste (Internal Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul<li>½ tsp turmeric powder</li>
+<li>1 tsp virgin coconut oil</li>
+<li>Pinch of black pepper</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water or rice once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Turmeric’s curcumin reduces inflammation and oxidative stress</li>
+<li>Coconut oil supports healthy fats and vessel flexibility</li>
+<li>Black pepper enhances curcumin absorption</li>
+</ul><hr>
+<h3>🍋 4. Lemon Peel & Pomegranate Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Peel of ½ lemon (organic)</li>
+<li>¼ cup fresh pomegranate seeds</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep lemon peel and pomegranate in hot water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains limonene → supports vascular detox</li>
+<li>Pomegranate boosts nitric oxide and reduces plaque formation</li>
+<li>May improve blood pressure and vessel elasticity</li>
+</ul><hr>
+<h3>🥬 5. Broccoli-Onion Soup for Vessel Strength</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup chopped broccoli</li>
+<li>¼ cup chopped onion</li>
+<li>2 cups water</li>
+<li>Pinch of cumin or turmeric</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 15–20 minutes. Blend or strain and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Broccoli is rich in vitamin E and lutein → supports vessel integrity</li>
+<li>Onion contains sulfur compounds → improves circulation and reduces clot risk</li>
+<li>May help prevent atherosclerosis and maintain elasticity</li>
+</ul>
+
+</section>
+<section id="a11">
+<h2>✨✨Discover natural remedies to support Dermis health and skin vitality—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Aloe Vera & Rose Water Hydrating Gel</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp fresh aloe vera gel</li>
+  <li>1 tsp rose water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix aloe vera gel and rose water. Apply a thin layer on the skin. Leave for 15–20 minutes, then rinse with lukewarm water. Use 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Aloe vera moisturizes and supports collagen formation</li>
+  <li>Rose water calms irritation and enhances skin tone</li>
+  <li>May reduce dryness and redness</li>
+</ul>
+<hr>
+
+<h3>🥬 2. Cucumber & Yogurt Cooling Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cucumber (grated)</li>
+  <li>1 tbsp plain yogurt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix grated cucumber with yogurt. Apply on the skin and leave for 15 minutes. Rinse with cool water. Use 2 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Cucumber soothes inflammation and hydrates dermis</li>
+  <li>Yogurt provides lactic acid for gentle exfoliation</li>
+  <li>May improve skin texture and softness</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Turmeric & Honey Spot Treatment</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>¼ tsp turmeric powder</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix turmeric and honey into a smooth paste. Apply on small areas needing care. Leave for 10–15 minutes and rinse. Use 1–2 times weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric reduces inflammation and microbial activity</li>
+  <li>Honey moisturizes and promotes healing</li>
+  <li>May prevent acne and minor irritation</li>
+</ul>
+<hr>
+
+<h3>🧄 4. Olive Oil & Vitamin E Massage</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp extra virgin olive oil</li>
+  <li>1 capsule vitamin E oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix oils and massage gently on the skin for 5–10 minutes. Use 2–3 times weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Olive oil nourishes and maintains skin elasticity</li>
+  <li>Vitamin E protects against oxidative stress</li>
+  <li>May reduce wrinkles and promote smoothness</li>
+</ul>
+<hr>
+
+<h3>🍋 5. Lemon & Honey Brightening Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp fresh lemon juice</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix lemon juice and honey. Apply lightly on the dermis and leave for 10 minutes. Rinse with lukewarm water. Use once weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Lemon provides natural brightening and antioxidant effect</li>
+  <li>Honey hydrates and supports healing</li>
+  <li>May even skin tone and improve radiance</li>
+</ul>
+
+</section>
+<section id="a12">
+<h2>✨✨Discover natural remedies to support Epidermis health and skin protection—your body’s first line of defense starts from the outside:✨✨</h2>
+
+<h3>🍵🖼️ 1. Green Tea & Aloe Vera Protective Toner</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup brewed green tea (cooled)</li>
+  <li>1 tbsp aloe vera gel</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix cooled green tea and aloe vera gel. Apply gently on the epidermis using a cotton pad daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Green tea provides antioxidants to protect epidermal cells</li>
+  <li>Aloe vera soothes and hydrates the outer skin layer</li>
+  <li>May reduce redness and oxidative damage from UV exposure</li>
+</ul>
+<hr>
+
+<h3>🥬🖼️ 2. Oatmeal & Honey Gentle Scrub</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp finely ground oatmeal</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix oatmeal and honey into a paste. Apply on epidermis with gentle circular motions for 2–3 minutes. Rinse with lukewarm water. Use 1–2 times weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Oatmeal exfoliates dead epidermal cells gently</li>
+  <li>Honey moisturizes and promotes healing</li>
+  <li>May improve skin texture and smoothness</li>
+</ul>
+<hr>
+
+<h3>🌿🖼️ 3. Cucumber & Rose Water Refreshing Mist</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cucumber (blended)</li>
+  <li>2 tbsp rose water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend cucumber and strain juice. Mix with rose water and spray lightly on epidermis whenever needed.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Cucumber cools and hydrates epidermis</li>
+  <li>Rose water tones and reduces irritation</li>
+  <li>May protect skin from environmental stress</li>
+</ul>
+<hr>
+
+<h3>🧄🖼️ 4. Coconut Oil & Vitamin E Layer</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp virgin coconut oil</li>
+  <li>1 capsule vitamin E oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and apply a thin layer on the epidermis before bedtime. Massage gently until absorbed. Use 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Coconut oil nourishes and protects the epidermis</li>
+  <li>Vitamin E prevents oxidative stress and aging signs</li>
+  <li>May strengthen skin barrier and retain moisture</li>
+</ul>
+<hr>
+
+<h3>🍋🖼️ 5. Lemon & Yogurt Brightening Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp fresh lemon juice</li>
+  <li>1 tbsp plain yogurt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix ingredients into a smooth paste. Apply on epidermis for 10 minutes. Rinse with lukewarm water. Use once weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Lemon juice brightens and exfoliates gently</li>
+  <li>Yogurt moisturizes and supports epidermal renewal</li>
+  <li>May improve overall skin tone and radiance</li>
+</ul>
+
+</section>
+<section id="a13">
+<h2>✨✨Discover natural remedies to support Hypodermis health and subcutaneous fat balance—your skin’s foundation starts from the inside:✨✨</h2>
+
+<h3>🥥🖼️ 1. Coconut Oil Deep Moisture Massage</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp virgin coconut oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Warm coconut oil slightly. Massage into the hypodermis layer using circular motions for 5–10 minutes daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Enhances blood circulation to subcutaneous tissues</li>
+  <li>Nourishes fat cells and connective tissue</li>
+  <li>May improve skin elasticity and firmness</li>
+</ul>
+<hr>
+
+<h3>🥬🖼️ 2. Aloe Vera & Olive Oil Blend</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp fresh aloe vera gel</li>
+  <li>1 tsp extra virgin olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix aloe gel and olive oil. Apply on hypodermis area and massage gently. Leave for 15–20 minutes, then rinse with lukewarm water. Use 2–3 times weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Olive oil nourishes fat cells and connective tissue</li>
+  <li>Aloe vera supports hydration and reduces inflammation</li>
+  <li>May improve subcutaneous skin tone and softness</li>
+</ul>
+<hr>
+
+<h3>🍯🖼️ 3. Honey-Cinnamon Fat Support Wrap</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp raw honey</li>
+  <li>½ tsp cinnamon powder</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix honey and cinnamon. Apply on targeted hypodermis area (like thighs or abdomen) and wrap with clean cloth for 20 minutes. Rinse with warm water. Use once weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Honey soothes and hydrates underlying tissues</li>
+  <li>Cinnamon boosts circulation and may improve fat metabolism</li>
+  <li>Supports subcutaneous tissue health and firmness</li>
+</ul>
+<hr>
+
+<h3>🍋🖼️ 4. Lemon & Coffee Ground Scrub</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp lemon juice</li>
+  <li>1 tbsp finely ground coffee</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix ingredients into a paste. Massage into hypodermis areas for 3–5 minutes, then rinse with lukewarm water. Use 1–2 times weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Coffee stimulates circulation and may support fat breakdown</li>
+  <li>Lemon brightens and tones skin</li>
+  <li>May improve skin firmness and texture</li>
+</ul>
+<hr>
+
+<h3>🌿🖼️ 5. Avocado & Almond Oil Nourishing Mask</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ ripe avocado (mashed)</li>
+  <li>1 tsp almond oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix avocado and almond oil. Apply thickly on hypodermis-targeted areas. Leave for 20 minutes, then rinse. Use once weekly.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Avocado provides healthy fats to nourish subcutaneous tissues</li>
+  <li>Almond oil improves elasticity and hydration</li>
+  <li>Supports hypodermis structure and skin softness</li>
+</ul>
+
+</section>
+  </main>
+
+  <footer>
+      <p>"Your skin is your story — every scar, freckle, and wrinkle is a chapter of strength, survival, and self-expression." 
+🌿🖐️
+</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html">Integumentary System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>
