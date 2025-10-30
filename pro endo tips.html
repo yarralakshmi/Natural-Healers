@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Endocrine Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+ 
+            padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🧪 Hormone Headquarters";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header><h3>🌿Natural remedies for healthy Endocrine system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+  
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html">Endocrine System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo endocrine tips.jpeg" style="height:150px;width:150px;"></img>
+<a href="#a1">🧠Hypothalamus.</a>
+<a href="#a2">🧬Pituitary Gland.</a>
+<a href="#a3">🌙Pineal Gland.</a>
+<a href="#a4">🦋Thyroid Gland.</a>
+<a href="#a5">🧵Parathyroid <br>Glands.</a>
+<a href="#a6">🔥Adrenal Glands.</a>
+<a href="#a7">🧃Pancreas.</a>
+<a href="#a8">🛡️Thymus.</a>
+<a href="#a9">🥚Ovaries</a>
+<a href="#a10">🥜Testes</a> 
+	  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Hypothalamus health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Rhodiola Rosea & Lemon Balm Stress-Balancing Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried rhodiola root</li>
+<li>½ tsp dried lemon balm</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep herbs in hot water for 10 minutes. Strain and sip in the morning or early afternoon.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Rhodiola supports the hypothalamic-pituitary-adrenal (HPA) axis</li>
+<li>Lemon balm calms nervous tension and supports hormonal balance</li>
+<li>May improve mood, energy, and stress resilience</li>
+</ul><hr>
+<h3>🥬 2. Broccoli-Garlic Brain Boost Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup chopped broccoli</li>
+<li>1 clove garlic (crushed)</li>
+<li>2 cups vegetable broth</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 15 minutes. Blend or strain and sip warm.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Broccoli provides chromium → supports insulin sensitivity in the hypothalamus</li>
+<li>Garlic improves circulation and reduces inflammation</li>
+<li>May enhance metabolic regulation and neuroprotection</li>
+</ul><hr>
+<h3>🌿 3. Ginkgo Biloba & Tulsi Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried ginkgo leaves</li>
+<li>5 fresh tulsi (holy basil) leaves</li>
+<li>Bowl of hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Add herbs to hot water. Inhale steam under a towel for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Ginkgo improves cerebral blood flow and memory</li>
+<li>Tulsi reduces cortisol and supports hypothalamic calm</li>
+<li>May ease mental fatigue and boost clarity</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Coconut Oil Temple Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp virgin coconut oil</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm oil with garlic for 5 minutes. Strain and gently massage around temples and neck 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts circulation to brain regions</li>
+<li>Coconut oil nourishes nerve membranes</li>
+<li>May support hypothalamic signaling and reduce tension</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Almond Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>2 soaked almonds (peeled and crushed)</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect brain cells</li>
+<li>Almonds offer vitamin E and healthy fats for membrane integrity</li>
+<li>May reduce oxidative stress and support hormonal balance</li>
+</ul>
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Pituitary Gland health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Ashwagandha-Cinnamon Hormone Harmony Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp ashwagandha powder</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip before bed 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Ashwagandha supports the hypothalamic-pituitary-adrenal (HPA) axis</li>
+<li>Cinnamon improves insulin sensitivity and hormonal balance</li>
+<li>May reduce stress and support pituitary hormone regulation</li>
+</ul><hr>
+<h3>🥬 2. Spinach-Lentil Soup with Turmeric</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh spinach</li>
+<li>½ cup cooked lentils</li>
+<li>¼ tsp turmeric</li>
+<li>2 cups water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Simmer all ingredients for 15 minutes. Blend or enjoy chunky.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spinach provides folate and magnesium for pituitary signaling</li>
+<li>Lentils offer amino acids for hormone synthesis</li>
+<li>Turmeric reduces inflammation and supports glandular health</li>
+</ul><hr>
+<h3>🌿 3. Maca-Honey Energy Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp maca powder</li>
+<li>1 tsp raw honey</li>
+<li>Optional: pinch of nutmeg</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Maca supports pituitary-driven reproductive hormones</li>
+<li>Honey provides antioxidants and gentle energy</li>
+<li>May improve mood, libido, and hormonal resilience</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Ginger Detox Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ inch fresh ginger (grated)</li>
+<li>Juice of ½ lemon</li>
+<li>1 cup warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and sip slowly in the morning.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic and ginger improve circulation to endocrine glands</li>
+<li>Lemon supports liver detox → indirectly benefits hormone balance</li>
+<li>May reduce pituitary inflammation and support clarity</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Almond Brain Boost Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>2 soaked almonds (peeled and crushed)</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect pituitary cells</li>
+<li>Almonds offer vitamin E and healthy fats for glandular function</li>
+<li>May support memory, hormone signaling, and pituitary resilience.</li>
+</ul>
+          </section>
+
+    <section id="a3">
+ <h2>✨✨Discover natural remedies to support Pineal Gland health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Chaga Mushroom Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried Chaga mushroom (or 1 tea bag)</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 20–30 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Rich in melanin and antioxidants → supports pineal detox</li>
+<li>May enhance sleep quality and reduce oxidative stress</li>
+<li>Traditionally used to boost immunity and mental clarity</li>
+</ul><hr>
+<h3>🥬 2. Spirulina-Lemon Detox Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp spirulina powder</li>
+<li>Juice of ½ lemon</li>
+<li>½ cup water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix well and drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Spirulina helps remove heavy metals and fluoride</li>
+<li>Lemon supports liver detox and pineal circulation</li>
+<li>May reduce calcification and boost energy</li>
+</ul><hr>
+<h3>🌿 3. Gotu Kola & Ginkgo Biloba Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried gotu kola</li>
+<li>½ tsp dried ginkgo biloba</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Gotu kola enhances cerebral blood flow and intuition</li>
+<li>Ginkgo improves oxygenation to pineal tissues</li>
+<li>May support memory, clarity, and glandular resilience</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Turmeric Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp ghee or warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and reduces calcification</li>
+<li>Turmeric’s curcumin may reverse fluoride damage</li>
+<li>May support pineal gland detox and hormonal balance</li>
+</ul><hr>
+<h3>🍫 5. Raw Cacao & Almond Brain Bites</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp raw cacao powder</li>
+<li>2 soaked almonds (crushed)</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and roll into small balls. Eat 1–2 daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Raw cacao is rich in flavonoids → boosts melatonin and mood</li>
+<li>Almonds offer vitamin E and magnesium for glandular support</li>
+<li>May enhance sleep, intuition, and pineal vitality</li>
+</ul>
+
+
+
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Thyroid Gland health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Seaweed-Lemon Detox Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp powdered seaweed (like kelp or nori)</li>
+<li>Juice of ½ lemon</li>
+<li>½ cup warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Seaweed is rich in iodine → essential for thyroid hormone production</li>
+<li>Lemon supports liver detox and improves absorption</li>
+<li>May help regulate T3/T4 levels and boost energy</li>
+</ul><hr>
+<h3>🥬 2. Coriander-Cumin Thyroid Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp coriander seeds</li>
+<li>½ tsp cumin seeds</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil seeds for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Coriander may help balance thyroid hormones naturally</li>
+<li>Cumin supports digestion and reduces inflammation</li>
+<li>May ease symptoms of both hypo- and hyperthyroidism</li>
+</ul><hr>
+<h3>🌿 3. Tulsi-Coconut Oil Hormone Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+ul><li>5 fresh tulsi (holy basil) leaves</li>
+<li>1 tsp virgin coconut oil</li>
+<li>½ cup warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend tulsi with coconut oil and warm water. Sip slowly.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Tulsi calms the HPA axis and supports thyroid regulation</li>
+<li>Coconut oil contains medium-chain fatty acids → boost metabolism</li>
+<li>May reduce fatigue and support hormonal harmony</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Fenugreek Anti-Inflammatory Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp fenugreek seeds (soaked and crushed)</li>
+<li>1 tsp ghee or warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and reduces oxidative stress</li>
+<li>Fenugreek supports insulin sensitivity and thyroid balance</li>
+<li>May ease swelling and improve glandular function</li>
+</ul><hr>
+<h3>🍠 5. Sweet Potato & Brazil Nut Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup boiled sweet potato (mashed)</li>
+<li>1 Brazil nut (crushed)</li>
+<li>Pinch of cinnamon</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a warm snack or side dish.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sweet potato provides beta-carotene → supports thyroid hormone conversion</li>
+<li>Brazil nuts are rich in selenium → protect thyroid tissue</li>
+<li>May enhance T4 to T3 conversion and reduce inflammation</li>
+</u>
+
+
+
+    </section>
+<section id="a5">
+<h2>✨✨NDiscover natural remedies to support Parathyroid Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🥬 1. Watercress & Almond Calcium Booster Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 cup fresh watercress</li>
+<li>1 tbsp soaked almonds</li>
+<li>½ banana</li>
+<li>½ cup coconut water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Watercress is rich in calcium and vitamin K</li>
+<li>Almonds offer magnesium and healthy fats</li>
+<li>May support parathyroid hormone balance and bone metabolism</li>
+</ul><hr>
+<h3>🍵 2. Nettle Leaf & Lemon Detox Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried nettle leaves</li>
+<li>Juice of ½ lemon</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep nettle in hot water for 10 minutes. Add lemon juice and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Nettle supports calcium absorption and kidney health</li>
+<li>Lemon aids detox and phosphorus regulation</li>
+<li>May reduce strain on parathyroid glands</li>
+</ul><hr>
+<h3>🌿 3. Ginger-Coriander Anti-Inflammatory Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ inch fresh ginger (grated)</li>
+<li>½ tsp crushed coriander seeds</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Ginger improves circulation and reduces glandular inflammation</li>
+<li>Coriander supports mineral balance and digestion</li>
+<li>May ease symptoms of calcium imbalance</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Turmeric Bone Support Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>¼ tsp turmeric powder</li>
+<li>1 cup warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep garlic and turmeric in warm water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic enhances calcium transport and immune support</li>
+<li>Turmeric reduces oxidative stress in endocrine tissues</li>
+<li>May protect parathyroid function and bone density</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Sesame Seed Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp roasted sesame seeds</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect glandular tissue</li>
+<li>Sesame seeds are rich in calcium and zinc</li>
+<li>May support parathyroid hormone regulation and mineral balance</li>
+</ul>
+</section>
+
+
+
+  <section id="a6">
+      <h2>✨✨Discover natural remedies to support Adrenal Glands health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Licorice Root & Ginger Adrenal Support Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried licorice root</li>
+<li>½ inch fresh ginger (sliced)</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<li>Licorice helps sustain cortisol levels and supports adrenal tone</li>
+<li>Ginger improves circulation and reduces inflammation</li>
+<li>May ease fatigue and stabilize energy levels</li>
+</ul><hr>
+<h3>🥬 2. Beetroot-Coconut Electrolyte Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup beetroot (boiled or raw)</li>
+<li>½ cup coconut water</li>
+<li>Juice of ½ lemon</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink after physical or emotional stress.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Beetroot boosts nitric oxide → improves adrenal blood flow</li>
+<li>Coconut water replenishes potassium and magnesium</li>
+<li>May support adrenal recovery and hydration</li>
+</ul><hr>
+<h3>🌿 3. Holy Basil & Rose Petal Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>5 fresh tulsi (holy basil) leaves</li>
+<li>1 tsp dried rose petals</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Tulsi calms the HPA axis and reduces cortisol spikes</li>
+<li>Rose petals soothe emotional stress and support hormonal balance</li>
+<li>May enhance adrenal resilience and mood</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Moringa Energy Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp moringa powder</li>
+<li>1 tsp ghee or warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic boosts immunity and adrenal circulation</li>
+<li>Moringa provides amino acids and minerals for hormone synthesis</li>
+<li>May reduce adrenal fatigue and support vitality</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Brazil Nut Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 Brazil nut (crushed)</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a morning snack or add to smoothies.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect adrenal tissue</li>
+<li>Brazil nuts are rich in selenium → essential for adrenal hormone production</li>
+<li>May improve stress tolerance and reduce oxidative damage</li>
+</ul><hr>
+
+
+    </section>
+ <section id="a7">
+      <h2>✨✨Discover natural remedies to support Pancreas health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Milk Thistle & Ginger Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried milk thistle</li>
+<li>½ inch fresh ginger (sliced)</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip once daily for 2–3 weeks.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Milk thistle supports liver and pancreatic detox</li>
+<li>Ginger reduces inflammation and improves enzyme flow</li>
+<li>May ease pancreatic stress and improve digestion</li>
+</ul><hr>
+<h3>🥬 2. Kale-Celery-Cucumber Green Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 kale leaves</li>
+<li>1 celery stalk</li>
+<li>½ cucumber</li>
+<li>1 glass water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend all ingredients. Drink fresh in the morning for 2–3 weeks.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Rich in antioxidants and fiber → supports insulin regulation</li>
+<li>May reduce oxidative stress and improve pancreatic enzyme production</li>
+</ul><hr>
+<h3>🌿 3. Purple Basil Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fresh or dried purple basil</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 5–7 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Purple basil helps regulate glucose and reduce inflammation</li>
+<li>May support pancreatic tissue repair and metabolic balance</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Turmeric Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp ghee or warm water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves circulation and reduces toxicity</li>
+<li>Turmeric’s curcumin may protect pancreatic cells from damage</li>
+</ul><hr>
+<h3>🍋 5. Indian Gooseberry (Amla) Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 tbsp chopped fresh amla or dried powder</li>
+<li>2 cups water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Cool and sip twice daily for 2 weeks.
+</p><h3 style="color:green;">Benefits:</h3>
+<li>Amla is rich in vitamin C and antioxidants</li>
+<li>May reduce pancreatic inflammation and support enzyme production</li>
+</ul>
+    </section>
+ <section id="a8">
+      <h2>✨✨Discover natural remedies to support Thymus health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Astragalus & Lemon Balm Immune Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried astragalus root</li>
+<li>½ tsp dried lemon balm</li>
+<li>1½ cups hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10–15 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Astragalus boosts T-cell production and thymus vitality</li>
+<li>Lemon balm calms stress → protects thymus from cortisol damage</li>
+<li>May enhance immune resilience and glandular tone</li>
+</ul><hr>
+<h3>🥬 2. Red Bell Pepper & Pumpkin Seed Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ red bell pepper (chopped)</li>
+<li>1 tbsp pumpkin seeds</li>
+<li>½ banana</li>
+<li>½ cup coconut water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend until smooth. Drink 3–4 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bell peppers are rich in vitamin C → supports thymus antioxidant defense</li>
+<li>Pumpkin seeds offer zinc → essential for T-cell maturation</li>
+<li>May reduce thymic shrinkage and boost immunity</li>
+</ul><hr>
+<h3>🌿 3. Thyme-Garlic Chest Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried thyme</li>
+<li>1 clove garlic (crushed)</li>
+<li>Bowl of hot water</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Add herbs to hot water. Inhale steam under a towel for 5–7 minutes.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Thyme stimulates thymus activity and respiratory immunity</li>
+<li>Garlic clears toxins and improves circulation</li>
+<li>May energize immune response and reduce congestion</li>
+</ul><hr>
+<h3>🧄 4. Ghee-Turmeric Warm Paste (Internal Remedy)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp turmeric powder</li>
+<li>1 tsp ghee (clarified butter)</li>
+<li>Pinch of black pepper</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm rice or water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Turmeric reduces inflammation and supports thymic tissue</li>
+<li>Ghee nourishes endocrine glands and improves absorption</li>
+<li>May protect against age-related thymus decline</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Brazil Nut Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 Brazil nut (crushed)</li>
+<li>1 tsp honey</li>
+<ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a morning snack or add to smoothies.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect thymus cells</li>
+<li>Brazil nuts are rich in selenium → vital for immune regulation</li>
+<li>May enhance T-cell output and reduce oxidative stress</li>
+</ul>
+    </section>
+<section id="a9">
+<h2>✨✨Discover natural remedies to support Ovaries health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Ashwagandha & Shatavari Hormonal Balance Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried ashwagandha root</li>
+  <li>½ tsp dried shatavari root</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep herbs in hot water for 10 minutes. Strain and sip in the morning or evening.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ashwagandha supports hormonal balance and reduces stress</li>
+  <li>Shatavari nourishes ovarian tissues and supports fertility</li>
+  <li>May regulate menstrual cycles and improve reproductive health</li>
+</ul>
+<hr>
+
+<h3>🥬 2. Flaxseed & Fennel Seed Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp ground flaxseed</li>
+  <li>1 tsp fennel seeds</li>
+  <li>½ cup almond milk</li>
+  <li>½ banana</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend all ingredients until smooth. Drink 3–4 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Flaxseeds provide lignans → support estrogen balance</li>
+  <li>Fennel seeds help regulate menstrual cycles and ease cramps</li>
+  <li>May enhance ovarian function and overall reproductive health</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Turmeric & Ginger Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp turmeric powder</li>
+  <li>½ tsp fresh grated ginger</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep turmeric and ginger in hot water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric reduces inflammation and oxidative stress in ovarian tissue</li>
+  <li>Ginger improves circulation and hormonal balance</li>
+  <li>May support fertility and menstrual regularity</li>
+</ul>
+<hr>
+
+<h3>🧄 4. Fenugreek Seed & Honey Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp fenugreek seeds (soaked overnight)</li>
+  <li>1 tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Grind soaked seeds into a paste. Mix with honey and consume in the morning 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Fenugreek supports estrogen balance and ovarian health</li>
+  <li>Honey nourishes tissues and provides antioxidant support</li>
+  <li>May enhance fertility and reproductive vitality</li>
+</ul>
+<hr>
+
+<h3>🍋 5. Lemon & Carrot Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 medium carrot (fresh)</li>
+  <li>½ lemon, juiced</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Juice carrot and lemon together. Drink in the morning 3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Carrots provide beta-carotene → supports ovarian tissue health</li>
+  <li>Lemon adds antioxidants → reduces oxidative stress</li>
+  <li>May improve hormonal balance and reproductive function</li>
+</ul>
+</section>
+<section id="a10">
+<h2>✨✨Discover natural remedies to support Testes health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+
+<h3>🍵 1. Ashwagandha & Maca Root Rejuvenating Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried ashwagandha root</li>
+  <li>½ tsp dried maca root powder</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep herbs in hot water for 10 minutes. Strain and sip in the morning or evening.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ashwagandha improves testosterone levels and sperm quality</li>
+  <li>Maca root enhances reproductive energy and stamina</li>
+  <li>May support overall testicular function and hormonal balance</li>
+</ul>
+<hr>
+
+<h3>🥬 2. Pumpkin Seeds & Almonds Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tbsp pumpkin seeds</li>
+  <li>2 soaked almonds</li>
+  <li>½ cup almond milk</li>
+  <li>½ banana</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend all ingredients until smooth. Drink 3–4 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Pumpkin seeds support sperm production and zinc levels</li>
+  <li>Almonds provide vitamin E → antioxidant support</li>
+  <li>May improve fertility and testicular health</li>
+</ul>
+<hr>
+
+<h3>🌿 3. Ginseng & Fenugreek Seed Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp dried ginseng root</li>
+  <li>½ tsp fenugreek seeds</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep ginseng and fenugreek seeds in hot water for 10 minutes. Strain and sip once daily.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Ginseng boosts sperm motility and vitality</li>
+  <li>Fenugreek supports testosterone levels</li>
+  <li>May enhance overall reproductive health</li>
+</ul>
+<hr>
+
+<h3>🧄 4. Garlic & Olive Oil Massage (External)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>1 tbsp extra virgin olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Warm olive oil with garlic for 5 minutes. Strain and gently massage the scrotal area 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves blood circulation to testes</li>
+  <li>Olive oil nourishes skin and tissues</li>
+  <li>May support sperm production and tissue health</li>
+</ul>
+<hr>
+
+<h3>🍋 5. Lemon & Carrot Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 medium carrot (fresh)</li>
+  <li>½ lemon, juiced</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Juice carrot and lemon together. Drink in the morning 2–3 times a week.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Carrots provide beta-carotene → supports testicular tissue health</li>
+  <li>Lemon adds antioxidants → reduces oxidative stress</li>
+  <li>May improve hormonal balance and reproductive function</li>
+</ul>
+
+</section>
+     </main>
+
+  <footer>
+    <p>🌿"The endocrine system whispers what the body must shout — balance, growth, and transformation begin within."💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+  
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html">Endocrine System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>

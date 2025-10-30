@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Sage plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Sage Plants That Support Endocrine Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html"   class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo endo indoor Sage(salivia officinalis) ani.jpeg"  style= " width:250px; height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Sage (Salvia officinalis).jpeg" 
+ style="width:250px; height:250px; float:right;">
+
+ <h2 id="intro">🪴The Introduction of Sage plant</h2>
+  <p>Sage (Salvia officinalis), a perennial evergreen herb from the mint family, is celebrated for its aromatic silvery-green leaves and vibrant purple-blue flowers. Native to the Mediterranean, it has long been valued for both culinary and medicinal uses, thriving in gardens and containers worldwide. Its name, derived from the Latin *salvare* (“to heal”), reflects its ancient role in traditional medicine and spiritual practices. Botanically, sage features woody stems and fragrant leaves with earthy, peppery notes, making it a staple in Mediterranean cuisine—especially for seasoning meats, soups, and sauces. Its flowers attract pollinators, adding ecological charm to its practical appeal.
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo indoor Sage(salivia officinalis) history.jpeg"  style="width:250px; height:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Sage plant</h3>
+
+    <h3>🏛️ Ancient Mediterranean Origins</h3>
+<p>
+The sage plant (Salvia officinalis) has its roots in the Mediterranean region, where it grew wild along rocky hillsides and sunlit slopes. Ancient civilizations quickly recognized its value, both as a medicinal herb and a culinary seasoning. The Greeks and Romans considered sage sacred and used it not only for cooking but also for healing and ritual purposes. The Latin word salvare, meaning “to heal” or “to save,” gave sage its botanical name, reflecting the plant’s strong association with health and preservation.
+    </p>
+    <h3>⚕️ Role in Ancient Medicine</h3>
+<p>
+In ancient Greek medicine, sage was highly regarded for its ability to treat wounds, reduce inflammation, and promote longevity. Greek physicians, including the famous Dioscorides and Hippocrates, recommended sage for digestive problems, sore throats, and memory improvement. The Romans also prized sage, using it to prepare tonics, teas, and poultices. Roman healers believed it could ward off evil spirits and cure almost any ailment, which earned sage a reputation as a “miracle herb.”
+    </p>
+    <h3>✝️ Sage in the Middle Ages</h3>
+<p>
+During the Middle Ages, sage became one of the most important herbs in European herbal medicine. Monks cultivated sage in monastery gardens, recording its countless benefits in herbal manuscripts. It was believed to strengthen memory, aid fertility, and protect against the plague. A famous medieval saying even declared: “Why should a man die when sage grows in his garden?”—emphasizing its importance for health and longevity. Sage was also a key ingredient in “Four Thieves Vinegar,” a herbal tonic said to protect people from deadly diseases.
+    </p>
+    <h3>🌍 Spread Through Trade and Exploration</h3>
+<p>
+As global trade expanded, sage traveled beyond Europe and the Mediterranean. Traders and explorers carried sage seeds and dried leaves to Asia, Africa, and the Americas, where it quickly integrated into local healing practices and cuisines. The Chinese were so impressed with sage’s medicinal power that they reportedly traded three chests of Chinese tea for just one chest of European sage leaves during the 17th century. This exchange highlights the esteem in which sage was held worldwide.
+    </p>
+    <h3>🪶 Sage in Indigenous Traditions</h3>
+<p>
+In Native American traditions, sage held deep spiritual meaning. White sage (Salvia apiana), a close relative of common sage, was and still is used in sacred rituals such as smudging, where dried sage bundles are burned to purify spaces, cleanse the spirit, and drive away negative energy. These practices continue to this day, showing sage’s enduring cultural and spiritual significance across continents.
+    </p>
+    <h3>🧪 Sage in Modern Times</h3>
+<p>
+In modern times, sage remains a cherished herb in both culinary arts and herbal medicine. Scientists have studied its properties and found that sage contains essential oils, flavonoids, and compounds with strong antioxidant, antimicrobial, and anti-inflammatory effects. It is now recognized for its ability to support cognitive function, oral health, digestion, and overall wellness. Culinary traditions also continue to celebrate sage, especially in Mediterranean, Italian, and American cuisines, where it flavors meats, sauces, and festive dishes.
+    </p>
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo indoor Sage(salivia officinalis) growing.jpeg" style= "  width:250px; height:250px; float:right;">
+    <h3 id="growing">🌿How to Grow</h3>
+
+  <h3>☀️ Ideal Growing Conditions</h3>
+<p>
+Sage thrives best in warm, sunny climates where it can receive at least 6 to 8 hours of direct sunlight daily. Being native to the Mediterranean, it prefers a dry, warm environment and does not tolerate excessive humidity or waterlogged soil. A location with good airflow is ideal to prevent fungal problems. Sage can also be grown indoors near a bright, sunny window if outdoor space is limited.
+  </p>
+  <h3>🧬 Propagation Methods</h3>
+<p>
+There are several ways to propagate sage, including seeds, cuttings, and division. While seeds can be sown directly into the soil, they germinate slowly, often taking two to three weeks. Gardeners often prefer cuttings taken from established sage plants, as they root more quickly and produce healthy clones of the parent plant. Division of mature sage clumps is another effective method, especially for rejuvenating older plants.
+  </p>
+  <h3>🌾 Soil Preparation</h3>
+<p>
+Sage grows best in well-drained, sandy or loamy soil with a neutral to slightly alkaline pH (6.0–7.5). Heavy clay soils should be improved by adding sand, compost, or organic matter to increase drainage. Preparing raised beds or planting in containers with drainage holes also ensures the roots don’t sit in excess moisture. Good soil preparation is essential for long-term growth, as sage is a perennial plant that can live for several years.
+  </p>
+  <h3>💧 Watering and Maintenance</h3>
+<p>
+Young sage plants need consistent moisture until they are well established. Once mature, sage is drought-tolerant and requires only moderate watering. It’s important to allow the soil to dry out between waterings, as overwatering can lead to root rot. Regular pruning of leaves and stems helps maintain a bushy shape and encourages new growth. Removing flower buds before they bloom also extends the life of the plant, since flowering can reduce leaf production.
+  </p>
+  <h3>🚫 Managing Growth and Spread</h3>
+<p>
+Although sage is not as invasive as some other herbs, it can grow into a large woody shrub if left unmanaged. Trimming back the plant each spring and summer prevents it from becoming leggy and encourages fresh, tender leaves. If multiple sage plants are grown, they should be spaced about 18 to 24 inches apart to ensure good air circulation and prevent overcrowding. Companion planting with rosemary, thyme, or oregano also benefits sage by reducing pests and diseases.
+  </p>
+  <h3>✂️ Harvesting Tips</h3>
+<p>
+Sage leaves can be harvested once the plant is well established, usually after the first year of growth. The best time to harvest is in the morning after the dew has dried, as this is when the essential oils are most concentrated. Leaves should be cut sparingly at first, never taking more than one-third of the plant at a time to allow for regeneration. Fresh leaves can be used immediately in cooking, or they can be dried and stored for later use, retaining both flavor and medicinal properties.
+</p>
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo endo indoor Sage(salivia officinalis) benefits.jpeg"  style= "  width:250px; height:250px; float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Sage plant</h3>
+    <ul>
+
+      <li><b> 🧠 Enhances Memory and Cognitive Function:</b>
+
+Sage has long been called the “herb of remembrance.” Modern studies suggest that its compounds, such as rosmarinic acid and flavonoids, can improve memory, focus, and overall brain health. It is being researched for its potential in supporting individuals with Alzheimer’s disease and age-related cognitive decline.</li>
+
+      <li><b> 🦠 Powerful Antioxidant Properties:</b>
+
+Rich in antioxidants like carnosol and rosmarinic acid, sage helps neutralize free radicals in the body. This protective effect reduces oxidative stress, lowers the risk of chronic diseases, and slows down premature aging of cells.</li>
+
+      <li><b> 🦷 Supports Oral Health:</b>
+
+Sage has strong antimicrobial and antibacterial properties, making it an excellent natural remedy for oral care. Gargling with sage tea or using sage mouthwash helps relieve sore throats, reduce gum inflammation, and combat mouth ulcers or bad breath.</li>
+
+      <li><b>🩸 Helps Regulate Blood Sugar Levels:</b>
+
+Research shows that sage may help lower blood glucose by improving insulin sensitivity. Regular consumption of sage tea has been linked to better blood sugar control, making it a helpful herb for managing type 2 diabetes.</li>
+
+<li><b> 🤒 Boosts Immunity:</b>
+
+Thanks to its antibacterial, antiviral, and anti-inflammatory compounds, sage strengthens the immune system. Drinking sage tea during colds or flu helps relieve symptoms such as congestion, sore throat, and fever, while also speeding up recovery.</li>
+
+      <li><b> 🌸 Eases Menopausal Symptoms:</b>
+
+Sage is known to reduce hot flashes, night sweats, and mood swings associated with menopause. Its natural compounds act in a hormone-balancing way, making it a gentle remedy for women going through hormonal transitions.</li>
+
+      <li><b>💧 Improves Digestion:</b>
+
+Traditionally, sage has been used as a digestive aid. It stimulates the secretion of digestive enzymes, reduces bloating, gas, and indigestion, and calms stomach discomfort. A warm cup of sage tea after meals can greatly improve digestive health.</li>
+
+      <li><b>💆‍♀️ Reduces Inflammation and Pain:</b>
+
+Sage contains anti-inflammatory compounds that help reduce swelling and ease pain. It is particularly useful for people suffering from arthritis, sore muscles, or inflamed joints. Both sage tea and topical applications (sage oil or compresses) can provide relief.</li>
+
+      <li><b> 💇‍♀️ Promotes Healthy Skin and Hair:</b>
+
+The antimicrobial and antioxidant qualities of sage make it beneficial for the skin. It can help treat acne, minor wounds, and skin infections. In hair care, sage rinses are used to strengthen hair, reduce dandruff, and restore natural color to graying hair.</li>
+
+      <li><b> 😌 Relieves Stress and Anxiety:</b>
+
+The soothing aroma of sage, especially when used as incense or in tea, promotes calmness and relaxation. Its compounds interact with the nervous system, reducing tension, nervousness, and mild depression.</li>
+
+      <li><b> ❤️ Supports Heart Health:</b>
+
+By improving circulation, lowering cholesterol levels, and reducing oxidative stress, sage contributes to better cardiovascular health. Its compounds help protect blood vessels and reduce the risk of heart-related conditions.</li>
+
+      <li><b> 🦴 Strengthens Bones:</b>
+
+Sage contains vitamin K, which plays a vital role in maintaining bone density and strength. Regular use of sage in the diet may help prevent conditions like osteoporosis.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>❤️“Sage is not just a herb for flavor—it is a leaf of wisdom, a healer of the body, and a purifier of the soul.”</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html"  class="footer-button"> Back to Plants</a>
+
+
+</footer>
+</body>
+</html>

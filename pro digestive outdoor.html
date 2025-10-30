@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Digestive Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Outdoor Plants That Support Digestive Health:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html" class="footer-button">Indoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\outdoor digestive.jpeg" alt="Assorted digestive-friendly outdoor plants" class="falling-image">
+   <a href="#Turmeric">Indian Gooseberry (Amla)</a>
+    <a href="#Peppermint">Peppermint</a>
+    <a href="#Triphala">Triphala</a>
+    <a href="#Slippery Elm">Slippery Elm</a>
+    <a href="#Marshmallow Root">Marshmallow Root</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴 Digestive Allies in Your Living Space</h2>
+    <p>Outdoor plants can be powerful digestive allies when brought into or used around your living space. While we often think of indoor herbs or supplements for digestion, many outdoor plants offer natural compounds that support gut health, ease digestive discomfort, and enhance overall wellness. Here’s how they function as digestive allies.</p>
+</div> 
+<!--Indian Gooseberry (Amla)-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo diges outdoor amla.jpeg" style="width:250px; float:right;" class="falling-image">
+<h2 id="Turmeric">🌿1.Indian Gooseberry (Amla):</h2>
+<p>🌱Indian Gooseberry, commonly known as Amla, is a treasured fruit in traditional Indian medicine, renowned for its remarkable healing potential. It is small, green, and sour in taste, but packed with essential nutrients, particularly vitamin C, which plays a key role in immune support, skin rejuvenation, and metabolic balance. Amla has been used for centuries in Ayurveda for its cooling and detoxifying properties, helping to balance all three doshas—Vata, Pitta, and Kapha. It supports healthy digestion by stimulating gastric juices and promoting nutrient absorption, while also acting as a gentle laxative. Beyond digestion, Amla is known for its ability to purify the blood, enhance liver function, and promote healthier skin and hair. Its antioxidant-rich profile helps combat oxidative stress, making it a natural defense against premature aging and chronic conditions. Widely consumed in forms such as juice, powder, or dried pieces, Indian Gooseberry continues to be an integral part of wellness routines in India and around the world.</p>
+<h1 style="left-padding:0px;">🔹 Indian Gooseberry – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li> 🍃 Helps soothe inflammation in the intestinal lining and supports gut healing.</li>
+<li>🍊 Acts as a natural remedy for diarrhea, dysentery, and irritable bowel symptoms.</li>
+<li>🌿 Enhances digestive efficiency and helps maintain bowel regularity.</li>
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor amla.html" class="plant-button">Learn More About Indian Gooseberry </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!--Peppermint-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\peppermint.jpeg" alt="Tulsi leaves on balcony" style="width:250px; float:left;">
+<h2 id="Peppermint">🌿2.Peppermint:</h2>
+<p>🌱Peppermint is highly valued for its soothing effect on the digestive system. It relaxes the muscles of the gastrointestinal tract, helping to relieve symptoms like bloating, gas, and abdominal cramps. Its menthol content has antispasmodic properties that ease irritable bowel syndrome (IBS) and indigestion.</p>
+<h1 style="left-padding:0px;">🔹Peppermint– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🦷Naturally combats bad breath and is commonly used in oral hygiene products.</li>
+      <li>🌬️Acts as a natural decongestant and can help relieve sinus congestion and coughs.</li>
+      <li>🌿The aroma has calming effects and may help reduce anxiety and mental fatigue.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor mint.html" class="plant-button">Explore Peppermint Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Triphala -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\triphala.jpeg" alt="Aloe Vera succulent" style="width:250px; float:right;">
+<h2 id="Triphala">🌿3.Triphala</h2>
+<p>🌱Triphala, a traditional Ayurvedic herbal blend of three fruits—Amla, Haritaki, and Bibhitaki—is widely used to support digestive health. It acts as a gentle laxative, promoting regular bowel movements and cleansing the digestive tract. Triphala balances the gut microbiome, reduces acidity, and strengthens overall digestive function.</p>
+<h1 style="left-padding:0px;">🔹 Triphala – Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      <li>🛡️Rich in antioxidants (especially from Amla), it helps strengthen the immune system.</li>
+      <li>🧬Protects cells from oxidative stress and reduces inflammation in the body.</li>
+      <li>👀Amla in Triphala is rich in vitamin C and supports healthy vision.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro triphala digestive outdoor.html" class="plant-button"> Triphala Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!-- slippery elm -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\lemongrass.jpeg" style="width:250px; float:left;">
+<h2 id="Slippery Elm">🌿4. Slippery Elm</h2>
+<p>🌱Slippery Elm (Ulmus rubra) is a tree native to North America. The inner bark of this tree is known for its medicinal properties. When mixed with water, it forms a slippery gel-like substance called mucilage, which helps in soothing sore throats, coughs, and digestive problems like acidity, ulcers, and constipation. It is also used for healing wounds, burns, and skin irritation. Slippery elm is available in the form of powder, capsules, tea, and ointment.</p>
+<h1 style="left-padding:0px;">🔹Slippery Elm  – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>🩺Encourages tissue repair in the stomach and intestines thanks to its protective barrier effect.</li>
+      <li>💩Acts as both a mild laxative and a bowel normalizer by coating and calming the gut lining.</li>
+      <li>😷Its slippery texture helps coat and relieve dry, scratchy throats.</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo slippery elm outdoor.html" class="plant-button">Slippery Elm Uses</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!-- Marshmallow Root -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\marshmallow roots.jpeg" alt="Carom seeds and leaves" style="width:250px; float:right;">
+<h2 id="Marshmallow Root">🌿5.Marshmallow Root:</h2>
+<p>🌱Marshmallow root is important for digestive health due to its high mucilage content, which forms a soothing, protective layer along the stomach and intestinal lining. This helps reduce inflammation, heal irritation, and protect against ulcers and acid reflux. It’s especially useful in treating conditions.</p>
+<h1 style="left-padding:0px;">🔹 Marshmallow Root – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      <li>🌿Its mucilage forms a protective layer, easing inflammation and irritation</li>
+      <li>🧴Reduces redness and irritation</li>
+      <li>💧May support female health</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor marshmallow root.html" class="plant-button">Marshmallow Root</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer>
+  “Outdoor plants don’t just sit pretty—they’re gut’s green gang, silently boosting digestion while looking like botanical influencers.” 🪴💚
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

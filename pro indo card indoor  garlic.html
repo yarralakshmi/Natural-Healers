@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Garlic (Allium sativum)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Garlic Plants That Support Cardiovascular Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Garlic ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Garlic.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿 Introduction to Garlic</h2>
+<p>🧄 Garlic (<i>Allium sativum</i>) is one of the oldest cultivated plants in human history, revered for both its culinary and medicinal properties. Native to Central and South Asia, garlic has been used for over 5,000 years, with archaeological evidence tracing its presence to ancient Egypt, Babylon, and China. It was domesticated during Neolithic times and spread through trade routes to the Middle East, Africa, and Europe. Ancient Egyptians fed garlic to pyramid builders for strength, while Greeks and Romans used it for healing, protection, and even spiritual rituals. In Asia, garlic was often valued more for its medicinal power than its flavor. Today, garlic remains a global staple—celebrated for its bold taste, heart-protective compounds, and immune-boosting antioxidants. Its journey from sacred tombs to modern kitchens reflects its enduring legacy as both food and medicine.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Garlic history.jpeg" style="width:250px; height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Garlic</h2>
+ 
+<h3>🌱 Origins and Botanical Background</h3>
+<p>Garlic (<i>Allium sativum</i>) is a bulbous flowering plant belonging to the Amaryllidaceae family. Native to Central and South Asia, garlic has been cultivated for over 5,000 years and is considered one of the oldest known horticultural crops. It grows from a segmented bulb and produces tall flowering stalks with pink to purple blooms. Garlic thrives in temperate climates and is closely related to onions, leeks, and chives. Its pungent aroma and medicinal potency come from sulfur-containing compounds like allicin, which are released when the cloves are crushed or chopped.</p>
+
+<h3>🕊️ Ancient Use in Healing Traditions</h3>
+<p>Garlic has held a revered place in ancient healing systems across civilizations. In Egypt, garlic was fed to pyramid builders to enhance strength and endurance, and it was placed in the tomb of Pharaoh Tutankhamun as a symbol of vitality. Greek and Roman physicians used garlic to treat infections, respiratory issues, and digestive disorders. In traditional Chinese and Indian medicine, garlic was valued for its warming properties and used to balance internal energies, treat colds, and support heart health. Its reputation as a natural antibiotic and immune booster has persisted through centuries.</p>
+
+<h3>🏛️ Recognition in Folk and Regional Medicine</h3>
+<p>Garlic became a staple in folk medicine across Europe, the Middle East, and Asia. In medieval Europe, it was believed to ward off evil spirits and plagues. In Unani and Siddha systems, garlic was used to treat joint pain, skin conditions, and digestive imbalances. Buddhist traditions, however, avoided garlic due to its stimulating nature. Across cultures, garlic was used in poultices, tinctures, and decoctions to treat wounds, infections, and chronic ailments, earning it a reputation as a “cure-all” in village medicine.</p>
+
+<h3>🌍 Spread and Exchange of Herbal Knowledge</h3>
+<p>Garlic’s journey through history was shaped by trade and migration. From its origins in Central Asia, garlic spread to Mesopotamia, Egypt, and the Mediterranean via ancient trade routes. Indian merchants introduced garlic to Babylonian and Assyrian cultures around 3000 BCE. Its popularity grew in Greece and Rome, where it was used in both culinary and medicinal contexts. Over time, garlic became embedded in traditional medicine systems across Asia, Africa, and Europe, contributing to a shared legacy of herbal wisdom.</p>
+
+<h3>🏡 Role in Daily Life and Agriculture</h3>
+<p>Garlic has long been a part of rural life, cultivated in home gardens and small farms for both food and medicine. Its hardy nature and pest-repelling properties made it a valuable companion plant in agriculture. Garlic bulbs were traded in local markets and used in seasonal remedies for colds, fatigue, and digestive issues. In many cultures, garlic was hung in homes for protection and planted near crops to deter insects, reflecting its practical and symbolic significance.</p>
+
+<h3>🌟 Modern-Day Research and Applications</h3>
+<p>Today, garlic is widely studied for its health benefits, including cardiovascular support, antimicrobial activity, and cancer-preventive potential. Modern supplements often contain aged garlic extract or standardized allicin for targeted therapeutic use. Scientific interest continues to grow around garlic’s role in lowering blood pressure, improving cholesterol levels, and enhancing immune function. As one of the most researched medicinal plants, garlic remains a cornerstone of natural wellness and integrative medicine.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Garlic growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+ 
+
+<h3>☀️ Ideal Growing Conditions</h3>  
+<p>Garlic (<i>Allium sativum</i>) thrives in temperate climates with cool winters and warm, dry summers. It prefers full sun exposure—at least 6 to 8 hours daily—and benefits from a cold period to initiate bulb development. In India, garlic is typically grown as a rabi crop (October–November), though it can also be cultivated during the kharif season in certain regions. Garlic performs best in areas with moderate humidity and well-defined seasonal changes, avoiding extremes of heat or frost.</p>
+
+<h3>🧬 Propagation Methods</h3>  
+<p>Garlic is propagated vegetatively using individual cloves from healthy, disease-free bulbs. Each clove is planted root-side down, about 2 inches deep and spaced 4–6 inches apart. Hardneck and softneck varieties differ in climate adaptability—hardneck types are better suited for colder regions, while softneck varieties thrive in milder zones. Garlic should be planted 6–8 weeks before the first frost to allow root establishment before winter dormancy.</p>
+
+<h3>🌾 Soil Preparation</h3>  
+<p>Garlic prefers loose, well-drained loamy soil with a neutral pH between 6.0 and 7.5. Heavy clay or waterlogged soils should be avoided. Before planting, enrich the soil with aged compost or organic manure. Raised beds or containers with good drainage are ideal for small-scale cultivation. Adding bone meal or potassium-rich fertilizer can enhance bulb size and overall yield.</p>
+
+<h3>💧 Watering and Maintenance</h3>  
+<p>Garlic requires consistent moisture during its active growth phase, especially in spring. Water deeply but infrequently to avoid soggy conditions that can lead to root rot. Mulching with straw or organic material helps retain moisture, suppress weeds, and insulate the soil during cold months. Avoid watering in the final weeks before harvest to allow bulbs to cure naturally.</p>
+
+<h3>🚫 Managing Growth and Spread</h3>  
+<p>Garlic does not spread aggressively, but proper spacing is essential to prevent overcrowding and disease. Monitor for pests such as onion maggots and fungal issues like rust. Crop rotation and organic pest control methods help maintain soil health and reduce disease pressure. Removing garlic scapes (flower stalks) from hardneck varieties redirects energy to bulb development.</p>
+
+<h3>✂️ Harvesting Tips</h3>  
+<p>Garlic is typically harvested in summer when the lower leaves begin to yellow and dry. Use a garden fork to gently lift bulbs from the soil, avoiding bruising. Cure harvested bulbs by laying them out in a dry, shaded area with good airflow for 2–3 weeks. Once cured, trim roots and stalks, and store bulbs in a cool, dark place. Properly cured garlic can last for several months and be replanted for the next season.</p>
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Garlic benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul>
+
+<li><b>🩺 Cardiovascular Support:</b> Helps lower blood pressure and cholesterol levels, reducing the risk of heart disease and improving circulation.</li>
+<li><b>🛡️ Immune System Boost:</b> Strengthens immunity by stimulating white blood cells and fighting off infections, especially during cold and flu seasons.</li>
+<li><b>🧼 Natural Detoxification:</b> Supports liver function and helps flush out toxins and heavy metals from the body.</li>
+<li><b>🧠 Brain Health Protection:</b> Rich in antioxidants like S-allyl cysteine that protect brain cells and may reduce the risk of neurodegenerative diseases.</li>
+<li><b>🍽️ Digestive Wellness:</b> Acts as a prebiotic, feeding beneficial gut bacteria and improving digestion and nutrient absorption.</li>
+<li><b>🧬 Blood Sugar Regulation:</b> Helps lower fasting blood sugar levels and improve insulin sensitivity, supporting diabetes management.</li>
+<li><b>🦠 Natural Antibiotic:</b> Contains allicin, a compound with proven antimicrobial properties that help fight bacteria and viruses.</li>
+<li><b>🔥 Anti-inflammatory Action:</b> Reduces inflammation throughout the body, easing joint pain and supporting overall wellness.</li>
+<li><b>💪 Athletic Performance:</b> Traditionally used to reduce fatigue and enhance physical endurance, especially in ancient cultures.</li>
+<li><b>🌿 Cancer-Fighting Potential:</b> Some studies suggest garlic compounds may help reduce the risk of certain cancers by protecting cells from damage.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿Since garlic then hath powers to save from death, bear with it though it makes unsavory breath✨💚."</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

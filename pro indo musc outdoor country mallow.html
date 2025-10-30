@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Country Mallow Plants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Country Mallow Plants That Support Muscular Health:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc outdoor country mallow ani.jpeg"  style= " width:250px;height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo muscular outdoor country mallow.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌼 Country Mallow (Sida cordifolia) – Introduction</h2>
+<p>Country Mallow is a hardy, velvety herbaceous plant or small undershrub that grows up to 2 meters tall. Native to India, Sri Lanka, and tropical Asia, it thrives in sandy soils, roadsides, and open woodlands. In Ayurveda, it’s revered as Balya—a strength-promoting herb—and is part of the Balatraya trio (Bala, Atibala, Nagbala). Its name “Bala” literally means “strength,” reflecting its rejuvenating effects on the muscular and nervous systems.
+The plant features heart-shaped leaves, yellow flowers, and soft white hairs that give it a flannel-like texture. Its roots, leaves, seeds, and oil are all used medicinally. Country Mallow contains alkaloids, flavonoids, mucilage, and ephedrine-like compounds, contributing to its wide therapeutic range.
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc outdoor country mallow history.jpeg"  style="width:250px; height:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Country Mallow </h3>
+
+
+<h3>🌱 Ancient Roots & Ayurvedic Beginnings</h3>  
+<p>Country Mallow, known scientifically as <em>Sida cordifolia</em>, is native to the Indian subcontinent and parts of Southeast Asia. It thrives in tropical and subtropical climates, often found growing wild in grasslands, roadsides, and forest edges. In Ayurveda, it’s called <em>Bala</em>, meaning “strength,” and has been revered for over 2,000 years as a tonic for vitality and rejuvenation. Ancient healers classified it among the <em>Brihmaneeya</em> group—herbs that nourish and fortify the body. Its use was deeply embedded in seasonal rituals, especially during monsoon ailments and postpartum recovery.</p>
+
+<h3>🌸 Healing Lore & Folk Traditions</h3>  
+<p>In traditional Indian medicine, Bala was a cornerstone herb for treating respiratory issues, inflammation, and nervous disorders. Its roots and leaves were boiled into decoctions to ease asthma and joint pain, while its oil was massaged into the skin to restore muscle tone and treat paralysis. Folk healers in rural India used it in balms for wound healing and in teas to calm anxiety. In Brazil and parts of Africa, where it later naturalized, it became a remedy for oral inflammation and bronchial congestion, often passed down through generations as a trusted household cure.</p>
+
+<h3>💮 Symbolism & Traditional Names</h3>  
+<p>Country Mallow carries many names: <em>Bala</em> in Sanskrit, <em>Kharayati</em> in Punjabi, <em>Kurunthotti</em> in Tamil, and <em>Flannel Weed</em> in English. Its heart-shaped leaves inspired the Latin name <em>cordifolia</em>, meaning “heart-leaved.” Symbolically, it represents resilience and gentle strength—its soft, velvety hairs protecting a robust medicinal core. In Ayurvedic texts, it’s associated with balance and nourishment, often invoked in rituals for healing and vitality.</p>
+
+<h3>🌏 Pathways Through Cultures & Continents</h3>  
+<p>With the spread of Ayurveda through trade and colonial exploration, Country Mallow found its way to Africa, the Americas, and Southeast Asia. Portuguese and British botanists documented its uses in the 18th century, noting its ephedrine content and adaptogenic properties. In Brazil, it became known as <em>malva branca</em> and was integrated into folk medicine for respiratory and reproductive health. Its global journey transformed it from a regional tonic into a cross-cultural botanical ally, embraced by herbalists and healers worldwide.</p>
+
+<h3>🌼 Modern Recognition & Global Cultivation</h3>  
+<p>Today, Country Mallow is cultivated in India, Sri Lanka, and tropical regions across the globe. Scientific studies have confirmed its anti-inflammatory, analgesic, and immunomodulatory effects, thanks to compounds like ephedrine, vasicinone, and β-sitosterol. It’s now featured in herbal oils, teas, and supplements aimed at boosting energy, reducing pain, and calming the nervous system. While its wild populations are monitored for sustainability, its legacy continues—bridging ancient Ayurvedic wisdom with modern holistic wellness.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc outdoor country mallow growing.jpeg"  style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3> 🏞️ Climate and Location</h3>
+
+<p>Country Mallow (*Sida cordifolia*), known as “Bala” in Ayurveda, grows best in warm tropical and subtropical climates. It is commonly found in open fields, roadside areas, and dry wastelands. The plant prefers temperatures between 25°C to 35°C and thrives under full sunlight. While it can tolerate dry conditions, it performs well in areas with moderate rainfall and seasonal warmth.</p>
+
+<h3>🌍 Soil Requirements</h3>
+
+<p>This hardy medicinal herb grows in a wide range of soil types, including sandy, loamy, and slightly clayey soils. However, well-drained, moderately fertile soil with good aeration ensures optimal growth. Country Mallow can also tolerate poor and nutrient-depleted soils, making it an ideal choice for semi-arid regions. Avoid planting it in waterlogged or excessively moist areas.</p>
+
+<h3>🌱 Propagation Through Seeds</h3>
+
+<p>Country Mallow is commonly propagated through seeds. Mature seeds should be collected from dried seed capsules and can be sown directly into prepared beds or pots. For better germination, seeds can be soaked in water for 12–24 hours before sowing. Sow the seeds about 1 cm deep in moist soil; they typically germinate within 7 to 14 days under warm conditions.</p>
+
+<h3>🌿 Transplanting Seedlings</h3>
+
+<p>Once seedlings reach a height of 10 to 15 cm and develop a few healthy leaves, they can be carefully transplanted to the main growing area. Transplanting is best done during early monsoon or after light rains, which helps establish roots. Maintain a spacing of about 30 to 45 cm between plants to allow bushy growth and prevent overcrowding.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Country Mallow requires minimal maintenance and is drought-tolerant once established. Watering is essential during the early stages of growth, especially in dry conditions. Mature plants need only occasional watering. Light pruning helps in managing the shape and promoting new shoots. Occasional application of compost or organic manure improves plant health and productivity.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+
+<p>This resilient herb is generally resistant to pests and diseases. However, in overly humid conditions, it may occasionally suffer from fungal infections or aphid attacks. These issues can be managed using neem-based sprays or organic pest control solutions. Its hardy nature and adaptability make Country Mallow an excellent choice for traditional herbal gardens and low-maintenance plantations.
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc outdoor country mallow benefits.jpeg"   style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul><li>💪 Boosts strength and stamina – Acts as a powerful rejuvenating tonic in Ayurveda.</li>
+<li>🧠 Supports nervous system – Nourishes and calms nerves, helpful in neurological disorders.</li>
+<li>🔥 Reduces inflammation – Contains anti-inflammatory properties for joint and muscle pain.</li>
+<li>❄️ Cools the body – Balances the Vata dosha and provides a natural cooling effect.</li>
+<li>🫁 Eases breathing – Beneficial in respiratory issues like asthma and bronchitis.</li>
+<li>⚡ Fights fatigue – Revitalizes body energy and combats physical exhaustion.</li>
+<li>🩹 Promotes wound healing – Used topically to treat skin wounds and inflammation.</li>
+<li>💓 Improves heart function – Traditionally used to strengthen heart tissues.</li>
+<li>🧬 Acts as an antioxidant – Protects cells from oxidative stress and aging.</li>
+<li>🛡️ Enhances immunity – Builds natural resistance against infections and weakness.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"Let your strength rise from within — like Country Mallow heals and energizes, build your power with calm and resilience." 🌿💪</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Tuberose (Rajnigandha) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Tuberose Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha) ani.jpeg"      style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha).jpeg"       style="width:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌼 Introduction to Tuberose (Rajnigandha)</h2>
+
+<p>Tuberose, commonly known as Rajnigandha in India and scientifically named Polianthes tuberosa, is a night-blooming perennial plant cherished for its intoxicating fragrance and elegant white flowers. Native to Mexico but widely cultivated in tropical and subtropical regions, Tuberose has become an essential part of floral decorations, perfumes, and religious offerings in many cultures. Its tall flower spikes adorned with waxy, star-shaped blooms make it a graceful presence in gardens and floral arrangements. Known for blooming after sunset, Rajnigandha is often associated with peace, sensuality, and spiritual purity.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha) history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Tuberose</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+
+<p>Tuberose, scientifically named Polianthes tuberosa, is a perennial flowering plant native to Mexico and parts of Central America. Despite the name, it is not related to the rose family. It belongs to the Asparagaceae family and is known for its tall spikes of waxy, white, and highly fragrant flowers. The name "Rajnigandha" is derived from Sanskrit, meaning "fragrance of the night," which reflects its strong, sweet scent that becomes more intense after sunset. It has been valued for centuries both for its beauty and its captivating fragrance.</p>
+
+<h3>🕊️ Ancient Cultivation and Traditional Use</h3>
+
+<p>In its native regions of Mexico, tuberose was cultivated by indigenous communities long before European contact. It was appreciated for its ornamental beauty and possibly used in ceremonial contexts due to its powerful fragrance. Although there is limited written documentation of its earliest cultural uses, its widespread presence in temple and garden spaces suggests that it held spiritual or symbolic significance.</p>
+
+
+<h3>🏛️ Introduction to Europe and Asia</h3>
+
+<p>Tuberose was introduced to Europe by Spanish explorers during the 16th century and quickly became popular in Mediterranean countries. In France, particularly in the town of Grasse, it became a prized flower for the emerging perfume industry due to its exotic and intense aroma. By the 18th and 19th centuries, tuberose reached Asia, where it was warmly embraced in countries like India. There, it was given the name Rajnigandha and became deeply embedded in cultural, religious, and social traditions.</p>
+
+<h3>🌍 Cultural Importance in India and the World</h3>
+
+<p>In India, Rajnigandha gained cultural significance and became a symbol of devotion, elegance, and purity. Its fragrant blossoms are commonly used in weddings, religious rituals, and festive celebrations. It is often woven into garlands, offered in temples, and worn as hair adornments. Beyond India, tuberose is used in Pacific Island cultures for leis and ceremonial decorations. Its powerful scent and pure white appearance have given it a universal appeal across continents and cultures.</p>
+
+<h3>🏡 Role in Perfume and Commercial Cultivation</h3>
+
+<p>Tuberose is one of the most important flowers in the global perfume industry. Its rich, creamy scent is used in some of the world’s most iconic fragrances. Essential oils extracted from tuberose flowers are known for their deep, floral, and slightly spicy notes. The plant is cultivated commercially in India, Egypt, Morocco, and China for both the floral and fragrance markets. It is also grown by home gardeners for its ornamental value and its unique ability to scent the evening air.</p>
+
+<h3>🌟 Modern-Day Popularity and Horticultural Appeal</h3>
+
+<p>Today, tuberose continues to be a popular choice in gardens, bouquets, and floral arrangements around the world. Its long-lasting blooms and intoxicating scent make it a favorite in both traditional and modern floral designs. With single and double-petaled varieties now available, it appeals to a wide range of tastes. Though sensitive to cold, it thrives in warm, sunny climates and is often grown in pots or beds where its scent can be enjoyed up close during the evening hours.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha) growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>
+
+<p>Tuberose prefers a warm and sunny environment for optimal growth and flowering. It thrives best in regions with mild winters and long summers. The plant needs at least five to six hours of direct sunlight each day to produce healthy blooms. It does not tolerate frost, so it is typically planted in spring once the danger of cold weather has passed. Good air circulation also supports disease-free growth.
+</p>
+
+<h3>🧬 Propagation Methods</h3>
+
+<p>Tuberose is mainly propagated through its bulbs or tubers rather than seeds. Healthy, disease-free bulbs are planted at the beginning of the growing season. Each bulb produces a flowering stalk and, over time, can multiply into a cluster of new bulbs. To propagate, old bulbs are dug up after the flowering season, and the smaller offsets are separated and stored in a cool, dry place until replanting.
+</p>
+
+<h3>🌾 Soil Preparation</h3>
+
+<p>Tuberose requires well-drained, fertile soil enriched with organic matter. Before planting, the soil should be loosened to a depth of 10 to 12 inches and mixed with compost or aged manure. It prefers a slightly acidic to neutral pH. Heavy clay soils should be improved with sand or organic matter to enhance drainage, as standing water can cause the bulbs to rot.
+</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Consistent moisture is essential during the active growing and flowering period. Water the plants regularly, keeping the soil evenly moist but not soggy. Reduce watering after the flowering ends and the foliage begins to yellow. Tuberose benefits from monthly feeding with a balanced fertilizer during its growing season. Removing faded flowers can extend blooming, and trimming yellowing leaves helps keep the plant tidy.
+</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+
+<p>Tuberose is not invasive, but the bulbs do multiply over time and can crowd the planting space. To manage growth, bulbs should be dug up and divided every two to three years. This also encourages better blooming. After digging up, allow the bulbs to dry, then store them in a cool, well-ventilated space if replanting is not immediate. Managing the bulb population ensures healthier plants and avoids overcrowding.
+</p>
+
+<h3>✂️ Harvesting Tips</h3>
+
+<p>Tuberose flowers are highly valued for their fragrance and are often harvested for garlands, perfumes, and floral arrangements. Stems are best cut in the morning or late evening when the fragrance is strongest. Use sharp scissors to cut the flower spikes when a few lower buds have opened. Keep the cut stems in water to prolong freshness. Harvesting flowers also encourages the plant to produce more blooms during the season.
+</p>
+
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha) growing.jpeg"           style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of Tuberose (Rajnigandha)</h3>
+<ul>
+<li>Helps reduce stress and anxiety through its calming fragrance.</li>
+<li>Acts as a natural aphrodisiac and mood enhancer.</li>
+<li>Supports restful sleep and relaxation.</li>
+<li>Provides relief from headaches and mental fatigue.</li>
+<li>Used in aromatherapy to uplift emotional well-being.</li>
+<li>May help regulate hormonal balance.</li>
+<li>Improves skin texture when used in essential oil form.</li>
+<li>Has mild anti-inflammatory effects.</li>
+<li>Boosts circulation when used in massage oils.</li>
+<li>Helps refresh the mind and body with its soothing scent.</li>
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌸 "Be like the tuberose—radiate your essence quietly, and still leave a lasting impression."
+
+
+
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Endocrine Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Outdoor Plants That Support Endocrine Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html" class="footer-button">Indoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor.jpeg" class="falling-image">
+   <a href="#Eucalyptus"> Shatavari (Asparagus racemosus) </a>
+    <a href="#Tulsi"> Maca Root (Lepidium meyenii)</a>
+    <a href="#Thyme">Kanchanar (Bauhinia variegata) </a>
+    <a href="#Oregano">Licorice Root (Glycyrrhiza glabra) </a>
+    <a href="#Mullein">Nigella (Nigella sativa) </a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>Nature's Allies for Hormonal Harmony</h2>
+<p>Shatavari (Asparagus racemosus), Maca Root (Lepidium meyenii), Kanchanar (Bauhinia variegata), Licorice Root (Glycyrrhiza glabra), and Nigella (Nigella sativa, commonly called Kalonji) are powerful botanical allies known for their supportive roles in maintaining endocrine system balance. These plants work synergistically to nourish and regulate hormone production, enhance glandular function, and combat hormonal imbalances. Shatavari is revered in Ayurveda for supporting female reproductive health and hormone regulation, while Maca Root from the Andes is celebrated for its adaptogenic properties that boost energy, mood, and hormonal equilibrium. Kanchanar is traditionally used to support healthy thyroid function and metabolic balance. Licorice Root acts as a gentle adrenal tonic, helping to reduce stress-induced hormone disruptions, and Nigella seeds are rich in thymoquinone, which supports immune and endocrine health. Together, these herbs promote a harmonious internal environment essential for overall vitality and hormonal wellness.
+
+</p>
+</div> 
+<!--Shatavari (Asparagus racemosus)  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Shatavari .jpeg"        style="width:250px; height:250px; float:right;" class="falling-image">
+<h2 id="Eucalyptus">Whispers of Balance: Shatavari’s Gift to the Endocrine Realm</h2>
+<p>Shatavari, known botanically as Asparagus racemosus, is a revered herb in traditional wellness systems for its deep connection to hormonal harmony. It gently nourishes the endocrine glands, particularly supporting the reproductive and adrenal systems. By promoting the natural production and regulation of hormones, Shatavari helps the body adapt to physical and emotional stress, bringing stability during times of hormonal fluctuations. Its cooling, nurturing qualities make it especially beneficial for supporting menstrual and menopausal balance in women, while also fostering emotional well-being and resilience. Through consistent use, Shatavari becomes a subtle yet powerful ally in maintaining inner equilibrium and promoting long-term endocrine health.
+
+</p>
+<h1 style="left-padding:0px;">🔹Shatavari  – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>🌸 supports hormonal balance, especially in the female reproductive system</li>
+<li>🌿 nourishes adrenal glands to help the body adapt to stress</li>
+<li>🌙 promotes emotional stability and eases hormonal fluctuations</li>
+     
+
+
+
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor shatavari.html"    class="plant-button">Learn More About Shatavari</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!--- Maca Root (Lepidium meyenii)  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Maca Root .jpeg"    style="width:250px; height:250px; float:left;">
+<h2 id="Tulsi">Echoes of Vitality: Maca Root and the Rhythm of Hormonal Health</h2>
+<p>Maca Root, scientifically known as Lepidium meyenii, is a treasured plant native to the high Andes, renowned for its energizing and balancing effects on the endocrine system. It works by gently nourishing the hypothalamus and pituitary glands, which are key regulators of hormonal activity throughout the body. Rather than supplying hormones directly, Maca supports the body’s own ability to create balance, making it a natural adaptogen. This unique quality allows it to help manage stress, uplift mood, and enhance stamina and libido in both men and women. Over time, Maca Root encourages a steady rhythm within the hormonal pathways, fostering a sense of vitality, clarity, and inner strength.
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Maca Root– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      <li>🌿 supports the pituitary and hypothalamus for overall hormonal regulation</li>
+<li>⚡ enhances energy, stamina, and libido naturally in both men and women</li>
+<li>🌈 helps balance mood and emotional well-being through adaptogenic effects</li>
+
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor maca root.html"         class="plant-button">Explore Maca Root</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!--Kanchanar (Bauhinia variegata)-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Kanchanar .jpeg"    style="width:250px; height:250px; float:right;">
+<h2 id="Thyme">Silent Strength: Kanchanar’s Support for Endocrine Clarity</h2>
+<p>Kanchanar, botanically known as Bauhinia variegata, is a remarkable tree valued in traditional healing for its deep cleansing and regulating influence on the endocrine system. Especially supportive of the thyroid gland, Kanchanar helps maintain metabolic balance and addresses imbalances related to glandular swellings and sluggish hormone activity. Its purifying properties aid in the gentle removal of toxins and stagnant fluids, encouraging clearer communication between the glands and the rest of the body. By enhancing lymphatic circulation and promoting the healthy functioning of hormonal pathways, Kanchanar quietly strengthens the body's internal harmony, fostering a sense of lightness, energy, and balance.
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Kanchanar - Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>🧠 supports healthy thyroid function and metabolic balance</li>
+<li>💧 aids in reducing glandular swellings and lymphatic congestion</li>
+<li>🌿 helps in detoxifying the endocrine glands for clearer hormonal signaling</li>
+
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href= "C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor kanchanar.html"         class="plant-button"> Insights Kanchanar</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Licorice Root (Glycyrrhiza glabra) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Licorice Root .jpeg" style="width:250px; height:250px; float:left;">
+<h2 id="Oregano">Rooted in Harmony: Licorice’s Gentle Touch on the Endocrine Flow</h2>
+<p>Licorice Root, known as Glycyrrhiza glabra, is a time-honored botanical with a profound influence on the endocrine system’s balance and resilience. Its natural compounds support the adrenal glands, which play a crucial role in stress response and hormone regulation. By helping to modulate cortisol levels and sustain energy during periods of fatigue or emotional strain, Licorice Root acts as a gentle adaptogen that encourages hormonal steadiness. It also aids in preserving hormone levels by slowing their breakdown, thus extending their beneficial effects within the body. With its soothing and harmonizing nature, Licorice Root offers a grounding presence that nurtures the body's inner systems and supports a state of long-term endocrine wellness.
+
+
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Licorice Root – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>💪 supports adrenal gland function and helps manage stress-related fatigue</li>
+<li>⚖️ aids in maintaining balanced cortisol levels for hormonal stability</li>
+<li>🔥 helps soothe inflammation and supports immune-endocrine harmony</li>
+
+
+
+
+</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor Licorice Root.html"   class="plant-button">Explore Licorice Root</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--Nigella (Nigella sativa, commonly called Kalonji) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella.jpeg" style="width:250px;height:250px; float:right;">
+<h2 id="Mullein">🌿Seeds of Inner Wisdom: Nigella’s Role in Endocrine Wellness</h2>
+<p>Nigella, commonly known as Nigella sativa or Kalonji, is a revered seed with a profound impact on the endocrine system’s overall balance and vitality. Its rich blend of natural compounds works in harmony with the body's hormonal functions, supporting the resilience and clarity of internal communication among glands. Regular use of Nigella encourages hormonal stability, especially during periods of physical or emotional stress, while also aiding in metabolic regulation and immune coordination.
+</p>
+<h1 style="left-padding:0px;">🔹Nigella – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>🩸 supports balanced insulin response and healthy blood sugar levels</li>
+<li>🌿 promotes thyroid and adrenal function naturally</li>
+<li>🧘 helps regulate mood and hormonal shifts through antioxidant action</li>
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor Nigella.html" class="plant-button"> Explore Nigella</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>
+   🌱 "Just like outdoor plants thrive under sunlight, fresh air, and nurturing soil, our endocrine system flourishes with natural balance, mindful care, and connection to nature’s rhythm."
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a></footer>
+</body>
+</html>

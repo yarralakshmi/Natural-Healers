@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Ashoka (Saraca asoca)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Coleus Plants That Support Reproductive Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro  outdoor ashoka ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro  outdoor ashoka .jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Ashoka (Saraca asoca)</h2>
+
+<p>Ashoka, botanically known as Saraca asoca, is one of the most sacred and traditionally esteemed trees in India, particularly in Ayurvedic medicine. Often associated with spiritual and cultural significance, the Ashoka tree is prized for its graceful appearance and potent medicinal properties. The bark, flowers, and seeds of the tree have been widely used in Ayurvedic formulations, primarily for supporting female reproductive health. It is known to help manage menstrual disorders, promote uterine health, and maintain hormonal balance. Ashoka also exhibits anti-inflammatory and antioxidant properties, making it useful in addressing various other ailments. Found mainly in the Indian subcontinent’s evergreen forests, Ashoka continues to be an integral part of holistic healing systems.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro  outdoor ashoka history.jpeg"  style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Ashoka</h3>
+ <h3>🌿 Ancient Agricultural Use</h3> 
+<p>Ashoka (*Saraca asoca*) was not traditionally cultivated as a staple crop but held an honored place in sacred groves and temple gardens across ancient India. Its graceful appearance and evergreen foliage made it a favored tree in palace courtyards and monastery grounds. Though not used for agriculture in the conventional sense, its presence was a marker of prosperity and fertility in ancient landscapes.</p> 
+
+<h3>🌸 Traditional Healing Herb</h3> 
+<p>Ashoka has been revered in Ayurvedic medicine for over 2,000 years, especially for its profound benefits on the female reproductive system. Ancient Ayurvedic texts like Charaka Samhita and Ashtanga Hridaya describe Ashoka bark as a key remedy for menstrual disorders, excessive bleeding, and uterine health. It was often combined with other herbs in decoctions to support hormonal balance and reproductive vitality.</p> 
+
+<h3>🍀 Symbolic and Folklore Significance</h3> 
+<p>The Ashoka tree holds deep spiritual and cultural significance in Indian tradition. It is associated with love, fertility, and inner strength. In Hindu mythology, the tree is linked to Kamadeva, the god of love, and Sita is said to have spent her captivity under an Ashoka tree in the Ramayana. Because of this, it is considered a tree of hope, protection, and emotional resilience.</p> 
+
+<h3>🌎 Spread and Cultural Integration</h3> <p>While Ashoka is native to the Indian subcontinent, its reputation spread across Southeast Asia through trade, religious exchanges, and traditional healing practices. It found a place in the herbal systems of Sri Lanka, Nepal, and Myanmar, where its bark and flowers were used for similar gynecological and anti-inflammatory purposes.</p> 
+
+<h3>🧪 Modern Herbal Interest</h3> 
+<p>In modern times, Ashoka continues to be a highly valued botanical in natural health systems. Scientific interest has grown around its phytoestrogenic and anti-inflammatory properties, especially in women’s wellness products. It is now widely used in Ayurvedic supplements and skincare, bridging ancient rituals and contemporary therapeutic applications.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro  outdoor ashoka growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>🏞️ Climate and Location</h3>
+ <p>The Ashoka tree grows best in tropical and subtropical climates, flourishing in regions with warm temperatures ranging from 20°C to 35°C. It prefers high humidity and moderate rainfall. Naturally found in the shaded understory of forests, it grows well in areas that receive partial sunlight or filtered light. Planting it near walls, buildings, or other trees can help recreate its native semi-shaded environment.</p> 
+
+<h3>🌍 Soil Requirements</h3>
+ <p>Ashoka prefers fertile, well-drained soils that are rich in organic matter. Loamy soil with good moisture retention is ideal for its growth. The tree performs best in slightly acidic to neutral pH conditions and does not tolerate waterlogged or highly alkaline soils. Adding compost or leaf mulch improves soil quality and supports healthy root development.</p> 
+
+<h3>🌱 Propagation Through Seeds</h3> 
+<p>Ashoka is typically propagated through seeds, which are collected from mature pods during the fruiting season. Seeds should be sown fresh, as they lose viability quickly. Soaking them in water for 12 to 24 hours before sowing can enhance germination. Plant the seeds about 1–2 cm deep in nursery bags or beds with moist soil, and expect germination within 2 to 3 weeks under warm conditions.</p> 
+
+<h3>🌿 Transplanting Seedlings</h3> 
+<p>Seedlings can be transplanted once they reach a height of 30 to 40 cm. Transplanting is best done at the beginning of the monsoon season to ensure proper root establishment. Maintain a spacing of around 3 to 4 meters between plants. Choosing a location with partial shade helps replicate its natural habitat and supports optimal growth.</p> 
+
+<h3>💧 Watering and Maintenance</h3> 
+<p>Young Ashoka trees need regular watering, especially during dry periods, to support strong root development. As the tree matures, it becomes moderately drought-tolerant but still benefits from periodic watering in summer. Applying mulch around the base helps retain moisture and control weeds. Pruning is generally not required except to remove damaged or overcrowded branches.</p> 
+
+<h3>🛡️ Pest and Disease Resistance</h3> 
+<p>Ashoka is relatively hardy and resistant to most common pests and diseases. However, excessive moisture or poor drainage may lead to root rot or fungal issues. Regular inspection and use of organic treatments like neem oil can help keep the tree healthy. Good air circulation and well-drained soil are key to preventing disease.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro  outdoor ashoka benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul>
+<li>🌸 Supports female reproductive health by regulating menstrual cycles and reducing cramps</li>
+<li>🩸 Helps manage excessive uterine bleeding and leucorrhea through its astringent properties</li>
+<li>🌿 Acts as a natural uterine tonic, promoting hormonal balance and fertility</li>
+<li>🧘‍♀️ Reduces emotional stress and mood swings associated with hormonal changes</li>
+<li>🔥 Possesses anti-inflammatory effects, aiding in relief from joint and tissue inflammation</li>
+<li>🧪 Detoxifies the body and purifies the blood, supporting clearer skin and better metabolism</li>
+<li>🦠 Has antimicrobial and antioxidant properties that protect against infections</li>
+<li>💪 Strengthens uterine muscles and supports postpartum recovery in women</li>
+<li>🛡️ Boosts overall reproductive immunity and long-term wellness in women</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌺 “Ashoka stands as a symbol of inner resilience—restoring balance, easing pain, and celebrating the natural rhythm of womanhood.”</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

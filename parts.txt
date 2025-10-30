@@ -1,0 +1,25 @@
+-lymphatic - Bone Marrow , Lymph Nodes, Spleen , Tonsils , Adenoids , MALT , Peyer’s patches , Appendix (immune role) , Thymus ,
+
+-skeletal - Bones , Cartilage , Ligament , Tendons , Joints , Bone marrow , Periosteum ,
+
+-cardiovascular - Blood , Heart , Arteries , Capillaries, Veins , blood vessels ,  RBCs , WBCs , platelets , plasma , venules , arterioles , coronary vessels , 
+
+-muscular - Skeletal Muscles , Smooth Muscles , Cardiac Muscle , 
+
+Nervous-Brain , Cerebrum ,  Cerebellum , Brainstem – midbrain , pons , medulla oblongata , Spinal Cord , Cranial Nerves , Spinal Nerves , eyes , ears , nose , tongue , skin , Sensory Organs , Ganglia , Meninges , Autonomic Nerve Centers , peripheral nerves
+	
+repro (F)- ovaries , Fimbriae , Fallopian Tubes , Uterus , Endometrium , Cervix , Vagina , Vulva , Mammary Glands(post-pregnancy) , Placenta (during pregnancy) , Clitoris , Labia majora & labia minora
+
+
+repro (M) - Testes , Scrotum , Epididymis , Vas Deferens , Seminal Vesicles , Prostate Gland , Bulbourethral Glands , Urethra , Penis , Glans Penis, Prepuce (foreskin),
+
+Respiratory - Nasal Cavity , Oral Cavity , Pharynx<br>(Throat) , Larynx (Voice Box) , Traches (Windpipe) , Bronchi , Bronchioles , Alveoli , Pulmonary Capillaries , Diaphragm , Lungs ,  Pleura , Intercostal muscles ,
+
+digestive - Mouth , Tongue , Teeth , Salivary Glands , Pharynx , Esophagus , Stomach , Liver , Gallbladder , Pancreas , Small Intestine , Large Intestine , Rectum , Anus , Appendix , Omentum , Mesentery ,
+
+urinary - Kidneys , Ureters , Urinary Bladder , Urethra , Renal Pelvis ,  Nephrons, 
+
+endo - Hypothalamus , Pituitary Gland , Pineal Gland , Thyroid Gland , Parathyroid Glands , Adrenal Glands , Pancreas , Thymus , Ovaries , Testes
+
+integ - Skin , Hair , Nails , Sweat Glands , Sebaceous (oil) Glands , Ceruminous Glands , Mammary Glands , Sensory Nerve Endings , Blood Vessels , Dermis , Epidermis , Hypodermis (skin layers)
+

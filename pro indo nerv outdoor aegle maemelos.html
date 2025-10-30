@@ -1,0 +1,388 @@
+/p<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Aegle Maemelos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Aegle Maemelos Plants That Support Nervous Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv indoor.html"  class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html" class="footer-button">← Back to Nervous System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Aegle Maemelos ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Aegle Maemelos.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🍏 Introduction to Aegle marmelos (Bael Tree)</h2>
+<p>Aegle marmelos, commonly known as Bael, Bilva, or Stone Apple, is a sacred and medicinal tree native to the Indian subcontinent and Southeast Asia. It belongs to the Rutaceae family and is revered in Ayurveda and Hindu traditions, often associated with Lord Shiva.</p>
+<p>This deciduous tree grows slowly and can reach heights of 10–15 meters, featuring spiny branches, aromatic trifoliate leaves, and hard-shelled fruits that resemble green or yellow globes. The fruit pulp is sweet and fragrant, used in beverages, jams, and traditional remedies.
+
+<p>
+
+
+
+
+
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor nerv Aegle Maemelos history.jpeg"     style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">📜 Historical Background of Aegle marmelos (Bael Tree)</h3>
+<h3>🌍 Origins in the Indian Subcontinent</h3><p>Aegle marmelos, commonly known as the Bael tree, is native to the Indian subcontinent and parts of Southeast Asia. It thrives in dry, deciduous forests and arid plains, particularly in regions of India, Bangladesh, Nepal, and Sri Lanka. Its natural resilience to drought and poor soil made it a staple in ancient agro-ecosystems. Revered for its trifoliate leaves and aromatic fruit, the Bael tree was deeply embedded in early Indian ecological and spiritual landscapes.</p>
+<h3>🌿 Discovery and Botanical Recognition</h3><p>The Bael tree was formally classified by Carl Linnaeus and later placed in the Rutaceae family by Portuguese botanist Corrêa. Its botanical name, *Aegle marmelos*, reflects its unique genus and species identity. Ancient texts like the Charaka Samhita and Sushruta Samhita mention Bael for its medicinal properties, long before Western taxonomy emerged. Its trifoliate leaves, symbolizing the Hindu Trimurti—Brahma, Vishnu, and Shiva—made it a sacred plant in both botanical and religious contexts.</p>
+<h3>🌱 Sacred Use in Temples and Rituals</h3><p>For centuries, Bael leaves have been offered in worship to Lord Shiva, especially during Maha Shivaratri. The tree is often found in temple gardens and is considered a purifier of the environment. Its fruit, known for its cooling and digestive properties, was distributed as prasadam in Shiva and Vishnu temples. Jain traditions also honor the Bael tree—Bhagwan Parshvanath, the 23rd Tirthankara, is believed to have attained enlightenment beneath one.</p>
+<h3>🌐 Global Recognition and Ethnomedicine</h3><p>By the 20th century, Aegle marmelos gained global attention for its pharmacological properties. Researchers identified its rich content of tannins, flavonoids, and alkaloids, validating its use in treating digestive disorders, respiratory issues, and inflammation. It became a subject of ethnobotanical studies across Southeast Asia, where it was used in folk medicine for jaundice, dysentery, and fever. Its cultivation spread to Thailand, Indonesia, and parts of Africa, where it adapted well to tropical climates.</p>
+<h3>🏡 Modern Symbolism and Holistic Wellness</h3><p>Today, the Bael tree is celebrated not only for its medicinal value but also for its symbolic resonance in holistic health. It represents balance, purification, and spiritual grounding. In Ayurvedic wellness, Bael is used in decoctions, powders, and tonics to support digestive and metabolic health. Its presence in home gardens and wellness retreats reflects a growing return to nature-based healing. As a bridge between tradition and science, Aegle marmelos continues to inspire sustainable and sacred living.</p>
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor nerv Aegle Maemelos growing.jpeg"     style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>🏞️ Climate and Location</h3>
+
+<p>Aegle marmelos, commonly known as Bael Tree, thrives in tropical and subtropical climates across the Indian subcontinent and Southeast Asia. It naturally grows in dry deciduous forests, rocky slopes, and temple courtyards. The tree prefers temperatures between 20°C and 40°C and can tolerate drought conditions. It flourishes in full sunlight and is well-suited to regions with seasonal rainfall, making it ideal for cultivation in arid and semi-arid zones.</p>
+
+<h3>🌍 Soil Requirements</h3>
+
+<p>Bael Tree prefers well-drained, sandy-loam or loamy soils enriched with organic matter. It tolerates poor and rocky soils but performs best in slightly acidic to neutral pH (6.0 to 7.5). Avoid waterlogged or saline soils, as they can hinder root development. Adding compost or farmyard manure improves soil fertility and supports healthy growth.</p>
+
+<h3>🌱 Propagation Through Seeds</h3>
+
+<p>Propagation is commonly done through seeds extracted from ripe fruits. Seeds should be cleaned, dried, and soaked in water for 24 hours before sowing. They are sown 2–3 cm deep in nursery beds or pots during spring or early monsoon. Germination typically occurs within 2 to 4 weeks under warm, moist conditions. Seedlings should be kept in partial shade until they are ready for transplanting.</p>
+
+<h3>🌿 Transplanting Seedlings</h3>
+
+<p>Once seedlings reach 30–40 cm in height and develop strong roots, they can be transplanted to the main site. Transplanting is best done at the onset of the rainy season. Maintain a spacing of 6 to 8 meters between trees to allow for canopy expansion. Bael is a slow-growing tree but becomes hardy and resilient once established.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Regular watering is essential during the first year of growth. Once mature, the tree becomes drought-tolerant and requires minimal irrigation. Mulching around the base helps retain moisture and suppress weeds. Occasional pruning of dead or diseased branches promotes healthy structure. Annual application of organic fertilizer or compost supports fruiting and foliage development.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+
+<p>Bael Tree is generally resistant to most pests and diseases. However, young plants may be affected by leaf spot, aphids, or fruit borers. These can be managed using organic treatments like neem oil or garlic spray. With minimal care, the Bael Tree thrives in home gardens and agroforestry systems, offering both medicinal value and cultural significance.
+
+
+
+
+
+
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Aegle Maemelosc benefits.jpeg"  style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">🧠 10 Nervous System Benefits of Aegle marmelos (Bael Tree)</h3>
+
+<ul><li> 🍃 Reduces neural inflammation through marmelosin and flavonoids that inhibit pro-inflammatory cytokines like TNF-α  </li>
+<li>🧠 Protects brain cells with strong antioxidant activity that combats oxidative stress and free radical damage  </li>
+<li>⚡ Supports cognitive function by modulating neurotransmitters linked to memory and learning  </li>
+<li>💊 Helps manage epilepsy by stabilizing neuronal firing and reducing seizure frequency in experimental models  </li>
+<li>🌿 Alleviates anxiety and depression through adaptogenic effects on the central nervous system  </li>
+<li>🧬 Improves neuroplasticity by enhancing cellular repair and regeneration in damaged neural tissues  </li>
+<li>🧘‍♀️ Promotes mental clarity via its calming effect on the nervous system, used traditionally in Ayurveda for focus</li>  
+<li>🛡️ Prevents neurodegeneration in conditions like Parkinson’s and Alzheimer’s by protecting dopaminergic neurons  </li>
+<li>🧪 Balances neurotransmitter levels including serotonin and dopamine, aiding emotional stability  </li>
+<li>🌟 Boosts overall brain resilience by combining anti-inflammatory, antioxidant, and neuroprotective actions
+
+
+
+</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🧠 Aegle marmelos steadies the mind like its sacred roots—nourishing the nervous system with ancient resilience and reminding us that balance is the gateway to clarity.
+</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html" class="footer-button">← Back to Nervous System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

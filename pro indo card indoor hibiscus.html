@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Hibiscus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Hibiscus Plants That Support Cardiovascular Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Hibiscus ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Hibiscus.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Hibiscus(Hibiscus rosasinensis)</h2>
+<p>🌱 Hibiscus isn’t just a garden showstopper—it’s a heart-smart botanical powerhouse. Packed with anthocyanins, flavonoids, and vitamin C, this vibrant flower supports cardiovascular health by improving blood vessel flexibility, reducing oxidative stress, and regulating blood pressure. Its natural diuretic and ACE-inhibiting properties make it a gentle ally for hypertension management, while its ability to balance cholesterol levels helps reduce the risk of atherosclerosis and heart disease.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Hibiscus history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Hibiscus(Hibiscus rosasinensis)</h2>
+
+<h3>🌱 Ancient Roots & First Records</h3> 
+<p> Hibiscus (Hibiscus rosa-sinensis and related species) has a history that stretches back thousands of years, with its earliest cultivation believed to have begun in tropical Asia and the Pacific Islands. Ancient peoples valued its vibrant, trumpet-shaped blooms not only for beauty but also for their medicinal and symbolic qualities. In Ayurvedic texts of India, hibiscus flowers were described as a cooling herb for balancing the body, enhancing hair health, and calming inflammation. In China, early herbalists recorded its use for soothing the skin and supporting women’s wellness, while Polynesian islanders cultivated it as a symbol of joy, life, and welcoming hospitality.</p> 
+
+<h3>🌸 Sacred Symbolism & Ritual Importance</h3> 
+<p> Across many cultures, hibiscus flowers have been deeply intertwined with spiritual and ceremonial life. In Hindu traditions, the bright red hibiscus is sacred to Goddess Kali and Lord Ganesha, often offered in pujas as a symbol of devotion, courage, and divine energy. In the Pacific Islands, wearing a hibiscus flower behind the ear became a cultural signifier—on the left to show being married or in a relationship, and on the right to signal being single. In Hawaiian culture, the hibiscus is the state flower and is woven into leis, dances, and celebrations, representing delicate beauty and the fleeting nature of life</p> 
+
+<h3>💮 Names, Legends & Cultural Stories</h3> 
+<p> The hibiscus carries many names and associations—called “Japa Pushpa” in Sanskrit, meaning “flower of worship,” “Shoe Flower” in parts of India due to its petal’s use in shoe-polishing pastes, and “Karkade” in Egypt, where the dried calyces are brewed into a tangy crimson tea. Legends in the Caribbean tell of the hibiscus as a “sun-kissed blossom,” gifted by the gods to bring warmth and vitality to the land. In Malaysia, the national flower Hibiscus rosa-sinensis is called “Bunga Raya,” symbolizing unity and courage.</p> 
+
+<h3>🌏 Journey Across Lands & Oceans</h3> 
+<p> From its tropical origins, hibiscus traveled widely through ancient trade routes. Arab merchants introduced it to North Africa, where its tea became a staple in Egypt and Sudan. European explorers carried it to the Caribbean and the Americas, where it adapted quickly to warm, humid climates. Polynesian voyagers spread it across the Pacific islands, integrating it deeply into local traditions and weaving it into mats, garlands, and hair adornments. Over time, hibiscus became a beloved garden ornamental in almost every tropical and subtropical region of the world</p>
+
+<h3>🌼 Present-Day Uses & Enduring Charm</h3> 
+<p> Today, hibiscus continues to hold a special place in global culture, medicine, and aesthetics. Its dried petals are brewed into teas known for supporting heart health and lowering blood pressure, while its fresh flowers are used in hair oils, skin masks, and natural dyes. In landscaping, hibiscus shrubs add bursts of vibrant color to gardens year-round. Beyond beauty, its symbolic meaning—love, vitality, and the fleeting nature of life—keeps it a favorite in art, literature, and ceremonies, ensuring that this ancient flower remains a timeless emblem of joy and connection.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Hibiscus growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Best Climate & Seasonal Suitability</h3>
+ <p> Hibiscus thrives in warm, tropical, and subtropical climates where temperatures range between 18 °C and 32 °C. It prefers sunny conditions for most of the day—at least 6 hours of direct sunlight ensures maximum blooms. In cooler climates, hibiscus can be grown in pots and moved indoors during winter, as it is sensitive to frost and prolonged cold. Continuous warmth and good air circulation are key for healthy growth and vibrant flowers.</p> 
+
+<h3>🌱 Ideal Soil Type & Preparation</h3>
+ <p> The hibiscus plant grows best in well-draining, fertile soil rich in organic matter. A loamy mix with a slightly acidic to neutral pH (6.0–7.0) is ideal. Before planting, work compost or well-rotted manure into the topsoil to boost nutrient content and moisture retention. Ensure proper drainage to prevent waterlogging, which can lead to root rot. For potted plants, use a high-quality potting mix enriched with slow-release fertilizer.</p> 
+
+<h3>🌿 Planting Methods & Propagation Tips</h3> 
+<p> Hibiscus can be propagated through seeds, stem cuttings, or grafting, though cuttings are the most common and reliable method. Choose healthy, semi-hardwood cuttings about 12–15 cm long, remove lower leaves, and dip the cut end in rooting hormone before planting in moist soil or sand. Keep the cuttings in partial shade until roots form. If planting from nursery pots, gently loosen the root ball before transplanting to encourage quick establishment.</p> 
+
+<h3>🪴 Spacing & Sunlight Preferences</h3> 
+<p> Space hibiscus plants 90–120 cm apart for proper air circulation and to allow their natural bushy growth. In garden beds, plant them where they can receive full sun for abundant flowering. For container growing, choose pots at least 35–40 cm deep with drainage holes, and position them in a bright, sunny location.</p> 
+
+<h3>💧 Watering Schedule & Humidity Needs</h3> 
+<p> Hibiscus plants enjoy consistently moist soil, but they do not tolerate soggy conditions. Water deeply when the top 2–3 cm of soil feels dry, ensuring moisture reaches the roots. During hot, dry weather, increase watering frequency. High humidity levels help prevent bud drop, so occasional misting in dry climates can benefit the plant. Mulching around the base helps conserve moisture, regulate soil temperature, and discourage weed growth.</p> 
+
+<h3>🛡️ Pest & Disease Care</h3> 
+<p> While hibiscus is relatively hardy, it can be attacked by aphids, whiteflies, spider mites, mealybugs, and hibiscus beetles. Treat infestations early with neem oil spray or insecticidal soap. Fungal problems such as leaf spot and root rot can occur in damp conditions—avoid overhead watering and ensure good drainage to prevent them. Regular pruning of dead or diseased parts improves airflow and plant health.</p>
+
+h3>🌸 Pruning & Flower Boosting</h3> 
+<p> Prune hibiscus plants in late winter or early spring before the main growing season. Remove weak or crossing branches to shape the plant and encourage more blooms. Pinching back new shoots during the season promotes bushier growth. Feeding the plant with a balanced, potassium-rich fertilizer every 2–3 weeks during flowering season enhances bloom size and color intensity.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Hibiscus benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+
+<li><b>🫀 Cardiovascular Health:</b> Hibiscus tea may help lower blood pressure and reduce LDL cholesterol, supporting a healthy heart.</li>
+<li><b>🍵 Metabolic Support:</b> Boosts metabolism and may help reduce fat absorption, aiding in weight management and energy balance.</li>
+<li><b>🛡️ Antioxidant Protection:</b> Fights free radicals, slowing signs of aging and protecting cells from oxidative stress.</li>
+<li><b>🫚 Digestive Comfort:</b> Eases constipation and supports smooth, healthy digestion with its gentle laxative properties.</li>
+<li><b>🔥 Anti-inflammatory Relief:</b> Helps reduce swelling, soothe body aches, and ease discomfort from inflammation.</li>
+<li><b>🧴 Hair and Skin Vitality:</b> Strengthens hair roots, promotes growth, and keeps skin radiant and hydrated.</li>
+<li><b>💧 Natural Diuretic Action:</b> Acts as a gentle diuretic, flushing out toxins and supporting kidney and bladder health.</li>
+<li><b>🌿 Liver Detoxification:</b> Supports liver function and helps cleanse the body of accumulated waste and impurities.</li>
+<li><b>🧘 Stress Reduction:</b> Contains calming compounds that may help reduce anxiety and promote emotional balance.</li>
+<li><b>🩺 Immune System Boost:</b> Rich in vitamin C and bioactive compounds that help strengthen immunity and fight infections.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿In every petal of hibiscus lies a whisper of healing—gentle enough to calm the heart, strong enough to protect it❤️".</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

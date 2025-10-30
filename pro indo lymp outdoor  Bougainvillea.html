@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Bougainvillea </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Bougainvillea Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+  
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea ani.jpeg"      style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea.jpeg"       style="width:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌸 Introduction to the Bougainvillea Plant</h2>
+<p>The Bougainvillea is a vibrant and eye-catching ornamental plant, admired for its dazzling display of colorful bracts that resemble petals. Native to South America, particularly Brazil, Peru, and Argentina, this hardy climber thrives in warm climates and can be grown as a bush, vine, or even a bonsai. While its paper-like bracts come in stunning shades of pink, magenta, red, purple, orange, and white, the true flowers of the Bougainvillea are tiny and usually white or yellow, nestled within the bracts. Known for its fast growth and minimal maintenance, this plant adds a dramatic splash of color to fences, trellises, and gardens, making it a favorite in tropical and subtropical landscapes around the world.</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Bougainvillea</h3>
+<h3>Origins and Botanical Background</h3>
+
+<p>The Bougainvillea plant originates from the warm, tropical regions of South America, particularly Brazil, Peru, and Argentina. It belongs to the Nyctaginaceae family and was first described in the late 18th century. The plant was named after the French explorer **Louis Antoine de Bougainville**, whose botanist companion, **Philibert Commerçon**, discovered the flowering vine during a voyage of exploration. With its striking, paper-like bracts that surround tiny white flowers, Bougainvillea quickly caught the attention of plant enthusiasts for its beauty and hardiness.</p>
+
+<h3>🕊️ Discovery and Scientific Recognition</h3>
+
+<p>Bougainvillea was formally introduced to the scientific community during the 1760s, after Commerçon brought specimens back to Europe. The plant’s discovery was part of a broader movement during the Age of Enlightenment, when many explorers and botanists were cataloging the natural world. Interestingly, Commerçon’s assistant **Jeanne Baret**, who disguised herself as a man to join the expedition, is credited by some historians as the first European to collect Bougainvillea, making her contribution an important footnote in botanical history.</p>
+
+<h3>🏛️ Arrival in Europe</h3>
+
+<p>Once introduced in France, Bougainvillea was quickly admired in aristocratic gardens and botanical collections across Europe. However, due to its sensitivity to cold temperatures, it was mostly grown in greenhouses and conservatories. European horticulturists began experimenting with its growth patterns and soon recognized its potential for ornamental cultivation in warmer regions around the Mediterranean.</p>
+
+<h3>🌍 Global Expansion Through Trade</h3>
+
+<p>As global trade routes expanded through colonization and botanical exchange, Bougainvillea found its way to **Africa, India, Southeast Asia, Australia, and the Caribbean**. Its resilience, rapid growth, and striking blooms made it a favorite for tropical and subtropical landscapes. In India, in particular, it became widely used in public gardens, schools, and homes, forming colorful hedges and cascades of blossoms.</p>
+
+<h3>🏡 Cultural and Decorative Significance</h3>
+
+<p>Bougainvillea soon became more than just a plant—it evolved into a symbol of beauty, hospitality, and resilience. Its brilliant hues made it a centerpiece in festive and religious decorations in many countries. The plant’s ability to thrive in poor soil and minimal care also gave it a reputation for being both beautiful and enduring—a reflection of the spirit of tropical cultures.</p>
+
+<h3>🌟 Modern Relevance and Popularity</h3>
+
+<p>Today, Bougainvillea is cherished around the world for its low-maintenance appeal, decorative value, and year-round blooming in warm climates. Numerous hybrids have been developed, offering a wide range of colors from deep magenta and crimson to soft pink, orange, and white. It is commonly grown along fences, trellises, and balconies, and continues to be a staple in both urban and rural gardening.</p>
+
+
+    
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>
+
+<p>Bougainvillea thrives in warm, sunny environments with at least six hours of direct sunlight each day. It performs best in tropical and subtropical climates where temperatures remain above freezing. The plant prefers well-drained soil and does not tolerate soggy or waterlogged conditions. Areas with good air circulation and full exposure to sunlight promote better flowering and overall growth.
+</p>
+<h3>🧬 Propagation Methods</h3>
+
+<p>Bougainvillea is most commonly propagated through stem cuttings rather than seeds. Semi-hardwood cuttings taken during the growing season root well when placed in a moist, well-drained medium. Using a rooting hormone can increase the success rate. While seeds can be used, they are slow to germinate and not widely preferred due to inconsistent results.
+</p>
+
+<h3>🌾 Soil Preparation</h3>
+
+<p>This plant requires loose, well-draining soil with a slightly acidic to neutral pH. To prepare the planting area, the soil should be loosened to a depth of 10 to 12 inches. If the soil is clay-heavy, it should be amended with sand or gravel to improve drainage. Rich or heavily composted soil is not ideal, as it may encourage leafy growth at the expense of flowers.
+</p>
+
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Bougainvillea needs regular watering during its initial growth phase to help establish roots. Once established, it becomes drought-tolerant and prefers dry conditions. Overwatering should be avoided, as it can lead to root rot and reduced flowering. Occasional pruning helps maintain the desired shape and encourages blooming. Fertilizers low in nitrogen and high in phosphorus are best to support flowering.
+</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+
+<p>Bougainvillea can become large and vigorous if not managed. Regular pruning helps control its size and promotes a bushier, more compact shape. It can be trained on trellises, fences, or walls when grown as a vine. Unchecked, it may sprawl or become woody, so seasonal trimming is important, especially after a flowering cycle.
+</p>
+<h3>✂️ Harvesting Tips</h3>
+
+<p>Although not typically harvested like herbs or vegetables, Bougainvillea branches with colorful bracts can be cut for decoration. For propagation, healthy semi-hardwood cuttings should be taken during active growth. When drying bracts for craft purposes, cut stems during the cooler part of the day and hang them upside down in a dry, shaded area with good airflow.
+</p>
+
+
+
+
+
+
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src= "C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea benefits.jpeg"          style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌼 Health Benefits of Bougainvillae</h3>
+<ul><li>Helps relieve cough, cold, and throat irritation.</li>
+<li>Supports respiratory health by clearing mucus.</li>
+<li>Boosts immunity with antioxidant properties.</li>
+<li>Acts as a natural remedy to reduce fever.</li>
+<li>Improves skin health and reduces acne.</li>
+<li>Aids in detoxifying the body.</li>
+<li>Supports digestion and relieves stomach issues.</li>
+<li>Possesses antibacterial and antifungal properties.</li>
+<li>Reduces inflammation in the body.</li>
+<li>Promotes faster wound healing and prevents infection.</li>
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌼"Bloom like the bougainvillea—bold, vibrant, and unbothered by thorns along the way."
+</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

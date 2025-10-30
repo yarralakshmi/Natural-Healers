@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Muscular Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Outdoor Plants That Support Muscular System:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html"  class="footer-button">Indoor Plants</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Body to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor ani.jpeg"  class="falling-image">
+   <a href="#Malabar Nut">Malabar Nut</a>
+    <a href="#Country Mallow">Country Mallow</a>
+    <a href="#Devil's cotton"> Devil's Cotton </a>
+    <a href="#Camel Thron">Camel Thron</a>
+    <a href="#Malakangini">Malakangini</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🪴Muscular Allies in Your Living Space</h2>
+    <p> Several outdoor medicinal plants can be powerful allies for the muscular system, helping to relieve pain, reduce inflammation, and support muscle recovery. Comfrey (Symphytum officinale) is known for its ability to heal muscle strains, sprains, and injuries when used externally as a poultice or ointment.</p>
+</div> 
+<!-- Malabar Nut-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor malabar nut.jpeg" style="width:250px; height:250px; float:right;" class="falling-image">
+<h2 id="Malabar Nut">🌿 Malabar Mallow Overview</h2>
+<p>Malabar Mallow, scientifically known as Malva sylvestris, is a hardy, flowering herb native to the Mediterranean and widely cultivated across India for its medicinal and ornamental value. With its soft, velvety leaves and vibrant purple blooms, this plant has long been cherished in traditional herbal medicine. It thrives in outdoor gardens and is especially valued for its high mucilage content—a gel-like compound that soothes and protects mucous membranes. Historically, it’s been used to treat respiratory ailments, digestive discomfort, and skin irritations. Its gentle nature makes it suitable for topical applications, teas, and infusions, offering both healing and hydration. In Indian wellness practices, Malabar Mallow is often included in remedies for sore throats, ulcers, and joint inflammation, reflecting its versatile therapeutic profile</p>
+
+ 
+<h1 style="left-padding:0px;">🔹🌸 Key Benefits of Malabar Mallow</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+       
+<li><b>🔥 Anti-inflammatory Support:</b> Helps reduce swelling and alleviate pain in muscles and joints, promoting mobility and comfort.</li>
+<li><b>🌬️ Respiratory Relief:</b> Soothes sore throats, calms dry coughs, and eases bronchial irritation for clearer breathing.</li>
+<li><b>🍃 Digestive Harmony:</b> Aids in relieving gastritis, ulcers, and mild constipation, supporting a balanced digestive system.</li>
+<li><b>🩹 Skin Restoration:</b> When applied as a poultice, it helps heal insect bites, burns, and eczema, calming irritation and promoting recovery.</li>
+
+</ul>
+</div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc malabar nut out.html" class="plant-button">Learn More About Malabar nut </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!-- Country Mallow -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor country mallow.jpeg" style="width:250px; height:250px; float:left;">
+<h2 id="Country Mallow">🌿 Country Mallow Overview</h2>
+<p>Country Mallow, known in Ayurveda as Bala and scientifically as Sida cordifolia, is a resilient herbaceous plant native to India and widely found across tropical regions. Revered for its strength-enhancing properties, it has been traditionally used to support the muscular system, nervous health, and overall vitality. The plant features velvety leaves and small yellow flowers, thriving in sandy soils and open landscapes. In Ayurvedic texts, Bala is celebrated as a rejuvenative herb that balances Vata dosha and nourishes muscle tissue. Its roots, leaves, and seeds are used in various formulations—from oils and decoctions to powders—making it a versatile ally in holistic wellness. Country Mallow is especially valued for its ability to calm inflammation, relieve pain, and promote physical strength, making it a staple in herbal preparations for joint and nerve health.
+</p>
+<h1 style="left-padding:0px;">🔹🌸 Key Benefits of Country Mallow:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul>
+      
+<li><b>💪 Muscle Strength & Recovery:</b> Enhances muscular tone and supports faster recovery after physical exertion, promoting endurance and resilience.</li>
+<li><b>🔥 Anti-inflammatory Relief:</b> Reduces joint swelling, eases arthritis symptoms, and alleviates nerve pain for improved mobility and comfort.</li>
+<li><b🧠 Nervous System Support:</b> Calms anxiety, boosts circulation, and fortifies the nerves—nurturing mental clarity and emotional balance.</li>
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor country mallow.html" class="plant-button">Explore Country Mallow</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- Devil's Cotton -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor devil's cotton.jpeg" style="width:250px;  height:250px;float:right;">
+<h2 id="Devil's cotton">🌿 Devil’s Cotton Overview</h2>
+<p>Devil’s Cotton, botanically known as Abroma augusta and traditionally called Ulat Kambal in India, is a striking shrub with velvety leaves and deep red or purple flowers. Native to tropical Asia and widely cultivated across India, this plant is revered in Ayurveda for its potent effects on the reproductive and nervous systems. It thrives in warm, humid climates and is often found in gardens or forest edges. The roots and bark are the most medicinally active parts, used in decoctions, powders, and oils. Devil’s Cotton is especially valued for its ability to regulate menstrual cycles, relieve uterine disorders, and ease muscular and joint pain. Its adaptogenic and anti-inflammatory properties make it a versatile ally in managing stress, hormonal imbalances, and chronic fatigue. Though powerful, it should be used with care, especially during pregnancy, due to its strong uterine-stimulating effects
+.</p>
+<h1 style="left-padding:0px;">🔹🌸 Key Benefits of Devil’s Cotton:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul>
+      
+<li><b>🌸 Menstrual Regulation:</b> Stimulates ovulation and helps balance hormonal cycles, supporting reproductive health and rhythm.</li>
+<li><b>🦴 Muscle & Joint Relief:</b> Eases arthritic pain, reduces inflammation, and soothes symptoms of rheumatism for improved mobility.</li>
+<li><b>🧘 Nervous System Support:</b> Acts as a gentle sedative—calming anxiety, enhancing sleep quality, and promoting emotional balance.</li>
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor devil's cotton.html" class="plant-button">Devil's Cotton Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Camel Thron -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor camel thron.jpeg" style="width:250px;height:250px; float:left;">
+<h2 id="Camel Thron">🌿 Camel Thorn Overview</h2>
+<p>Camel Thorn is a hardy, thorny shrub native to arid regions of Asia and the Middle East, and it thrives in parts of India like Rajasthan, Gujarat, and the Himalayan foothills. Known for its deep rhizomatous roots and resilience in dry climates, this plant has earned a revered place in Ayurvedic medicine. Traditionally called Yavasa or Dhanvayasa, it is celebrated for its ability to balance Pitta and Kapha doshas, and its cooling, light-to-digest nature. The plant secretes a sweet resin called manna, which has been historically used as a natural laxative and tonic. Its roots, leaves, and flowers are used in various formulations to treat respiratory, digestive, and musculoskeletal conditions. Camel Thorn is especially valued for its anti-inflammatory and rejuvenative properties, making it a powerful outdoor ally for muscular health and vitality.
+</p>
+<h1 style="left-padding:0px;">🔹🌸 Key Benefits of Camel Thorn:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+
+<li><b>🦵 Muscle & Joint Relief:</b> Reduces inflammation and pain in joints, legs, and arms—supporting mobility and physical comfort.</li>
+<li><b>🌬️ Respiratory Support:</b> Clears phlegm and eases symptoms of asthma, bronchitis, and cough for smoother, deeper breathing.</li>
+<li><b>🍽️ Digestive Aid:</b> Treats indigestion, heartburn, constipation, and gastric ulcers—promoting a calm and balanced digestive system.</li>
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor camel thron.html" class="plant-button">Explore Camel Thron</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--Malakangini-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo muscular outdoor malakangini.jpeg" style="width:250px; height:250px;float:right;">
+<h2 id="Malakangini">🌿🌿 Malakangini Overview:</h2>
+<p>🌱Malakangini is a woody climbing shrub native to India and Southeast Asia, often referred to as the “Elixir of the Mind” in traditional Ayurvedic texts. With glossy leaves and small yellowish flowers, it thrives in warm climates and is commonly found in forested regions and garden edges. The seeds are its most potent part, rich in oil and alkaloids that nourish the nervous system and enhance cognitive function. In Ayurveda, it is classified as a Medhya Rasayana, meaning it rejuvenates the mind and intellect. Malakangini is also known for its warming nature, making it ideal for treating Vata-related disorders such as joint pain, muscle stiffness, and neurological imbalances. Its oil is widely used in massage therapies, herbal tonics, and memory-enhancing formulations.
+</p>
+<h1 style="left-padding:0px;">🔹🌸 Key Benefits of Malakangini:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul>
+      
+<li><b>🧠 Cognitive Enhancement:</b> Boosts memory, sharpens concentration, and enhances mental clarity—supporting peak brain performance.</li>
+<li><b>🦴 Muscle & Joint Relief:</b> Eases stiffness, relieves spasms, and reduces arthritic pain for improved flexibility and comfort.</li>
+<li><b>🧘 Nervous System Support:</b> Calms anxiety, strengthens nerve function, and reduces fatigue—promoting emotional balance and resilience.</li>
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor malakangini.html" class="plant-button"> Explore Malakangini</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>"Just as muscles grow stronger through resistance, plants thrive by adapting to the forces of nature—each gust of wind shaping their strength, each root anchoring their resolve."
+  🪴💚</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

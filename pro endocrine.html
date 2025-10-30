@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Inside the Endocrine Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(0, 0, 0, 0.85);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: zoomOutFade 2.5s ease forwards;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px #1b5e20;
+    }
+
+    @keyframes zoomOutFade {
+      0% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(3); opacity: 0.5; }
+      100% { transform: scale(5); opacity: 0; visibility: hidden; }
+    }
+
+    .page-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+      color: white;
+      padding: 40px 20px 20px;
+      position: relative;
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content: "🧬 The Body’s Hormone Messenger";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      max-width: 300px;
+      background-color: var(--dark-panel);
+      padding: 20px;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 255, 102, 0.4);
+    }
+
+    nav h3 {
+      color: var(--earth);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    nav img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px #81c784;
+    }
+nav img:hover {
+      transform: scale(1.03);
+    }
+
+    article {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 255, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+    }
+
+    article h2, article h3 {
+      color: #c5e1a5;
+      margin-bottom: 10px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0f2f1;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.03);
+    }
+
+    ol {
+      margin-left: 20px;
+      color: #a5d6a7;
+      font-size: 17px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #66bb6a, #aed581);
+      margin: 30px 0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #ff4081, #fbc02d, #4dd0e1);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-style: italic;
+      font-size: 18px;
+      box-shadow: 0 -4px 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .footer-links a {
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 8px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .header-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <h1>🧬 Endocrine System</h1>
+  </div>
+
+  <header>
+    <h1>Inside the endocrine Journey 🌿</h1>
+    <div class="header-buttons">
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html">Outdoor Plants</a>
+    
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html">Tips</a>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <section>
+      <nav>
+        <img src="C:\Users\yarra\Downloads\indo endocrine system.jpeg" style="height:250px">
+        <h3 id="a">Choose:</h3>
+<p>Here, the endocrine system is catigorized into three parts:</p>
+        <a href="#endo">🏭Endocrine Glands – Hormone Factories</a>
+        <a href="#hor">💌 Hormones – Chemical Messengers</a>
+        <a href="#target">🎯 Target Organs & Cells – Action Zones</a>
+<a href="#video">🎥Video Source</a>
+      </nav>
+
+  <article>
+<h2>🧠🪄 Introduction to the Endocrine System:</h2>
+<p>The endocrine system is your body’s internal messaging squad—powered by hormones  that regulate everything from growth, energy, emotions, and metabolism to sleep and stress. Instead of sending electrical signals like the nervous system, it uses glands 🌿 to release chemical messengers (hormones) directly into your bloodstream . These messengers travel across the body, influencing cells and organs to keep you balanced, adaptable, and thriving. From the brain’s pituitary gland (the “master controller”) to the adrenal glands that fuel your fight-or-flight—each part plays a vital role in syncing body and mind with the rhythm of life.
+</p>
+<p>
+It’s nature’s chemistry set—quietly steering your health, development, mood, and even your plant-loving passion 🌿🧪💬.</p>
+<hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Endocrine Glands – Hormone Factories.jpeg" alt="🏭 Endocrine Glands – Hormone Factories" style="float:right;width:250px;">
+
+<div style="margin-left: 50px;">
+<h1 id="endo">🔸 Endocrine Glands – Hormone Factories:</h1>
+<p>🌿🪄Endocrine glands are specialized organs that act as the body’s hormone factories, producing and secreting hormones directly into the bloodstream. Unlike other glands with ducts, endocrine glands are ductless, allowing hormones to travel freely to various parts of the body. Each gland has a specific role in regulating essential functions like growth, metabolism, reproduction, and stress response. The pituitary gland, often called the "master gland," controls several other endocrine glands. The thyroid gland manages the body's metabolism, while the adrenal glands help the body respond to stress. The pancreas maintains blood sugar levels, and the gonads (ovaries and testes) regulate sexual development and reproduction. Other important glands include the pineal gland, which controls sleep cycles, and the parathyroid glands, which regulate calcium levels. Together, these glands form a network that ensures the body stays balanced, healthy, and functioning properly.
+
+
+.</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type='***'>
+<li>Pituitary Gland</li>
+<li>Thyroid Gland</li>
+<li>Parathyroid Glands</li>
+<li>Adrenal Glands</li>
+<li>Pancreas</li>
+<li>Pineal Gland</li>
+<li>Ovaries(in females)</li></li>Testes(in males)</li>
+<li>Hypothalamus</li>
+<li>Thymus</li>
+</ol>
+</div>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+
+<p>
+<img src="C:\Users\yarra\Downloads\Hormones – Chemical Messengers.jpeg" alt="💌 Hormones – Chemical Messengers" style="float:left;width:250px;">
+
+<h1 id="hor">🔸💌 Hormones – Chemical Messengers</h1>
+<p>Hormones are powerful chemical messengers produced by endocrine glands and released directly into the bloodstream. They travel throughout the body to reach specific target organs and cells, where they trigger vital biological responses. Each hormone has a unique role, helping regulate functions such as growth, metabolism, mood, reproduction, and homeostasis. For instance, insulin helps control blood sugar levels, thyroxine regulates metabolism, and adrenaline prepares the body for emergency responses. Unlike nerve impulses, hormones work more slowly but have longer-lasting effects. The balance and timing of hormone release are carefully controlled to keep the body functioning properly. Even a tiny amount of a hormone can create a significant response, showing just how essential these chemical messengers are in maintaining overall health and balance.
+</p>
+
+
+<p>
+✨Hormones – Chemical Messengers</p>
+<h1 style="left-padding:0px;">🔹Key Components:</h1>
+<ol type=''>
+<li>Growth Hormone (GH) </li>
+<li>Insulin & Glucagon</li>
+<li>Thyroxine (T4) </li>
+<li>Adrenaline (Epinephrine)</li>
+<li>Cortisol</li>
+<li>Estrogen & Progesterone</li>
+<li>Testosterone </li>
+<li>Melatonin</li>
+<li>Parathyroid Hormone(PTH)</li>
+</ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+
+<p>
+<img src="C:\Users\yarra\Downloads\Target Organs & Cells – Action Zones.jpeg" alt="🎯 Target Organs & Cells – Action Zones" style="float:right;width:250px;">
+
+<h1 id="target">🔸🎯 Target Organs & Cells – Action Zones</h1></p>
+
+
+<p>Target organs and cells are the specific body parts that respond to hormones released by endocrine glands. Each hormone travels through the bloodstream and binds only to its matching target cells, much like a key fits a specific lock. These targets then carry out the hormone’s instructions, which can range from regulating growth and metabolism to controlling reproduction and stress responses. For example, insulin from the pancreas acts on liver and muscle cells to control blood sugar levels, while thyroxine from the thyroid gland stimulates metabolic cells to increase energy production. Estrogen and progesterone act on the uterus and reproductive organs to prepare for pregnancy, and adrenaline affects the heart and lungs to increase alertness during stress. This precise hormone-target interaction ensures the body stays balanced and functions smoothly, making target organs and cells the critical “action zones” of the endocrine system.🌿💥.</p>
+<h1>🔹 Key Components</h1>
+<ol type='***'>
+<li>Bones & Muscles </li>
+<li>Liver & Muscle Cells</li>
+<li>Kidneys</li>
+<li>Uterus & Mammary Glands </li>
+<li>Heart & Lungs</li>
+<li>Skin & Hair Follicles</li>
+<li>Metabolic Cells</li>
+<li>Immune Cells</li>
+</ol>
+<hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+        <hr>
+<h3 id="video">🎥 Watch: The Skeletal System Explained</h3>
+<iframe width="660" height="515" src=https://www.bing.com/videos/riverview/relatedvideo?q=endocrine+system&&mid=2FFAC44AD81067A4FA0E2FFAC44AD81067A4FA0E&FORM=VCGVRP></iframe><hr><p><a href="#a" style="color:pink">Link to choose</a></p>
+
+    
+<hr>
+
+    </article>
+</section>
+
+<footer>
+ 
+<h3>Line of the slide/page</h3>
+<p>🧠💧 "Your hormones may be tiny, but they’re like molecular hype squads—boosting your growth, leveling your mood, and reminding your body it’s got work to do (even when you’re just vibing with plants)!" 🌿😄🔥</p>
+<div class="footer-links">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html">Outdoor Plants</a>
+    
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html">Tips</a>
+         </div>
+
+</footer>
+
+</body>
+</html>

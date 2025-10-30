@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Neem Bark (Azadirachta indica – bark specifically)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Neem Bark Plants That Support Integumentary Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html"    class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integu outdoor Neem Bark  ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integu outdoor Neem Bark.jpeg"   style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌿Neem Bark: The Bitter Bark that Beautifies from Within</h2>
+
+<p>Neem Bark, derived from the Azadirachta indica tree, is a time-honored botanical known for its remarkable purifying and protective qualities. Found widely across the Indian subcontinent, this bitter-tasting bark is packed with bioactive compounds that help eliminate toxins from the bloodstream and support a healthy immune response. Its natural antibacterial, antifungal, and anti-inflammatory properties make it especially beneficial for the skin, helping to manage conditions like acne, eczema, and chronic rashes. By working from within to cleanse and calm the body, Neem Bark plays a vital role in nurturing the health and balance of the integumentary system.
+</p>
+
+    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integu outdoor Neem Bark history.jpeg"       style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Neem Bark </h3>
+<h3>🌱 Origins and Botanical Background</h3>
+ <p>Neem, scientifically known as Azadirachta indica, is a fast-growing, evergreen tree native to the Indian subcontinent and parts of Southeast Asia. It belongs to the Meliaceae family and thrives in tropical and semi-arid climates, often seen lining roads, growing wild in forests, or cultivated in village compounds. The tree is known for its bitter leaves, seeds, and especially its bark, which has been a cornerstone of traditional medicine. The bark is dark gray and deeply fissured, containing powerful phytochemicals that have made it a valued natural remedy for centuries. Its strong presence in Indian landscapes and healing practices has earned it names like “the village pharmacy” and “sarva roga nivarini,” meaning the curer of all diseases.</p> 
+
+<h3>🕊️ Ancient Use in Traditional Healing</h3> 
+<p>Neem Bark has been extensively referenced in classical Ayurvedic texts for its purifying, cooling, and antimicrobial properties. It was commonly used to cleanse the blood, treat skin diseases, and reduce inflammation. In ancient formulations, it featured in decoctions and pastes meant to address chronic skin conditions, ulcers, fever, and even dental and digestive issues. Its bitterness was seen as a symbol of its powerful detoxifying nature. The bark was considered effective in balancing pitta and kapha doshas, and Ayurvedic practitioners often used it as part of seasonal purification rituals to remove accumulated toxins from the body.</p> 
+
+<h3>🏛️ Recognition in Folk and Regional Medicine</h3> 
+<p>Across rural India, Neem Bark has long been a household remedy passed down through generations. In folk medicine, it was used for treating malaria, skin infections, gum disease, and even snake bites. Villagers prepared bark decoctions for internal use or boiled the bark in water for antiseptic baths. In Siddha and Unani systems, the bark was similarly revered for its ability to cool the body, eliminate parasites, and purify the blood. It was often blended with other herbs to create multi-purpose tonics. Neem Bark’s availability and reliability made it one of the most trusted natural treatments in regional healing traditions.</p>
+
+ <h3>🌍 Spread and Exchange of Herbal Knowledge</h3>
+ <p>Neem Bark’s healing reputation eventually spread beyond India through trade and cultural exchange, especially during the early Arab and European interactions with Indian botanical knowledge. As global interest in natural medicine grew, Neem became one of the most studied plants in ethnomedicine. The bark, rich in limonoids and other active compounds, drew attention for its antibacterial and antifungal effects. Its applications expanded to include soaps, skin treatments, dental care products, and agricultural uses as a natural pesticide. Neem Bark became a symbol of India’s botanical heritage, integrated into global herbal pharmacology and sustainable health practices.</p> 
+
+<h3>🏡 Role in Village Life and Ecology</h3> 
+<p>In Indian villages, the Neem tree is more than just a source of medicine—it is a part of daily life and local ecology. The bark is harvested carefully to ensure the tree's health, often during the dry season, and stored for year-round use. Families rely on it for everything from first aid to seasonal cleansing. It also plays a role in agriculture, as its extracts are used to protect crops and soil. Neem trees are planted around homes for their cooling shade and air-purifying qualities, reflecting a harmonious balance between health, tradition, and nature. The bark’s enduring use in rural households highlights its deep integration into India’s ecological and cultural fabric.</p>
+
+ <h3>🌟 Modern-Day Research and Applications</h3> 
+<p>Today, scientific studies continue to affirm the therapeutic potential of Neem Bark. Research highlights its antibacterial, antiviral, anti-inflammatory, and immune-modulating properties. It has shown promise in managing conditions like eczema, gum infections, ulcers, and fungal diseases. Active constituents such as nimbidin, nimbolide, and azadirachtin are being explored for pharmacological applications. Neem Bark is now widely included in natural skincare products, herbal supplements, and oral health solutions. Its legacy as a healing agent has found new relevance in modern wellness, linking ancient wisdom with contemporary science and sustainable healthcare solutions.</p>
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integu outdoor Neem Bark growing.jpeg"    style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+<h3>☀️ Ideal Growing Conditions</h3> 
+<p>Neem trees flourish in hot, arid to semi-arid tropical climates and are well-adapted to withstand drought conditions. They require full sunlight and are best suited to regions with temperatures ranging from 21°C to 35°C. While neem trees can survive in poor soil conditions, they grow most vigorously in areas with low humidity and well-drained soil. Though tolerant of drought and poor soil fertility, they are sensitive to prolonged waterlogging and frost.</p> 
+
+<h3>🧬 Propagation Methods</h3> 
+<p>Neem is primarily propagated through seeds, though vegetative propagation via stem cuttings and root suckers is also possible. Fresh seeds must be used as they lose viability quickly. Seeds should be sown immediately after harvesting, typically at the beginning of the monsoon season. Pre-soaking the seeds in water for 12–24 hours can aid germination. In nursery settings, seedlings are grown for 3–6 months before being transplanted to the field.</p> 
+
+<h3>🌾 Soil Preparation</h3> 
+<p>Neem prefers deep, well-drained sandy or loamy soils but is highly adaptable and can grow even in rocky, nutrient-poor areas. Slightly alkaline to neutral soil pH (6.2 to 7.5) is ideal. Before planting, the soil should be loosened to improve aeration and drainage. If the site has poor fertility, incorporating compost or farmyard manure into the planting pits can enhance root development and tree establishment.</p> 
+<h3>💧 Watering and Maintenance</h3> 
+<p>Neem trees require minimal watering once established, making them ideal for dryland farming. However, during the initial 6–8 months after transplanting, regular watering is necessary to support root development. Overwatering should be avoided to prevent fungal diseases. Weeding around the base of young trees helps reduce competition and encourages faster growth. A protective mulch layer can be applied to retain soil moisture in hotter climates.</p> 
+
+<h3>🚫 Managing Growth and Spread</h3> 
+<p>Neem trees grow moderately fast and can reach up to 15–20 meters in height. In home gardens or plantations, spacing of 4–6 meters between trees is recommended to allow full canopy development. Pruning lower branches during the early growth phase helps develop a strong trunk and supports better air circulation. Neem’s strong taproot system minimizes the risk of unwanted spreading but makes relocation difficult after establishment.</p> 
+
+<h3>✂️ Harvesting Tips</h3> 
+<p>The bark of the neem tree is typically harvested from mature trees aged 5 years or older. Bark harvesting should be done carefully in strips from different areas without girdling the tree, which can damage or kill it. The bark is then washed and sun-dried or shade-dried before being stored. Proper drying ensures preservation of the tree’s potent compounds, which are later used in powders, decoctions, or extracts for medicinal and skincare applications.</p> 
+
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integu outdoor Neem Bark benefits.jpeg"      style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of Neem Bark</h3>
+<ul>
+<li>Supports skin detoxification by purifying the blood and clearing internal toxins.</li>
+<li>Helps manage acne and pimples by regulating sebum production and fighting bacteria.</li>
+<li>Reduces inflammation and soothes irritated or sensitive skin.</li>
+<li>Promotes healing of wounds, ulcers, and skin abrasions.</li>
+<li>Combats fungal infections such as ringworm and athlete's foot.</li>
+<li>Helps in the treatment of chronic skin conditions like eczema and dermatitis.</li>
+<li>Strengthens the skin’s defense against microbial and environmental stressors.</li>
+<li>Assists in clearing dark spots, scars, and pigmentation.</li>
+<li>Acts as a natural cooling agent to relieve skin from heat rashes and allergies.</li>
+<li>Improves overall skin texture, tone, and resilience over time.</li>
+
+
+
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+
+🌿 "Let the strength of Neem Bark cleanse your skin and spirit—where purity begins, radiance follows naturally."
+
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a></footer>
+</body>
+</html>

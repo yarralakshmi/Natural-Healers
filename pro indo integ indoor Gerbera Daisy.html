@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Gerbera Daisy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Gerbera Daisy Plants That Support Integumentary Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"    class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ indoor gerbera ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\The Gerbera Daisy.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to gerbera Daisy </h2>
+<p>🌱The Gerbera Daisy (Gerbera jamesonii) is a vibrant flowering plant native to South Africa, celebrated for its bold colors and cheerful appearance. Discovered in 1884 near Barberton by Scotsman Robert Jameson and named after German botanist Traugott Gerber, this daisy quickly gained global popularity. Its radiant blooms, ranging from pink and orange to red and white, have made it one of the top five most beloved cut flowers worldwide. Beyond its aesthetic charm, Gerbera daisies are known for their ability to release oxygen at night and purify indoor air—making them ideal companions for bedrooms and wellness spaces. Their long vase life, low maintenance needs, and symbolic meanings of innocence, purity, and happiness have earned them a special place in gardens, floral arrangements, and emotional healing practices.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ indoor gerbera history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of gerbera Daisy</h2>
+ <h3>🌱 Botanical Roots & Early Recognition</h3>
+<p> Gerbera daisies (Gerbera jamesonii) are native to South Africa, thriving in the sunny grasslands and rocky slopes of the region. They were first scientifically described in the late 19th century by Robert Jameson, after whom the species is named. With their large, vibrant blooms and daisy-like form, they quickly attracted the attention of botanists and plant enthusiasts worldwide</p> 
+
+<h3>🌸 Place in Decorative & Cultural Traditions</h3> 
+<p> Throughout the 20th century, Gerbera daisies became a staple in floral arrangements, garden landscapes, and festive décor. Their bold colors symbolized cheerfulness, purity, and energy, making them a popular choice for weddings, celebrations, and home decoration. In various cultures, the daisy form has been linked to innocence, optimism, and renewal.</p> 
+
+<h3>💮 Symbolism & Popular Names</h3> 
+<p> Commonly referred to simply as “Gerbera” or “Transvaal Daisy,” the flower carries symbolic meanings of happiness, admiration, and new beginnings. Its radiant petals and sunny appearance make it a favorite gift to brighten someone’s day or convey heartfelt positivity.</p> 
+
+<h3>🌏 Journey Across the Globe</h3> 
+<p> From its origins in South Africa, the Gerbera daisy was introduced to Europe through botanical exploration and plant trade. By the early 20th century, it had reached gardens and greenhouses worldwide, with hybridization producing an even wider range of colors and forms. Today, it’s cultivated extensively in Asia, Europe, and the Americas for both ornamental and commercial floral purposes.</p> 
+
+<h3>🌼 Modern-Day Charm & Uses</h3> 
+<p> In the present day, Gerbera daisies remain a top choice for cut flowers, garden borders, and indoor potted plants. Their beauty is matched by their health benefits, as they help purify indoor air and create uplifting atmospheres. Whether placed in a vase, planted in a garden, or showcased on a sunny balcony, Gerbera daisies continue to spread joy and color around the world.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ indoor gerbera growing.jpeg"  style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3🌤️ Ideal Climate & Natural Habitath3>
+ <p> Gerbera Daisy (Gerbera jamesonii) prefers mild, sunny climates with daytime temperatures between 18 °C and 24 °C. It thrives in bright light but benefits from some afternoon shade in hot regions. Native to South Africa, these daisies flourish in open fields and grasslands, making them perfect for sunny gardens, balconies, or well-lit indoor spaces.</p> 
+
+<h3>>🌱 Soil Requirements & Potting Mix<</h3>
+ <p> Gerbera Daisies grow best in well-draining, sandy-loam soil with a slightly acidic pH of 5.5–6.5. A suitable mix includes garden soil, coco peat, and perlite to ensure both moisture retention and good drainage. Avoid heavy clay soils to prevent root rot.</p> 
+
+<h3>🌿 Propagation & Planting Tips</h3> 
+<p> These daisies can be propagated by seeds, division, or tissue culture. For division, separate healthy clumps after flowering, ensuring each has roots and leaves. Plant at the same depth as before and avoid burying the crown to prevent rot. Seeds should be sown in moist, loose soil and kept warm until germination</p> 
+
+<h3>🪴 Spacing & Sunlight Placement</h3> 
+<p> Outdoors, space plants 30–40 cm apart to allow airflow and prevent fungal issues. Indoors, place them near a bright, south or east-facing window where they receive at least 6 hours of sunlight. If using artificial grow lights, provide 14–16 hours daily for best results.</p> 
+
+<h3>💧 Watering & Humidity Care</h3> 
+<p> Water when the top inch of soil feels dry, directing water to the base to keep leaves dry and reduce fungal risk. Maintain moderate humidity but ensure good airflow. Overwatering or waterlogged soil can damage the roots and crown.</p> 
+
+<h3>🛡️ Pest Control & Common Problems</h3> 
+<p> Gerbera Daisies may be affected by aphids, spider mites, and powdery mildew. Inspect regularly and treat early with neem oil or insecticidal soap. Yellow leaves may indicate overwatering or nutrient deficiency, while drooping flowers can signal underwatering or excessive heat.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ indoor gerbera benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul>
+  <li>🌼 <strong>Brightens Mood</strong> – The vibrant colors of Gerbera daisies can uplift spirits and reduce stress, which benefits skin health.</li>
+  <li>🌬️ <strong>Improves Air Quality</strong> – Known for removing toxins like benzene and formaldehyde from the air, helping reduce skin irritation caused by pollutants.</li>
+  <li>💧 <strong>Boosts Humidity</strong> – Adds moisture to indoor air, which helps prevent dry skin and chapped lips.</li>
+  <li>🛡️ <strong>Rich in Antioxidants</strong> – Contains compounds that may help protect skin cells from oxidative damage and aging.</li>
+  <li>🌿 <strong>Soothes Skin Inflammation</strong> – Gerbera extracts are sometimes used in natural skincare to calm redness and irritation.</li>
+  <li>🧴 <strong>Hydrates Skin</strong> – Indirectly supports skin hydration through improved air quality and humidity levels.</li>
+  <li>🧘 <strong>Promotes Relaxation</strong> – The presence of flowers like Gerbera can reduce anxiety and stress-related skin issues.</li>
+  <li>🌸 <strong>Enhances Complexion</strong> – Cleaner air and reduced stress contribute to a healthier, more radiant skin tone.</li>
+  <li>🏡 <strong>Safe for Indoor Use</strong> – Non-toxic to humans and pets, making it ideal for skin-friendly home environments.</li>
+  <li>🧠 <strong>Supports Mental Wellness</strong> – Caring for Gerbera daisies can improve mood and mental clarity, which positively affects skin health.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿 the Gerbera Daisy, radiate vibrant colors even on cloudy days — your brightness can be someone’s sunshine☀️🌸". </p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Drumstick Tree </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿DrumStick Plants That Support Cardiovascular Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Drumstick Tree (Moringa oleifera) ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Drumstick Tree (Moringa oleifera).jpeg" style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴The Miracle of Moringa: Life from the Drumstick Tree</h2>
+
+<p>The Drumstick Tree, known scientifically as Moringa oleifera, is a fast-growing and highly valued tree native to the Indian subcontinent. Celebrated as a “miracle tree,” it offers an abundance of nutrients, antioxidants, and medicinal benefits through its leaves, pods, flowers, and seeds. Traditionally used in both food and natural medicine, Moringa is especially known for supporting heart health, reducing inflammation, and strengthening the immune system. Resilient and nourishing, the Drumstick Tree stands as a symbol of nature’s generosity and its power to heal and sustain life.
+
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Drumstick Tree (Moringa oleifera) history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Drumstick Tree (Moringa oleifera)</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+ <p>The Drumstick Tree, scientifically known as Moringa oleifera, is a fast-growing and drought-resistant tree native to the foothills of the Himalayas in northwestern India. It belongs to the Moringaceae family and is widely cultivated in tropical and subtropical regions across the world. Recognized for its slender branches, feathery leaves, and long, drumstick-shaped seed pods, the tree is known for its remarkable nutritional and medicinal properties. It thrives in poor soil conditions and is often planted as part of agroforestry systems, especially in arid and semi-arid zones.</p>
+
+ <h3>🕊️ Traditional Use in Indian Healing Systems</h3>
+ <p>Moringa oleifera has been used for thousands of years in Ayurvedic medicine, where it is believed to help prevent and treat more than 300 diseases. Ancient Indian texts mention the use of its leaves, bark, seeds, and pods for treating digestive issues, inflammation, and infections. Its high nutrient content, including vitamins, minerals, and antioxidants, made it a staple in traditional diets and herbal remedies. Moringa was commonly consumed in the form of leaf powders, teas, and decoctions to support overall health, especially in rural households.</p>
+
+ <h3>🏛️ Cultural and Nutritional Relevance</h3>
+ <p>In Indian culture, the Drumstick Tree is valued not just for its medicinal uses but also for its role in daily nutrition. The pods are widely used in South Indian cuisine, especially in dishes like sambar and curries, while the leaves are cooked or dried for later use. In many regions, Moringa is considered a “village pharmacy” due to its wide range of healing properties. It has also played a role in traditional farming, where its leaves are used as animal fodder and green manure, contributing to soil enrichment and sustainable practices.</p>
+
+ <h3>🌍 Spread Across Continents</h3> 
+<p>The benefits of Moringa eventually led to its spread beyond India to Africa, Southeast Asia, and Central America. It was introduced to other tropical countries as a multipurpose tree capable of combating malnutrition and enhancing food security. In many African countries, Moringa became a vital crop in community nutrition programs due to its protein-rich leaves and resistance to drought. International health organizations began to promote Moringa as a sustainable solution for addressing nutritional deficiencies in vulnerable populations.</p>
+
+ <h3>🏡 Role in Community Health and Agriculture</h3>
+ <p>The Drumstick Tree has long been integrated into rural landscapes for its usefulness in both home gardens and small farms. Its rapid growth, ability to regenerate quickly after pruning, and low water requirement make it an ideal plant for resource-limited areas. Farmers grow it as a living fence, a shade provider, and a source of income through local markets. Its multi-purpose nature ensures that even small plots of land can yield food, medicine, and ecological benefits throughout the year.</p>
+
+ <h3>🌟 Modern Recognition and Global Appeal</h3>
+ <p>In recent years, Moringa has gained international recognition as a “superfood” due to its exceptional nutritional profile and health benefits. It is now commonly found in health stores in the form of powders, capsules, teas, and oils. Scientific studies have confirmed its antioxidant, anti-inflammatory, and cholesterol-lowering effects, reinforcing its traditional uses. As interest in natural wellness, sustainable agriculture, and plant-based nutrition grows, the Drumstick Tree stands out as a global symbol of nourishment, healing, and environmental resilience.</p>
+
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Drumstick Tree (Moringa oleifera) growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3> 
+<p>The Drumstick Tree (Moringa oleifera) thrives in hot, semi-arid to tropical climates with plenty of sunlight. It requires full sun for optimal growth, ideally receiving more than six hours of direct sunlight each day. Moringa prefers temperatures between 25°C to 35°C and is highly tolerant to drought once established, making it ideal for dry and sunny regions.</p> 
+
+<h3>🧬 Propagation Methods</h3> 
+<p>Moringa can be propagated easily through seeds or cuttings. Seeds germinate quickly and grow rapidly in warm conditions. For faster results, mature stem cuttings from healthy trees can be planted directly into the ground, where they quickly establish roots. While both methods are effective, cuttings tend to produce fruit-bearing trees more quickly.</p> 
+
+<h3>🌾 Soil Preparation</h3> 
+<p>Moringa grows well in a wide range of soils but prefers sandy or loamy, well-drained soils with a neutral to slightly acidic pH. Before planting, loosen the soil to about 2 feet deep and enrich it with compost or organic matter to support early growth. Avoid heavy clay and waterlogged soils, which can lead to root rot.</p> 
+
+<h3>💧 Watering and Maintenance</h3> 
+<p>Young Moringa plants should be watered regularly to promote strong root development. Once mature, the tree requires minimal watering and can survive prolonged dry periods. Water deeply once a week during dry spells. Pruning is important to encourage bushier growth, control height, and stimulate the production of more leaves and pods.</p> 
+
+<h3>🚫 Managing Growth and Spread</h3> 
+<p>Moringa trees grow quickly and can reach heights of 10 to 12 meters if left unmanaged. Regular pruning helps keep them compact and manageable, especially in small gardens. They do not spread invasively but may self-seed in favorable conditions. Managing seedling growth and maintaining tree shape ensures easy harvest and healthy development.</p>
+
+<h3>✂️ Harvesting Tips</h3>
+<p>Moringa pods are typically harvested when they are young and tender, around 6 to 8 weeks after flowering, to ensure the best taste and texture. Mature pods become tough and fibrous, though they can still be used for seed extraction. Leaves can be harvested once the tree is well established, usually 60–90 days after planting. For continued growth, only 30–50% of the leaves should be plucked at a time. Both pods and leaves should be harvested carefully using clean tools to encourage regrowth and maintain tree health.</p>
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Drumstick Tree (Moringa oleifera) benefits.jpeg"         style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of Drumstick Tree</h3>
+<ul>
+
+<li><b>🩺 Blood Pressure Regulation:</b> Helps lower high blood pressure naturally, supporting heart stability and vascular health.</li>
+<li><b>⚖️ Cholesterol and Lipid Balance:</b> Reduces cholesterol levels and improves lipid profile, promoting cleaner arteries and reduced risk.</li>
+<li><b>🚫 Arterial Plaque Prevention:</b> Prevents plaque buildup in arteries, supporting smooth blood flow and long-term cardiovascular protection.</li>
+<li><b>🔄 Circulation and Heart Function:</b> Enhances blood circulation and strengthens heart performance for better energy and endurance.</li>
+<li><b>🛡️ Antioxidant Protection:</b> Rich in antioxidants that shield heart tissues from damage and promote cellular repair.</li>
+<li><b>🧬 Oxidative Stress Reduction:</b> Reduces oxidative stress on blood vessels, improving elasticity and reducing inflammation.</li>
+<li><b>🧁 Blood Sugar Support:</b> Supports healthy blood sugar levels, which positively impact heart health and metabolic balance.</li>
+<li><b>🔥 Anti-inflammatory Benefits:</b> Contains natural compounds that reduce cardiovascular strain caused by chronic inflammation.</li>
+<li><b>💨 Oxygen and Red Blood Cell Support:</b> Improves red blood cell formation and oxygen delivery, boosting vitality and circulation.</li>
+<li><b>💪 Cardiovascular Endurance:</b> Strengthens overall heart resilience and stamina, helping the body adapt to physical and emotional stress.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"Let the Drumstick Tree (Moringa) be your heart’s green guardian — powering every beat with nature’s purest strength."
+
+🌳
+
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

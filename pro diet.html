@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍽️ Balanced Diet & Exercise Planner</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0') no-repeat center center fixed; background-size:cover; color:white; }
+  header { background: rgba(56, 142, 60, 0.9); color:white; padding:30px 15px; text-align:center; font-size:32px; font-weight:bold; backdrop-filter: blur(3px); text-shadow:1px 1px 5px rgba(0,0,0,0.5);}
+  header p { font-size:18px; margin-top:5px; color:#ffeb3b; font-weight:normal;}
+  .container { padding:20px; text-align:center; background: rgba(0,0,0,0.7); margin:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3);}
+  .section { margin:20px 0;}
+  button { margin:10px; padding:12px 20px; border:none; border-radius:8px; background:#66bb6a; color:white; font-size:16px; cursor:pointer; transition:0.3s;}
+  button:hover { background:#388e3c; transform:scale(1.05);}
+  table { margin:20px auto; border-collapse:collapse; width:95%; background:black; color:white; box-shadow:0 0 10px rgba(0,0,0,0.2);}
+  th, td { border:1px solid #555; padding:10px; text-align:center;}
+  th { background:#222; color:#ffeb3b;}
+  .hidden { display:none;}
+  .exercise { margin-top:30px; padding:20px; background: rgba(0,0,0,0.8); border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);}
+  .exercise h3 { color:#ffeb3b;}
+  footer { margin-top:30px; padding:20px; background: rgba(34,34,34,0.9); color:#ffeb3b; text-align:center; font-size:18px; border-top:2px solid #66bb6a; border-radius:0 0 12px 12px; box-shadow:0 -4px 8px rgba(0,0,0,0.3);}
+button.selected {
+  background: #ffeb3b; /* Bright yellow to indicate selection */
+  color: black;
+}
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  🍎 Balanced Diet & Exercise Planner 🍏
+  <p>Start your journey to a healthier life today!</p>
+
+</header>
+
+<div class="container">
+
+  <div id="foodTypeSection" class="section">
+    <h2>Choose Your Food Preference</h2>
+    <button onclick="updateSelection('foodType','Vegetarian')">🥗 Vegetarian</button>
+    <button onclick="updateSelection('foodType','Non-Vegetarian')">🍗 Non-Vegetarian</button>
+    <button onclick="updateSelection('foodType','Eggetarian')">🍳 Eggetarian</button>
+    <button onclick="updateSelection('foodType','Vegan')">🌱 Vegan</button>
+  </div>
+
+  <div id="ageSection" class="section hidden">
+    <h2>Select Age Group</h2>
+    <button onclick="updateSelection('ageGroup','Infant')">👶 Infant (0–4 yrs)</button>
+    <button onclick="updateSelection('ageGroup','Child')">🧒 Child (5–12 yrs)</button>
+    <button onclick="updateSelection('ageGroup','Teen')">🧑 Teen (13–19 yrs)</button>
+    <button onclick="updateSelection('ageGroup','Young Adult')">👨 Young Adult (20–29 yrs)</button>
+    <button onclick="updateSelection('ageGroup','Adult')">👩 Adult (30–45 yrs)</button>
+    <button onclick="updateSelection('ageGroup','Senior')">👴 Senior (46+ yrs)</button>
+  </div>
+
+  <div id="weekSection" class="section hidden">
+    <h2>Select a Day</h2>
+    <button onclick="updateSelection('day','Monday')">Monday</button>
+    <button onclick="updateSelection('day','Tuesday')">Tuesday</button>
+    <button onclick="updateSelection('day','Wednesday')">Wednesday</button>
+    <button onclick="updateSelection('day','Thursday')">Thursday</button>
+    <button onclick="updateSelection('day','Friday')">Friday</button>
+    <button onclick="updateSelection('day','Saturday')">Saturday</button>
+    <button onclick="updateSelection('day','Sunday')">Sunday</button>
+    <button onclick="updateSelection('day','Whole Week')">📅 Whole Week</button>
+  </div>
+
+  <div id="dietSection" class="section hidden">
+    <h2 id="dietTitle"></h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Meal</th>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Calories</th>
+        <th>Time</th>
+      </tr>
+      <tbody id="dietTable"></tbody>
+    </table>
+  </div>
+
+  <div id="exerciseSection" class="exercise hidden">
+    <h3>🏋️ Exercise Timetable</h3>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Exercise</th>
+        <th>Duration</th>
+      </tr>
+      <tbody id="exerciseTable"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>🌟 "Eat well, move daily, and live a balanced life – your body will thank you!" 🌟
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+</div>
+</footer>
+
+<script>
+let foodType = "";
+let ageGroup = "";
+let selectedDay = "";
+
+const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+// Sample age-specific diet (expanded with Eggetarian and Vegan)
+const weeklyDiet = {
+  "Vegetarian": {
+    "Infant":{"Monday":["Oatmeal + Milk","Soft Veg Porridge","Mashed Fruits"],"Tuesday":["Rice Cereal","Veg Puree","Banana Mash"],"Wednesday":["Oatmeal + Milk","Veg Puree","Apple Mash"],"Thursday":["Rice Porridge","Veg Soup","Mashed Banana"],"Friday":["Oatmeal + Fruits","Soft Veg Curry","Mashed Pear"],"Saturday":["Rice Cereal","Veg Puree","Apple Mash"],"Sunday":["Oatmeal + Milk","Soft Veg Curry","Mashed Fruits"]},
+    "Child":{"Monday":["Oatmeal + Fruits","Veg Curry + Rice","Roti + Paneer Curry"],"Tuesday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Wednesday":["Idli + Sambar","Paneer Curry + Rice","Vegetable Soup + Bread"],"Thursday":["Paratha + Yogurt","Veg Biryani","Dal + Chapati + Salad"],"Friday":["Oats Pancakes","Veg Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Paneer Wrap","Roti + Veg Curry"],"Sunday":["Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Teen":{"Monday":["Oatmeal + Fruits","Veg Curry + Rice","Roti + Paneer Curry"],"Tuesday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Wednesday":["Idli + Sambar","Paneer Curry + Rice","Vegetable Soup + Bread"],"Thursday":["Paratha + Yogurt","Veg Biryani","Dal + Chapati + Salad"],"Friday":["Oats Pancakes","Veg Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Paneer Wrap","Roti + Veg Curry"],"Sunday":["Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Young Adult":{"Monday":["Oatmeal + Fruits","Veg Curry + Rice","Roti + Paneer Curry"],"Tuesday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Wednesday":["Idli + Sambar","Paneer Curry + Rice","Vegetable Soup + Bread"],"Thursday":["Paratha + Yogurt","Veg Biryani","Dal + Chapati + Salad"],"Friday":["Oats Pancakes","Veg Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Paneer Wrap","Roti + Veg Curry"],"Sunday":["Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Adult":{"Monday":["Oatmeal + Fruits","Veg Curry + Rice","Roti + Paneer Curry"],"Tuesday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Wednesday":["Idli + Sambar","Paneer Curry + Rice","Vegetable Soup + Bread"],"Thursday":["Paratha + Yogurt","Veg Biryani","Dal + Chapati + Salad"],"Friday":["Oats Pancakes","Veg Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Paneer Wrap","Roti + Veg Curry"],"Sunday":["Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Senior":{"Monday":["Oatmeal + Fruits","Light Veg Soup + Rice","Soft Roti + Paneer"],"Tuesday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Wednesday":["Oatmeal + Fruits","Light Veg Soup + Rice","Soft Roti + Paneer"],"Thursday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Friday":["Oatmeal + Fruits","Light Veg Soup + Rice","Soft Roti + Paneer"],"Saturday":["Smoothie Bowl","Dal + Rice + Salad","Veg Stir Fry + Quinoa"],"Sunday":["Oatmeal + Fruits","Light Veg Soup + Rice","Soft Roti + Paneer"]}
+  },
+  "Non-Vegetarian": {
+    "Infant":{"Monday":["Mashed Chicken + Rice","Veg Puree","Banana Mash"],"Tuesday":["Egg Yolk + Cereal","Veg Puree","Apple Mash"],"Wednesday":["Mashed Fish + Rice","Veg Soup","Mashed Banana"],"Thursday":["Egg Yolk + Oatmeal","Veg Puree","Apple Mash"],"Friday":["Mashed Chicken + Rice","Veg Puree","Mashed Pear"],"Saturday":["Mashed Fish + Rice","Veg Puree","Apple Mash"],"Sunday":["Egg Yolk + Oatmeal","Veg Puree","Mashed Fruits"]},
+    "Child":{"Monday":["Boiled Eggs + Toast","Grilled Chicken + Rice","Fish Curry + Chapati"],"Tuesday":["Egg Sandwich","Chicken Salad","Grilled Fish + Rice"],"Wednesday":["Omelette + Bread","Chicken Curry + Rice","Prawn Curry + Chapati"],"Thursday":["Scrambled Eggs + Toast","Grilled Chicken + Quinoa","Fish Fry + Veggies"],"Friday":["Egg Bhurji + Roti","Chicken Biryani","Fish Curry + Rice"],"Saturday":["Boiled Eggs + Veggies","Grilled Fish + Salad","Chicken Curry + Chapati"],"Sunday":["Egg Sandwich","Roast Chicken + Veggies","Fish + Rice"]},
+    "Teen":{"Monday":["Boiled Eggs + Toast","Grilled Chicken + Rice","Fish Curry + Chapati"],"Tuesday":["Egg Sandwich","Chicken Salad","Grilled Fish + Rice"],"Wednesday":["Omelette + Bread","Chicken Curry + Rice","Prawn Curry + Chapati"],"Thursday":["Scrambled Eggs + Toast","Grilled Chicken + Quinoa","Fish Fry + Veggies"],"Friday":["Egg Bhurji + Roti","Chicken Biryani","Fish Curry + Rice"],"Saturday":["Boiled Eggs + Veggies","Grilled Fish + Salad","Chicken Curry + Chapati"],"Sunday":["Egg Sandwich","Roast Chicken + Veggies","Fish + Rice"]},
+    "Young Adult":{"Monday":["Boiled Eggs + Toast","Grilled Chicken + Rice","Fish Curry + Chapati"],"Tuesday":["Egg Sandwich","Chicken Salad","Grilled Fish + Rice"],"Wednesday":["Omelette + Bread","Chicken Curry + Rice","Prawn Curry + Chapati"],"Thursday":["Scrambled Eggs + Toast","Grilled Chicken + Quinoa","Fish Fry + Veggies"],"Friday":["Egg Bhurji + Roti","Chicken Biryani","Fish Curry + Rice"],"Saturday":["Boiled Eggs + Veggies","Grilled Fish + Salad","Chicken Curry + Chapati"],"Sunday":["Egg Sandwich","Roast Chicken + Veggies","Fish + Rice"]},
+    "Adult":{"Monday":["Boiled Eggs + Toast","Grilled Chicken + Rice","Fish Curry + Chapati"],"Tuesday":["Egg Sandwich","Chicken Salad","Grilled Fish + Rice"],"Wednesday":["Omelette + Bread","Chicken Curry + Rice","Prawn Curry + Chapati"],"Thursday":["Scrambled Eggs + Toast","Grilled Chicken + Quinoa","Fish Fry + Veggies"],"Friday":["Egg Bhurji + Roti","Chicken Biryani","Fish Curry + Rice"],"Saturday":["Boiled Eggs + Veggies","Grilled Fish + Salad","Chicken Curry + Chapati"],"Sunday":["Egg Sandwich","Roast Chicken + Veggies","Fish + Rice"]},
+    "Senior":{"Monday":["Soft Boiled Eggs","Boiled Chicken + Rice","Light Fish Curry"],"Tuesday":["Soft Omelette","Boiled Chicken + Veggies","Light Fish Curry"],"Wednesday":["Soft Boiled Eggs","Boiled Chicken + Rice","Light Fish Curry"],"Thursday":["Soft Omelette","Boiled Chicken + Veggies","Light Fish Curry"],"Friday":["Soft Boiled Eggs","Boiled Chicken + Rice","Light Fish Curry"],"Saturday":["Soft Omelette","Boiled Chicken + Veggies","Light Fish Curry"],"Sunday":["Soft Boiled Eggs","Boiled Chicken + Rice","Light Fish Curry"]}
+  },
+  "Eggetarian": {
+    "Infant":{"Monday":["Egg Yolk + Rice Cereal","Veg Puree","Mashed Banana"],"Tuesday":["Scrambled Egg","Veg Puree","Apple Mash"],"Wednesday":["Egg Yolk + Oatmeal","Veg Soup","Mashed Pear"],"Thursday":["Soft Boiled Egg","Veg Puree","Banana Mash"],"Friday":["Egg Yolk + Rice","Veg Puree","Mashed Fruits"],"Saturday":["Scrambled Egg","Veg Soup","Apple Mash"],"Sunday":["Soft Boiled Egg","Veg Puree","Mashed Banana"]},
+    "Child":{"Monday":["Boiled Eggs + Toast","Egg Curry + Rice","Paneer Sandwich"],"Tuesday":["Scrambled Egg + Bread","Veggie Omelette","Egg Fried Rice"],"Wednesday":["Omelette + Toast","Egg Salad + Chapati","Pancakes + Fruits"],"Thursday":["Boiled Egg + Sandwich","Egg Curry + Roti","Veg Stir Fry"],"Friday":["Egg Bhurji + Paratha","Omelette + Rice","Paneer Wrap"],"Saturday":["Scrambled Egg + Toast","Egg Pasta","Veg Sandwich"],"Sunday":["Boiled Eggs + Bread","Egg Curry + Chapati","Smoothie Bowl"]},
+    "Teen":{"Monday":["Egg Sandwich","Egg Curry + Rice","Veggie Omelette"],"Tuesday":["Scrambled Egg + Toast","Paneer + Rice","Egg Fried Rice"],"Wednesday":["Omelette + Bread","Egg Curry + Chapati","Veg Pasta"],"Thursday":["Boiled Eggs + Toast","Egg Curry + Roti","Veg Stir Fry"],"Friday":["Egg Bhurji + Paratha","Egg Salad + Rice","Paneer Wrap"],"Saturday":["Scrambled Egg + Toast","Egg Pasta","Veg Sandwich"],"Sunday":["Boiled Eggs + Bread","Egg Curry + Chapati","Smoothie Bowl"]},
+    "Young Adult":{"Monday":["Egg Sandwich","Egg Curry + Rice","Veggie Omelette"],"Tuesday":["Scrambled Egg + Toast","Paneer + Rice","Egg Fried Rice"],"Wednesday":["Omelette + Bread","Egg Curry + Chapati","Veg Pasta"],"Thursday":["Boiled Eggs + Toast","Egg Curry + Roti","Veg Stir Fry"],"Friday":["Egg Bhurji + Paratha","Egg Salad + Rice","Paneer Wrap"],"Saturday":["Scrambled Egg + Toast","Egg Pasta","Veg Sandwich"],"Sunday":["Boiled Eggs + Bread","Egg Curry + Chapati","Smoothie Bowl"]},
+    "Adult":{"Monday":["Egg Sandwich","Egg Curry + Rice","Veggie Omelette"],"Tuesday":["Scrambled Egg + Toast","Paneer + Rice","Egg Fried Rice"],"Wednesday":["Omelette + Bread","Egg Curry + Chapati","Veg Pasta"],"Thursday":["Boiled Eggs + Toast","Egg Curry + Roti","Veg Stir Fry"],"Friday":["Egg Bhurji + Paratha","Egg Salad + Rice","Paneer Wrap"],"Saturday":["Scrambled Egg + Toast","Egg Pasta","Veg Sandwich"],"Sunday":["Boiled Eggs + Bread","Egg Curry + Chapati","Smoothie Bowl"]},
+    "Senior":{"Monday":["Soft Boiled Egg","Light Egg Curry","Veg Porridge"],"Tuesday":["Soft Omelette","Egg + Rice","Veg Soup"],"Wednesday":["Soft Boiled Egg","Light Egg Curry","Veg Porridge"],"Thursday":["Soft Omelette","Egg + Rice","Veg Soup"],"Friday":["Soft Boiled Egg","Light Egg Curry","Veg Porridge"],"Saturday":["Soft Omelette","Egg + Rice","Veg Soup"],"Sunday":["Soft Boiled Egg","Light Egg Curry","Veg Porridge"]}
+  },
+  "Vegan": {
+    "Infant":{"Monday":["Oatmeal + Plant Milk","Veg Puree","Mashed Banana"],"Tuesday":["Rice Cereal","Veg Puree","Apple Mash"],"Wednesday":["Oatmeal + Plant Milk","Veg Puree","Mashed Pear"],"Thursday":["Rice Porridge","Veg Soup","Banana Mash"],"Friday":["Oatmeal + Fruits","Veg Puree","Mashed Apple"],"Saturday":["Rice Cereal","Veg Puree","Mashed Banana"],"Sunday":["Oatmeal + Plant Milk","Veg Soup","Mashed Pear"]},
+    "Child":{"Monday":["Oatmeal + Almond Milk","Veg Curry + Rice","Tofu Sandwich"],"Tuesday":["Smoothie Bowl","Lentil Curry + Rice","Veg Stir Fry + Quinoa"],"Wednesday":["Vegan Pancakes","Veg Curry + Rice","Tofu Salad + Bread"],"Thursday":["Vegan Paratha + Plant Yogurt","Veg Biryani","Lentil Soup + Chapati"],"Friday":["Oats Pancakes","Vegan Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Tofu Wrap","Roti + Veg Curry"],"Sunday":["Vegan Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Teen":{"Monday":["Oatmeal + Almond Milk","Veg Curry + Rice","Tofu Sandwich"],"Tuesday":["Smoothie Bowl","Lentil Curry + Rice","Veg Stir Fry + Quinoa"],"Wednesday":["Vegan Pancakes","Veg Curry + Rice","Tofu Salad + Bread"],"Thursday":["Vegan Paratha + Plant Yogurt","Veg Biryani","Lentil Soup + Chapati"],"Friday":["Oats Pancakes","Vegan Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Tofu Wrap","Roti + Veg Curry"],"Sunday":["Vegan Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Young Adult":{"Monday":["Oatmeal + Almond Milk","Veg Curry + Rice","Tofu Sandwich"],"Tuesday":["Smoothie Bowl","Lentil Curry + Rice","Veg Stir Fry + Quinoa"],"Wednesday":["Vegan Pancakes","Veg Curry + Rice","Tofu Salad + Bread"],"Thursday":["Vegan Paratha + Plant Yogurt","Veg Biryani","Lentil Soup + Chapati"],"Friday":["Oats Pancakes","Vegan Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Tofu Wrap","Roti + Veg Curry"],"Sunday":["Vegan Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Adult":{"Monday":["Oatmeal + Almond Milk","Veg Curry + Rice","Tofu Sandwich"],"Tuesday":["Smoothie Bowl","Lentil Curry + Rice","Veg Stir Fry + Quinoa"],"Wednesday":["Vegan Pancakes","Veg Curry + Rice","Tofu Salad + Bread"],"Thursday":["Vegan Paratha + Plant Yogurt","Veg Biryani","Lentil Soup + Chapati"],"Friday":["Oats Pancakes","Vegan Sandwich","Mixed Veg Curry + Rice"],"Saturday":["Upma + Chutney","Tofu Wrap","Roti + Veg Curry"],"Sunday":["Vegan Pancakes + Fruits","Veg Pasta","Soup + Bread"]},
+    "Senior":{"Monday":["Oatmeal + Almond Milk","Light Veg Soup + Rice","Soft Tofu"],"Tuesday":["Smoothie Bowl","Lentil Soup","Soft Roti + Veg"],"Wednesday":["Oatmeal + Almond Milk","Light Veg Soup + Rice","Soft Tofu"],"Thursday":["Smoothie Bowl","Lentil Soup","Soft Roti + Veg"],"Friday":["Oatmeal + Almond Milk","Light Veg Soup + Rice","Soft Tofu"],"Saturday":["Smoothie Bowl","Lentil Soup","Soft Roti + Veg"],"Sunday":["Oatmeal + Almond Milk","Light Veg Soup + Rice","Soft Tofu"]}
+  }
+};
+
+// Exercise per age group (kept same as before)
+const exercises = {
+  "Infant":{"Monday":[["8:00 AM","Tummy Time","10 mins"]],"Tuesday":[["8:00 AM","Crawling Practice","15 mins"]],"Wednesday":[["8:00 AM","Tummy Time","10 mins"]],"Thursday":[["8:00 AM","Crawling Practice","15 mins"]],"Friday":[["8:00 AM","Tummy Time","10 mins"]],"Saturday":[["8:00 AM","Crawling Practice","15 mins"]],"Sunday":[["8:00 AM","Tummy Time","10 mins"]]},
+  "Child":{"Monday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Tuesday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Wednesday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Thursday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Friday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Saturday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]],"Sunday":[["6:00 AM","Stretching","15 mins"],["5:00 PM","Playtime / Running","30 mins"]]},
+  "Teen":{"Monday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Tuesday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Wednesday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Thursday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Friday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Saturday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]],"Sunday":[["6:00 AM","Jogging","30 mins"],["6:00 PM","Strength Training","45 mins"]]},
+  "Young Adult":{"Monday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Tuesday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Wednesday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Thursday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Friday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Saturday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Sunday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]]},
+  "Adult":{"Monday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Tuesday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Wednesday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Thursday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Friday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Saturday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]],"Sunday":[["6:00 AM","Yoga","30 mins"],["6:00 PM","Gym Workout","45 mins"]]},
+  "Senior":{"Monday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Tuesday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Wednesday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Thursday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Friday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Saturday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]],"Sunday":[["6:00 AM","Walking","20 mins"],["5:00 PM","Light Stretching","15 mins"]]}
+};
+
+function updateSelection(type, value){
+  if(type === "foodType") foodType = value;
+  if(type === "ageGroup") ageGroup = value;
+  if(type === "day") selectedDay = value;
+
+  if(foodType) document.getElementById("ageSection").classList.remove("hidden");
+  if(ageGroup) document.getElementById("weekSection").classList.remove("hidden");
+
+  // Re-render tables whenever all selections exist
+  if(foodType && ageGroup && selectedDay) renderTables();
+}
+
+
+function updateSelection(type, value){
+  if(type === "foodType") {
+    foodType = value;
+    // Highlight selected foodType button
+    document.querySelectorAll('#foodTypeSection button').forEach(btn => btn.classList.remove('selected'));
+    document.querySelector(`#foodTypeSection button[onclick="updateSelection('foodType','${value}')"]`).classList.add('selected');
+  }
+
+  if(type === "ageGroup") {
+    ageGroup = value;
+    // Highlight selected ageGroup button
+    document.querySelectorAll('#ageSection button').forEach(btn => btn.classList.remove('selected'));
+    document.querySelector(`#ageSection button[onclick="updateSelection('ageGroup','${value}')"]`).classList.add('selected');
+  }
+
+  if(type === "day") {
+    selectedDay = value;
+    // Highlight selected day button
+    document.querySelectorAll('#weekSection button').forEach(btn => btn.classList.remove('selected'));
+    document.querySelector(`#weekSection button[onclick="updateSelection('day','${value}')"]`).classList.add('selected');
+  }
+
+  if(foodType) document.getElementById("ageSection").classList.remove("hidden");
+  if(ageGroup) document.getElementById("weekSection").classList.remove("hidden");
+
+  // Re-render tables whenever all selections exist
+  if(foodType && ageGroup && selectedDay) renderTables();
+}
+
+
+function renderTables(){
+  document.getElementById("dietSection").classList.remove("hidden");
+  document.getElementById("exerciseSection").classList.remove("hidden");
+
+  let dietTable = document.getElementById("dietTable");
+  let exerciseTable = document.getElementById("exerciseTable");
+  dietTable.innerHTML = "";
+  exerciseTable.innerHTML = "";
+
+  let daysToShow = selectedDay === "Whole Week" ? days : [selectedDay];
+
+  document.getElementById("dietTitle").innerText = selectedDay === "Whole Week" 
+    ? `${foodType} Diet Plan for ${ageGroup} (Whole Week)` 
+    : `${foodType} Diet Plan for ${ageGroup} on ${selectedDay}`;
+
+  for(let d of daysToShow){
+    let plan = (weeklyDiet[foodType][ageGroup] && weeklyDiet[foodType][ageGroup][d]) || ["N/A","N/A","N/A"];
+    let meals = ["Breakfast","Lunch","Dinner"];
+    for(let i=0;i<meals.length;i++){
+      let row = document.createElement("tr");
+      row.innerHTML = `<td>${d}</td><td>${meals[i]}</td><td>${plan[i]}</td><td>1 serving</td><td>Approx. 400-550 kcal</td><td>${["8:00 AM","1:00 PM","8:00 PM"][i]}</td>`;
+      dietTable.appendChild(row);
+    }
+    let ex = (exercises[ageGroup] && exercises[ageGroup][d]) || [];
+    for(let e of ex){
+      let row = document.createElement("tr");
+      row.innerHTML = `<td>${d}</td><td>${e[0]}</td><td>${e[1]}</td><td>${e[2]}</td>`;
+      exerciseTable.appendChild(row);
+    }
+  }
+}
+</script>
+
+</body>
+</html>

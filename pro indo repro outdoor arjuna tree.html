@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Arjuna Tree plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Arjuna Plants That Support Reproductive Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo repro outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro outdoor arjuna tree ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Arjuna (Terminalia arjuna).jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌳 Introduction to Arjuna Tree (Terminalia arjuna)</h2>
+<p>The Arjuna tree, scientifically known as Terminalia arjuna, is a majestic deciduous tree native to the Indian subcontinent. Revered in Ayurvedic medicine for thousands of years, it is especially known for its remarkable benefits to cardiovascular health. The tree typically grows along riverbanks and in sub-Himalayan regions and can reach heights of up to 60–80 feet. Its bark is smooth and greyish-white, and its flowers are pale greenish-yellow, blooming during the summer months.</p>
+
+<p>In Ayurveda, Arjuna is considered a "Hridaya" (heart tonic) and has been traditionally used to treat heart ailments, improve circulation, and support overall vitality. With its deep cultural, medicinal, and ecological importance, the Arjuna tree holds a significant place in both traditional healing practices and environmental conservation efforts.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro outdoor arjuna history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Arjuna Tree</h3>
+ <h3>   📜 History of the Arjuna Tree</h3>
+<p>The Arjuna tree (Terminalia arjuna) has a rich historical and cultural legacy in Indian traditions, especially in Ayurveda. Its medicinal use dates back over 2,500 years, with references found in ancient Ayurvedic texts like the Charaka Samhita and Sushruta Samhita. These classical texts described the bark of the Arjuna tree as a potent remedy for heart disorders, wounds, and ulcers.</p>
+
+<p>Named after the legendary warrior Arjuna from the Mahabharata—symbolizing strength and protection—the tree was believed to provide inner strength and resilience, especially to the heart. Ancient Ayurvedic healers would dry and powder the bark to prepare herbal decoctions that supported cardiac function, regulated blood pressure, and helped manage cholesterol.</p>
+
+<p>Beyond its medicinal uses, the Arjuna tree has also played a symbolic role in Indian culture, often planted near temples and sacred spaces as a guardian tree, offering protection, shade, and spiritual significance. Its enduring legacy continues in modern herbal and holistic medicine practices.</p>
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo repro outdoor arjuna tree growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>🏞️ Climate and Location</h3>
+<p>The Arjuna tree thrives best in tropical and subtropical climates, commonly found along riverbanks and moist forest areas. It requires warm temperatures between 20°C and 35°C, high humidity, and ample sunlight to grow well. Choosing a location that receives full sunlight and stays moist is ideal for its healthy development.</p>
+
+<h3>🌍 Soil Requirements</h3>
+<p>Arjuna grows well in a variety of soils, especially fertile, well-drained alluvial or loamy soils. While it prefers slightly moist and rich soils, it can also tolerate clayey or mildly alkaline conditions. However, it's important to avoid areas prone to waterlogging.</p>
+
+<h3>🌱 Propagation Through Seeds</h3>
+<p>The most common method of growing Arjuna is through seeds. Seeds should be collected from mature, dried fruits. Before sowing, it's recommended to soak the seeds in water for 24 to 48 hours to improve germination. The seeds are then sown about 1–2 cm deep in nursery beds or pots, where they typically germinate within 2 to 3 weeks under warm, moist conditions.</p>
+
+<h3>🌿 Transplanting Seedlings</h3>
+<p>Once the seedlings reach a height of about 30 to 40 cm, they can be transplanted into open ground. This is best done at the beginning of the monsoon season, which ensures proper root establishment. When planting multiple trees, maintain a spacing of around 4 to 5 meters between each to allow enough room for growth.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+<p>Young Arjuna trees require regular watering, especially during the dry season, to establish deep roots. Once matured, the tree becomes more drought-tolerant. Adding mulch around the base can help retain soil moisture. Minimal pruning is needed, mainly to remove dead or diseased branches and maintain a clean shape.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+<p>The Arjuna tree is generally resistant to pests and diseases, but occasional care may be needed to protect against termites or leaf spot infections. Natural pest repellents like neem oil spray or organic compost can help maintain the tree’s health.
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo repro outdoor arjuna benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul><li>🫀 Strengthens heart muscles and improves overall cardiovascular function</li>
+<li>💓 Regulates blood pressure and helps manage cholesterol levels</li>
+<li>💉 Purifies the blood and enhances blood circulation</li>
+<li>🧘‍♂️ Reduces stress and anxiety, promoting emotional calmness</li>
+<li>🌿 Aids in wound healing and treats skin infections and ulcers</li>
+<li>⚖️ Helps control blood sugar levels, supporting diabetes management</li>
+<li>🦴 Improves bone strength due to its calcium and magnesium content</li>
+<li>🦷 Supports oral health by treating gum infections and strengthening teeth</li>
+<li>🔥 Anti-inflammatory and antioxidant, reducing cell damage and inflammation</li>
+<li>🛡️ Boosts overall immunity and natural healing abilities</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌸 "Stand strong like the Arjuna tree—deep-rooted in purpose, rising with resilience, and healing the world around you."</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro.html" class="footer-button">← Back to Reproductive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro repro indoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

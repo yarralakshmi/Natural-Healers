@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Nigella Tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Nigella Plants That Support Endocrine Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\proendo indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella ani.jpeg"   style= " width:250px; float:left; height:250px;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella.jpeg" style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌿 Nigella: The Black Seed Blessing Rooted in Nature’s Wisdom 🌿</h2>
+
+<p>Nigella, commonly referred to as Nigella sativa or black seed, is a small yet mighty herbaceous plant celebrated for its deep medicinal heritage and powerful healing essence. Though often called a seed, it is the plant’s delicate flowers and fine foliage that make it a graceful addition to gardens and natural landscapes, while its tiny black seeds have earned a sacred place in traditional medicine across cultures. Thriving in dry, sunny climates, the Nigella plant offers seeds that are rich in essential oils and compounds known to support immune strength, metabolic health, and hormonal balance. Revered as a natural tonic for the endocrine system, Nigella works subtly yet effectively to harmonize internal functions, earning it the ancient title “the seed of blessing.” Its quiet strength and holistic benefits continue to bridge the wisdom of the past with the wellness needs of the present.
+
+
+</p>
+
+    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Nigella</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+<p>Nigella, scientifically known as Nigella sativa, is an annual flowering plant native to South and Southwest Asia, as well as parts of the Middle East and North Africa. Belonging to the Ranunculaceae family, it grows in warm, dry climates and produces delicate pale blue or white flowers with fine, feathery leaves. The plant is best known for its tiny, jet-black seeds, often referred to as black cumin or black seed. These seeds develop within inflated capsules and have a pungent, bitter flavor along with a rich history of medicinal and culinary use. Nigella has been cultivated for thousands of years for its aromatic seeds and its significance in various healing traditions across cultures.</p>
+
+<h3>🕊️ Ancient Use in Traditional Healing</h3>
+<p>Nigella seeds have been used since antiquity as both a spice and a powerful healing agent. Historical records show that the seeds were found in the tomb of the Egyptian pharaoh Tutankhamun, reflecting their revered status in ancient Egypt. In Greek and Roman medicine, they were prescribed for digestive issues and respiratory ailments. In Unani and Islamic medicine, Nigella holds special importance and is often called “Habbatul Barakah,” meaning “the seed of blessing.” Traditional texts mention its use in treating a wide range of conditions, including fevers, infections, menstrual irregularities, and skin disorders. In Ayurveda, Nigella is used for balancing the doshas and stimulating metabolism, often added to herbal formulations to enhance absorption and detoxification.</p>
+
+<h3>🏛️ Recognition in Folk and Regional Medicine</h3>
+<p>Throughout South Asia, the Middle East, and North Africa, Nigella has been a common household remedy used to strengthen immunity, relieve congestion, and soothe digestive discomfort. In rural Indian and Middle Eastern communities, the seeds are often roasted or ground and mixed with honey or warm water as a tonic for general wellness. Oil extracted from the seeds, known as black seed oil, has been widely applied to the skin and scalp and consumed internally for respiratory and inflammatory conditions. Generations of families have passed down recipes and remedies involving Nigella, preserving its role as a versatile healing herb in folk medicine.</p>
+
+<h3>🌍 Spread and Exchange of Herbal Knowledge</h3>
+<p>As trade and cultural exchange expanded across Asia, Europe, and Africa, Nigella seeds became a staple in both herbal medicine and culinary traditions. Their unique flavor and health benefits led to their inclusion in traditional spice blends, herbal tonics, and food preservation techniques. With growing global awareness of natural health solutions, Nigella gained recognition in the West as a superfood and adaptogenic herb. It is now widely available in health stores and natural pharmacies around the world, with increased interest in its traditional uses and therapeutic potential.</p>
+
+<h3>🏡 Role in Village Life and Ecology</h3>
+<p>In traditional agriculture, Nigella is grown as a small-scale crop in home gardens and village fields. It requires minimal resources and adapts well to dry, arid soils, making it suitable for subsistence farming. Farmers harvest the seed capsules by hand and dry them in the sun before separating the seeds, which are then sold locally or used in homemade remedies and food. Black seed oil extraction has also become an important cottage industry in several regions, providing livelihood opportunities while maintaining the heritage of natural healing. The plant’s resilience and usefulness ensure its continued presence in daily rural life.</p>
+
+<h3>🌟 Modern-Day Research and Applications</h3>
+<p>In recent years, Nigella has attracted scientific interest for its antioxidant, anti-inflammatory, and immune-boosting properties. Its active compound, thymoquinone, is studied for its potential in managing chronic conditions such as asthma, diabetes, and autoimmune disorders. Clinical studies have also explored its role in supporting hormonal balance, improving skin health, and modulating the immune response. Today, Nigella is used in the form of capsules, oils, powders, and teas, bridging the gap between ancient herbal wisdom and modern health science. As interest in plant-based wellness continues to grow, Nigella remains a powerful symbol of natural healing across generations.
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+  <h3>☀️ Ideal Growing Conditions</h3> 
+<p>Nigella sativa, commonly known as black cumin or black seed, grows best in mild, temperate climates with full sun exposure. It prefers cool seasons for initial growth and moderate warmth as it matures. The plant requires a location with good airflow and ample sunlight for healthy flowering and seed development. It is usually grown as an annual and completes its life cycle within one growing season, making it suitable for regions with mild summers and short winters.</p> 
+
+<h3>🧬 Propagation Methods</h3> 
+<p>Nigella is propagated through seeds, which are directly sown into the soil. The seeds should be planted in early spring or late autumn, depending on the climate. They are sown shallowly—about 1 to 1.5 cm deep—and spaced adequately to allow for air circulation. Germination typically occurs within 10 to 14 days under ideal conditions. Transplanting is not commonly practiced as the plant prefers minimal disturbance.</p> 
+
+<h3>🌾 Soil Preparation</h3> 
+<p>Nigella prefers well-drained, light-textured soils such as sandy loam or loam. It grows best in soils with a pH between 6.0 and 7.0. The soil should be tilled to a fine texture before sowing and enriched with organic compost to improve fertility. Good drainage is essential to prevent root rot and fungal infections, especially during the early stages of growth. Raised beds or gentle slopes can be used in areas prone to waterlogging.</p> 
+
+<h3>💧 Watering and Maintenance</h3>
+ <p>Moderate and consistent watering is important for Nigella during the germination and early growth phases. Once the plants are established, they require only occasional watering, as they are somewhat drought-tolerant. Overwatering should be avoided. Regular weeding is important to prevent competition for nutrients and sunlight. The plant benefits from light mulching to retain soil moisture and suppress weeds without interfering with its shallow roots.</p> 
+
+<h3>🚫 Managing Growth and Spread</h3> 
+<p>Nigella grows in a compact, upright form and does not spread aggressively. It typically reaches a height of 30 to 60 cm. The plant does not require pruning but may benefit from thinning if overcrowded. It is relatively pest-resistant, although aphids and fungal issues may occasionally arise in overly moist conditions. Crop rotation and proper spacing help maintain healthy growth and prevent disease buildup in the soil.</p> 
+
+<h3>✂️ Harvesting Tips</h3> 
+<p>Nigella seeds are harvested once the seed pods turn brown and begin to dry on the plant. The entire plant can be cut and placed upside down in a paper bag or hung in a well-ventilated area to finish drying. Once dry, the pods are gently crushed to release the small black seeds. The seeds are then cleaned, sun-dried further if needed, and stored in airtight containers away from moisture and sunlight to preserve their potency and flavor.</p>
+
+
+
+
+
+
+
+</p>
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo endo outdoor Nigella benefits.jpeg"       style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of Nigella</h3>
+<ul>
+
+<li><b>🩸 Supports Pancreatic Health & Insulin Regulation:</b>
+
+Promotes healthy pancreatic function and aids in the natural production of insulin, helping maintain stable blood sugar levels and metabolic balance.</li>
+
+<li><b>❤️ Improves Blood Sugar Balance:</b>
+
+Helps manage diabetes and prediabetic conditions by enhancing insulin sensitivity and reducing glucose fluctuations through endocrine support.</li>
+
+<li><b>🦋 Enhances Thyroid Function:</b>
+
+Supports the synthesis and regulation of thyroid hormones, helping correct imbalances that affect energy, mood, and metabolism.</li>
+
+<li><b>🛡️ Boosts Adrenal Resilience:</b>
+
+Strengthens adrenal glands to better handle chronic stress, fatigue, and hormonal disruption, restoring vitality and emotional balance.</li>
+
+<li><b>🔄 Modulates Immune-Endocrine Interaction:</b>
+
+Improves communication between immune and hormonal systems, enhancing the body’s adaptive response and reducing inflammation-related hormone issues.</li>
+
+<li><b>🌸 Supports Reproductive Hormone Balance:</b>
+
+Promotes equilibrium in estrogen, progesterone, and testosterone levels, benefiting fertility, libido, and menstrual health in both men and women.</li>
+
+<li><b>🧽 Helps Manage PCOS Symptoms:</b>
+
+Aids in detoxifying reproductive tissues and regulating hormones, helping reduce cyst formation, acne, and irregular cycles associated with PCOS.</li>
+
+<li><b>🧬 Acts as a Natural Antioxidant:</b>
+
+Protects endocrine glands from oxidative stress and cellular damage, preserving hormonal integrity and long-term glandular health.</li>
+
+<li><b>⚙️ Improves Metabolism & Glandular Efficiency:</b>
+
+Enhances the performance of hormone-producing glands, supporting nutrient absorption, energy conversion, and weight regulation.</li>
+
+<li><b>🌿 Promotes Hormonal Harmony & Vitality:</b>
+
+Fosters balance across the endocrine system, encouraging emotional stability, reproductive health, and sustained wellness throughout life stages.</li>
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+🌼 Nigella nurtures the endocrine system with ancient wisdom, inspiring balance, resilience, and inner healing.
+
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endo tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro endocrine.html" class="footer-button">← Back to Endocrine System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo endo outdoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

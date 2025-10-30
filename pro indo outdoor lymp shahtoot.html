@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Shahtoot (Mulberry Tree) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Shahtoot (Mulberry Tree) Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree) ani.jpeg"      style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree).jpeg"       style="width:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌳 Introduction to Shahtoot (Mulberry Tree)</h2>
+
+<p>Shahtoot, commonly known as the Mulberry tree and scientifically referred to as Morus alba (white mulberry), Morus nigra (black mulberry), or Morus rubra (red mulberry), is a fast-growing, deciduous tree valued for its delicious berries and broad, shade-providing canopy. Native to China but now widely grown in Asia, Europe, and the Americas, Shahtoot has played an important role in traditional medicine, agriculture, and sericulture, especially as the primary food source for silkworms. The tree's sweet, juicy fruits are rich in nutrients and antioxidants, while its leaves, bark, and roots have been used in herbal remedies for centuries. With its resilience, utility, and nutritional benefits, the Mulberry tree remains a cherished part of rural and urban landscapes alike.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree) history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">History of mulberry tree</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+
+<p>The mulberry tree, known as Shahtoot in many parts of South Asia, is a deciduous tree from the genus Morus. Native to temperate regions of Asia, Africa, and the Americas, mulberry trees have long been cultivated for their sweet, berry-like fruits and their valuable leaves. Among its species, Morus alba (white mulberry) originated in China, Morus nigra (black mulberry) in western Asia, and Morus rubra (red mulberry) in North America. The name "Shahtoot" comes from Persian, meaning "king of berries," reflecting the high regard for its fruit and its use across ancient civilizations.</p>
+
+<h3>🕊️ Ancient Use and Silk Connection
+</h3>
+<p>The history of mulberry trees is deeply tied to the ancient silk trade. In China, white mulberry leaves were cultivated as the exclusive food for silkworms, forming the foundation of the world-renowned silk industry. The art of sericulture, or silk farming, began over 4,000 years ago in China, and mulberry trees were considered so valuable that the knowledge of cultivating them was once protected by law. As the Silk Road trade routes expanded, mulberry cultivation spread to India, Persia, and the Mediterranean.
+</p>
+
+
+<h3>🏛️ Spread to the Middle East and Europe</h3>
+
+<p>Mulberry trees reached the Middle East and parts of Europe during ancient and medieval times. In Persia and surrounding regions, including modern-day Iran and Afghanistan, Shahtoot became popular for both its fruits and its symbolic association with prosperity. The Greeks and Romans also valued mulberries, often using the fruits for dyeing, medicine, and food. By the Middle Ages, mulberry trees were grown in monastery gardens and royal estates throughout Europe.
+</p>
+
+
+<h3>🌍 Introduction to South Asia and Cultural Significance</h3>
+
+<p>In India, the mulberry tree has a long-standing presence, especially in Kashmir, Bengal, and Karnataka, where it plays a key role in sericulture and traditional medicine. The leaves of Morus alba are used to raise silkworms in silk-producing regions, while the fruit of Morus nigra and Morus indica is consumed fresh or dried. In traditional Unani and Ayurvedic medicine, Shahtoot is valued for its cooling, digestive, and anti-inflammatory properties. The fruit is associated with health, abundance, and nourishment, and is often used in home remedies, sherbets, and preserves.</p>
+
+<h3>🏡 Role in Rural Life and Agriculture</h3>
+<p>Mulberry trees are valued for more than just their fruit and leaves. Their fast growth and shade-providing canopies make them ideal for planting along farms, homes, and roadsides. In rural regions, the wood is used for tools, firewood, and even musical instruments. Farmers appreciate the tree's resilience, ease of cultivation, and benefits to livestock, as its leaves can be used as fodder. The tree is also known to help in soil conservation and as a windbreak in agroforestry systems.
+</p>
+
+
+<h3>🌟 Modern-Day Uses and Appeal</h3>
+
+<p>Today, Shahtoot continues to hold importance in agriculture, herbal medicine, and health-conscious diets. Its fruits are rich in vitamins, antioxidants, and fiber, often used in juices, jams, teas, and supplements. In both rural and urban landscapes, mulberry trees are planted for their beauty, shade, and ecological benefits. As interest in natural remedies and sustainable agriculture grows, Shahtoot remains a timeless and valuable tree in gardens, farms, and traditional healing practices across the globe.
+</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree) growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>
+
+<p>Shahtoot (Mulberry tree) thrives in warm, sunny environments and performs best when planted in full sun. It prefers a tropical to subtropical climate but can also grow in temperate regions with mild winters. The tree benefits from at least six hours of direct sunlight daily and grows well in open spaces with good airflow. It is drought-tolerant once established but performs best with regular watering during the growing season.
+</h3>
+
+<h3>🧬 Propagation Methods</h3>
+
+<p>Shahtoot can be propagated through seeds, cuttings, or grafting. However, the most common and effective method is by using hardwood cuttings or grafting onto rootstock for better fruit quality. Cuttings taken from mature trees during the dormant season root well in moist, fertile soil. Seeds can be used but may not produce true-to-type fruits and take longer to mature. Grafted trees begin bearing fruit earlier and more reliably.</p>
+
+<h3>🌾 Soil Preparation</h3>
+
+<p>Shahtoot grows in a variety of soils but prefers well-drained loamy or sandy soil with a neutral to slightly acidic pH. Before planting, the soil should be dug to a depth of 1 to 2 feet and mixed with compost or organic matter to improve fertility and structure. Avoid waterlogged areas, as excess moisture can damage the roots. Mulching around the base of the tree helps retain moisture and suppress weeds.
+</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>While young Shahtoot trees require regular watering to establish roots, mature trees can withstand short dry periods. Deep watering once or twice a week during dry seasons promotes healthy growth and fruit production. Avoid overwatering, which may lead to fungal diseases. The tree requires minimal maintenance, but annual pruning helps control shape, remove dead wood, and encourage better airflow through the canopy.
+</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+
+<p>Shahtoot trees can grow large and spread widely if left unmanaged. Pruning is essential to maintain size, encourage branching, and make fruit harvesting easier. Mulberries can self-seed in favorable conditions, leading to unwanted saplings. Regular removal of these seedlings and managing root suckers can help control its spread. In urban gardens, selecting dwarf or grafted varieties helps limit excessive growth.
+</p>
+
+<h3>✂️ Harvesting Tips</h3>
+
+<p>Shahtoot fruits are harvested when they are fully ripe and deep-colored, which can range from dark purple to black depending on the variety. Harvesting is done by gently twisting the berries from the branch or by shaking the branches over a sheet. Since the berries are soft and bruise easily, they should be handled carefully. The fruit is best consumed fresh but can also be used for jams, juices, or drying.
+</p>
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree) benefits.jpeg"           style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌳 Health Benefits of Shahtoot (Mulberry Tree)</h3>
+<ul>
+<li>Rich in antioxidants that support immune health.</li>
+<li>Helps regulate blood sugar levels naturally.</li>
+<li>Improves digestion and supports gut health.</li>
+<li>Promotes healthy vision due to its vitamin A content.</li>
+<li>Supports heart health by reducing bad cholesterol.</li>
+<li>Boosts energy and reduces fatigue.</li>
+<li>Aids in controlling high blood pressure.</li>
+<li>Enhances skin health and slows signs of aging.</li>
+<li>Strengthens bones with calcium and iron content.</li>
+<li>Helps detoxify the liver and purify the blood.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌳"Grow like the Shahtoot—deep-rooted, generous, and nourishing to all who seek your shade."
+
+
+
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

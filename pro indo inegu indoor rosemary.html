@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Rosemary Lilly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Rosemary Lilly Plants That Support Integumentary Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"    class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ indoor rosemary lilly ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\rosemary lilly.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Rosemary Lilly</h2>
+<p>🌱 Rosemary (Salvia rosmarinus, formerly Rosmarinus officinalis) is a woody, evergreen herb native to the Mediterranean region, long celebrated for its aromatic leaves and therapeutic properties. Its name—“dew of the sea”—reflects both its coastal origins and its refreshing scent. Historically, rosemary was revered by ancient Greeks and Romans for enhancing memory, purifying spaces, and symbolizing fidelity. Over centuries, it became a staple in herbal medicine, culinary traditions, and spiritual rituals. Today, rosemary continues to thrive as a multifunctional plant, offering benefits for cognitive health, skin care, digestion, and emotional well-being. Whether brewed into tea, infused into oils, or grown as a decorative shrub, rosemary remains a timeless botanical treasure.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ indoor rosemary lilly history0.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Rosemary Lilly</h2>
+ <h3>🌿 Ancient Roots and Discovery</h3>
+<p> Rosemary Lily (Lilium rosmarinifolium), admired for its striking blooms and delicate fragrance, has been celebrated for centuries in various parts of Europe, Asia, and the Mediterranean. Ancient herbalists treasured its beauty alongside its medicinal value, often planting it in monastery gardens and royal courtyards. Its long, slender leaves, resembling rosemary, gave it both its name and an aura of culinary familiarity, though it is primarily grown for ornamental and healing purposes.</p> 
+
+<h3>🌸 Healing in Traditional Medicine</h3> 
+<p> For hundreds of years, Rosemary Lily was more than just a garden jewel—it was a trusted remedy in traditional medicine. In European herbal practices, its bulbs and petals were infused in oils or decoctions to soothe inflammation, ease respiratory troubles, and improve circulation. In parts of Asia, it was considered a heart-strengthening plant, often used in tonics for vitality. Its gentle fragrance was believed to calm the mind and uplift the spirit, making it a valued ally in emotional well-being.</p> 
+
+<h3>🍀 Legends, Symbolism, and Cultural Significance</h3> 
+<p> In folklore, Rosemary Lily symbolized purity, renewal, and steadfast devotion. Brides in medieval times sometimes carried its blossoms for protection and blessings of love. Legends claim it was a “guardian flower,” warding off negative energies and bringing harmony to the home. Artists and poets often referenced it as a bridge between strength and grace—rooted deeply like rosemary, yet blooming with the elegance of a lily.</p> 
+
+<h3>🌎 Journey Across Lands</h3> 
+<p> Originally native to regions of the Mediterranean and Southern Europe, Rosemary Lily’s charm spread quickly along trade routes. By the 18th century, it was cultivated in botanical gardens across Asia, North America, and beyond. Its resilience to varied climates, coupled with its aesthetic appeal, made it a favorite among gardeners, herbalists, and landscapers alike.</p> 
+
+<h3>🧪 Present-Day Appreciation</h3> 
+<p> Today, Rosemary Lily remains a treasured plant in both ornamental horticulture and herbal wellness. Its extracts are explored for skin health, immune support, and aromatherapy benefits. Beyond its medicinal uses, it continues to grace homes, gardens, and ceremonial spaces, symbolizing beauty, balance, and timeless tradition.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ indoor rosemary lilly growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Ideal Climate & Natural Habitat</h3>
+ <p> Rosemary (Salvia rosmarinus) thrives in warm, sunny climates with mild winters and moderate rainfall. It prefers temperatures between 15°C and 30°C and grows best in full sun for at least 6–8 hours daily. Native to the Mediterranean region, Rosemary naturally flourishes in coastal areas and rocky hillsides with good air circulation.</p> 
+
+<h3>🌱 Soil Preferences & Preparation</h3>
+ <p> This hardy perennial prefers well-drained, sandy to loamy soils with a slightly alkaline pH of 6.5–7.5. Rosemary dislikes waterlogged soil, so adding coarse sand or gravel to improve drainage is recommended. Enriching the soil with a small amount of compost before planting encourages healthy root development without making it overly rich.</p> 
+
+<h3>🌿 Propagation & Planting Tips</h3> 
+<p> Rosemary can be grown from seeds, but it is most successfully propagated from cuttings taken in spring or summer. Choose healthy, non-flowering stems about 8–10 cm long, remove the lower leaves, and plant them in well-draining potting mix. Keep the cuttings lightly moist until roots develop. For direct planting, space plants 45–60 cm apart.</p> 
+
+<h3>🪴 Garden Placement & Spacing</h3> 
+<p>Rosemary enjoys space to spread, so plant it in borders, raised beds, or large pots near sunny patios or kitchen windows for easy harvesting. Ensure good airflow between plants to reduce the risk of fungal issues. In decorative gardens, Rosemary pairs beautifully with lavender, thyme, and sage</p> 
+
+<h3>💧 Watering & General Care</h3> 
+<p> Rosemary is drought-tolerant once established and prefers to be watered deeply but infrequently. Allow the topsoil to dry out between waterings. Overwatering can lead to root rot. Pruning after flowering helps maintain a compact shape and encourages fresh growth.</p> 
+
+<h3>🛡️ Common Pests & Problems</h3> 
+<p> Rosemary is generally pest-resistant but can occasionally attract aphids, spider mites, or whiteflies. Good air circulation, avoiding overwatering, and regular inspection help prevent problems. In humid climates, watch out for powdery mildew; prune crowded stems and ensure sunlight reaches all parts of the plant.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ indoor rosemary lilly benefits.jpeg" style= " height:250px; width:250px; float:left;"> 
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+  <li>💇 <strong>Stimulates Hair Growth</strong> – Rosemary oil boosts circulation to the scalp, encouraging stronger, thicker hair growth.</li>
+  <li>❄️ <strong>Reduces Dandruff & Scalp Irritation</strong> – Its antifungal properties help treat dandruff and soothe itchy scalp conditions.</li>
+  <li>🛡️ <strong>Protects Against Oxidative Damage</strong> – Rich in antioxidants that defend skin cells from environmental stress and aging.</li>
+  <li>🦠 <strong>Antibacterial & Antifungal</strong> – Helps prevent acne, skin infections, and fungal issues like athlete’s foot.</li>
+  <li>💪 <strong>Soothes Muscle & Joint Pain</strong> – Topical application can relieve soreness and inflammation in muscles and skin tissues.</li>
+  <li>🧴 <strong>Tightens & Tones Skin</strong> – Rosemary extract can improve skin elasticity and reduce puffiness or sagging.</li>
+  <li>🌿 <strong>Supports Wound Healing</strong> – Its antimicrobial and anti-inflammatory effects promote faster healing of cuts and abrasions.</li>
+  <li>🧠 <strong>Improves Mental Clarity</strong> – Aromatherapy with rosemary enhances focus and reduces stress, which benefits skin health indirectly.</li>
+  <li>🍽️ <strong>Detoxifies the Body</strong> – Supports liver function and digestion, helping clear toxins that can affect skin clarity.</li>
+  <li>😊 <strong>Reduces Stress-Related Skin Issues</strong> – By calming the nervous system, rosemary helps prevent stress-induced breakouts and irritation.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿rosemary’s fragrance, let your mind stay fresh and your spirit evergreen 💚🌸". </p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

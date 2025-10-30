@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Devil's Cotton Plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Devil's Cotton Plant That Support Muscular Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc outdoor devil's cotton ani.jpeg"  style= " width:250px;height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo muscular outdoor devil's cotton.jpeg"   style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌺 Devil’s Cotton (Abroma augusta) – Introduction</h2>
+<p>Devil’s Cotton is a striking, perennial shrub or small tree native to tropical Asia, including India, Bangladesh, and Myanmar. It typically grows up to 2.5–3 meters tall and is recognized by its dark maroon flowers, heart-shaped leaves, and fibrous bark. The plant is covered in soft bristly hairs that can be irritating to the touch, hence the name “Devil’s Cotton.” Its bark yields a jute-like fiber used in fishing nets and handicrafts.</p>
+<p>In Ayurveda and folk medicine, Abroma augusta is revered for its uterine tonic properties and is traditionally used to treat menstrual disorders, diabetes, and rheumatic pain. It thrives in moist, shady habitats and is often cultivated in gardens or found in scrub jungles and forest edges.
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo mus outdoor devil's cotton history.jpeg" style="width:250px; height:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Devil's cotton</h3>
+ <h3> 📜 History of the Devil’s Cotton Plant</h3>
+
+<h3>🌱 Ancient Roots & Tropical Mystique</h3>  
+<p>Devil’s Cotton, scientifically known as <em>Abroma augusta</em>, is native to the humid tropics of South and Southeast Asia, particularly India, Bangladesh, and Myanmar. Unlike its temperate cousins, it thrives in moist, shaded forest understories and riverbanks. First described by Carl Linnaeus in 1768 as <em>Theobroma augustum</em>, its dark maroon flowers and cotton-like seed fibers earned it the nickname “Devil’s Cotton.” The plant’s bristly hairs, which cause skin irritation, added to its mystique and cautionary folklore. Traditionally, it was cultivated near village edges and temple groves, valued for its potent medicinal bark and roots.</p>
+
+<h3>🌸 Healing Lore & Folk Traditions</h3>  
+<p>In Ayurveda and Unani medicine, Devil’s Cotton is known as <em>Olat Kambal</em> and used primarily for gynecological and neurological disorders. Its bitter bark and roots were brewed into decoctions to treat menstrual irregularities, diabetes, and insomnia. Folk healers used its leaves in poultices for carbuncles and skin infections, while its fibrous bark was sometimes applied to wounds. In homeopathy, it became a remedy for amenorrhea and urinary issues, with its use passed down through generations as a “women’s herb” for balancing hormonal cycles and calming the nervous system.</p>
+
+<h3>💮 Symbolism & Traditional Names</h3>  
+<p>Known by evocative names like “Devil’s Cotton,” “Olat Kambal,” and “Olak Tambol,” the plant symbolizes hidden potency and caution. The name “Devil’s Cotton” refers to the cotton-like seed fibers surrounded by irritating hairs—beautiful yet untouchable. In traditional lore, it was seen as a plant of dual nature: healing and hazardous. Its deep red flowers were associated with feminine energy and transformation, often used in rituals for protection and renewal.</p>
+
+<h3>🌏 Pathways Through Cultures & Continents</h3>  
+<p>As colonial botanists explored India’s flora, Devil’s Cotton was documented and studied for its medicinal potential. It entered pharmacopoeias in Europe and was later adopted into Brazilian folk medicine, where it was used for respiratory and reproductive health. Despite its limited global cultivation, its reputation as a powerful herbal remedy spread through ethnobotanical studies and traditional knowledge networks. Its jute-like bark also attracted interest for textile applications, though its irritant properties limited widespread use.</p>
+
+<h3>🌼 Modern Recognition & Global Cultivation</h3>  
+<p>Today, Devil’s Cotton is cultivated in tropical gardens and research plots across Asia. Scientific studies have explored its anti-inflammatory, antidiabetic, and neuroprotective properties, though its active compounds remain under investigation. Sustainable harvesting practices are encouraged due to its niche medicinal value. It appears in herbal supplements and homeopathic remedies, especially for women’s health, bridging ancient wisdom with modern phytotherapy. Despite its ominous name, Devil’s Cotton continues to be a botanical paradox—both feared and revered.</p>
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo mus outdoor devil's cotton growing.jpeg"  style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3> 🏞️ Climate and Location</h3>
+
+<p>Devil’s Cotton (*Abroma augusta*), also known as “Ulatkambal” in Ayurveda, prefers tropical to subtropical climates with moderate to high humidity. It naturally grows in forested regions, shaded valleys, and moist lowlands. Ideal growing temperatures range between 20°C to 35°C. The plant thrives in semi-shaded areas, making it well-suited for gardens that receive filtered sunlight or morning sun with afternoon shade.</p>
+
+<h3>🌍 Soil Requirements</h3>
+
+<p>This medicinal shrub grows best in well-drained, loamy, or sandy-loam soils rich in organic matter. It prefers slightly acidic to neutral pH conditions. While Devil’s Cotton can tolerate moderately poor soils, it performs best when the soil is fertile, moist, and not prone to waterlogging. Regular addition of compost enhances soil structure and plant health.</p>
+
+<h3>🌱 Propagation Through Seeds and Cuttings</h3>
+
+<p>Devil’s Cotton can be propagated both by seeds and stem cuttings. Seeds should be collected from mature fruits and sown during the early monsoon or spring. For better germination, soak seeds in water for 24 hours before planting. Alternatively, semi-hardwood cuttings from healthy plants can be rooted in moist soil under humid conditions. Germination or rooting usually occurs within 2 to 3 weeks.</p>
+
+<h3>🌿 Transplanting Seedlings</h3>
+
+<p>When seedlings or rooted cuttings reach a height of about 20–30 cm, they can be transplanted into the main growing area. Transplanting should ideally be done at the start of the rainy season for better establishment. A spacing of about 1 to 1.5 meters between plants is recommended to allow enough room for spreading branches and healthy air circulation.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Young plants require consistent watering, especially during dry spells, to ensure steady root growth. Once established, Devil’s Cotton becomes moderately drought-tolerant. The soil should be kept moist but not soggy. Mulching around the base helps retain moisture and suppress weeds. Occasional pruning improves branching and plant shape, while adding organic manure or compost promotes lush growth.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+
+<p>Devil’s Cotton is relatively resistant to most common pests and diseases. However, in overly humid conditions, it may be affected by fungal infections or leaf spot. These can be managed with neem oil sprays or organic fungicides. With basic care, this plant remains healthy and productive, making it a valuable addition to any medicinal or home garden focused on women's wellness and traditional healing.
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo mus outdoor devil's cotton benefits.jpeg"   style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul><li>🌸 Regulates menstrual cycles – Traditionally used to support healthy periods.</li>
+<li>🤕 Relieves menstrual pain – Acts as a natural remedy for cramps and uterine discomfort.</li>
+<li>💧 Balances female hormones – Supports hormonal health and reproductive function.</li>
+<li>🌿 Treats uterine disorders – Beneficial in conditions like fibroids and irregular bleeding.</li>
+<li>😌 Eases mood swings – Calms the nervous system during PMS or hormonal imbalance.</li>
+<li>💪 Strengthens reproductive organs – Nourishes and tones the uterus and ovaries.</li>
+<li>🩺 Supports overall women’s wellness – Traditionally valued in female reproductive care.</li>
+<li>❄️ Reduces inflammation – Offers anti-inflammatory effects for pelvic discomfort.</li>
+<li>🌱 Aids in detoxification – Helps cleanse the reproductive and urinary tracts.</li>
+<li>🛡️ Boosts female immunity – Strengthens natural defenses and energy in women.
+</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"Just as Devil’s Cotton restores inner balance, let your strength grow from healing, not just hustle." 🌸💪
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

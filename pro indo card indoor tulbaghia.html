@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Tulbaghia(Society Garlic)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Tulbaghia Plants That Support cardiovascular Health:</h1>
+<div class="top-nav" >
+   <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Tulbaghia ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Tulbaghia.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Tulbaghia</h2>
+<p>🌱 Tulbaghia (Tulbaghia violacea), commonly known as Society Garlic or Wild Garlic, is a hardy perennial herb native to South Africa. Despite its name, it belongs to the onion family (Amaryllidaceae), not true garlic. The plant is well-known for its garlic-like aroma and clusters of pretty purple, star-shaped flowers that bloom for long  periods.Traditionally, Tulbaghia has been valued for both ornamental beauty and medicinal uses. In folk medicine, it has been used to support heart health, reduce blood pressure, ease colds, and improve digestion. Its leaves and flowers are sometimes used in cooking as a mild garlic substitute. Easy to grow, drought-tolerant, and pest-resistant, Tulbaghia is a popular choice for gardens and landscapes worldwide.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Tulbaghia history.jpeg"  style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Tulbaghia</h2>
+ <h3>🌱 Historical Roots & Native Origins</h3>
+<p> Tulbaghia (Tulbaghia violacea), commonly known as Society Garlic, is native to the grasslands and rocky slopes of Southern Africa, particularly South Africa’s KwaZulu-Natal and Eastern Cape regions. Indigenous communities have valued this hardy perennial for centuries, using it not only as a flavorful herb but also as a medicinal remedy for various ailments. Its origins are deeply tied to the landscapes of Africa, where it grew naturally in open fields, thriving in sunlight and resilient soils.</p> 
+
+<h3>🌸 Healing Traditions & Folk Medicine</h3> 
+<p> For generations, Tulbaghia has been cherished in African traditional medicine. The Zulu people and other ethnic groups used the leaves, flowers, and roots as natural remedies for coughs, colds, fevers, and stomach issues. Its strong garlic-like aroma symbolized cleansing and protection, often believed to ward off evil spirits and infectious diseases. Crushed leaves were applied topically to insect bites and wounds, while decoctions were consumed to improve circulation and boost immunity. It stood as a healing companion in village households, much like garlic in other parts of the world.</p> 
+
+<h3>💮 Symbolism, Names & Cultural Identity</h3> 
+<p> Tulbaghia earned the popular name “Society Garlic” because, unlike true garlic, its milder fragrance was considered socially acceptable in gatherings. It is also known as Wild Garlic or Pink Agapanthus. The name Tulbaghia honors Ryk Tulbagh, the Dutch governor of the Cape of Good Hope in the 18th century, under whose period the plant was scientifically classified. In African culture, it symbolized vitality, protection, and resilience—qualities admired in both people and plants that thrive in challenging conditions.</p> 
+
+<h3>🌏 Expansion & Botanical Recognition</h3> 
+<p> Tulbaghia’s journey beyond Africa began with European explorers and botanists in the 18th century. Carried to Europe for study and ornamental cultivation, it soon became valued in botanical gardens for its drought tolerance and delicate lilac blooms. Herbalists in Europe experimented with its medicinal uses, recognizing its similarities to garlic as a natural antibiotic. Later, it spread to other continents, including Asia and the Americas, where it was adopted into ornamental landscaping and herbal traditions</p> 
+
+<h3>🌼 Present-Day Importance & Global Cultivation</h3> 
+<p> Today, Tulbaghia is cultivated worldwide, both as a decorative garden plant and as a herbal resource. Its long-lasting violet flowers and garlic-scented leaves make it a favorite in eco-friendly and water-wise gardens. In modern herbal medicine, it continues to be studied for antibacterial, antifungal, and anti-inflammatory properties. Beyond its healing role, Tulbaghia has found a place in kitchens as a mild seasoning herb, bridging traditional African wisdom with contemporary culinary and medicinal practices. It stands as a plant of endurance—rooted in ancient healing but flourishing in today’s gardens and wellness culture.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Tulbaghia growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>☀️ Preferred Climate & Natural Habitat<</h3>
+ <p> Tulbaghia (Tulbaghia violacea), or Society Garlic, thrives in warm, temperate to subtropical climates. It prefers temperatures between 18 °C and 28 °C, though it can tolerate light frosts once established. In its native South African grasslands, it grows in open fields and rocky slopes with plenty of sunlight. When cultivated, it does best in regions with mild winters and moderate rainfall. In colder climates, it can be grown in pots and brought indoors during winter to protect it from frost damage</p> 
+
+<h3>🌱 Soil Type & Ground Preparation</h3>
+ <p> Tulbaghia grows well in well-draining sandy or loamy soil enriched with compost or organic matter. It prefers slightly acidic to neutral soil with a pH range of 6.0–7.5. Before planting, loosen the soil to improve aeration and mix in well-rotted manure or compost to boost fertility. Because Tulbaghia is drought-tolerant, proper drainage is essential—waterlogged soil may lead to root or bulb rot.</p> 
+
+<h3>🌿 Propagation & Planting Practices</h3> 
+<p> Tulbaghia is usually propagated by dividing clumps of mature plants. Carefully separate the bulbs or rhizomes, ensuring each division has roots and at least one shoot, then replant them directly into prepared soil. Seeds can also be used, though they germinate slowly and require patience. When planting bulbs or divisions, position them 3–5 cm below the soil surface and firm the soil gently around the base.</p> 
+
+<h3>🪴 Spacing & Light Exposure</h3> 
+<p> For healthy growth, space Tulbaghia plants about 30–45 cm apart, as they form bushy clumps over time. They thrive in full sun but can also tolerate partial shade, especially in hot summer regions. In containers, select pots that are at least 25–30 cm deep to accommodate the roots and allow space for clump expansion.</p> 
+
+<h3>💧 Watering & Care Routine</h3> 
+<p> Tulbaghia is naturally drought-tolerant, but young plants require consistent moisture until established. Water deeply once or twice a week during dry spells, allowing the soil to dry slightly between waterings. Overwatering should be avoided as it can cause root rot. Mulching around the plants helps retain soil moisture, suppress weeds, and protect the roots from extreme heat. During winter, reduce watering since the plant goes semi-dormant in colder regions</p> 
+
+<h3>🛡️ Common Pests & Disease Prevention</h3> 
+<p> Tulbaghia is generally resistant to most pests due to its garlic-like aroma, which repels insects. However, snails, aphids, and whiteflies may occasionally appear. These can be controlled using organic insecticidal sprays or by removing them manually. Fungal diseases such as leaf spots or bulb rot may occur in poorly drained soils or overcrowded clumps. To prevent this, ensure proper spacing, avoid waterlogging, and periodically divide older clumps to maintain plant vigor.</p>
+<h3>🌼 Flowering & Maintenance</h3>
+<p> Tulbaghia produces attractive lilac-pink flowers from spring to late autumn, which not only beautify gardens but also attract pollinators like bees and butterflies. Deadheading spent flowers encourages more blooms, while trimming older leaves helps maintain a neat appearance. Every 3–4 years, clumps can be lifted, divided, and replanted to rejuvenate growth and prevent overcrowding. With minimal care, Tulbaghia rewards gardeners with long-lasting flowers, edible leaves, and medicinal value.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Tulbaghia benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+
+<li><b>🩺 Blood Pressure Regulation:</b> Helps lower high blood pressure naturally, supporting overall cardiovascular stability and heart health.</li>
+<li><b>🧬 Cholesterol Management:</b> May assist in reducing LDL cholesterol and improving lipid profiles, promoting cleaner arteries.</li>
+<li><b>🔄 Circulation Enhancement:</b> Improves blood flow and vascular function, enhancing oxygen delivery to tissues and organs.</li>
+<li><b>🛡️ Antioxidant Protection:</b> Rich in polyphenols and phytochemicals that protect heart tissues from oxidative stress and cellular damage.</li>
+<li><b>🔥 Anti-inflammatory Action:</b> Reduces inflammation in blood vessels, easing cardiovascular strain and supporting arterial health.</li>
+<li><b>🚫 Antiplatelet Activity:</b> Inhibits platelet adhesion and aggregation, helping prevent blood clots and reducing the risk of heart attacks and strokes.</li>
+<li><b>🧼 Blood Purification:</b> Acts as a natural blood cleanser, supporting detoxification and reducing cardiovascular burden.</li>
+<li><b>🧠 Heart-Brain Connection:</b> May support cognitive function and memory, indirectly benefiting heart health through improved circulation.</li>
+<li><b>🧪 Antithrombogenic Properties:</b> Demonstrates anticoagulant effects by reducing clotting kinetics and platelet activation in blood plasma.</li>
+<li><b>💪 Cardiovascular Resilience:</b> Enhances heart endurance and vascular integrity, helping the body adapt to stress and maintain long-term heart health.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿In the quiet bloom of Tulbaghia lies a pulse of healing—gently lowering pressure, clearing the flow, and guarding the heart with nature’s grace✨🌸."</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

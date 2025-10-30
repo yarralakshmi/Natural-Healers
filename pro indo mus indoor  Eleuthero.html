@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Eleuthero</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Eleuthero Plants That Support Muscular Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button">outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a> 
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc indoor Eleuthero ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc indoor Eleuthero .jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Eleuthero</h2>
+<p>🌱 Eleuthero (Eleutherococcus senticosus), also known as Siberian ginseng, is a hardy, deciduous shrub native to Northeast Asia, particularly Russia, China, Korea, and Japan. It grows in mountain forests and is well known in traditional Chinese and Russian herbal medicine as an adaptogen—helping the body resist physical, mental, and environmental stress. The plant has woody stems with small leaves, clusters of yellowish flowers, and black berries, but its medicinal value lies mainly in its root. Eleuthero is used to boost stamina, enhance immunity, support cognitive function, and improve recovery from fatigue.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc indoor Eleuthero history.jpeg"  style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Eleuthero</h2>
+ <h3> Roots in Ancient Herbal Traditions</h3>
+<p>leuthero (Eleutherococcus senticosus), often called Siberian ginseng, has been treasured for centuries in the forests of Northeast Asia, particularly in Siberia, China, Korea, and Japan. Thriving in cold, mountainous regions, it was gathered and cultivated by local herbalists who valued its tough, spiny stems and medicinal roots. In traditional Chinese medicine, Eleuthero was documented over 2,000 years ago in the ancient text Shennong Ben Cao Jing as a tonic to increase vitality, stamina, and resilience. In Siberian folk traditions, it was used by hunters and travelers to endure harsh winters, maintain energy, and recover from illness.</p> 
+
+<h3>🌸 Cultural Reverence & Folk Wisdom</h3> 
+<p>  In China, Eleuthero was considered a protective herb for balancing “qi” (vital energy) and warding off seasonal ailments. Russian herbal traditions also held the plant in high regard; it was often brewed into teas for workers, soldiers, and athletes to help withstand long hours of labor and physical stress. The plant became associated with endurance, adaptability, and a strong spirit—qualities admired in communities living in challenging climates.</p> 
+
+<h3>💮 Symbolism & Traditional Names</h3> 
+<p>  Known by names such as “Siberian Ginseng,” “Touch-Me-Not Shrub,” and “Ci Wu Jia” in Chinese, Eleuthero symbolizes resilience, energy, and survival. Unlike true ginseng (Panax species), Eleuthero has a different botanical profile but earned its popular name because of its similar energizing properties. Its thorny stems and hardy nature reflect its symbolic meaning: protection, persistence, and strength through adversity</p> 
+
+<h3>🌏 From Remote Forests to Global Recognition</h3> 
+<p>  Eleuthero remained largely a regional remedy until the mid-20th century, when Russian scientists began studying it as part of their adaptogen research program. They sought natural substances that could help astronauts, athletes, and military personnel perform better under stress. This research brought Eleuthero into the spotlight, and its reputation spread across Europe, Asia, and eventually North America. Today, it is cultivated not only in its native regions but also in parts of North America and Eastern Europe for commercial herbal use.</p> 
+
+<h3>🌼 Modern-Day Uses & Lasting Legacy</h3> 
+<p> In the modern wellness world, Eleuthero is celebrated as one of the most effective adaptogenic herbs—helping the body adapt to stress, enhance physical stamina, boost immune function, and improve mental clarity. It is commonly found in herbal supplements, teas, and energy tonics. Athletes and professionals use it to fight fatigue, while herbalists recommend it to support recovery after illness. Despite its worldwide availability today, Eleuthero still carries the legacy of its ancient role: a plant of strength, balance, and endurance, deeply rooted in the traditions of the cold northern lands where it first thrived.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc indoor Eleuthero growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Best Climate & Natural Habitat</h3>
+ <p> Eleuthero (Eleutherococcus senticosus) thrives in cool to temperate climates, naturally growing in the forests and mountain slopes of Siberia, China, Korea, and Japan. It prefers regions with cold winters and mild summers, where temperatures range between 10 °C and 25 °C. This hardy shrub is frost-tolerant and requires a dormant winter period to maintain healthy growth. While it can adapt to warmer climates, it performs best in areas that mimic its native forest environment</p> 
+
+<h3>🌱 Soil Preferences & Bed Preparation</h3>
+ <p> Eleuthero grows best in well-draining, fertile loamy soil enriched with organic matter. A slightly acidic to neutral pH of 5.5–7.0 is ideal. Before planting, loosen the soil to a depth of at least 30–40 cm and mix in compost or aged manure to improve nutrient availability and water retention. Good drainage is essential to prevent root rot, especially in wetter climates. Mulching the soil surface helps mimic its natural forest floor conditions.</p> 
+
+<h3>🌿 Propagation Methods & Planting Tips</h3> 
+<p>  Eleuthero can be propagated from seeds, root cuttings, or young nursery plants. Seeds require a period of cold stratification (4–6 weeks) before sowing to improve germination. Sow them in early spring once the danger of frost has passed. Root cuttings taken from mature plants in late winter can also establish well if planted directly into prepared beds. When using nursery plants, ensure they are disease-free and have strong, healthy roots before transplanting.</p> 
+
+<h3>🪴 Plant Spacing & Sunlight Requirements</h3> 
+<p> Space Eleuthero shrubs 1–1.5 m apart to allow for their mature spread, which can reach up to 3 m in height. While it can tolerate partial shade, it grows more vigorously in areas that receive at least 4–6 hours of filtered sunlight daily. In hotter climates, light afternoon shade will prevent leaf scorch and help maintain soil moisture</p> 
+
+<h3>💧 Watering & Moisture Management</h3> 
+<p>  Keep the soil consistently moist during the plant’s first year to encourage strong root establishment. Once mature, Eleuthero is moderately drought-tolerant but benefits from deep watering during dry spells. Avoid waterlogging, as excessive moisture can damage the roots. Applying organic mulch (leaf litter, straw, or bark) helps retain moisture, suppress weeds, and keep the soil temperature stable.</p> 
+
+<h3>🛡️ Pest & Disease Control</h3> 
+<p>  Eleuthero is generally resistant to most pests and diseases, but aphids, spider mites, and leaf spots may occasionally appear. Control infestations by pruning affected parts and using organic insecticidal sprays if needed. Fungal problems can be avoided by ensuring good air circulation and avoiding excessive overhead watering. Annual pruning in late winter helps maintain plant shape and encourages new growth.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc indoor Eleuthero benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+<li>💪Helps reduce fatigue and improve physical endurance.</li>
+<li>🧠Enhances focus, memory, and mental clarity.</li>
+<li>🛡️Supports the body’s defense against infections.</li>
+<li>🧘Helps the body adapt to stress and maintain balance.</li>
+<li>🩺May help regulate blood pressure and improve circulation.</li>
+<li>🏋️Improves recovery and resilience during physical activity.</li>
+<li>🩹Reduces inflammation and supports overall wellness.</li>
+<li>🌿Boosts energy levels without overstimulating the nervous system.</li>
+<li>🧬Supports immune function and cellular health.</li>
+<li>💤May improve sleep quality by balancing stress hormones.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿eleuthero’s strength, rise with resilience and thrive through every challenge✨🌱."</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" class="footer-button"> Back to Plants</a>
+ 
+</footer>
+</body>
+</html>

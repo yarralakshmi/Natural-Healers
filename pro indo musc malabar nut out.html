@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Malabar  Nut</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Malabar Nut Plant That Support Muscular Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\promus indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc outdoor malabar ani.jpeg"  style= " width:250px; height:250px;float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo muscular outdoor malabar nut.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿 Malabar Nut (Justicia adhatoda) – Introduction</h2>
+<p>The Malabar Nut plant, scientifically known as Justicia adhatoda, is a robust, evergreen shrub native to the Indian subcontinent and Southeast Asia. Revered in Ayurveda, Unani, and Siddha systems of medicine, it has been used for over 2,000 years to treat respiratory and inflammatory conditions. The plant typically grows up to 2–3 meters tall and features lance-shaped, bitter-tasting leaves and clusters of white or purple-tinged flowers. Its name “Adhatoda” is derived from Tamil, meaning “untouched by goats,” referencing its bitter taste that deters grazing animals.</p>
+<p>Thriving in tropical and subtropical climates, Malabar Nut is commonly found along forest edges, roadsides, and garden hedges. It’s especially valued for its high content of vasicine, a quinazoline alkaloid known for its bronchodilatory and expectorant properties. This compound has even inspired modern pharmaceutical developments like bromhexine, a mucolytic agent used in respiratory therapy.
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc outdoor malabar nut history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Malabar Nut</h3>
+
+
+<h3>🌱 Ancient Roots & Tropical Origins</h3>  
+<p>Malabar nut, scientifically known as <em>Justicia adhatoda</em>, is native to the warm, humid regions of South and Southeast Asia, including India, Sri Lanka, Nepal, and Myanmar. Unlike Arctic herbs, it flourished in tropical forests and shaded groves, thriving in well-drained soils and monsoon-fed ecosystems. Historical texts from over 2,000 years ago—especially in Ayurvedic and Unani traditions—mention its use in treating respiratory ailments. Its bitter leaves and potent alkaloids made it a staple in ancient healing practices, often cultivated near homes and temples for easy access during seasonal illnesses.</p>
+
+<h3>🌸 Healing Lore & Folk Traditions</h3>  
+<p>In Indian folk medicine, Malabar nut was revered as a “breath-giver.” Ayurvedic texts like the <em>Charaka Samhita</em> and <em>Sushruta Samhita</em> describe its efficacy in clearing bronchial passages, soothing coughs, and treating asthma. Yogic practitioners used its leaf juice to purify the respiratory tract before pranayama. In rural communities, elders passed down recipes for poultices made from its leaves to treat wounds, joint pain, and inflammation. Its flowers and bark were also used in decoctions for fever and digestive issues, making it a versatile remedy in household medicine chests.</p>
+
+<h3>💮 Symbolism & Traditional Names</h3>  
+<p>Known by many names—<em>Vasaka</em> in Sanskrit, <em>Adulsa</em> in Hindi, and <em>Arusa</em> in Tamil—the Malabar nut symbolizes purification and vitality. The name “Adhatoda” is believed to mean “untouched by goats,” referencing its bitter taste that deters grazing animals. Its lion-shaped flowers earned it the nickname “lion’s muzzle,” a symbol of strength and protection. In spiritual contexts, it was sometimes planted near sacred groves to ward off illness and negative energies.</p>
+
+<h3>🌏 Pathways Through Cultures & Continents</h3>  
+<p>As Indian medical knowledge spread through trade and conquest, Malabar nut traveled with it. It entered Persian and Arabic healing systems via Unani medicine, where it was called “Bansa” and used for respiratory and uterine health. British colonial botanists documented its properties in the 18th and 19th centuries, leading to its inclusion in early pharmacopoeias. Its active compound, vasicine, inspired the development of modern drugs like bromhexine, a mucolytic agent still used today. From Asia, it reached Africa and Latin America, where it was adopted into local herbal traditions.</p>
+
+<h3>🌼 Modern Recognition & Global Cultivation</h3>  
+<p>Today, Malabar nut is cultivated across tropical regions of Asia and Africa, with growing interest in its pharmacological potential. Scientific studies have validated its anti-inflammatory, expectorant, and antimicrobial properties. It’s now a key ingredient in herbal syrups, teas, and capsules aimed at respiratory wellness. Conservation efforts are underway to preserve wild populations and promote sustainable harvesting. Bridging ancient wisdom with modern science, Malabar nut continues to be a botanical cornerstone in holistic health systems worldwide.</p>
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo musc outdoor malabar nut growing.jpeg"  style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3> 🏞️ Climate and Location</h3>
+
+<p>The Malabar Nut plant thrives in warm, tropical to subtropical climates and is commonly found in plains, low hills, and forest edges. It grows well in temperatures ranging between 20°C to 35°C and prefers areas with moderate humidity. This hardy shrub requires ample sunlight and performs best when planted in open areas with direct exposure to sunlight.</p>
+
+<h3>🌍 Soil Requirements</h3>
+
+<p>Malabar Nut grows well in a variety of soil types, especially sandy loam or well-drained fertile soils rich in organic matter. It can also tolerate slightly alkaline or clayey soils, making it adaptable to different environments. However, waterlogged or overly compact soils should be avoided, as they can hinder root development and overall plant health.</p>
+
+<h3>🌱 Propagation Through Stem Cuttings</h3>
+
+<p>The most common method of propagation is through semi-hardwood stem cuttings taken from a healthy mature plant. These cuttings, around 10–15 cm in length, should be planted in moist, well-prepared nursery beds or containers. They usually root within 2 to 3 weeks under warm and humid conditions. Though seeds can also be used, propagation by cuttings ensures faster and more consistent growth.</p>
+
+<h3>🌿 Transplanting Young Plants</h3>
+
+<p>Once the rooted cuttings or young seedlings grow to about 20–30 cm in height, they can be transplanted to the main field or garden space. Transplanting is best done at the beginning of the rainy season to ensure better root establishment. Maintain a spacing of 1.5 to 2 meters between plants to allow proper branching and air circulation.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Malabar Nut requires moderate watering, especially during the initial growing phase. Once established, the plant becomes drought-tolerant and requires only occasional watering. Regular weeding and light pruning will help in maintaining its shape and encouraging healthy growth. Adding organic compost once or twice a year improves soil fertility and plant vigor.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+
+<p>The plant is generally resistant to most common pests and diseases. However, in humid conditions, leaf spot or fungal infections may occur. These can be managed using natural fungicides like neem oil or by ensuring good air circulation around the plant. Its robust nature makes it a low-maintenance and long-lasting addition to home gardens or herbal plantations.
+
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo musc outdoor malabar nut benefits.jpeg"   style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul><li>🫁 Clears lung mucus – Acts as a natural expectorant that helps in expelling phlegm.</li>
+<li>😮‍💨 Relieves asthma – Eases breathing and reduces asthma symptoms.</li>
+<li>🤒 Soothes cough and bronchitis – Provides relief from chronic respiratory issues.</li>
+<li>🔥 Reduces inflammation – Has anti-inflammatory effects on internal tissues.</li>
+<li>🦠 Fights infections – Contains antimicrobial properties to combat pathogens.</li>
+<li>🩸 Controls internal bleeding – Used in traditional medicine for bleeding disorders.</li>
+<li>🗣️ Treats sore throat – Relieves irritation and swelling in the throat.</li>
+<li>🌿 Heals skin wounds – Used externally to promote healing of cuts and boils.</li>
+<li>🧪 Supports TB treatment – Traditionally used in herbal remedies for tuberculosis.</li>
+<li>🛡️ Boosts lung immunity – Strengthens the respiratory system naturally.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"Breathe deep, move strong — like the Malabar Nut clears the lungs, let every breath fuel your strength." 🌿💪</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro mus tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro musc.html" class="footer-button">← Back to Muscular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo musc outdoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>

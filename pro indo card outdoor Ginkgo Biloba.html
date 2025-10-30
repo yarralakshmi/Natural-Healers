@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Ginkgo Biloba </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Ginkgo Biloba Plants That Support Cardiovascular Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Ginkgo Biloba ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Ginkgo Biloba.jpeg" style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴Leaves of Legacy: The Tale of Ginkgo Biloba</h2>
+
+<p>Ginkgo Biloba, often called a living fossil, is one of the oldest tree species on Earth, with a history dating back over 200 million years. Native to China and now cultivated worldwide, this resilient tree is admired for its unique fan-shaped leaves and remarkable medicinal value. Ginkgo has long been used in traditional medicine to enhance memory, boost circulation, and support heart and brain health. Its powerful antioxidant compounds make it a natural defender against cellular damage, earning it a special place in both ancient healing and modern wellness practices.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Ginkgo Biloba history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Ginkgo Biloba</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+ <p>Ginkgo Biloba is one of the oldest surviving tree species on Earth, often referred to as a "living fossil" due to its unchanged structure for over 200 million years. It belongs to the Ginkgoaceae family and is the only extant species of its kind. Native to China, Ginkgo trees were once widespread across the globe but gradually disappeared from most regions, surviving only in limited areas of East Asia. The tree is easily identified by its unique fan-shaped leaves and can live for centuries, with some specimens in Asia believed to be over a thousand years old.</p>
+
+ <h3>🕊️ Ancient Use in Traditional Chinese Medicine</h3> 
+<p>Ginkgo Biloba has a long and respected history in Traditional Chinese Medicine, where its seeds and leaves were used to treat respiratory conditions, enhance brain function, and improve circulation. Records of Ginkgo’s medicinal use date back more than 1,500 years. The seeds were traditionally used in treatments for asthma, cough, and bladder issues, while the leaves gained popularity in later centuries for their role in supporting mental clarity and vascular health. The tree was often planted around temples and monasteries, symbolizing endurance, peace, and longevity.</p> 
+
+<h3>🏛️ Preservation Through Culture and Religion</h3>
+ <p>Ginkgo trees were preserved in temple gardens and protected by Buddhist monks, particularly during periods when the species had nearly vanished from the wild. These sacred groves in China and Japan helped ensure the survival of Ginkgo through centuries of climatic and environmental change. As a result, many of the oldest cultivated Ginkgo trees still exist near places of worship, considered sacred and symbolic of resilience and spiritual harmony. The tree’s ability to survive war, pollution, and natural disasters has added to its cultural significance across Asia.</p> 
+
+<h3>🌍 Global Recognition and Botanical Exploration</h3>
+ <p>European explorers and botanists first encountered Ginkgo in the 17th century and brought it to the West, where it soon became popular for both ornamental and medicinal purposes. It was introduced to Europe via Japan, earning the nickname “maidenhair tree” due to the resemblance of its leaves to the maidenhair fern. Over time, Ginkgo became a common feature in parks and botanical gardens around the world. Its resilience to urban pollution and pests made it a preferred choice for city landscapes, especially in countries like the United States, France, and India.</p> 
+
+<h3>🏡 Modern Cultivation and Urban Significance</h3>
+ <p>Today, Ginkgo Biloba is cultivated worldwide and is especially valued in urban areas for its beauty and hardiness. Its resistance to disease, insects, and environmental stress makes it ideal for lining streets and public parks. In India, Ginkgo trees are being introduced in city gardens and green belts as part of urban beautification and environmental conservation projects. The tree’s ability to withstand harsh conditions, combined with its cultural symbolism and health benefits, has secured its place in both ecological planning and wellness practices.</p> 
+
+<h3>🌟 Scientific Discovery and Modern Use</h3>
+ <p>Modern science has confirmed many of the traditional claims about Ginkgo Biloba. Its leaves are rich in flavonoids and terpenoids, compounds known for their antioxidant and anti-inflammatory effects. Extracts of Ginkgo are widely used to support memory, cognitive function, and circulation, especially in aging populations. Ginkgo supplements have become common in herbal medicine and wellness markets across the globe. As research continues into its potential applications, Ginkgo Biloba remains a powerful link between ancient herbal wisdom and modern scientific understanding.</p>
+
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Ginkgo Biloba growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>
+ <p>Ginkgo biloba, often called the maidenhair tree, grows best in temperate climates with full sun exposure. It is a hardy and resilient species that can tolerate a wide range of environmental conditions, including pollution and urban stress. Ginkgo trees prefer areas with good air circulation and thrive in regions with distinct seasonal changes, making them suitable for both city landscapes and garden settings.</p>
+
+ <h3>🧬 Propagation Methods</h3>
+ <p>Ginkgo can be propagated from seeds or by grafting. Seeds should be collected from female trees in autumn and stratified—exposed to cold temperatures—for several weeks to break dormancy before planting. However, seed-grown trees take many years to mature and may vary genetically. Grafting onto established rootstocks is commonly used to ensure uniformity and faster maturity, especially for ornamental or medicinal use. Cuttings can also be rooted under controlled conditions but have lower success rates.</p> 
+
+<h3>🌾 Soil Preparation</h3>
+ <p>Ginkgo biloba adapts well to a variety of soils but prefers deep, well-drained sandy or loamy soils with a slightly acidic to neutral pH. The planting site should be free from waterlogging to prevent root diseases. Before planting, prepare the soil by loosening it to a depth of at least 18–24 inches and mixing in compost or aged manure to enrich nutrient content. Proper drainage is crucial for healthy root development.</p>
+
+ <h3>💧 Watering and Maintenance</h3>
+ <p>Young Ginkgo trees need regular watering, especially during dry periods, to support initial growth. Once established, the tree becomes drought-tolerant and requires minimal watering. Avoid overwatering to prevent root stress. Ginkgo is a low-maintenance tree with few pests or disease issues. Occasional pruning is recommended to shape the tree, remove dead wood, and improve airflow. Mulching helps retain soil moisture and control weeds around the base.</p>
+
+ <h3>🚫 Managing Growth and Spread</h3>
+ <p>Ginkgo biloba is a slow to moderate grower and typically reaches heights of 15 to 25 meters when mature. It does not spread invasively, making it suitable for urban and confined spaces. Regular monitoring of female trees is advised as their fruits emit a strong odor when ripe. To avoid this, many landscapers prefer planting male cultivars. The tree’s columnar growth habit makes it ideal for lining streets, pathways, and garden borders.</p>
+
+<h3>✂️ Harvesting Tips</h3>
+ <p>Ginkgo biloba seeds are typically harvested in autumn when the fleshy outer coating of the fruit turns yellow and begins to fall naturally. The seeds are collected from the ground or gently picked from low-hanging branches. Due to the strong odor of the fruit’s outer layer, it is usually removed promptly, and the seeds are thoroughly cleaned and dried. For medicinal use, Ginkgo leaves are harvested in late summer to early fall when they are fully matured but still green, then dried in shade for use in herbal preparations.</p>
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Ginkgo Biloba benefits.jpeg"         style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of   </h3>
+<ul>
+<li><b>🔄 Circulation and Vascular Flow:</b> Enhances blood circulation and promotes healthy vascular flow, supporting overall heart function.</li>
+<li><b>🛡️ Blood Clot Prevention:</b> Helps reduce the risk of blood clots by supporting smooth blood movement and vessel integrity.</li>
+<li><b>🩺 Blood Pressure Balance:</b> Supports healthy blood pressure levels naturally, contributing to cardiovascular stability.</li>
+<li><b>💨 Oxygen Delivery:</b> Improves oxygen transport to heart muscles, boosting energy and cardiac performance.</li>
+<li><b>🧱 Vessel Wall Strength:</b> Strengthens blood vessel walls, enhancing elasticity and reducing the risk of damage or rupture.</li>
+<li><b>🧬 Antioxidant Heart Protection:</b> Acts as a powerful antioxidant to shield heart tissues from oxidative stress and inflammation.</li>
+<li><b>🧘 Arterial Flexibility:</b> Helps reduce arterial stiffness, promoting smoother blood flow and reducing cardiovascular strain.</li>
+<li><b>🔁 Heart Rhythm Support:</b> Promotes better regulation of heart rhythm, aiding in the management of palpitations and irregular beats.</li>
+<li><b>🚫 Cholesterol Management:</b> May assist in reducing cholesterol buildup in arteries, supporting long-term heart health.</li>
+<li><b>💪 Cardiovascular Endurance:</b> Enhances overall resilience and stamina of the cardiovascular system, helping the body adapt to stress and activity.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+
+“With every leaf of Ginkgo Biloba, nature whispers strength to your heart and clarity to your mind — let it guide your cardiovascular journey.” 🍃
+
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button"> Back to Plants</a></footer>
+</body>
+</html>

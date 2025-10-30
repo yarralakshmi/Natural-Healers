@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Madhu Kamini </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Madhu Kamini Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata) ani.jpeg"      style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata).jpeg"       style="width:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌺 Introduction to Madhu Kamini (Murraya paniculata)</h2>
+
+<p>Madhu Kamini, scientifically known as Murraya paniculata and commonly called Orange Jasmine or Kamini, is a compact, evergreen shrub admired for its glossy green foliage and clusters of small, fragrant white flowers. Native to South and Southeast Asia, this plant is popular in gardens and hedges due to its pleasant aroma, ornamental appeal, and ability to be shaped easily. The sweet scent of its blossoms, which resembles orange blossoms, attracts bees and butterflies, making it a charming addition to pollinator gardens. Apart from its aesthetic value, Madhu Kamini is known for its low maintenance and adaptability to urban environments, symbolizing beauty, calmness, and natural harmony.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata) history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h2 id="history">History of Madhu Kamini</h2>
+<h3> 🌱 Origins and Botanical Background</h3>
+
+<p>Madhu Kamini, scientifically known as Murraya paniculata, is a small, evergreen shrub or tree that belongs to the Rutaceae family. It is native to South and Southeast Asia, particularly found in regions of India, Sri Lanka, China, Malaysia, and Thailand. The plant is known for its dense green foliage and fragrant white flowers, which resemble those of jasmine or orange blossoms. Often planted as an ornamental shrub in gardens and public spaces, it has earned popularity for its pleasant scent and its adaptability to different soil types and climates.</p>
+
+<h3>🕊️ Traditional and Cultural Presence</h3>
+
+<p>Although not heavily referenced in ancient texts, Madhu Kamini has long been appreciated in traditional South Asian gardens. Its sweet fragrance and glossy leaves made it a favorite for planting near temples, homes, and courtyards. It was commonly believed to bring freshness and tranquility to spaces, and its flowers were used in small-scale offerings and decorations. In rural India, the shrub is sometimes referred to by local names that reflect its aromatic nature and gentle appearance.</p>
+
+<h3>🏛️ Spread Across Asia and Botanical Interest</h3>
+
+<p>Over time, Madhu Kamini spread throughout the tropical regions of Asia, making its way into the landscaping practices of Thailand, Indonesia, and parts of China. Its ability to thrive in both wild and cultivated conditions caught the attention of botanists and horticulturists. The plant’s versatility in shaping and pruning made it an ideal choice for formal gardens, palace compounds, and public walkways. It was also introduced to other tropical regions around the world for ornamental and hedging purposes.
+</p>
+
+<h3>🌍 Use in Landscaping and Urban Greening</h3>
+
+<p>Madhu Kamini has become a preferred plant for hedges, borders, and low-maintenance garden design. Its compact size, repeated blooming throughout the year, and resistance to pests make it especially useful in urban gardening. It is widely used in parks, institutions, housing societies, and school grounds. In addition to its aesthetic appeal, the shrub helps support pollinators like bees and butterflies, contributing positively to urban biodiversity.
+</p>
+
+<h3>🏡 Cultural Symbolism and Household Value</h3>
+
+<p>In many Indian households, Madhu Kamini is planted not only for beauty but also for the sense of peace and purity it brings to the surroundings. Its fragrance is associated with calmness, making it suitable for spaces near prayer rooms or meditation areas. Though not a major medicinal plant, its presence in folk medicine is seen in the use of leaves and flowers in air freshening and sometimes mild herbal infusions. It is also considered to have a natural ability to refresh the air and repel insects.
+</p>
+
+
+<h3>🌟 Modern Relevance and Garden Popularity</h3>
+
+<p>Today, Madhu Kamini remains an important part of tropical garden design. With increasing interest in fragrant, low-maintenance, and eco-friendly plants, it continues to be grown widely in both rural and urban landscapes. Its year-round blooming, neat appearance, and ease of care have made it a staple in home gardens, institutional plantations, and decorative fencing. As interest in natural beauty and sustainable gardening grows, Madhu Kamini holds its place as a timeless favorite in ornamental horticulture.
+</p>
+
+
+    
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata) growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>
+
+<p>Madhu Kamini, also known as Orange Jasmine, thrives in warm tropical and subtropical climates. It prefers full sun to partial shade and grows best in locations that receive at least 4–6 hours of direct sunlight daily. While it tolerates some shade, more sunlight results in better flowering. The plant does well in both gardens and containers and can be used as a hedge, ornamental shrub, or bonsai.
+</p>
+
+<h3>🧬 Propagation Methods</h3>
+
+<p>Madhu Kamini is commonly propagated through seeds, cuttings, or air layering. Semi-hardwood cuttings taken in the monsoon or early spring root effectively when placed in moist, well-drained soil. Seeds can be used, but they take longer to germinate and establish. Air layering is another reliable method, especially when propagating mature plants. Propagation by cuttings ensures the new plants retain the same characteristics as the parent plant.</p>
+
+<h3>🌾 Soil Preparation</h3>
+
+<p>This plant prefers well-draining, fertile soil that is rich in organic matter. A loamy or sandy-loam soil with a slightly acidic to neutral pH is ideal. Before planting, loosen the soil to a depth of 10–12 inches and mix in compost or well-rotted manure to improve fertility. Good drainage is essential, as Madhu Kamini does not tolerate waterlogged conditions. Raised beds or container planting is suitable for areas with heavy soil.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Madhu Kamini needs regular watering during its growing phase, especially in dry or hot weather. Water the plant deeply but allow the topsoil to dry between waterings to avoid root rot. Once established, it becomes moderately drought-tolerant. Pruning after flowering helps maintain its shape, encourages bushy growth, and promotes more blooms. Fertilize monthly during the growing season with a balanced or bloom-boosting fertilizer for lush growth and abundant flowers.</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+
+<p>This shrub grows vigorously and can spread up to 6 feet or more if left unpruned. Regular trimming helps maintain a compact shape and controls its spread in gardens or landscapes. While not invasive, Madhu Kamini can become dense and leggy if not pruned periodically. It’s an ideal plant for shaping into hedges or topiary forms, and controlled pruning ensures better flowering and air circulation.</p>
+
+<h3>✂️ Harvesting Tips</h3>
+
+<p>Madhu Kamini is primarily grown for its fragrant white flowers, which can be gently plucked once fully opened. While it is not commonly harvested for culinary use, the flowers are sometimes used in garlands or for their aromatic appeal. If you're growing it for aesthetic purposes, regular removal of spent blooms and trimming faded branches helps encourage fresh flowering and keeps the plant looking neat and healthy.</p>
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata) benefits.jpeg"           style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌿 Health Benefits of Madhu Kamini (Murraya paniculata / Orange Jasmine)</h3>
+<ul>
+<li>Emits a calming fragrance that helps reduce stress.</li>
+<li>Acts as a natural air freshener and mood enhancer.</li>
+<li>Attracts pollinators, supporting ecological balance.</li>
+<li>May aid in mild respiratory relief through aromatic exposure.</li>
+<li>Supports mental clarity and peace in meditation spaces.</li>
+<li>Sometimes used in folk remedies for mild digestive issues.</li>
+<li>Enhances indoor air quality with its foliage.</li>
+<li>May help repel certain insects naturally.</li>
+<li>Promotes relaxation through its jasmine-like scent.</li>
+<li>Adds aesthetic and emotional value to gardens and homes.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"Like the Madhu Kamini, bloom quietly, spread fragrance freely, and let your presence bring peace without making noise."
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

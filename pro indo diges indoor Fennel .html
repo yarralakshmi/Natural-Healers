@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Fennel (Foeniculum vulgare) plant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Fennel Plants That Support Digestive Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo diges indoor Fennel ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo diges indoor Fennel .jpeg" style="width:250px;height:250px; float:right;">
+
+ <h2 id="intro">🪴🌾 The Belly’s Best Friend: Fennel and Digestive Harmony</h3><p>Fennel (Foeniculum vulgare), with its sweet, anise-like aroma and delicate feathery fronds, has long been revered as one of nature’s most effective digestive allies. Native to the Mediterranean region and now widely cultivated across India, fennel has been used for centuries in Ayurveda, Unani, and folk medicine to soothe the stomach and restore gut balance. Its seeds are rich in essential oils like anethole, fenchone, and estragole, which possess carminative, antispasmodic, and anti-inflammatory properties. These compounds help relax the smooth muscles of the gastrointestinal tract, reducing bloating, gas, and cramping while stimulating the secretion of digestive enzymes and bile. Fennel also supports gut motility, alleviates constipation, and enhances nutrient absorption—making it especially beneficial for those with sluggish digestion or irritable bowel syndrome (IBS). Whether chewed after meals, brewed into tea, or added to culinary dishes, fennel offers a gentle, aromatic path to digestive wellness. In a world of complex remedies, fennel remains a simple, fragrant solution—bringing comfort, clarity, and calm to the core of your being.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo diges indoor Fennel history.jpeg" style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Fennel</h3>
+     <h3>🌱 Origins and Botanical Background</h3><p>Fennel (Foeniculum vulgare) is a perennial herb from the Apiaceae family, native to the sun-drenched shores of the Mediterranean. Its hollow stems, feathery leaves, and aromatic seeds have made it a staple in both culinary and medicinal traditions for thousands of years. The name “fennel” derives from the Latin *faeniculum*, meaning “little hay,” a nod to its delicate foliage. Ancient civilizations quickly recognized its value, cultivating it for its digestive, diuretic, and anti-inflammatory properties. Over time, fennel spread across Europe, Asia, and the Americas, adapting to diverse climates and becoming a beloved herb in global healing systems and cuisines.</p>
+<h3>🕊️ Ancient Egyptian Use</h3><p>In ancient Egypt, fennel was revered as a symbol of longevity and vitality. It was used in rituals honoring gods and incorporated into herbal remedies for digestive complaints and respiratory issues. Egyptians believed fennel could ward off evil spirits and enhance physical strength, and it was often included in ceremonial offerings and medicinal preparations.</p>
+<h3>🏛️ Greek and Roman Traditions</h3><p>The Greeks called fennel *marathron*, from which the town of Marathon derives its name. They used it to treat over 20 ailments, including indigestion, bloating, and menstrual discomfort. Hippocrates recommended fennel for nursing mothers to increase milk supply. The Romans embraced fennel for its culinary and medicinal versatility—Pliny the Elder documented its use for snake bites, eyesight improvement, and stomach relief. Roman soldiers chewed fennel seeds for stamina and clarity during campaigns.</p>
+<h3>📜 Medieval Herbalism in Europe</h3><p>During the Middle Ages, fennel was a common feature in monastic gardens and household remedies. It was used as a strewing herb to mask odors and repel insects, and hung over doorways to ward off evil spirits. Fennel seeds were chewed during long church services to suppress hunger, earning them the nickname “meetin’ seeds.” Herbalists praised fennel for its digestive, diuretic, and detoxifying effects, and it became a key ingredient in tonics and teas.</p>
+<h3>🔬 Scientific Recognition and Taxonomy</h3><p>Botanists formally classified fennel under the binomial name *Foeniculum vulgare*, recognizing its close relation to dill, caraway, and coriander. Its essential oils—especially anethole, fenchone, and estragole—were identified as  the source of its distinctive aroma and therapeutic properties. Scientific studies confirmed its carminative, antispasmodic, and antimicrobial effects, bridging traditional herbal wisdom with modern pharmacology.</p>
+<h3>⚗️ Rise in European Medicine</h3><p>In Renaissance and Enlightenment Europe, fennel became a popular remedy in apothecaries. Physicians prescribed fennel oil and seed infusions for digestive disorders, respiratory ailments, and hormonal imbalances. Nicholas Culpepper, a renowned herbalist, praised fennel for its ability to “consume phlegmatic humors” and counteract the effects of fish-heavy diets. Its use in culinary and medicinal preparations expanded rapidly across Europe.</p>
+<h3>🌎 Transatlantic Expansion and Farming</h3><p>European settlers brought fennel to the Americas in the 17th century, where it quickly adapted to new soils and climates. Indigenous communities incorporated it into their healing practices, and fennel became a staple in colonial gardens. By the 19th century, fennel farming was established in regions like New York and the Pacific Northwest, supplying seeds and oil for domestic and international markets.</p>
+<h3>🏭 Industrial Era Applications</h3><p>The Industrial Revolution enabled large-scale production of fennel oil through steam distillation. It became a key ingredient in pharmaceuticals, confections, and personal care products. Fennel flavoring appeared in toothpaste, cough drops, and digestive tonics, while its seeds were used in spice blends and baked goods. Its popularity surged in Italian and Indian cuisines, solidifying its role as both a healing herb and culinary treasure.</p>
+<h3>🌟 Modern-Day Relevance</h3><p>Today, fennel remains a cornerstone of digestive wellness and culinary artistry. Its seeds are chewed after meals to aid digestion, brewed into teas for gut relief, and incorporated into dishes for flavor and health. Scientific research continues to validate its traditional uses, especially for bloating, colic, and irritable bowel syndrome (IBS). Whether in herbal medicine, gourmet kitchens, or sustainable gardens, fennel’s enduring legacy is one of healing, nourishment, and aromatic delight.</p>
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo diges indoor Fennel growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+ <h3>☀️ <strong>Ideal Growing Conditions</strong></h3><p>Fennel thrives in cool to moderately warm climates and prefers full sun exposure. It grows best in temperatures between 15°C to 25°C. While it tolerates light frost, extreme heat can cause premature bolting, especially in bulb-forming varieties like Florence fennel. Choose a location with at least 6 hours of direct sunlight daily. Fennel is well-suited for garden beds and large containers, and its feathery foliage adds ornamental value to herb gardens.</p>
+<h3>🧬 <strong>Propagation Methods</strong></h3><p>Fennel is typically propagated from seeds. Sow seeds directly into the soil after the last frost, spacing them 25–30 cm apart. Avoid transplanting, as fennel has a sensitive taproot that doesn’t respond well to disturbance. For continuous harvest, sow seeds every 2–3 weeks. Keep fennel away from dill and coriander to prevent cross-pollination, which can affect seed quality and flavor.</p>
+<h3>🌾 <strong>Soil Preparation</strong></h3><p>Fennel prefers well-drained, fertile soil with a pH between 6.0 and 7.0. Loosen the soil and mix in compost or aged manure before sowing. Avoid overly rich soil, which can lead to bland bulbs. For container growing, use a deep pot with a high-quality potting mix and added organic matter. Good drainage is essential to prevent root rot and fungal issues.</p>
+<h3>💧 <strong>Watering and Maintenance</strong></h3><p>Water fennel regularly to maintain consistent moisture, especially during dry spells. Avoid waterlogging, which can damage roots. Mulch around the base to retain moisture and suppress weeds. Thin seedlings once they reach 5–7 cm tall to ensure proper airflow and bulb development. Remove flower stalks early if growing for bulbs, as flowering can reduce bulb size.</p><ul><li>Water when topsoil feels dry, especially during hot weather</li><li>Apply compost or organic fertilizer every 3–4 weeks</li><li>Thin seedlings to 25–30 cm spacing for optimal growth</li></ul>
+<h3>🚫 <strong>Managing Growth and Spread</strong></h3><p>Fennel is a self-seeding plant that can spread if left unchecked. To manage its growth, harvest seeds before they mature or remove flower heads early. Avoid planting near dill or coriander to prevent hybridization. Container growing helps control its spread and allows easy relocation during seasonal changes.</p>
+<h3>✂️ <strong>Harvesting Tips</strong></h3><p>Harvest fennel bulbs when they reach 7–10 cm in diameter, typically 90–100 days after sowing. Use a sharp knife to cut the bulb at soil level. Fronds can be harvested earlier and used fresh in salads or teas. For seeds, allow flower heads to dry on the plant, then collect and store in airtight containers.</p>
+<h3>🌿 <strong>Uses and Benefits</strong></h3><p>Fennel is a culinary and medicinal powerhouse. Its bulbs are used in soups, stews, and roasted dishes, while fronds add flavor to salads and teas. Medicinally, fennel supports digestion, relieves bloating, and soothes colic. Its seeds are chewed after meals to freshen breath and aid gut health. Fennel also attracts pollinators and repels pests, making it a valuable companion plant in herbal gardens.</p>
+
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo diges indoor Fennel benefits.jpeg"  style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴Health & Medicinal Benefits of Holy basil plant</h3>
+    <ul>
+     <li><b>🌿 1. Promotes Digestive Enzyme Secretion:</b>Fennel stimulates the release of digestive juices and enzymes, helping break down food efficiently and easing the digestive process.</li>
+<br>
+<li><b>🍃 2. Relieves Bloating and Gas:</b>Its carminative properties help expel excess gas from the stomach and intestines, reducing bloating, flatulence, and abdominal discomfort.</li>
+<br>
+<li><b>🩺 3. Soothes Irritable Bowel Syndrome (IBS):</b>Fennel’s anti-inflammatory and antispasmodic effects can help calm intestinal spasms and reduce symptoms of IBS and colic.</li>
+<br>
+<li><b>🧪 4. Acts as a Natural Antacid:</b>Fennel seeds help neutralize excess stomach acid, making them effective in managing heartburn and acid reflux.</li>
+<br>
+<li><b>💧 5. Supports Gut Hydration and Detoxification:</b>Fennel’s mild diuretic properties help flush out toxins and excess fluids, supporting kidney function and overall digestive clarity.</li>
+<br>
+<li><b>🧠 6. Calms Digestive-Related Anxiety:</b>Traditionally used to ease nervous tension, fennel may help reduce stress-related digestive issues like nausea and cramping.</li>
+<br>
+<li><b>🫐 7. Enhances Nutrient Absorption:</b>By improving gut motility and reducing inflammation, fennel supports better absorption of vitamins and minerals from food.</li>
+<br>
+<li><b>🩹 8. Eases Constipation:</b>Its fiber content and gentle laxative effect help regulate bowel movements and prevent constipation without harsh side effects.</li>
+<br>
+<li><b>🌱 9. Freshens Breath and Oral Digestion:</b>Chewing fennel seeds after meals not only freshens breath but also stimulates saliva production, aiding early stages of digestion.</li>
+<br>
+<li><b>🧬 10. Balances Gut Flora:</b>Fennel’s antimicrobial compounds help maintain a healthy balance of gut bacteria, supporting immunity and digestive resilience.</li>
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+🌱“Fennel is the gentle guardian of your gut—cooling, calming, and clearing the path to inner ease. Let its sweet strength remind you: healing begins with harmony, and every seed holds the power to restore.”
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

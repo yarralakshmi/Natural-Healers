@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Annona Squamosa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Annona Squamosa Plants That Support Nervous Health:</h1>
+<div class="top-nav" >
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv indoor.html"  class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html" class="footer-button">← Back to Nervous System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Annona Squamosa  ani.jpeg"  style= " width:250px;height:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Annona Squamosa .jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🍈 Introduction to Annona squamosa (Sugar Apple)</h2>
+<p>Annona squamosa, commonly known as Sugar Apple, Sweetsop, or Sitaphal, is a small, well-branched tropical tree or shrub from the Annonaceae family. Native to the Americas and West Indies, it has spread widely across tropical regions, including India, where it’s cherished both as a fruit crop and a medicinal plant.</p>
+<p>This semi-deciduous plant typically grows 3 to 8 meters tall and produces round, knobby fruits with a soft, fragrant, custard-like pulp. The fruit is segmented and easily separates when ripe, revealing creamy white to pale yellow flesh that’s sweet and rich in flavor
+
+<p>
+
+
+
+
+
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor nerv Annona Squamosa  history.jpeg"     style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">📜 Historical Background of Annona squamosa (Sugar Apple)</h3>
+<h3>🌍 Origins in Tropical Americas</h3><p>Annona squamosa is native to the tropical regions of the Americas, particularly the Caribbean and parts of Central and South America. It flourished in warm, lowland climates with well-drained soils and seasonal rainfall. Indigenous communities cultivated and consumed its sweet, segmented fruits long before European contact, integrating it into both their diets and traditional healing practices. Its resilience and productivity made it a cherished plant in early agroforestry systems.</p>
+<h3>🌿 Discovery and Botanical Recognition</h3><p>The species was formally described by Carl Linnaeus in the 18th century, earning its binomial name *Annona squamosa L.* under the Annonaceae family. The genus name “Annona” is derived from the Latin word “anon,” meaning “annual produce,” referencing its fruit-bearing nature. The species epithet “squamosa” refers to the scaly texture of its fruit rind. European botanists were captivated by its unique fruit morphology and fragrant pulp, leading to its inclusion in early botanical texts and illustrations.</p>
+<h3>🌱 Early Spread Through Trade Routes</h3><p>Spanish and Portuguese explorers played a key role in spreading Annona squamosa beyond the Americas. By the 17th century, it had reached Asia via the Manila galleons, thriving in tropical regions like India, the Philippines, and Southeast Asia. In India, it became known as “Sitaphal,” and was quickly adopted into Ayurvedic and folk medicine traditions. Its adaptability to various climates and soils helped it naturalize across Africa, Asia, and the Pacific Islands.</p>
+<h3>🌐 Global Cultivation and Hybridization</h3><p>Throughout the 20th century, Annona squamosa gained popularity as both a fruit crop and a medicinal plant. It became widely cultivated in tropical and subtropical regions around the world. In the United States, hybridization efforts led to the development of the atemoya—a cross between Annona squamosa and Annona cherimola—offering improved flavor and resilience. Taiwan and Hong Kong have since developed new cultivars with enhanced sweetness and reduced seed count, boosting its commercial appeal.</p>
+<h3>🏡 Cultural Significance and Medicinal Legacy</h3><p>Annona squamosa holds deep cultural and medicinal significance across continents. In Indian traditions, its leaves, bark, and seeds are used for treating ulcers, dysentery, and skin ailments. In Latin America, it’s revered for its antioxidant and anti-inflammatory properties. The fruit’s creamy texture and sweet aroma have made it a symbol of abundance and nourishment. Today, it continues to be celebrated not only for its flavor but also for its role in holistic wellness and sustainable agriculture.</p>
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor nerv Annona Squamosa  growing.jpeg"     style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>🏞️Climate and Location</h3>
+
+<p>Annona squamosa, commonly known as sugar apple or sweetsop, thrives in tropical and subtropical climates. It prefers warm temperatures ranging from 20°C to 35°C and is sensitive to frost. Native to the Americas and West Indies, it has been widely cultivated across India, Southeast Asia, and tropical Africa. The tree flourishes in full sunlight and benefits from moderate rainfall, making it ideal for regions with distinct dry and wet seasons.</p>
+
+<h3>🌍 Soil Requirements</h3>
+
+<p>Sugar apple grows best in well-drained sandy or loamy soils with a slightly acidic to neutral pH (6.0–7.5). It tolerates poor soils but is vulnerable to waterlogging, which can lead to root rot. Adding organic compost or farmyard manure improves soil fertility and supports healthy root development.</p>
+
+<h3>🌱 Propagation Through Seeds</h3>
+
+<p>Propagation is typically done through seeds extracted from ripe fruits. Seeds should be soaked overnight to enhance germination and sown 2–3 cm deep in nursery beds or pots. Germination usually occurs within 2 to 4 weeks under warm, moist conditions. Seedlings may take 2–3 years to bear fruit. Grafting is also practiced to produce improved varieties with better fruit quality and faster yields.</p>
+
+<h3>🌿 Transplanting Seedlings</h3>
+
+<p>Once seedlings reach 30–40 cm in height and develop strong roots, they can be transplanted to the main site. Transplanting is best done at the onset of the rainy season. Maintain a spacing of 4 to 6 meters between trees to allow for canopy expansion and airflow.</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Regular watering is essential during the first year of growth. Mature trees require moderate irrigation and become drought-tolerant. Mulching around the base helps retain moisture and suppress weeds. Light pruning improves tree shape and removes dead or diseased branches. Annual application of balanced fertilizer supports fruiting and foliage development.</p>
+
+<h3>🛡️ Pest and Disease Resistance</h3>
+
+<p>Sugar apple trees are susceptible to pests such as fruit borers, aphids, mealybugs, and whiteflies. Diseases like root rot and bark infections may occur in poorly drained soils. Organic treatments like neem oil or Pyganic are effective for pest control. With proper care, the tree produces fragrant flowers and sweet, custard-like fruits that are popular in tropical markets.
+
+
+</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor nerv Annona Squamosa benefits.jpeg"  style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">🧠 10 Nervous System Benefits of Annona squamosa (Sugar Apple)</h3>
+<ul><li>🍃 Promotes neural calmness* by enhancing GABA receptor activity, reducing excitability</li>  
+<li>🧠 Improves memory retention* through the alkaloid anonaine, which supports cognitive function</li>  
+<li>⚡ Provides neuroprotection* in epileptic models by restoring GABAergic balance  </li>
+<li>💊 Supports neurotransmitter synthesis* with vitamin B6, vital for dopamine and serotonin production</li>  
+<li>🛡️ Protects neurons* from oxidative stress via polyphenols and flavonoids  </li>
+<li> 🌿 Reduces inflammation* in neural tissues, aiding in pain and stress management  </li>
+<li>🧬 Modulates brain signaling* through acetogenins found in seeds and bark  </li>
+<li>🧘‍♀️ Alleviates anxiety and restlessness* through mild sedative properties in leaf extracts  </li>
+<li> 🧪 Improves cerebral blood flow* due to potassium and magnesium content, enhancing brain oxygenation</li>  
+<li>🌟 Boosts overall brain vitality* by combining antioxidant, anti-inflammatory, and neurochemical support
+
+
+
+
+</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🧠 Annona squamosa nourishes the nervous system with sweet serenity—reminding us that healing can be as gentle and powerful as nature’s own rhythm.*
+</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro nerv.html" class="footer-button">← Back to Nervous System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo nerve outdoor.html" class="footer-button"> Back to Plants</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Outdoor plants for Lymphtic Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background:  linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+
+color:white;
+   padding: 60px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 20px 26px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Outdoor Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<h2 id="a">🌱 Choose Your Herb</h2>
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp.jpeg" class="falling-image">
+   <a href="#Eucalyptus">Bougainvillea</a>
+    <a href="#Tulsi">Morning Glory (Ipomoea)</a>
+    <a href="#Thyme">Tuberose (Rajnigandha)</a>
+    <a href="#Oregano">Shahtoot (Mulberry Tree)</a>
+    <a href="#Mullein">Madhu Kamini</a></div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+    <h2>🌿 Outdoor Plants That Support the Lymphatic System</h2>
+<p>These five outdoor plants—Bougainvillea, Morning Glory (Ipomoea), Tuberose (Rajnigandha), Shahtoot (Mulberry Tree), and Madhu Kamini (Murraya paniculata)—offer various benefits that may support the lymphatic system through traditional and herbal practices. Bougainvillea is known for its detoxifying and anti-inflammatory properties, which can help reduce lymph node swelling and support immune function. Morning Glory contains flavonoids and terpenoids that aid in reducing inflammation and promoting cellular detox. Tuberose, with its soothing aroma and diuretic effects, is used in Ayurveda to ease lymphatic congestion and stress-related stagnation. Shahtoot (Mulberry) is rich in antioxidants like resveratrol, which enhance blood circulation and reduce oxidative stress on lymphatic tissues. Madhu Kamini, a fragrant shrub, offers antibacterial and anti-inflammatory benefits that may help clear skin issues and reduce lymphatic blockages. Together, these plants contribute to cleansing, circulation, and immune modulation—key pillars of a healthy lymphatic system.
+
+
+
+</p>
+</div> 
+<!-- - Bougainvillea-->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp  Bougainvillea.jpeg"        style="width:250px; height:250px;float:right;" class="falling-image">
+<h2 id="Eucalyptus">🌺 Bougainvillea: A Natural Ally for Wellness</h2>
+<p>Bougainvillea (Bougainvillea spectabilis) is a vibrant, thorny vine known for its striking papery bracts and hardy nature. Beyond its ornamental charm, it has long been valued in traditional medicine for its anti-inflammatory, antioxidant, and antimicrobial properties. Bougainvillea tea, made from its flowers and bracts, is used to support respiratory health, reduce fever, and aid in detoxification. Its bioactive compounds—such as flavonoids, alkaloids, and saponins—make it a promising plant for managing inflammation and promoting overall immune balance, which indirectly supports the lymphatic system by reducing toxic load and swelling.
+
+</p>
+<h1 style="left-padding:0px;">🔹Bougainvillea – Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>🔥  Helps reduce inflammation, easing joint pain and swollen lymph nodes</li>
+<li>💧 Supports detoxification, aiding in the removal of toxins from the body</li>
+<li>🌬️Promotes respiratory health, helping clear mucus and soothe sore throats</li>
+
+
+
+    </ul></div>
+<div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor  Bougainvillea.html"    class="plant-button">Learn More About Bougainvillea</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+
+<!--- Morning Glory (Ipomoea)  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp morning glory.jpeg"    style="width:250px;height:250px; float:left;">
+<h2 id="Tulsi">🌸 Morning Glory (Ipomoea): A Climber with Healing Potential</h2>
+<p>Morning Glory (Ipomoea spp.) is a fast-growing, ornamental vine known for its vibrant trumpet-shaped flowers that bloom with the sunrise. Beyond its beauty, this plant has long been used in traditional medicine across cultures. It contains flavonoids, terpenoids, and alkaloids that contribute to its antioxidant, anti-inflammatory, and digestive-supporting properties. Some species of Morning Glory have been used to ease constipation, reduce internal swelling, and promote skin healing. Its natural compounds help neutralize free radicals and support cellular detox, making it a gentle ally for the lymphatic system and overall wellness.
+
+
+</p>
+<h1 style="left-padding:0px;">🔹- Morning Glory– Health Benefits at a Glance:</h1>
+</div>
+<div style="margin-left:220px" class="content-wrapper">
+     <ul><li>🔥 Reduces inflammation, helping soothe internal and external swelling</li>
+<li>💨Supports digestion, easing bloating and promoting bowel movement</li>
+<li>🛡️Provides antioxidants, protecting cells from free radical damage</li>
+
+ 
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor moring glory (ipomoea).html"         class="plant-button">Explore - Morning Glory Benefits</a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p><hr>
+</div>
+
+
+ <!-- - Tuberose (Rajnigandha) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp Tuberose (Rajnigandha).jpeg"    style="width:250px;height:250px; float:right;">
+<h2 id="Thyme">🌼 Tuberose (Rajnigandha): Fragrance with Healing Power</h2>
+<p>Tuberose (Polianthes tuberosa), known in India as Rajnigandha, is a night-blooming flower cherished for its intoxicating fragrance and therapeutic properties. Traditionally used in Ayurveda, its bulb and essential oil are known for their anti-inflammatory, diuretic, and stress-relieving effects. Rajnigandha has been used to treat swollen lymph nodes, urinary retention, and skin conditions, making it a valuable plant for supporting the lymphatic system and overall detoxification. Its calming aroma also plays a role in emotional balance, helping to ease anxiety and promote restful sleep.
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Tuberose– Health Benefits at a Glance:</h1>
+  </div>
+<div style="margin-left:220px" class="content-wrapper">
+    <ul><li>🧘‍♂️ Reduces lymph node swelling with its potent anti-inflammatory properties</li>
+<li>💧Acts as a natural diuretic, promoting fluid balance and detoxification</li>
+<li>🌿Relieves stress and anxiety, supporting emotional and lymphatic harmony</li>
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor turbose.html"          class="plant-button">Tuberose Insights</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+<!--Shahtoot (Mulberry Tree)  -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lymp outdoor Shahtoot (Mulberry Tree).jpeg" style="width:250px;height:250px; float:left;">
+<h2 id="Oregano">🍇 Shahtoot (Mulberry Tree): A Nutrient-Rich Support for Vital Health</h2>
+<p>Shahtoot, or the Mulberry Tree (Morus alba), is a deciduous tree native to India and widely celebrated for its sweet, juicy berries and medicinal value. Rich in vitamin C, iron, resveratrol, and antioxidants, mulberries have been used in Ayurveda to support blood purification, digestion, and immune health. Their potent phytonutrients help reduce oxidative stress, improve circulation, and support detoxification, all of which are essential for a healthy lymphatic system. The berries and leaves are also used to manage blood sugar levels and promote skin and hair vitality, making Shahtoot a versatile addition to both diet and herbal remedies.
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Shahtoot – Health Benefits at a Glance:</h1>
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>🩸Enhances blood circulation, supporting lymphatic flow and tissue oxygenation</li>
+<li>🛡️Rich in antioxidants, helping reduce oxidative stress and cellular damage</li>
+<li>🌿Supports digestion and detox, aiding in lymphatic cleansing and gut health</li>
+
+       
+</li>
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo outdoor lymp shahtoot.html"   class="plant-button">Explore Shahtoot </a><hr>
+<p>Click Here to go back to the link  >><a href="#a" style="color:pink;">Plants link</a></p>
+<hr></div>
+
+    
+
+<!--Madhu Kamini (Murraya paniculata) -->
+<div style="margin-left: 50px;" class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lump outdoor Madhu Kamini (Murraya paniculata).jpeg" style="width:250px;height:250px; float:right;">
+<h2 id="Mullein">🌸 Madhu Kamini (Murraya paniculata): Fragrance, Healing & Serenity in One Shrub</h2>
+<p>Also known as Orange Jasmine, Mock Orange, or China Box, Murraya paniculata is a fragrant evergreen shrub native to South and Southeast Asia. Its glossy green leaves and heavenly white flowers make it a favorite in gardens, temples, and traditional healing practices. But beyond its ornamental charm, Madhu Kamini is packed with medicinal properties—used in Ayurveda and folk medicine for its anti-inflammatory, antibacterial, and antispasmodic effects.
+Its bioactive compounds like murrayacinine, paniculatin, and mahanimbine offer a wide range of health benefits, from respiratory relief to skin healing and stress reduction.
+
+
+
+</p>
+<h1 style="left-padding:0px;">🔹Madhu Kamini – Health Benefits at a Glance:</h1>
+   
+   </div>
+<div style="margin-left:220px" class="content-wrapper">
+   <ul><li>🌬️ Respiratory Support: Eases asthma, bronchitis, and acts as a natural expectorant</li>
+<li>🩹 Skin & Wound Healing: Treats acne, rashes, and accelerates wound recovery</li>
+<li>🧘 Stress Relief & Sleep Aid: Its calming scent promotes relaxation and better sleep</li>
+
+
+
+    </ul></div><div class="content-wrapper">
+    <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor madhu kamini .html" class="plant-button"> Explore Madhu Kamini</a><hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;">Plants link</a></p>  <hr></div>
+</article>
+</section>
+
+<footer><p>🌿 “Just as the lymphatic system clears and renews your body from within, nurturing outdoor healers like Shahtoot and Madhu Kamini helps you align with nature’s rhythm of detox, vitality, and pure breath—one leaf, one bloom, one deep exhale at a time.”
+  
+
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+</footer>
+</body>
+</html>

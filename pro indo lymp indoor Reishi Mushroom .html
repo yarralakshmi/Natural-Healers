@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Reishi Mushroom (Ganoderma lucidum)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Reishi Mushroom  Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp indoor Reishi Mushroom ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp indoor Reishi Mushroom.jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Ashwagandha(Withania Somnifera)</h2>
+
+<p> Reishi Mushroom (*Ganoderma lucidum*) is a revered medicinal fungus known for its deep, glossy appearance and potent healing properties. Traditionally celebrated in Chinese and Japanese medicine as the “mushroom of immortality,” Reishi is valued for its ability to support immune function, reduce stress, and promote longevity. It thrives in warm, humid environments and can be cultivated indoors using specialized kits. Though not typically consumed fresh due to its bitter taste, Reishi is widely used in teas, powders, and extracts, making it a popular adaptogenic remedy in modern wellness practices.
+</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lymp indoor Reishi Mushroom history.jpeg" style="width:250px; float:left;">
+
+
+    <h2 id="history">🪴The History of Reishi Mushroom</h2>
+<h3>🌱 Origins and Botanical Background</h3>  
+<p>Reishi Mushroom (*Ganoderma lucidum*), also known as Lingzhi in Chinese, is native to the humid woodlands of East Asia, particularly China, Japan, and Korea. It typically grows on hardwood trees like oak and maple and belongs to the Ganodermataceae family. With its glossy, reddish-brown cap and fan-like shape, Reishi has long been admired for its striking appearance and medicinal potency. Though rare in the wild, it is now widely cultivated for its therapeutic use.</p>  
+
+<h3>🏯 Ancient Chinese Reverence</h3>  
+<p>Reishi’s documented use dates back over 2,000 years to the Han dynasty, where it was considered an “elixir of immortality” and reserved for emperors and nobility. Ancient texts like the *Shennong Ben Cao Jing* praised its ability to promote longevity, vitality, and spiritual strength. Reishi frequently appeared in Taoist art and mythology, symbolizing divine health and transcendence.</p>  
+
+<h3>🗾 Japanese and Korean Traditions</h3>  
+<p>In Japan and Korea, Reishi was similarly revered for its immune-boosting and calming effects. It was used in traditional Kampo and Korean herbal medicine to treat fatigue, respiratory issues, and liver ailments. Its spiritual symbolism also extended into Buddhist practices, where it was associated with enlightenment and inner peace.</p>  
+
+<h3>📜 Expansion into Indian and Southeast Asian Healing</h3>  
+<p>Though less central in Indian Ayurveda, Reishi found its way into regional healing systems through trade and cultural exchange. Its adaptogenic qualities were recognized and compared to native herbs like Ashwagandha and Guduchi, especially in formulations for stress and immune support.</p>  
+
+<h3>🔬 Scientific Recognition and Taxonomy</h3>  
+<p>Reishi was formally classified as *Ganoderma lucidum* by European botanists in the 18th century. Modern research has identified over 200 bioactive compounds, including triterpenes and polysaccharides, which contribute to its anti-inflammatory, immunomodulatory, and neuroprotective effects. These discoveries have elevated Reishi’s status in integrative and functional medicine worldwide.</p>  
+
+<h3>🌍 Global Spread and Modern Relevance</h3>  
+<p>In the 20th century, Reishi gained popularity in the West through herbal tonics, supplements, and wellness teas. Its cultivation expanded globally, and it became a staple in natural health circles for managing stress, enhancing immunity, and promoting longevity. Today, Reishi bridges ancient Eastern wisdom with modern scientific validation, making it one of the most respected medicinal mushrooms in holistic health.</p>  
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo lymp indoor Reishi Mushroom growing.jpeg"   style= "  width:250px;height:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3>  
+<p>Reishi mushrooms thrive in warm, humid environments with temperatures between 21–27°C (70–80°F) and humidity levels around 85–95%. They prefer indirect sunlight or low-intensity artificial light and require good air circulation to prevent mold. Indoors, they can be grown in bags or containers filled with hardwood sawdust substrate, mimicking their natural habitat on decaying logs.</p>  
+
+<h3>🧬 Propagation Methods</h3>  
+<p>Reishi is typically propagated using spawn—either grain or sawdust-based. The spawn is inoculated into sterilized substrate bags containing hardwood sawdust and wheat bran. After colonization, which takes 2–3 weeks, the bags are moved to a fruiting chamber with controlled humidity and light to encourage mushroom development. Fruiting can take 6–8 weeks, depending on conditions.</p>  
+
+<h3>🌾 Substrate Preparation</h3>  
+<p>Prepare the substrate by mixing 5 cups of hardwood pellets with 1.25 cups of wheat bran and 6 cups of water. Let the pellets soak until they break down into sawdust, then mix thoroughly. Pack the mixture into filter patch bags and sterilize at 121°C (250°F) for 90 minutes. Allow to cool completely before inoculating with spawn.</p>  
+
+<h3>💧 Watering and Maintenance</h3>  
+<p>Maintain high humidity using a misting system or humidifier. Reishi mushrooms do not require direct watering but benefit from a consistently moist environment. Monitor CO₂ levels and provide fresh air exchange to prevent stunted growth. Avoid contamination by keeping the growing area clean and sterile during colonization and fruiting.</p>  
+
+<h3>🚫 Managing Growth and Spread</h3>  
+<p>Reishi mushrooms grow as shelf-like conks or antler-shaped fruiting bodies. They do not spread aggressively and are easy to manage in confined indoor spaces. Use breathable bags or containers with small holes for gas exchange. Monitor for signs of contamination and remove any affected substrate promptly.</p>  
+
+<h3>✂️ Harvesting Tips</h3>  
+<p>Harvest Reishi mushrooms when the fruiting bodies are fully mature—typically after 6–8 weeks of fruiting. Use a sharp knife or saw to cut them at the base. Dry the mushrooms in a well-ventilated area or food dehydrator before storing. Dried Reishi can be used for teas, tinctures, or powdered supplements.</p>  
+
+<h3>🌿 Uses and Benefits</h3>  
+<p>Reishi is prized for its adaptogenic and immunomodulatory properties. It supports lymphatic detoxification, reduces inflammation, and enhances stress resilience. Traditionally used in East Asian medicine, it remains a cornerstone of modern herbal wellness.</p>  
+
+<ul>  
+  <li>Tea and decoctions for immune and lymphatic support</li>  
+  <li>Powdered extracts for stress relief and vitality</li>  
+  <li>Tinctures for anti-inflammatory and antioxidant benefits</li>  
+</ul>  
+
+
+
+</div>
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo lymp indoor Reishi Mushroom benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h3 id="benefits">💚 Health Benefits:</h3>
+<ul>
+<li>🛡️ Boosts immune cell activity, including natural killer cells and lymphocytes, enhancing lymphatic defense.</li>
+
+<li>🔥 Reduces inflammation in lymph nodes and tissues, promoting smoother lymphatic flow.</li>
+
+<li>🧬 Supports detoxification by aiding the removal of cellular waste through the lymphatic network.</li>
+
+<li>🌿 Acts as an adaptogen, helping regulate stress hormones that can impact lymphatic balance.</li>
+
+<li>🧠 Enhances the function of macrophages and T-cells, key players in lymphatic immune response.</li>
+
+<li>💧 Improves fluid circulation, reducing lymphatic congestion and swelling.</li><li>🧴 Provides antioxidant protection, preventing oxidative damage to lymphatic vessels and cells.</li>
+
+<li>🩺 May support recovery from infections by accelerating lymphatic clearance of pathogens.</li>
+
+<li>🧘 Promotes relaxation and sleep, which are essential for optimal lymphatic drainage during rest.</li>
+
+<li>🫀 Supports cardiovascular health, indirectly benefiting lymphatic flow and pressure regulation.</li></ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿Like the silent strength of the forest, Reishi works beneath the surface—cleansing, balancing, and fortifying the body’s inner rivers. Let your lymph flow with the wisdom of nature.” </p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

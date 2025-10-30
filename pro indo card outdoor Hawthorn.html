@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Hawthorn (Crataegus spp.) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Hawthorn Plants That Support Cardiovascular Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Hawthorn (Crataegus spp.) ani.jpeg"   style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card outdoor Hawthorn (Crataegus spp.).jpeg" style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌼Heart’s Guardian: The Journey of Hawthorn</h2>
+
+<p>Hawthorn, belonging to the Crataegus species, is a small yet powerful tree cherished for its deep connection to heart health. Native to temperate regions and steeped in centuries of herbal tradition, Hawthorn has been used as a natural remedy to strengthen the heart, improve blood circulation, and regulate blood pressure. Its delicate flowers and vibrant red berries not only add beauty to the landscape but also carry healing compounds that support cardiovascular wellness. With its gentle strength and time-honored benefits, Hawthorn continues to be a trusted ally in nurturing the heart naturally.
+
+
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Hawthorn (Crataegus spp.) history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Hawthorn (Crataegus spp.)</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+ <p>Hawthorn, belonging to the genus Crataegus, is a small deciduous tree or shrub native to temperate regions of Europe, Asia, and North America. It is a member of the Rosaceae family and is characterized by its thorny branches, white or pink blossoms, and bright red berries. With over 200 species, Hawthorn grows in woodlands, hedgerows, and rocky hillsides, adapting easily to a variety of climates and soils. Its long lifespan and hardy nature have allowed it to thrive for centuries in both wild and cultivated landscapes, often planted as boundary hedges and windbreaks in rural settings.</p>
+
+ <h3>🕊️ Ancient Use in European Herbal Traditions</h3>
+ <p>Hawthorn has been used for centuries in European folk medicine, especially in traditions associated with heart and circulatory health. As early as the first century, Greek physician Dioscorides mentioned Hawthorn's healing properties in his writings. In medieval Europe, herbalists used the leaves, flowers, and berries to treat heart-related ailments, chest pain, and high blood pressure. Its reputation as a heart tonic grew stronger during the 17th and 18th centuries, when it became a key component in natural remedies across the British Isles and Central Europe.</p>
+
+ <h3>🏛️ Symbolism and Folklore</h3> 
+<p>Beyond its medicinal value, Hawthorn has deep cultural and spiritual significance. In Celtic and Druidic traditions, it was considered a sacred tree, often associated with protection, fertility, and fairies. People believed it guarded the boundary between the physical and spiritual worlds. In rural Europe, branches of Hawthorn were hung above doorways and windows to ward off evil spirits and illness. Its blossoms were also linked to May Day celebrations, representing rebirth, hope, and the return of spring.</p>
+
+ <h3>🌍 Expansion Through Trade and Colonial Influence</h3>
+ <p>As botanical knowledge spread through exploration and trade, Hawthorn was introduced to North America, where it quickly adapted to new climates. Early settlers used it for fencing and medicine, and indigenous communities incorporated the berries into their own healing practices. Hawthorn’s heart-protective qualities gained attention among early physicians in the United States and Canada, where it was prescribed for treating angina and irregular heartbeat well into the 19th century. Over time, its use expanded into various herbal systems, bridging traditional European and Native American practices.</p>
+
+ <h3>🏡 Role in Landscape and Rural Life</h3> 
+<p>Hawthorn trees have been a staple in rural landscapes for generations. Their dense, thorny branches make them excellent natural fences, while the flowers attract pollinators and the berries feed birds and wildlife. In European villages, the tree was often planted near homes and farms as a symbol of good fortune and health. Its ecological value, low maintenance, and seasonal beauty made it a favorite among farmers, herbalists, and nature enthusiasts alike.</p>
+
+ <h3>🌟 Modern-Day Recognition and Use</h3>
+ <p>Today, Hawthorn is widely recognized in both traditional and modern herbal medicine for its benefits to cardiovascular health. It is commonly used in teas, capsules, and tinctures to support heart function, improve blood flow, and reduce symptoms of hypertension. Clinical studies continue to explore its effects on heart disease, arrhythmias, and cholesterol levels. Hawthorn’s combination of cultural heritage, ecological value, and proven health benefits ensures its continued relevance in gardens, medicine cabinets, and wellness practices around the world.</p>
+
+
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card outdoor Hawthorn (Crataegus spp.) growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3>☀️ Ideal Growing Conditions</h3> 
+<p>Hawthorn thrives best in temperate climates and prefers full sun to partial shade. It is well-suited for regions with cool to mild weather and benefits from at least six hours of sunlight daily. This hardy tree can tolerate wind, frost, and even air pollution, making it an ideal choice for urban gardens, countryside hedgerows, or wildlife-friendly landscapes.</p> 
+
+<h3>🧬 Propagation Methods</h3> 
+<p>Hawthorn is commonly propagated through seeds or semi-hardwood cuttings. Seeds require a process of stratification—exposing them to cold conditions for several months to break dormancy—before sowing. Cuttings, taken in late summer, can be rooted in a moist, well-drained growing medium. Grafting is also used, especially for ornamental or specific cultivars, to ensure consistency and faster growth.</p>
+
+ <h3>🌾 Soil Preparation</h3> 
+<p>Hawthorn trees grow well in various soil types, including clay, loam, or sandy soils, as long as they are well-drained. The ideal soil pH is neutral to slightly acidic. Before planting, the soil should be tilled and enriched with compost or organic matter to improve fertility. Avoid areas with stagnant water to prevent root rot. A planting hole twice the width of the root ball will help ensure good root establishment.</p>
+
+ <h3>💧 Watering and Maintenance</h3>
+ <p>While young hawthorn trees need regular watering during the first year, mature trees are quite drought-tolerant and require only occasional watering. Deep watering during dry spells supports healthy root systems and flowering. Pruning in late winter or early spring helps maintain shape, remove dead branches, and improve air circulation. Watch for thorns when handling or pruning, as most species have sharp spines along the branches.</p>
+
+ <h3>🚫 Managing Growth and Spread</h3>
+ <p>Hawthorn trees can spread through self-seeding if not managed, especially in favorable environments. Regular removal of unwanted saplings around the base can help control spread. Pruning helps maintain a compact form and encourages healthy flowering. Hawthorns are suitable for hedgerows or specimen planting and offer seasonal interest through spring blossoms and bright red autumn berries, attracting birds and pollinators alike.</p>
+
+<h3>✂️ Harvesting Tips</h3>
+ <p>Hawthorn berries are harvested in late summer to early autumn when they are fully ripe, turning bright red or deep crimson, depending on the species. The berries are gently handpicked to avoid bruising and can be used fresh, dried, or processed into teas, tinctures, and jams. Additionally, young leaves and flowers are collected in spring during full bloom and carefully dried in the shade to preserve their medicinal properties. For best results, harvest on dry days and store in airtight containers after proper drying.</p>
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src= "C:\Users\yarra\Downloads\indo card outdoor Hawthorn (Crataegusspp.) benefits.jpeg"        style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of   </h3>
+<ul>
+
+<li><b>💓 Heart Muscle Strength:</b> Strengthens heart muscles and enhances overall cardiac function for better endurance and vitality.</li>
+<li><b>🩺 Natural Blood Pressure Regulation:</b> Helps regulate blood pressure gently, supporting cardiovascular balance without harsh effects.</li>
+<li><b>🔄 Enhanced Circulation:</b> Improves blood flow to the heart and vital organs, boosting energy and systemic health.</li>
+<li><b>🧘 Mild Heart Failure Support:</b> May help reduce symptoms of mild heart failure by improving cardiac output and comfort.</li>
+<li><b>⚖️ Cholesterol Balance:</b> Supports healthy cholesterol levels, promoting cleaner arteries and reduced cardiovascular risk.</li>
+<li><b>🛡️ Antioxidant Cardiac Protection:</b> Acts as a powerful antioxidant to shield heart tissues from oxidative damage and inflammation.</li>
+<li><b>❄️ Chest Comfort:</b> Helps relieve chest tightness and mild angina, offering soothing support for heart-related discomfort.</li>
+<li><b>💨 Oxygen Efficiency:</b> Enhances circulation and oxygen utilization, improving stamina and reducing fatigue.</li>
+<li><b>🔁 Rhythm Stability:</b> Supports a steady heart rhythm, helping manage irregular beats and promoting calm cardiac function.</li>
+<li><b>😌 Palpitation Relief:</b> Reduces anxiety-related heart palpitations, fostering emotional and cardiovascular harmony.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+"In the gentle strength of Hawthorn lies a guardian for the heart — steady, soothing, and rooted in nature's care."🌸
+
+
+
+</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button"> Back to Plants</a></footer>
+</body>
+</html>

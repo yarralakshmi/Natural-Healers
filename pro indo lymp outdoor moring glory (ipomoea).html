@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Morning Glory (Ipomoea) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Morning Glory Plants That Support Lymphatic Health:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp indoor.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp morning glory ani.jpeg"      style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp morning glory.jpeg"       style="width:250px; float:right;">
+
+
+ <h2 id="intro">🪴 🌸 Introduction to Morning Glory (Ipomoea)</h2>
+
+<p>Morning Glory, scientifically known as *Ipomoea*, is a fast-growing, twining vine admired for its trumpet-shaped, vibrant flowers that bloom with the sunrise and fade by afternoon. Native to tropical and subtropical regions around the world, this plant is popular in gardens and trellises for its ability to climb and cover surfaces beautifully. The heart-shaped leaves and vivid blossoms—ranging in colors like blue, purple, pink, and white—make it a favorite ornamental plant. Morning Glory is not only visually charming but also symbolic of renewal, new beginnings, and the fleeting beauty of each day.
+</p>    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp morning glory history.jpeg"         style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Morning Glory</h3>
+<h3>🌱 Origins and Botanical Background</h3>
+
+<p>Morning Glory, belonging to the genus Ipomoea, is a flowering plant known for its vibrant, trumpet-shaped blooms and fast-growing vines. The plant has a vast natural range and is believed to have originated in tropical and subtropical regions of Central and South America. With over 1,000 species under the Ipomoea genus, Morning Glory has evolved to thrive in diverse climates. Its name comes from the way its flowers unfurl at dawn and close by afternoon, symbolizing renewal, beauty, and the fleeting nature of time.</p>
+
+<h3>🕊️ Early Uses and Significance in Ancient Cultures</h3>
+
+<p>Morning Glory has been used for centuries by various indigenous cultures. In ancient Mesoamerica, particularly by the Aztecs, the seeds of certain Ipomoea species—such as Ipomoea tricolor and Ipomoea violacea—contained psychoactive compounds like LSA, a natural form of LSD. These seeds were used in religious rituals and vision quests for spiritual insight. Meanwhile, in ancient China, the plant was known for its medicinal properties, especially as a natural laxative derived from its seeds.</p>
+
+<h3>🏛️ Spread to Asia and Europe</h3>
+
+<p>Morning Glory made its way to Asia and Europe through early trade routes. In Japan, Morning Glory (Asagao) became especially popular during the Edo period (1603–1868), where it was cultivated not only for its beauty but also bred into various artistic forms. The plant became a subject of traditional Japanese art and poetry, symbolizing love, impermanence, and grace. In Europe, it was appreciated primarily for its ornamental value and was grown in gardens and along trellises.</p>
+
+<h3>🌍 Global Cultivation and Adaptation</h3>
+
+<p>With the expansion of global botanical exchange, Morning Glory adapted to a variety of climates across the world. It became a favorite in the United States, especially in southern and coastal areas, where it thrived in warm, sunny conditions. Its rapid growth, heart-shaped leaves, and vibrant flowers made it a common sight along fences, garden walls, and mailboxes. Despite its beauty, some species of Ipomoea became invasive in certain regions due to their aggressive growth and seed dispersal.</p>
+
+<h3>🏡 Cultural Symbolism and Gardening Use</h3>
+
+<p>Throughout history, Morning Glory has carried rich symbolic meanings. In Victorian floriography, the language of flowers, Morning Glory symbolized love in vain or affection that fades quickly. In Japanese culture, it symbolized brief love or the passing of summer. Gardeners today continue to admire Morning Glory for its ease of growth, especially as a fast climber that can cover unsightly structures or add vertical color to small spaces.</p>
+
+<h3>🌟 Modern-Day Appeal and Conservation</h3>
+
+<p>Today, Morning Glory remains a beloved plant in ornamental gardening. New hybrids offer a wide palette of colors including violet, blue, pink, and white. Its fast growth and ability to self-seed make it both a blessing and a challenge in gardens. While appreciated for its charm, care is taken in some regions to prevent it from spreading uncontrollably. It continues to be used in natural landscaping, pollinator gardens, and vertical greening designs for fences and pergolas.</p>
+
+    
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo outdoor lymp morning  glory growing.jpeg"      style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+    <h3> ☀️ Ideal Growing Conditions</h3>
+
+<p>Morning Glory plants prefer full sunlight and perform best when they receive six to eight hours of direct sun each day. They thrive in warm temperatures and grow rapidly in tropical to temperate climates. These plants do well in moderately fertile, well-drained soil and can tolerate poor soils as long as water does not stagnate. Morning Glories are known for their vigorous climbing ability, making them suitable for fences, trellises, and pergolas.
+</p>
+
+<h3>🧬 Propagation Methods</h3>
+
+<p>Morning Glory is primarily propagated from seeds. The seeds have a hard outer coating and benefit from scarification—lightly nicking the seed coat or soaking them overnight in water—before planting. Sow the seeds directly into the soil after the danger of frost has passed, spacing them a few inches apart. Germination usually occurs within one to two weeks. Once established, the plant will reseed itself and often return year after year in the same spot.
+</p>
+
+<h3>🌾 Soil Preparation</h3>
+
+<p>Morning Glory does not require highly fertile soil and can grow in a variety of conditions, but it prefers well-drained soil with a slightly acidic to neutral pH. Loosen the top 8 to 10 inches of soil before planting to ensure good root penetration. Avoid adding excessive compost or fertilizer, as this may result in lush foliage with fewer blooms. A moderately loose, airy soil texture helps the vines grow quickly and spread efficiently.
+</p>
+
+<h3>💧 Watering and Maintenance</h3>
+
+<p>Water Morning Glory plants moderately during their initial growth period to help them establish deep roots. Once mature, they become drought-tolerant and need watering only during dry spells. Overwatering can cause root rot or promote excessive leaf growth. Morning Glory vines require minimal maintenance but should be supported with a structure for climbing. Pruning can help keep their size in check and encourage more blooms, especially after the first flowering cycle.
+</p>
+
+<h3>🚫 Managing Growth and Spread</h3>
+
+<p>Morning Glory is a fast-growing vine that can become invasive in some areas if not controlled. It spreads by reseeding and can cover large areas if left unchecked. To manage growth, trim the plant regularly and remove seed pods before they dry and fall to the ground. In garden settings, providing a dedicated space with proper vertical support will help contain and guide its growth while preventing it from overtaking other plants.
+</p>
+
+<h3>✂️ Harvesting Tips</h3>
+
+<p>Morning Glory is typically not harvested for culinary or medicinal use, but its seeds can be collected for replanting. Harvest the seed pods when they are dry and brown, and store the seeds in a cool, dry place for future sowing. Flowers can be cut for decorative use, though they tend to wilt quickly after picking, as each bloom lasts only a single day. For continuous flowering, deadheading or removing faded blooms can help stimulate new growth.
+</p>
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo outdoor lymp morning glory benefits.jpeg"           style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌼 Health Benefits of Morning Glory (Ipomoea)</h3>
+<ul>
+<li>Acts as a mild natural laxative for digestive relief.</li>
+<li>Helps in detoxifying the body and cleansing the colon.</li>
+<li>Contains antioxidants that protect cells from damage.</li>
+<li>Supports healthy liver function.</li>
+<li>Provides mild sedative effects to promote better sleep.</li>
+<li>May help reduce inflammation and pain.</li>
+<li>Used in traditional medicine to manage high blood pressure.</li>
+<li>Possesses antibacterial and antifungal properties.</li>
+<li>Enhances overall metabolic health.</li>
+<li>May assist in weight management by improving digestion.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>🌸 "Like the morning glory, rise with the sun and bloom with purpose, even if only for a day."
+</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo lymp outdoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\prolymp.html" class="footer-button">← Back to Lymphatic System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro lymp tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</footer>
+</body>
+</html>

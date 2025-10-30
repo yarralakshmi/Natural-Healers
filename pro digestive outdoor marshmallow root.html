@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿 Marshmallow Root</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 80px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 300px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Marshmallow Plants That Support Digestive Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor digestive.html" class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor.html" class="footer-button">Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo marshmallow plant.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to Grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo marshmallow article.jpeg" style="width:250px; float:right;">
+
+ <h2 id="intro">🪴The Introduction of Marshmallow Root</h2>
+      <p>Marshmallow root (Althaea officinalis) is a perennial herb native to Europe, Western Asia, and North Africa, long valued for its soothing and healing properties. The plant has been used for centuries in traditional medicine, especially its thick, fibrous root, which contains a substance called mucilage—a gel-like compound that becomes slippery when mixed with water. This unique property makes marshmallow root especially effective in **coating and soothing irritated tissues throughout the body. Historically, it has been used to relieve sore throats, dry coughs, digestive issues, skin irritations, and urinary tract inflammation. In ancient times, marshmallow root was even consumed as a food source during times of famine. Today, it is widely available in the form of **teas, tinctures, capsules, and topical creams, and remains a trusted remedy in herbal and natural medicine for its gentle, calming effects on the body’s mucous membranes.</p>
+  <p>The root is rich in polysaccharides, especially mucilage, which forms a protective, gel-like coating on irritated tissues. This makes it especially useful for treating sore throats, dry coughs, heartburn, ulcers, colitis, and urinary tract irritations. It also has mild antibacterial and anti-inflammatory properties, which enhance its healing ability. Marshmallow root is often used in herbal formulations to soothe and protect tissues from inflammation or damage, and it's considered safe for both children and adults when used properly.</p>
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo marshmallow history.jpeg" style="width:250px; float:left;">
+
+
+    <h3 id="history">🪴The History of Marshmallow Root</h3>
+ <h3>🌱 Origins and Botanical Background</h3>
+    <p>Marshmallow root has a long and fascinating history dating back thousands of years. It was first used by the ancient Egyptians, who valued it for both its **medicinal and nutritional properties. They used it to treat *sore throats, wounds, and digestive issues, and also ate the root as a vegetable, especially during food shortages.</p>
+<h3>🕊️ Ancient Egyptian Use</h3>
+    <p>Medically, the Egyptians used marshmallow root for its mucilage content, which provided relief from inflammation and irritation of mucous membranes, especially in the throat and respiratory tract. Its softening and moistening properties made it suitable for treating wounds, burns, and skin irritations as well.</p>
+    
+<h3>🏛️ Greek and Roman Traditions</h3>
+    <p>The Romans, following the Greek tradition, also used marshmallow in both culinary and medicinal practices. The Roman naturalist Pliny the Elder wrote that "whoever shall take a spoonful of the marshmallow shall that day be free from all disease," underscoring its popularity and reputation as a general health tonic. Roman physicians utilized the root to treat inflammations, bruises, and gastrointestinal issues, often incorporating it into warm compresses or soothing drinks.</p>
+    
+<h3>📜 Medieval Herbalism in Europe</h3>
+    <p>Medieval herbalists used marshmallow root primarily for its demulcent and emollient qualities, applying it to soothe sore throats, dry coughs, digestive inflammation, urinary irritation, and various skin ailments. The root was often boiled to create a mucilaginous extract used in teas, poultices, and salves. It was also a common remedy for chest congestion, ulcers, and wounds, offering gentle, natural relief.</p>    
+    
+<h3>🔬 Scientific Recognition and Taxonomy</h3>
+    <p>Scientific recognition of marshmallow root increased during the 18th and 19th centuries, with the development of botanical classification systems. Carl Linnaeus, the father of modern taxonomy, formally described Althaea officinalis in his work Species Plantarum in 1753, giving it the binomial name still used today.</p>
+    
+<h3>⚗️ Rise in European Medicine</h3>
+    <p>The rise of marshmallow root in European medicine gained momentum during the Renaissance and early modern period (15th–18th centuries), as classical knowledge from Greek and Roman texts was revived and integrated into evolving European medical practice. Scholars and physicians studied ancient authors like Hippocrates, Dioscorides, and Galen, whose works emphasized marshmallow root’s healing properties, particularly for soothing inflamed tissues, wounds, coughs, and digestive issues.</p>    
+    
+<h3>🌎 Transatlantic Expansion and Farming</h3>
+    <p>Marshmallow root (Althaea officinalis) expanded beyond Europe during the Age of Exploration and colonization, particularly from the 17th to 19th centuries, as European settlers carried familiar medicinal plants to the Americas. Alongside other herbs, marshmallow was introduced to North America, where it was cultivated in gardens and used by settlers for its well-known soothing and healing properties.</p>  
+    
+<h3>🏭 Industrial Era Applications</h3>
+    <p>During the Industrial Era (18th to early 20th centuries), marshmallow root transitioned from a traditional herbal remedy to a more widely manufactured and commercially available product. With the rise of apothecaries, patent medicines, and the growing pharmaceutical industry, marshmallow root became a common ingredient in over-the-counter remedies, especially for coughs, sore throats, and digestive issues. Its natural mucilage made it ideal for syrups, lozenges, and throat pastilles, helping to soothe irritated mucous membranes.</p>   
+    
+<h3>🌟 Modern-Day Relevance</h3>
+    <p>In today’s world, marshmallow root (Althaea officinalis) remains a respected and widely used herb in both natural and clinical medicine, celebrated for its soothing, anti-inflammatory, and healing properties. With the resurgence of interest in plant-based remedies and holistic wellness, marshmallow root has found a strong foothold in modern herbalism, integrative medicine, and consumer health products.</p>
+    
+    <hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo mmarshmallow growing.jpeg" style= "  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+  <p></p>  
+<h3>☀️ **Ideal Growing Conditions</h3>
+  <p>Marshmallow root (Althaea officinalis) grows best in cool to temperate climates with plenty of moisture. It thrives in full sun to partial shade and prefers deep, rich, loamy soil that is well-drained but consistently moist. The ideal soil pH ranges from 6.0 to 7.0 (slightly acidic to neutral). The plant naturally grows in marshes, riverbanks, and wet meadows, so it performs well in areas with regular watering or access to naturally damp soil. Marshmallow can tolerate light frost and grows as a perennial, reaching heights of 4–6 feet when conditions are optimal. For the healthiest root development, it’s best to plant marshmallow in a spot with ample space, fertile soil enriched with compost, and minimal competition from weeds.</p>
+  
+<h3>🧬 **Propagation Methods</h3> 
+  <p>Marshmallow seeds can be sown indoors or directly outdoors in early spring. To improve germination, seeds benefit from cold stratification—storing them in a damp paper towel in the fridge for about 3–4 weeks before planting. Sow seeds about ¼ inch deep in well-prepared soil, keeping it consistently moist. Germination usually occurs in 2–3 weeks.</p> 
+  
+<h3>🌾 **Soil Preparation</h3>
+  <p>Proper soil preparation is essential for growing healthy and productive marshmallow plants. Marshmallow root thrives in deep, fertile, loamy soil that is moist yet well-drained, replicating its natural marshland habitat. The ideal soil pH is between 6.0 and 7.0, slightly acidic to neutral.</p>
+  
+<h3>💧 **Watering and Maintenance</h3>
+  <p>Marshmallow root (Althaea officinalis) thrives in moist, well-hydrated environments, similar to its native wetland habitat. Consistent watering and light maintenance are key to healthy growth and a strong root system.</p>
+<ul><li>Regular watering</li>  
+  <li>Keep the area weed-free, particularly during the early growth stages, as weeds compete for nutrients and water.</li>
+<li>Fertilizing</li>
+</ul>
+
+<h3>🚫 **Managing Growth and Spread</h3> 
+  <p>Marshmallow root (Althaea officinalis) is a non-invasive, well-behaved perennial, but proper management ensures healthy growth and controlled spread, especially in garden settings.</p>
+
+<h3>✂️ **Harvesting Tips</h3> 
+  <p>Harvesting marshmallow root (Althaea officinalis) requires patience and proper timing to ensure maximum potency and yield.</p> 
+  <hr><p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+<h3>🌿 **Uses and Benefits</h3>
+<img src="C:\Users\yarra\Downloads\marshmallow roots.jpeg" style= "  width:250px; float:left;">
+
+
+  <p>Marshmallow root (Althaea officinalis) is a versatile and highly valued herb with a rich history in traditional and modern medicine. Its primary strength lies in its high mucilage content, which creates a soothing, protective layer over irritated tissues. </p>
+  <ull><li>Helps relieve gastritis, heartburn, ulcers, and inflammatory bowel conditions by protecting and calming the stomach lining.</li>  
+<li>Medicinal preparations for digestion and headache relief.<li>
+  <li>Soothes Coughs and Sore Throats.</li>
+<li>Promotes Skin Healing.</li>
+</ul>
+</p></div>
+
+<div class="content-wrapper">
+
+</div><div class="content-wrapper">
+    <h3>🪴Health & Medicinal Benefits of Peppermint</h3>
+<ul>
+<li><b>Supports Urinary Tract Health:</b>Soothes irritation in the urinary tract.</li>
+<li><b>Promotes Skin Healing:</b>Applied topically for wounds, burns, eczema, rashes, and insect bites.</li>
+<li><b>Supports brain health:</b>Enhances memory and may reduce risk of neurodegenerative diseases.</li>
+<li><b>Anti-inflammatory:</b>Helpful in conditions like colitis, arthritis, and urinary inflammation.</li>
+<li><b>Moisturizes and Protects Tissues:</b>Excellent for dry conditions—used in lip balms, creams, and hair products.</li>
+<li><b>Aids digestion:</b>Stimulates bile production, eases bloating, gas, and indigestion.</li>
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+
+
+<footer>
+  <p>🌱“Whoever shall take a spoonful of marshmallow shall that day be free from all disease.”</p>
+  <br>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive outdoor.html" class="footer-button">Back to plants</a> 
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive system.html" class="footer-button">← Back to Digestive System</a>
+
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro digestive indoor tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+
+</footer>
+</body>
+</html>

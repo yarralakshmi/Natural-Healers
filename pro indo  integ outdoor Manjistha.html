@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Manjistha (Rubia cordifolia)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿Manjistha Plants That Support Integumentary Health:</h1>
+<div class="top-nav" >
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indoor integumentary.html"    class="footer-button">Indoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html"  class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ outdoor Manjistha ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ outdoor Manjistha.jpeg"   style="width:250px;height:250px; float:right;">
+
+
+ <h2 id="intro">🪴🌿🪷 Manjistha: The Crimson Vine of Skin Harmony</h2>
+
+<p>Manjistha, scientifically known as Rubia cordifolia, is a perennial climber with slender red roots that have been cherished in traditional systems of medicine for centuries. Thriving in the Himalayan foothills and tropical climates, this plant is renowned for its deep detoxifying properties. Its root extract contains bioactive compounds that help cleanse the blood and support lymphatic flow, which are essential functions for maintaining clear and healthy skin. Used both internally and externally, Manjistha helps manage various skin conditions by soothing inflammation, reducing blemishes, and encouraging the body’s natural repair processes, making it a valuable botanical for supporting the integumentary system holistically.
+</p>
+
+    
+
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+
+
+
+
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ outdoor Manjistha history.jpeg"       style="width:250px;height:250px; float:left;">
+
+
+    <h3 id="history">🪴History of Manjistha </h3>
+<h3>🌱 Origins and Botanical Background</h3>
+ <p>Manjistha, scientifically known as Rubia cordifolia, is a perennial climbing plant native to the Himalayan region and other tropical and subtropical parts of Asia. It belongs to the Rubiaceae family and is easily recognized by its slender, twining stems and vibrant reddish roots, which are the most valued part of the plant. Often found growing along forest edges, riverbanks, and hill slopes, Manjistha thrives in moist, fertile soil. The name “Manjistha” means “bright red” in Sanskrit, reflecting the intense color of its roots and its traditional association with blood purification and circulatory health in herbal medicine.</p> 
+
+<h3>🕊️ Ancient Use in Traditional Healing</h3> 
+<p>Manjistha has held a prestigious place in Ayurvedic texts like Charaka Samhita and Sushruta Samhita for its potent detoxifying and skin-supportive properties. It was traditionally classified as a “rasayana” herb, valued for promoting longevity, rejuvenation, and clarity of the blood and skin. Practitioners of Ayurveda often used Manjistha in decoctions, powders, and oils to support the treatment of skin disorders, menstrual irregularities, and lymphatic congestion. It was believed to pacify excess pitta and rakta (blood), making it effective in conditions related to inflammation, acne, eczema, and pigmentation.</p> 
+
+<h3>🏛️ Recognition in Folk and Regional Medicine</h3> 
+<p>In Indian folk medicine, Manjistha was commonly used as a natural dye as well as a medicinal herb. Local healers relied on it for treating chronic skin conditions, wound healing, and improving complexion. In Siddha and Unani systems, it was employed for blood purification, liver stimulation, and to regulate the female reproductive system. Its bright red roots were often boiled to make decoctions that were consumed during seasonal detox rituals or applied topically for skin healing. The herb's versatility made it an essential part of traditional healing practices across rural and tribal communities in India.</p> 
+
+<h3>🌍 Spread and Exchange of Herbal Knowledge</h3> 
+<p>Though Manjistha’s roots lie in Ayurveda, its medicinal reputation crossed regional and cultural boundaries through historical trade and herbal exchanges. As interest in botanical remedies grew in Asia, the Middle East, and later in Europe, Rubia cordifolia became part of the global herbal pharmacopeia. European herbalists were intrigued by its use as a natural red dye and began exploring its therapeutic properties. Its bioactive constituents, particularly rubiadin and alizarin, sparked interest among early pharmacologists for their potential antimicrobial, anti-inflammatory, and detoxifying effects.</p> 
+
+<h3>🏡 Role in Village Life and Ecology</h3> 
+<p>In traditional village settings, Manjistha has long been respected not only as a remedy but also as a culturally symbolic plant. Its roots were often harvested during the post-monsoon season and stored for year-round use in household remedies. Women especially used it during seasonal skin issues and menstrual irregularities. Its vibrant dye was used for fabrics and even ceremonial purposes. Ecologically, its ground-covering vines contribute to soil retention and biodiversity in rural landscapes. The plant’s availability and multi-functional value made it a vital component of both home medicine and sustainable living.</p> 
+
+<h3>🌟 Modern-Day Research and Applications</h3> 
+<p>Recent scientific research has begun validating many of Manjistha’s traditional claims. Studies have highlighted its anti-inflammatory, antioxidant, antimicrobial, and hepatoprotective properties. Its potential role in treating skin conditions, detoxifying the blood, and modulating the immune system is now supported by emerging clinical evidence. Compounds like purpurin, munjistin, and rubiadin are being investigated for their biological activities. Today, Manjistha is increasingly used in herbal teas, skincare formulations, and detox supplements, bridging ancient Ayurvedic wisdom with contemporary wellness practices.</p>
+
+
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo integ outdoor Manjistha growing.jpeg"    style= "height:250px;  width:250px; float:right;">
+    <h3 id="growing">How to Grow</h3>
+ <h3>☀️ Ideal Growing Conditions</h3> 
+<p>Manjistha prefers temperate to tropical climates with moderate rainfall and partial to full sunlight. It thrives in well-ventilated environments and naturally grows along forest edges, rocky slopes, and in open fields at elevations up to 3000 meters. Temperatures between 15°C and 30°C are ideal for its growth. Though it tolerates slight shade, planting it in an area with at least 4 to 5 hours of sunlight per day ensures better root development and medicinal potency.</p> 
+
+<h3>🧬 Propagation Methods</h3> 
+<p>Manjistha is propagated mainly through seeds and root cuttings. Seeds are collected during the late fruiting season and can be sown in seedbeds or directly into the field during the onset of monsoon. Root segments, preferably 8–10 cm in length with visible buds, can be planted directly into prepared beds for quicker establishment. Germination from seed may take 15 to 20 days, while root divisions usually show faster shoot development under moist conditions.</p> 
+
+<h3>🌾 Soil Preparation</h3> 
+<p>Manjistha requires loose, well-drained soils rich in organic content. Sandy loam or red lateritic soils with a slightly acidic to neutral pH are ideal for healthy root growth. Prior to planting, the soil should be tilled deeply to improve aeration and mixed with decomposed farmyard manure or compost to enhance fertility. Raised beds or ridges help prevent water stagnation and protect the delicate root system from rot.</p> 
+
+<h3>💧 Watering and Maintenance</h3> 
+<p>Consistent moisture is essential during the early stages of Manjistha’s growth. Regular watering should be done to keep the soil moist but not waterlogged. Once established, the plant becomes moderately drought-tolerant. Mulching with dried leaves or straw helps retain moisture and suppress weed growth. Occasional weeding is necessary to ensure that competing plants do not hinder root expansion or nutrient uptake.</p> 
+
+<h3>🚫 Managing Growth and Spread</h3> 
+<p>Being a climbing or spreading vine, Manjistha requires support such as trellises, fences, or nearby shrubs to grow vertically and avoid tangling on the ground. If space is limited, training it on wires or poles encourages better aerial growth. The plant’s slow initial growth phase may require protection from invasive weeds. Pruning is not essential but can be used to guide its spread and ensure light penetration to all parts of the plant.</p> 
+
+<h3>✂️ Harvesting Tips</h3> 
+<p>Manjistha roots are harvested after 18 to 24 months when they have fully matured and developed their characteristic reddish color. Harvesting is best done in the dry season when the aerial parts begin to wither. The roots are dug carefully to avoid breakage, washed thoroughly, and dried in shade to retain their medicinal qualities. Properly dried roots can be stored for several months in airtight containers for use in decoctions, powders, or oil infusions.</p>
+
+
+
+
+</div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo integ outdoor Manjistha benefits.jpeg"      style= "  width:250px; height:250px;float:left;">
+    <h3 id="benefits">🪴🌸 Health Benefits of Manjistha</h3>
+<ul>
+<li>Purifies the blood, helping to reduce skin eruptions and blemishes.</li>
+<li>Supports healthy lymphatic drainage, promoting clearer skin.</li>
+<li>Helps manage chronic skin conditions like eczema and psoriasis.</li>
+<li>Soothes inflammation and itching associated with various skin disorders.</li>
+<li>Assists in fading pigmentation and promoting even skin tone.</li>
+<li>Enhances wound healing by supporting tissue regeneration.</li>
+<li>Fights bacterial and fungal infections affecting the skin.</li>
+<li>Improves complexion and restores natural skin radiance.</li>
+<li>Detoxifies skin tissues by eliminating deep-seated toxins.</li>
+<li>Strengthens skin immunity and resistance to environmental stressors.</li>
+
+
+
+
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>
+🌿 "Just as Manjistha purifies the blood and brings clarity to the skin, let your inner healing shine outward with confidence and grace."
+
+
+
+</p>
+  <br>
+<a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo integu outdoor.html"  class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro integumentary.html" class="footer-button">← Back to Integumentary System</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro intrgu tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</footer>
+</body>
+</html>

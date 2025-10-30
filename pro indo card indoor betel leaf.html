@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌿Betel Leaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #66bb6a;
+      --orange: #ffb74d;
+      --rose: #f48fb1;
+      --teal: #26c6da;
+      --earth: #e0e0e0;
+      --dark-panel: rgba(32, 32, 32, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url("C:/Users/yarra/Downloads/backbround for pro_files/picture-flowers-bottle-sprigs-lavender_1022029-137975.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--earth);
+    }
+.content-wrapper {
+      animation: fallDown 1s ease-out;
+    }
+
+    @keyframes fallDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+img:hover { transform: scale(1.1); }
+    header {
+      position: relative;
+      background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
+color:white;
+   padding: 70px 20px 70px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 38px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .nav-button {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    nav, article {
+      background-color: var(--dark-panel);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      color: var(--earth);
+    }
+
+    nav:hover, article:hover {
+      transform: translateY(-4px);
+    }
+
+    nav {
+      max-width: 400px;
+    }
+
+    article {
+      max-width: 840px;
+    }
+
+    nav.img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to right, var(--orange), var(--green));
+      color: #1b1b1b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+    }
+
+    .plant-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(to right, var(--teal), var(--green));
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    .plant-button:hover {
+      background: linear-gradient(to right, var(--green), var(--orange));
+      color: var(--earth);
+    }
+
+
+    footer {
+      background: linear-gradient(to right, var(--green), var(--rose));
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+    }
+
+    .footer-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--teal), var(--orange));
+      padding: 8px 14px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient(to right, var(--orange), var(--green));
+    }
+
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 30px;
+      }
+    }
+@keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-150px) scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .falling-image {
+      animation: fall 1.2s ease-out;
+    }
+header, footer {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+<div class="content-wrapper">
+<h1>🌿 Betel Leaf Plants That Support cardiovascular Health:</h1>
+<div class="top-nav" >
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/pro.html" class="footer-button">Home Page</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html" class="footer-button">Outdoor Plants</a>
+  <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">Body Systems</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+
+</div>
+</div>
+</header>
+<section>
+  <nav>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Betel Leaf ani.jpeg"  style= " width:250px; float:left;" class="falling-image">
+
+<h2 id="a">🌱 Choose</h2>
+       <a href="#intro">🪴 Introduction</a>
+    <a href="#history">🪴 History</a>
+    <a href="#growing">🪴 How to grow</a>
+    <a href="#benefits">🪴 Health Benefits</a>
+    </div>
+  </nav>
+
+  <article>
+<div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\Betel Leaf (Piper betle).jpeg" style="width:250px;height:250px; float:right;">
+ 
+
+ <h2 id="intro">🌿Introduction to Betel Leaf</h2>
+<p>🌱 Betel Leaf (Piper betle) is a heart-shaped, glossy green leaf native to South and Southeast Asia, widely cultivated for its medicinal and cultural importance. Traditionally used in Ayurveda and folk medicine, betel leaves are valued for their antimicrobial, anti-inflammatory, and digestive properties. Chewing fresh leaves is believed to improve oral health, freshen breath, and aid digestion, while topical applications help relieve pain, swelling, and skin irritations. Rich in antioxidants and essential oils, the leaves also support respiratory health and boost immunity. Thriving in warm, humid climates, the betel vine grows best in shaded areas with moist, well-drained soil, making it suitable for gardens or as a potted plant in living spaces. In homes, it serves not only as a medicinal plant but also as a symbol of prosperity and good health in many cultural traditions.</p>
+</div>
+<div class="content-wrapper">
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Betel Leaf history.jpeg"  style="width:250px; height:250px;float:left;">
+
+
+    <h2 id="history">🪴The History of </h2>
+ <h3>🌱 Historical Roots & Early Domestication</h3>
+<p> Betel Leaf (Piper betle), a glossy, heart-shaped evergreen vine, has been cultivated for thousands of years across South and Southeast Asia. Its history can be traced back over 5,000 years, with references in ancient Sanskrit texts, including the Charaka Samhita and Sushruta Samhita, where it was praised for its medicinal and digestive properties. Indigenous to regions like India, Sri Lanka, and Malaysia, betel leaf was grown in shaded courtyards, temple gardens, and forested groves. Its widespread cultivation was supported by the tropical climate, making it a household plant in traditional communities</p> 
+
+<h3>🌸 Cultural & Ceremonial Importance</h3> 
+<p> The betel leaf holds a sacred place in Indian and Southeast Asian culture. In Hindu rituals, it is offered to deities as a symbol of prosperity, purity, and respect. During weddings and festivals, betel leaves are exchanged as auspicious tokens, symbolizing love, fertility, and good fortune. In Southeast Asia, especially in Myanmar, Thailand, and Cambodia, betel chewing with areca nut and lime was an integral social custom, believed to refresh breath, aid digestion, and strengthen social bonds. Betel leaf was not just a herb but a cultural tradition woven into daily and spiritual life.</p> 
+
+<h3>💮 Symbolism & Traditional Names</h3> 
+<p> Betel leaf is known by many names across cultures — Paan in Hindi, Tambula in Sanskrit, Vetrilai in Tamil, and Sirih in Indonesia. Its heart-shaped leaves symbolize love, devotion, and hospitality. In Vedic rituals, offering a pair of betel leaves with areca nut (Tambula) is considered a gesture of honor and respect to guests. Symbolically, it represents **everlasting freshness, prosperity, and the bond of relationships.</p> 
+
+<h3>🌏 Spread Through Trade & Tradition</h3> 
+<p> With the expansion of trade routes, betel cultivation and chewing traditions spread from India and Sri Lanka to Myanmar, Malaysia, Indonesia, and the Philippines. Ancient sailors and merchants carried betel leaves across the seas, where it quickly became part of local traditions. In China and other parts of East Asia, betel chewing became associated with social gatherings and community bonding. Its role expanded beyond medicine into cultural hospitality, ensuring its place in the history of multiple civilizations.</p> 
+
+<h3>🌼 Present-Day Significance & Uses</h3> 
+<p> Today, betel leaf continues to hold importance both culturally and medicinally. In India, it remains an essential part of religious ceremonies, festive rituals, and hospitality traditions, especially in offering paan after meals. Ayurveda recognizes it for its digestive, antiseptic, and cooling properties, often used to relieve coughs, headaches, and stomach ailments. Beyond India, it is still widely used in Southeast Asia, though modern health awareness has reduced habitual chewing with areca nut due to its health risks. Nonetheless, the betel leaf is cherished as a *living link between ancient traditions and contemporary wellness practices*, embodying spirituality, culture, and healing.</p>
+
+<hr></div><div class="content-wrapper">
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr></div>
+
+
+
+
+<div class="content-wrapper">
+    <img src="C:\Users\yarra\Downloads\indo card indoor Betel Leaf growing.jpeg" style= "  width:250px;height:250px; float:right;">
+    <h2 id="growing">How to Grow</h2>
+    <h3>🌤️ Suitable Climate & Natural Habitat</h3>
+ <p> Betel Leaf (Piper betle) grows best in warm, humid, and partially shaded climates typical of tropical and subtropical regions. Ideal temperatures range from 15 °C to 35 °C, with high humidity supporting lush leaf growth. Direct harsh sunlight can scorch its tender leaves, so filtered sunlight or partial shade is recommended. Heavy frost and cold winds damage the plant, so in cooler regions, it should be grown indoors or in protected greenhouses.</p> 
+
+<h3>🌱 Soil Preferences & Preparation</h3>
+ <p> Betel Leaf prefers fertile, well-drained, loamy soil rich in organic matter. The ideal pH ranges between 5.5 and 7.0, slightly acidic to neutral. Before planting, prepare the soil by loosening it deeply and mixing in organic compost, leaf mold, or cow dung manure. Good aeration and drainage are crucial since waterlogging can cause root rot. Mulching with dried leaves or straw helps preserve soil moisture and fertility.</p> 
+
+<h3>🌿 Propagation & Planting Methods</h3> 
+<p> Betel is mostly propagated by stem cuttings rather than seeds. Choose healthy, disease-free vines and cut 10–15 cm long sections with at least 2–3 nodes. Plant these cuttings in moist soil or root them in water until new shoots appear. Each cutting should be planted in a slanting position, burying at least one node underground to ensure strong root development. In traditional farms, cuttings are planted along bamboo poles, brick walls, or trellises to support climbing growth.</p> 
+
+<h3>🪴 Spacing, Support & Light Needs</h3> 
+<p> Since betel is a vine, it requires structural support for climbing. Provide stakes, poles, trellises, or nearby trees for it to twine around. Maintain spacing of 40–60 cm between plants to allow good air circulation and healthy leaf production. Betel thrives under partial shade or diffused sunlight — too much shade reduces leaf flavor, while too much sun can dry or burn the leaves. A balance of filtered light is best for lush growth.</p> 
+
+<h3>💧 Watering Practices & Moisture Care</h3> 
+<p> Betel leaf requires consistent moisture but should never be waterlogged. Water the plant regularly, especially during hot summers, keeping the soil evenly moist. In pots, water when the top layer of soil begins to dry. Mulching helps retain moisture and prevents weed growth. Overwatering should be avoided as it leads to fungal infections and weak roots. During rainy seasons, ensure excess water drains away freely.</p> 
+
+<h3>🛡️ Pest, Disease & Care Management</h3> 
+<p> Betel leaf is vulnerable to pests like aphids, scale insects, and mealybugs, as well as fungal diseases such as leaf spot and root rot. To manage pests, spray neem oil or soapy water on affected areas. Ensure proper spacing and airflow to prevent fungal attacks. Avoid excessive nitrogen fertilizers, as they make the plant more prone to disease. Regular pruning of old and infected leaves keeps the vine healthy and productive. Organic manure every 2–3 months boosts growth and leaf quality.</p></div>
+
+<hr><div class="content-wrapper">
+
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div><div class="content-wrapper">
+<img src="C:\Users\yarra\Downloads\indo card indoor Betel Leaf benefits.jpeg" style= " height:250px; width:250px; float:left;">
+    <h2 id="benefits">💚 Health Benefits:</h2>
+<ul>
+
+<li><b>🩺 Blood Pressure Regulation:</b> Helps control high blood pressure naturally, supporting overall cardiovascular stability and heart function.</li>
+<li><b>⚖️ Cholesterol Management:</b> Lowers LDL (bad) cholesterol and triglycerides while supporting healthy lipid balance, reducing the risk of heart disease.</li>
+<li><b>🔄 Circulation Enhancement:</b> Improves blood flow and vascular function, promoting better oxygen delivery to the heart and organs.</li>
+<li><b>🛡️ Antioxidant Protection:</b> Rich in phenolic compounds and flavonoids that protect heart tissues from oxidative stress and cellular damage.</li>
+<li><b>🔥 Anti-inflammatory Action:</b> Reduces inflammation in blood vessels, easing cardiovascular strain and supporting arterial health.</li>
+<li><b>🚫 Plaque Prevention:</b> Helps prevent plaque buildup in arteries, lowering the risk of atherosclerosis and related complications.</li>
+<li><b>💨 Respiratory and Cardiac Synergy:</b> Eases breathing and supports heart rhythm by relaxing airway muscles and reducing congestion.</li>
+<li><b>🧬 Cellular Detoxification:</b> Supports liver and blood purification, helping remove toxins that can burden the cardiovascular system.</li>
+<li><b>💪 Cardiovascular Endurance:</b> Enhances stamina and heart resilience, helping the body adapt to physical and emotional stress.</li>
+<li><b>🧠 Mental Alertness and Heart-Brain Connection:</b> Traditionally used to improve focus and mood, indirectly supporting heart health through reduced stress and improved circulation.</li>
+
+</ul>
+<hr>
+<p>Click Here to go back to the link  >><a href="#a"style="color:pink;" >Plants link</a></p><hr>
+</div>
+
+    </article>
+  </section>
+  
+<footer>
+  <p>"🌿In the quiet strength of a betel leaf lies nature’s wisdom—calming the breath, cleansing the blood, and guarding the heart with every chew✨🍃."</p>
+  <br>
+ <a href="C:/Users/yarra/OneDrive/ドキュメント/html/organs.html" class="footer-button">← Back to Systems</a>
+  <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardio tips.html" class="footer-button">🌿 Discover Plant-Based Healing Tips</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html"  class="footer-button">← Back to Cardiovascular System</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html" class="footer-button"> Back to Plants</a>
+
+</footer>
+</body>
+</html>
