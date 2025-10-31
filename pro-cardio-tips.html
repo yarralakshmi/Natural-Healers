@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Cardiovascular Wellness Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 1s ease forwards 1s;
+    }
+
+    @keyframes pageFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right,#f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7 );
+ 
+            padding: 40px 20px 20px;
+ padding: 40px 20px 20px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5em;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    }
+header h1 {
+      font-size: 2.5rem;
+    }
+
+    header::after {
+      content:"🫀Lifeline of Circulation";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
+    }
+
+
+ 
+
+    nav {
+      position: fixed;
+      top: 110px;
+	bottom:80px;
+      left: 10px;
+      background: linear-gradient(45deg, #ffcc80, #ff8a65, #f06292); /* orange to pink */
+      border: 3px dashed #ffb300;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 183, 77, 0.4);
+      z-index: 10;
+max-height: 90vh; /* limits nav height to 90% of viewport */
+  overflow-y: auto; /* enables vertical scroll when needed */
+
+    }
+/* Optional: hide scrollbar for a cleaner look */
+nav::-webkit-scrollbar {
+  width: 6px;
+}
+    nav a {
+      display: block;
+      margin: 10px 0;
+      background: linear-gradient(45deg, #ffe57f, #ff7043);
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #4e342e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    
+}
+
+    nav a:hover {
+      background:linear-gradient(45deg, #f06292, #ec407a);
+      transform: scale(1.05);
+      color: white;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+section {
+  background: rgba(33, 33, 33, 0.9); /* near-black charcoal */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white; /* make text white */
+  backdrop-filter: blur(8px); /* blur the background */
+}
+
+h2 {
+  color: #ffeb3b; /* optional: give heading a soft contrast color */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: white; /* ensure paragraph text is white */
+}
+        
+    /* Sprinkle animation */
+    .sprinkles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #f5f5f5;
+      overflow: hidden;
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeOut 1s ease forwards 1s;
+    }
+
+    .sprinkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4081, #e91e63);
+      border-radius: 50%;
+      position: absolute;
+      animation: sprinkleMove 2s ease forwards;
+    }
+
+    @keyframes sprinkleMove {
+      from {
+        transform: translate(var(--x), var(--y));
+        opacity: 1;
+      }
+      to {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  
+
+ footer {
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+
+  padding: 30px 20px;
+  text-align: center;
+  color: #4e342e;
+  font-size: 16px;
+  font-style: italic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background:linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <div class="sprinkles-container" id="sprinkleBox"></div>
+
+  <header>
+<h3>🌿Natural remedies for healthy Cardiovascular system</h3>
+<div class="header-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+ 
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html">Cardiovascular System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+</div>
+</header>
+
+  <nav>
+<img src="C:\Users\yarra\Downloads\indo cardiovascular tips.jpeg" style="height:150px;width:150px;"></img>
+    <a href="#a1">❤️Heart</a>
+    <a href="#a2">🛤️ Arteries</a>
+	<a href="#a3">🧵Capillaries</a>
+	<a href="#a4">🌊Veins</a>
+<a href="#a5">🩸Blood</a>
+<a href="#a6">🧬RBCs</a>
+<a href="#a7">🛡️WBCs</a>
+<a href="#a8">🩸platelets</a>
+<a href="#a9">💧plasma</a>
+<a href="#a10">🩸Venules</a>
+<a href="#a11">❤️Arterioles</a>
+<a href="#a12">💖Coronary<br>vessels</a>
+<a href="#a13">💖Blood vessels</a>
+	  </nav>
+
+  <main>
+    <section id="a1">
+      <h2>✨✨Discover natural remedies to support Heart health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Hibiscus-Rose Petal Heart Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp dried hibiscus petals</li>
+<li>1 tsp dried rose petals</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Hibiscus helps lower blood pressure and cholesterol</li>
+<li>Rose petals soothe emotional stress and support circulation</li>
+<li>May reduce arterial stiffness and calm the heart rhythm</li>
+</ul><hr>
+<h3>🥬 2. Beetroot-Celery Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup beetroot (boiled or raw)</li>
+<li>1 celery stalk</li>
+<li>Juice of ½ lemon</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Beetroot boosts nitric oxide → improves blood flow</li>
+<li>Celery supports vascular relaxation and electrolyte balance</li>
+<li>May enhance oxygen delivery and reduce blood pressure</li>
+</ul><hr>
+<h3>🌿 3. Hawthorn Berry & Cinnamon Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried hawthorn berries</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Hawthorn strengthens heart muscle and improves rhythm</li>
+<li>Cinnamon supports blood sugar and lipid balance</li>
+<li>May reduce palpitations and improve cardiac tone</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Olive Oil Heart Spread</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp extra virgin olive oil</li>
+<li>Pinch of oregano</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and spread on whole-grain toast or use as a dip.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic reduces plaque buildup and improves circulation</li>
+<li>Olive oil provides monounsaturated fats for heart protection</li>
+<li>May lower LDL cholesterol and support arterial health</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Walnut Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tbsp crushed walnuts</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and enjoy as a morning snack or add to oatmeal.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect blood vessels</li>
+<li>Walnuts offer omega-3s and antioxidants</li>
+<li>May reduce inflammation and support heart rhythm</li>
+</ul>
+
+
+
+
+
+    </section>
+
+<section id="a2">
+<h2>✨✨Discover natural remedies to support Arteries health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Pomegranate-Ginger Artery Cleanse Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ cup fresh pomegranate seeds</li>
+<li>½ inch fresh ginger</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Pomegranate contains punicalagin → reduces plaque and improves elasticity</li>
+<li>Ginger improves circulation and lowers LDL cholesterol</li>
+<li>May support arterial flexibility and reduce inflammation</li>
+</ul><hr>
+<h3>🥬 2. Avocado-Garlic Heart Spread</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ ripe avocado</li>
+<li>1 clove garlic (crushed)</li>
+<li>Pinch of black pepper</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mash and spread on whole-grain toast or use as a dip.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Avocado offers monounsaturated fats → lower bad cholesterol</li>
+<li>Garlic reduces arterial stiffness and improves blood flow</li>
+<li>May protect against atherosclerosis and oxidative damage</li>
+</ul><hr>
+<h3>🌿 3. Hawthorn-Cinnamon Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried hawthorn berries</li>
+<li>¼ tsp cinnamon powder</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Boil for 10 minutes. Strain and sip before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Hawthorn strengthens blood vessels and improves circulation</li>
+<li>Cinnamon supports lipid balance and reduces arterial inflammation</li>
+<li>May ease palpitations and support vascular tone</li>
+</ul><hr>
+<h3>🧄 4. Sesame-Turmeric Artery Paste</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tsp roasted sesame seeds</li>
+<li>½ tsp turmeric powder</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix into a paste and consume with warm water 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Sesame seeds are rich in calcium and lignans → support vascular health</li>
+<li>Turmeric’s curcumin reduces plaque and improves endothelial function</li>
+<li>May reduce arterial stiffness and improve blood pressure</li>
+</ul><hr>
+<h3>🍋 5. Lemon Peel & Flaxseed Omega Boost</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>Grated peel of ½ lemon</li>
+<li>1 tsp ground flaxseed</li>
+<li>1 tsp honey</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and consume with warm water or yogurt.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Lemon peel contains bioflavonoids → protect arterial walls</li>
+<li>Flaxseed offers omega-3s and fiber → reduce cholesterol</li>
+<li>May support smooth blood flow and reduce inflammation</li>
+</ul>
+          </section>
+
+    <section id="a3">
+ <h2>✨✨Discover natural remedies to support Capillaries health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Bilberry-Ginger Circulation Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried bilberry leaves or berries</li>
+<li>½ inch fresh ginger (sliced)</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Bilberry contains anthocyanins → strengthen capillary walls</li>
+<li>Ginger improves microcirculation and reduces inflammation</li>
+<li>May reduce fragility and improve nutrient delivery</li>
+</ul><hr>
+<h3>🥬 2. Parsley-Lemon Detox Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp fresh parsley (chopped)</li>
+<li>Juice of ½ lemon</li>
+<li>½ cup water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Blend and strain. Drink fresh in the morning 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Parsley is rich in vitamin C → supports collagen in capillary walls</li>
+<li>Lemon boosts detox and antioxidant defense</li>
+<li>May reduce capillary leakage and improve elasticity</li>
+</ul><hr>
+<h3>🌿 3. Horse Chestnut & Aloe Vera Gel (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp horse chestnut extract</li>
+<li>1 tbsp pure aloe vera gel</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and apply gently to areas with visible capillaries or redness.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Horse chestnut contains aescin → seals leaky capillaries</li>
+<li>Aloe soothes inflammation and hydrates skin</li>
+<li>May reduce redness and improve vessel tone</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Rosehip Oil Massage (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 clove garlic (crushed)</li>
+<li>1 tbsp rosehip oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Warm gently, strain, and massage lightly over affected areas.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic improves blood flow and reduces oxidative stress</li>
+<li>Rosehip oil is rich in vitamin C and fatty acids</li>
+<li>May strengthen capillary walls and reduce visible damage</li>
+</ul><hr>
+<h3>🍋 5. Green Tea & Pineapple Skin Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 green tea bag</li>
+<li>2 tbsp fresh pineapple juice</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep tea, cool, and mix with pineapple juice. Dab onto skin or drink as a tonic.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Green tea reduces inflammation and protects vessels</li>
+<li>Pineapple contains bromelain → supports circulation and healing</li>
+<li>May improve skin tone and capillary resilience</li>
+</ul>
+
+
+
+    </section>
+
+    <section id="a4">
+      <h2>✨✨Discover natural remedies to support Veins health and hormonal harmony—your body’s balance starts from the inside:✨✨</h2>
+<h3>🍵 1. Horse Chestnut & Hibiscus Infusion</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>½ tsp dried horse chestnut (Aesculus hippocastanum)</li>
+<li>½ tsp dried hibiscus petals</li>
+<li>1½ cups hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Steep for 10 minutes. Strain and sip once daily.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Horse chestnut strengthens vein walls and reduces swelling</li>
+<li>Hibiscus supports blood pressure and vascular elasticity</li>
+<li>May reduce varicose vein discomfort and improve circulation</li>
+</ul><hr>
+<h3>🥬 2. Cabbage Leaf Poultice (External Use)</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>2 fresh cabbage leaves</li>
+<li>Warm water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Soak leaves in warm water for 2 minutes. Apply to legs and wrap with cloth for 20 minutes.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Cabbage is rich in sulfur and antioxidants</li>
+<li>May reduce inflammation, pain, and improve vein tone</li>
+</ul><hr>
+<h3>🌿 3. Chrysanthemum Steam Therapy</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp dried chrysanthemum flowers</li>
+<li>Bowl of hot water</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Add flowers to hot water. Inhale steam for 5–7 minutes or apply warm compress to legs.</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul><li>Chrysanthemum contains flavonoids → support vein flexibility</li>
+<li>May ease pressure and improve blood flow</li>
+</ul><hr>
+<h3>🧄 4. Garlic-Orange Massage Oil</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>6 garlic cloves (sliced)</li>
+<li>Juice of 3 oranges</li>
+<li>2 tbsp olive oil</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Mix and let sit for 12 hours. Massage gently into legs for 15 minutes before bed.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Garlic reduces inflammation and improves circulation</li>
+<li>Orange juice adds vitamin C for vein repair</li>
+<li>May ease swelling and detoxify blood vessels</li>
+</ul><hr>
+<h3>🌶️ 5. Cayenne Pepper Circulation Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul><li>1 tbsp cayenne pepper</li>
+<li>1 cup hot water</li>
+<li>Juice of ½ lemon</li>
+</ul><p><b style="color:#90caf9;">Preparation:</b>
+Stir well and sip slowly 2–3 times a week.
+</p><h3 style="color:green;">Benefits:</h3>
+<ul><li>Cayenne boosts blood flow and reduces vein stiffness</li>
+<li>Lemon adds antioxidants and supports vascular tone</li>
+<li>May reduce pain and improve vein elasticity</li>
+</ul>
+
+
+
+
+
+    </section>
+<section id="a5">
+<h2>✨✨🩸 Discover natural remedies to support Blood health—nourish, purify, and energize your circulation: ✨✨</h2>
+
+<h3>🩸 1. Beetroot–Carrot Vitality Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup beetroot (chopped)</li>
+  <li>½ cup carrot (chopped)</li>
+  <li>½ apple (optional, for sweetness)</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot, carrot, and apple with water. Strain if needed and drink fresh in the morning 3–4 times a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot rich in iron & folate → supports hemoglobin</li>
+  <li>Carrot antioxidants purify and strengthen blood</li>
+  <li>Boosts circulation and energy levels</li>
+</ul>
+<hr>
+
+<h3>🩸 2. Spinach–Lentil Iron Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup spinach (chopped)</li>
+  <li>¼ cup red lentils (masoor)</li>
+  <li>2 cups water</li>
+  <li>Pinch of cumin & rock salt</li>
+  <li>½ tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Cook lentils in water until soft, add spinach, cumin, and salt. Simmer for 3 minutes. Finish with lemon juice. Serve warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Rich in plant iron and folate</li>
+  <li>Supports red blood cell production</li>
+  <li>Lemon enhances iron absorption</li>
+</ul>
+<hr>
+
+<h3>🩸 3. Amla–Honey Immunity Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 fresh amla (Indian gooseberries) or 1 tsp amla powder</li>
+  <li>1 tsp raw honey</li>
+  <li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix amla juice/powder with warm water and honey. Drink daily in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Vitamin C enhances iron absorption</li>
+  <li>Purifies blood and supports immunity</li>
+  <li>Helps fight fatigue and weakness</li>
+</ul>
+<hr>
+
+<h3>🩸 4. Sesame–Jaggery Energy Bites</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp roasted sesame seeds</li>
+  <li>1 tbsp jaggery (grated)</li>
+  <li>½ tsp ghee (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Melt jaggery with a few drops of water, mix in sesame seeds (and ghee if desired), roll into small balls. Eat 1–2 daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Sesame is rich in iron, copper, and zinc</li>
+  <li>Jaggery boosts hemoglobin naturally</li>
+  <li>Great natural sweet for energy</li>
+</ul>
+<hr>
+
+<h3>🩸 5. Garlic–Ginger Circulation Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 garlic clove (lightly crushed)</li>
+  <li>½ tsp fresh ginger (grated)</li>
+  <li>1 cup hot water</li>
+  <li>½ tsp honey (optional)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep garlic and ginger in hot water for 8 minutes. Strain and add honey if desired. Drink once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves blood circulation</li>
+  <li>Ginger helps reduce oxidative stress</li>
+  <li>May prevent blood stagnation and fatigue</li>
+</ul>
+
+</section>
+<section id="a6">
+<h2>✨✨🧬 Discover natural remedies to support Red Blood Cells (RBCs) — energize, oxygenate, and restore vitality: ✨✨</h2>
+
+<h3>🧬 1. Beetroot–Pomegranate Hemoglobin Booster</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup beetroot (chopped)</li>
+  <li>½ cup pomegranate seeds</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot and pomegranate with water. Drink fresh every alternate day.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot rich in folate → aids RBC formation</li>
+  <li>Pomegranate boosts hemoglobin naturally</li>
+  <li>Enhances oxygen supply to tissues</li>
+</ul>
+<hr>
+
+<h3>🧬 2. Spinach–Tomato Iron Curry</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup spinach (chopped)</li>
+  <li>1 medium tomato (chopped)</li>
+  <li>1 tsp olive oil</li>
+  <li>Pinch of cumin & rock salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Sauté cumin in oil, add tomato and spinach, cook until soft. Serve with warm roti/rice.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Spinach provides non-heme iron</li>
+  <li>Tomato vitamin C enhances iron absorption</li>
+  <li>Supports healthy RBC count</li>
+</ul>
+<hr>
+
+<h3>🧬 3. Dates–Almond Morning Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>3 soaked dates</li>
+  <li>4 soaked almonds</li>
+  <li>½ cup warm milk (or almond milk)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend soaked dates and almonds with warm milk. Drink in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Dates rich in iron and energy-boosting sugars</li>
+  <li>Almonds add vitamin E and folate</li>
+  <li>Strengthens hemoglobin and endurance</li>
+</ul>
+<hr>
+
+<h3>🧬 4. Black Sesame–Jaggery Laddoo</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp black sesame seeds</li>
+  <li>1 tbsp jaggery (grated)</li>
+  <li>½ tsp ghee</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Roast sesame, melt jaggery with ghee, mix together and roll into laddoos. Eat 1 daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Sesame supports iron and copper intake</li>
+  <li>Jaggery boosts hemoglobin naturally</li>
+  <li>Improves fatigue caused by anemia</li>
+</ul>
+<hr>
+
+<h3>🧬 5. Amla–Wheatgrass Hematopoietic Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp wheatgrass juice</li>
+  <li>1 tbsp fresh amla juice</li>
+  <li>½ tsp honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix wheatgrass juice and amla juice, add honey. Drink once daily on empty stomach.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Wheatgrass stimulates RBC production</li>
+  <li>Amla rich in vitamin C → aids iron absorption</li>
+  <li>Detoxifies blood and boosts vitality</li>
+</ul>
+
+</section>
+
+<section id="a7">
+<h2>✨✨🛡️ Discover natural remedies to support White Blood Cells (WBCs) — strengthen immunity, fight infections, and protect your body: ✨✨</h2>
+
+<h3>🛡️ 1. Turmeric–Black Pepper Immunity Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup warm milk (cow’s or almond)</li>
+  <li>½ tsp turmeric powder</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix turmeric and pepper into warm milk. Drink at night before sleep.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric boosts WBC activity with curcumin</li>
+  <li>Black pepper enhances absorption</li>
+  <li>Strengthens immune defense against infections</li>
+</ul>
+<hr>
+
+<h3>🛡️ 2. Garlic–Honey Immune Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove raw garlic (crushed)</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix garlic with honey and consume in the morning on empty stomach.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic enhances WBC response to pathogens</li>
+  <li>Honey provides antibacterial protection</li>
+  <li>Boosts natural killer cell activity</li>
+</ul>
+<hr>
+
+<h3>🛡️ 3. Tulsi–Ginger Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 fresh tulsi leaves</li>
+  <li>½ tsp grated ginger</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep tulsi and ginger in hot water for 10 minutes. Strain and drink warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Tulsi strengthens immune response</li>
+  <li>Ginger reduces inflammation</li>
+  <li>May increase WBC efficiency in fighting colds</li>
+</ul>
+<hr>
+
+<h3>🛡️ 4. Citrus–Kiwi Vitamin C Boost</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 orange (peeled & sliced)</li>
+  <li>1 kiwi (peeled & chopped)</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend orange and kiwi with water. Drink fresh once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Citrus fruits high in vitamin C → supports WBC function</li>
+  <li>Kiwi aids collagen production for immunity</li>
+  <li>Faster recovery from infections</li>
+</ul>
+<hr>
+
+<h3>🛡️ 5. Mushroom–Lemon Immunity Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup chopped mushrooms</li>
+  <li>½ tsp olive oil</li>
+  <li>½ lemon juice</li>
+  <li>Pinch of rock salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Sauté mushrooms in olive oil, add water and cook into a light soup. Squeeze lemon before serving.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Mushrooms stimulate WBC production</li>
+  <li>Lemon provides immune-boosting vitamin C</li>
+  <li>Protects body from viral & bacterial infections</li>
+</ul>
+
+</section>
+
+<section id="a8">
+<h2>✨✨🩸 Discover natural remedies to support Platelets — boost clotting power, healing, and blood protection: ✨✨</h2>
+
+<h3>🩸 1. Papaya Leaf Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>5 fresh papaya leaves</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Crush papaya leaves, blend with water, and strain the juice. Drink 2 tbsp twice daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Increases platelet count naturally</li>
+  <li>Rich in antioxidants & enzymes</li>
+  <li>Supports recovery from dengue & viral fevers</li>
+</ul>
+<hr>
+
+<h3>🩸 2. Beetroot–Carrot Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 small beetroot (peeled & chopped)</li>
+  <li>1 carrot (chopped)</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot and carrot with water. Drink once daily for a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot helps regenerate blood cells</li>
+  <li>Carrots add vitamin A → supports healthy bone marrow</li>
+  <li>Improves platelet production</li>
+</ul>
+<hr>
+
+<h3>🩸 3. Pomegranate–Honey Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup pomegranate seeds</li>
+  <li>1 tsp raw honey</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend pomegranate seeds into juice and mix with honey. Drink daily in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Pomegranate improves platelet activity</li>
+  <li>Honey boosts immunity & energy</li>
+  <li>Fights fatigue caused by low platelet count</li>
+</ul>
+<hr>
+
+<h3>🩸 4. Wheatgrass–Lemon Shot</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp fresh wheatgrass juice</li>
+  <li>½ tsp lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix wheatgrass juice with lemon. Drink on empty stomach, 3–4 times weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Wheatgrass rich in chlorophyll → supports bone marrow</li>
+  <li>Lemon enhances absorption</li>
+  <li>Boosts overall platelet count</li>
+</ul>
+<hr>
+
+<h3>🩸 5. Pumpkin–Amla Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup pumpkin (chopped)</li>
+  <li>1 tbsp amla juice</li>
+  <li>Pinch of black salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil pumpkin pieces until soft, mash into soup, and add amla juice before serving.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Pumpkin supports platelet formation</li>
+  <li>Amla (vitamin C) enhances clotting function</li>
+  <li>Strengthens blood vessels & recovery</li>
+</ul>
+
+</section>
+
+<section id="a9">
+<h2>✨✨💧 Discover natural remedies to support Plasma — nourish your blood, improve circulation, and enhance overall vitality: ✨✨</h2>
+
+<h3>💧 1. Coconut Water & Lemon Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 glass fresh coconut water</li>
+  <li>½ lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix lemon juice into coconut water and drink once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Replenishes plasma electrolytes</li>
+  <li>Keeps the body hydrated</li>
+  <li>Boosts energy and fluid balance</li>
+</ul>
+<hr>
+
+<h3>💧 2. Aloe Vera–Honey Tonic</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 tbsp fresh aloe vera gel</li>
+  <li>1 tsp raw honey</li>
+  <li>½ cup lukewarm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend aloe gel with honey and water. Drink in the morning on an empty stomach.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Aloe vera improves plasma nutrient absorption</li>
+  <li>Honey strengthens immunity</li>
+  <li>Detoxifies and maintains blood fluidity</li>
+</ul>
+<hr>
+
+<h3>💧 3. Watermelon–Mint Cooler</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup watermelon cubes</li>
+  <li>4–5 fresh mint leaves</li>
+  <li>½ cup cold water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend watermelon and mint with water. Serve chilled.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Watermelon restores plasma hydration</li>
+  <li>Mint refreshes and supports digestion</li>
+  <li>Improves circulation & plasma volume</li>
+</ul>
+<hr>
+
+<h3>💧 4. Moringa Leaf Soup</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup moringa leaves</li>
+  <li>2 cups water</li>
+  <li>Pinch of rock salt</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil moringa leaves in water, strain, and add a little rock salt. Drink as soup once or twice weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Moringa boosts plasma protein levels</li>
+  <li>Enhances immunity & hemoglobin transport</li>
+  <li>Strengthens overall blood health</li>
+</ul>
+<hr>
+
+<h3>💧 5. Cucumber–Amla Detox Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cucumber (sliced)</li>
+  <li>2 tbsp amla juice</li>
+  <li>1 glass water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Infuse cucumber slices in water for 1 hour, then add amla juice before drinking.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Cucumber hydrates and purifies plasma</li>
+  <li>Amla (vitamin C) improves plasma antioxidant capacity</li>
+  <li>Supports detoxification & nutrient transport</li>
+</ul>
+
+</section>
+
+<section id="a10">
+<h2>✨✨🩸 Discover natural remedies to support Venules — enhance blood circulation, vascular strength, and overall vitality: ✨✨</h2>
+
+<h3>🩸 1. Beetroot-Carrot Juice</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 medium beetroot</li>
+  <li>1 medium carrot</li>
+  <li>½ lemon juice</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend beetroot and carrot, strain, and add lemon juice. Drink 3–4 times a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Beetroot increases nitric oxide, improving venule dilation</li>
+  <li>Carrots provide antioxidants for vascular health</li>
+  <li>Supports smooth blood flow and oxygen delivery</li>
+</ul>
+<hr>
+
+<h3>🩸 2. Garlic–Olive Oil Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 cloves garlic (crushed)</li>
+  <li>1 tsp extra virgin olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix garlic with olive oil and consume before meals once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves venule blood circulation</li>
+  <li>Olive oil provides healthy fats for vascular flexibility</li>
+  <li>Prevents oxidative damage to vessel walls</li>
+</ul>
+<hr>
+
+<h3>🩸 3. Ginger–Turmeric Herbal Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp grated ginger</li>
+  <li>½ tsp turmeric powder</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Boil ginger and turmeric in water for 10 minutes. Strain and drink warm.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Reduces inflammation in venules</li>
+  <li>Enhances microcirculation</li>
+  <li>Strengthens vascular walls naturally</li>
+</ul>
+<hr>
+
+<h3>🩸 4. Pomegranate–Black Pepper Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup fresh pomegranate seeds</li>
+  <li>Pinch of black pepper</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Crush pomegranate seeds and sprinkle black pepper. Eat as a snack 3–4 times weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Pomegranate enhances venule elasticity</li>
+  <li>Black pepper improves absorption of antioxidants</li>
+  <li>Boosts circulation and prevents clot formation</li>
+</ul>
+<hr>
+
+<h3>🩸 5. Dark Chocolate-Walnut Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>2 small pieces of dark chocolate (70% cocoa or more)</li>
+  <li>3–4 walnuts</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Eat dark chocolate with walnuts as an evening snack.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Dark chocolate improves blood vessel flexibility</li>
+  <li>Walnuts provide omega-3 fatty acids for venule health</li>
+  <li>May reduce venous stiffness and support microcirculation</li>
+</ul>
+
+</section>
+
+<section id="a11">
+<h2>✨✨❤️ Discover natural remedies to support Arterioles — balance blood pressure, strengthen vessel walls, and improve circulation: ✨✨</h2>
+
+<h3>❤️ 1. Hibiscus–Cinnamon Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp dried hibiscus petals</li>
+  <li>¼ tsp cinnamon powder</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep hibiscus and cinnamon in hot water for 10 minutes. Strain and drink daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Hibiscus helps regulate blood pressure naturally</li>
+  <li>Cinnamon improves blood vessel elasticity</li>
+  <li>Supports arteriole relaxation and smooth blood flow</li>
+</ul>
+<hr>
+
+<h3>❤️ 2. Garlic–Lemon Morning Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>Juice of ½ lemon</li>
+  <li>1 cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix all ingredients and drink on an empty stomach in the morning.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic improves arteriole dilation and reduces stiffness</li>
+  <li>Lemon provides vitamin C for vessel wall strength</li>
+  <li>May lower blood pressure naturally</li>
+</ul>
+<hr>
+
+<h3>❤️ 3. Celery–Cucumber Smoothie</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 cup chopped celery</li>
+  <li>½ cucumber</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend until smooth and drink 3–4 times a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Celery contains phthalides that relax arterioles</li>
+  <li>Cucumber hydrates and reduces pressure in vessels</li>
+  <li>Supports overall cardiovascular health</li>
+</ul>
+<hr>
+
+<h3>❤️ 4. Flaxseed–Honey Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp ground flaxseed</li>
+  <li>1 tsp raw honey</li>
+  <li>½ cup warm water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and consume 2–3 times weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Flaxseeds provide omega-3s for arteriole health</li>
+  <li>Honey acts as a natural vascular tonic</li>
+  <li>Reduces inflammation and strengthens vessel walls</li>
+</ul>
+<hr>
+
+<h3>❤️ 5. Dark Grape–Almond Mix</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>10 dark grapes</li>
+  <li>4 soaked almonds</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Eat together as a mid-morning snack 4–5 times weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Grapes improve arteriole flexibility with antioxidants</li>
+  <li>Almonds provide vitamin E for vascular repair</li>
+  <li>Supports smooth blood flow in microcirculation</li>
+</ul>
+
+</section>
+
+<section id="a12">
+<h2>✨✨💖 Discover natural remedies to support Coronary Vessels — nourish your heart, improve circulation, and protect against blockages: ✨✨</h2>
+
+<h3>💖 1. Hawthorn–Rosehip Heart Tea</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 tsp dried hawthorn berries</li>
+  <li>1 tsp dried rosehips</li>
+  <li>1½ cups hot water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Steep hawthorn and rosehips in hot water for 10–12 minutes. Strain and sip once daily.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Hawthorn strengthens coronary circulation</li>
+  <li>Rosehips provide vitamin C and antioxidants</li>
+  <li>Helps reduce risk of arterial stiffness</li>
+</ul>
+<hr>
+
+<h3>💖 2. Garlic–Olive Oil Elixir</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>1 clove garlic (crushed)</li>
+  <li>1 tsp extra virgin olive oil</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Mix and take before meals 3–4 times a week.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Garlic prevents cholesterol buildup in coronary vessels</li>
+  <li>Olive oil provides heart-healthy monounsaturated fats</li>
+  <li>Improves elasticity of coronary arteries</li>
+</ul>
+<hr>
+
+<h3>💖 3. Pomegranate–Mint Drink</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ cup fresh pomegranate seeds</li>
+  <li>5 fresh mint leaves</li>
+  <li>½ cup water</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Blend and drink 3–4 times weekly.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Pomegranate reduces oxidative stress in coronary vessels</li>
+  <li>Mint aids in cooling and circulation</li>
+  <li>Supports healthy heart function</li>
+</ul>
+<hr>
+
+<h3>💖 4. Ginger–Turmeric Golden Milk</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>½ tsp turmeric powder</li>
+  <li>¼ tsp grated fresh ginger</li>
+  <li>1 cup warm milk (plant-based or dairy)</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Simmer ingredients for 5 minutes, strain, and sip before bed.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Turmeric reduces coronary inflammation</li>
+  <li>Ginger improves heart blood circulation</li>
+  <li>Protects against arterial damage</li>
+</ul>
+<hr>
+
+<h3>💖 5. Walnut–Flaxseed Snack</h3>
+<h3 style="color:pink;">Ingredients:</h3>
+<ul>
+  <li>3–4 walnuts</li>
+  <li>1 tsp ground flaxseeds</li>
+</ul>
+<p><b style="color:#90caf9;">Preparation:</b>  
+Eat together as a daily mid-morning snack.  
+</p>
+<h3 style="color:green;">Benefits:</h3>
+<ul>
+  <li>Walnuts and flaxseeds provide omega-3s for vessel flexibility</li>
+  <li>Reduce plaque risk in coronary arteries</li>
+  <li>Enhance oxygen supply to heart muscles</li>
+</ul>
+
+</section>
+<section id="a13">
+Absolutely, Lakshmi 🌸! Here's a beautifully formatted, line-spaced guide with 5 homemade remedies to support blood vessel health — blending circulatory wisdom, botanical nourishment, and holistic vitality:
+
+---
+
+<h2>✨✨🌸 Nourish Your Blood Vessels — the lifelines of vitality and flow: ✨✨</h2>  
+  
+<br>  
+  
+<h3>🌸 1. Garlic–Lemon Heart Tonic</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>1 clove fresh garlic (crushed)</li>  
+  <li>1 tsp lemon juice</li>  
+  <li>½ cup warm water</li>  
+</ul>  
+  <br>  
+  <p><b style="color:#90caf9;">Preparation:</b>  
+Mix garlic and lemon juice in warm water. Let sit for 5 minutes and drink slowly.  
+</p>  
+  <br>  
+  <h3 style="color:green;">Benefits:</h3>  
+  <ul>  
+  <li>Garlic improves blood flow and reduces arterial stiffness</li>  
+  <li>Lemon supports vascular cleansing and collagen synthesis</li>  
+  <li>Helps regulate blood pressure and vessel tone</li>  
+</ul>  
+  <hr>  
+  <br>  
+  
+<h3>🌸 2. Beetroot–Carrot Vital Juice</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>½ cup beetroot (grated or juiced)</li>  
+  <li>½ cup carrot (grated or juiced)</li>  
+  <li>1 tsp ginger juice (optional)</li>  
+</ul>  
+  <br>  
+  <p><b style="color:#90caf9;">Preparation:</b>  
+Blend all ingredients and consume fresh, preferably in the morning.  
+</p>  
+  <br>    
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Beetroot increases nitric oxide → improves vessel dilation</li>  
+  <li>Carrot provides antioxidants for vessel repair</li>  
+  <li>Supports circulation and oxygen delivery</li>  
+</ul>  
+<hr>  
+<br>  
+  
+<h3>🌸 3. Cinnamon–Flax Warm Drink</h3>  
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>½ tsp cinnamon powder</li>  
+  <li>1 tsp ground flaxseed</li>  
+  <li>1 cup warm water or almond milk</li>  
+</ul>  
+<br>  
+<p><b style="color:#90caf9;">Preparation:</b>  
+Stir cinnamon and flaxseed into warm liquid. Let sit for 2 minutes and sip slowly.  
+</p>  
+<br>  
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Cinnamon improves blood sugar and vessel elasticity</li>  
+  <li>Flaxseed provides omega-3s for vascular health</li>  
+  <li>Reduces inflammation in blood vessels</li>  
+</ul>  
+<hr>  
+<br>  
+  
+<h3>🌸 4. Pomegranate–Mint Infusion</h3>  
+<h3 style="color:pink;">Ingredients:</h3>  
+<ul>  
+  <li>¼ cup pomegranate seeds</li>  
+  <li>5 fresh mint leaves</li>  
+  <li>1½ cups warm water</li>  
+</ul>  
+<br>  
+<p><b style="color:#90caf9;">Preparation:</b>  
+Crush seeds and mint lightly, steep in warm water for 10 minutes. Strain and enjoy.  
+</p>  
+<br>  
+<h3 style="color:green;">Benefits:</h3>  
+<ul>  
+  <li>Pomegranate protects endothelial lining of vessels</li>  
+  <li>Mint improves circulation and digestion</li>  
+  <li>Supports arterial clarity and antioxidant defense</li>  
+</ul>  
+<hr>  
+<br>  
+  
+<h3>🌸 5. Turmeric–Black Pepper Elixir</h3>  
+  <h3 style="color:pink;">Ingredients:</h3>  
+  <ul>  
+  <li>¼ tsp turmeric powder</li>  
+  <li>Pinch of black pepper</li>  
+  <li>½ tsp coconut oil</li>  
+  <li>½ cup warm water</li>  
+</ul>  
+  <br>  
+  <p><b style="color:#90caf9;">Preparation:</b>  
+Mix all ingredients and drink as a warm elixir, preferably in the evening.  
+</p>  
+  <br>  
+ <h3 style="color:green;">Benefits:</h3>  
+  <ul>  
+  <li>Turmeric reduces vascular inflammation</li>  
+  <li>Black pepper enhances curcumin absorption</li>  
+  <li>Coconut oil supports lipid balance and vessel flexibility</li>  
+</ul>  
+  <hr>  
+
+</section>
+     </main>
+
+  <footer>
+    <p>🌿"The heart is not just a pump — it's the rhythm of life, the pulse of purpose, and the beat of resilience." 🌿💪</p>
+<div class="footer-buttons">
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\procard indoor.html">Indoor Plants</a>
+      <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro indo card outdoor.html">Outdoor Plants</a>
+<a href="C:\Users\yarra\OneDrive\ドキュメント\html\organs.html">← Back to Systems</a>
+ 
+     <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro.html">Home page</a>
+< href="C:\Users\yarra\OneDrive\ドキュメント\html\pro cardiovascular.html">Cardiovascular System</a>
+ <a href="C:\Users\yarra\OneDrive\ドキュメント\html\pro diet.html">Diet sheet</a>
+
+             </div>
+</footer>
+  <script>
+    const sprinkleBox = document.getElementById('sprinkleBox');
+    const colors = ['#ff4081', '#fbc02d', '#4dd0e1', '#81c784', '#ce93d8', '#ff8a65'];
+
+    for (let i = 0; i < 150; i++) {
+      const sprinkle = document.createElement('div');
+      sprinkle.classList.add('sprinkle');
+      const x = (Math.random() - 0.5) * 2000 + 'px';
+      const y = (Math.random() - 0.5) * 2000 + 'px';
+      sprinkle.style.setProperty('--x', x);
+      sprinkle.style.setProperty('--y', y);
+      sprinkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      sprinkle.style.left = Math.random() * 100 + 'vw';
+      sprinkle.style.top = Math.random() * 100 + 'vh';
+      sprinkleBox.appendChild(sprinkle);
+    }
+  </script>
+</body>
+</html>
