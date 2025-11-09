@@ -124,12 +124,37 @@
 
     footer {
       background: linear-gradient(to right, #a5d6a7, #f8bbd0);
-      padding: 20px;
+      padding: 30px;
       text-align: center;
       color: #4e342e;
       font-size: 18px;
       font-style: italic;
       margin-top: 40px;
+    }
+
+    .footer-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .footer-buttons a {
+      background: linear-gradient(to right, #aed581, #81c784);
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .footer-buttons a:hover {
+      background-color: #66bb6a;
+      box-shadow: 0 0 10px #4caf50;
+      transform: scale(1.05);
     }
 
     @media (max-width: 700px) {
@@ -151,6 +176,11 @@
         flex-direction: column;
         align-items: center;
       }
+
+      .footer-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -162,8 +192,8 @@
     <a href="pro.html">← Go Back</a>
     <a href="pro2.html">Outdoor Plants</a>
     <a href="pro3.html">Indoor Plants</a>
-     <a href="pro diet.html">Diet sheet</a>  
-</nav>
+    <a href="pro diet.html">Diet sheet</a>  
+  </nav>
 </header>
 
 <section>
@@ -190,21 +220,15 @@
 </section>
 
 <footer>
-  </p>🌟 "Your body is a symphony of systems—nervous, muscular, circulatory, skeletal—all working in harmony to keep you alive and thriving."</p>
-<a href="pro.html">← Go Back</a>
+  <p>🌟 "Your body is a symphony of systems—nervous, muscular, circulatory, skeletal—all working in harmony to keep you alive and thriving."</p>
+
+  <div class="footer-buttons">
+    <a href="pro.html">← Go Back</a>
     <a href="pro2.html">Outdoor Plants</a>
     <a href="pro3.html">Indoor Plants</a>
-     <a href="pro diet.html">Diet sheet</a>  
-
+    <a href="pro diet.html">Diet sheet</a>  
+  </div>
 </footer>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
