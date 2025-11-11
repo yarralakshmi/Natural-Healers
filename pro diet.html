@@ -44,6 +44,41 @@ button.selected {
   color: #fff;
   transform: scale(1.05);
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #f48fb1, #ce93d8, #b39ddb, #90caf9, #a5d6a7);
+  color: #4e342e;
+  text-align: center;
+  padding: 15px 10px;
+  font-weight: bold;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.footer-buttons {
+  margin-top: 8px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.footer-buttons a:hover {
+  background: linear-gradient(45deg, #ec407a, #d81b60);
+  color: #fff;
+  transform: scale(1.05);
+}
 
 </style>
 </head>
@@ -119,11 +154,10 @@ button.selected {
 
 <footer>🌟 "Eat well, move daily, and live a balanced life – your body will thank you!" 🌟
 <div class="footer-buttons">
-  <a href="pro.html">🏠 Home Page</a>
-  <a href="diet-tips.html">🥗 Diet Tips</a>
-  <a href="exercise-guide.html">💪 Exercise Guide</a>
+  <a href="pro.html">Home page</a>
   <a href="organs.html">← Back to Systems</a>
 </div>
+
 
 </footer>
 
@@ -258,5 +292,6 @@ function renderTables(){
 
 </body>
 </html>
+
 
 
