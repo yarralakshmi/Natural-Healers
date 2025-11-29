@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🌿lemon verbena plant</title>
+  <title>✨ Inside the Reproductive Journey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --green: #66bb6a;
@@ -12,13 +15,13 @@
       --rose: #f48fb1;
       --teal: #26c6da;
       --earth: #e0e0e0;
-      --dark-panel: rgba(32, 32, 32, 0.9);
+      --dark-panel: rgba(0, 0, 0, 0.85);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -27,220 +30,242 @@
       background-size: cover;
       color: var(--earth);
     }
-.content-wrapper {
-      animation: fallDown 1s ease-out;
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: zoomOutFade 2.5s ease forwards;
     }
 
-    @keyframes fallDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    .overlay h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px #1b5e20;
     }
-img:hover { transform: scale(1.1); }
+
+    @keyframes zoomOutFade {
+      0% { transform: scale(1); opacity: 1; }
+      80% { transform: scale(3); opacity: 0.5; }
+      100% { transform: scale(5); opacity: 0; visibility: hidden; }
+    }
+
+    .page-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
     header {
-      position: relative;
       background: linear-gradient(to right, #f44336, #ff9800, #4caf50, #2196f3, #9c27b0);
-color:white;
-   padding: 70px 20px 70px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-      overflow: hidden;
+      color: white;
+      padding: 40px 20px 20px;
+      position: relative;
+      font-family: 'DM Serif Display', serif;
       text-align: center;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.3);
-      z-index: 0;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
-      position: relative;
-      z-index: 1;
-      color: white;
-      font-family: 'DM Serif Display', serif;
-      font-size: 38px;
-      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+      font-size: 2.5rem;
     }
 
-    .top-nav {
+    header::after {
+      content: "⚧ Reproductive System – The Continuation of Life";
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-buttons {
       position: absolute;
-      top: 20px;
+      top: 10px;
       right: 20px;
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
-      z-index: 2;
     }
 
-    .nav-button {
-      background: linear-gradient(to right, #aed581, #81c784);
-      padding: 10px 16px;
-      border-radius: 8px;
-      color: #1b5e20;
+    .header-buttons a {
+      background: linear-gradient(to right, var(--orange), var(--green));
+      padding: 10px 18px;
+      border-radius: 10px;
+      color: #1b1b1b;
+      font-size: 16px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 16px;
-      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
     }
 
-    .nav-button:hover {
-      background-color: #66bb6a;
-      box-shadow: 0 0 10px #4caf50;
-      transform: scale(1.05);
+    .header-buttons a:hover {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.07);
     }
 
     section {
       display: flex;
       flex-wrap: wrap;
-      padding: 40px 20px;
       justify-content: center;
-    }
-
-    nav, article {
-      background-color: var(--dark-panel);
-      backdrop-filter: blur(8px);
-      border-radius: 16px;
-      padding: 20px;
-      margin: 20px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease;
-      color: var(--earth);
-    }
-
-    nav:hover, article:hover {
-      transform: translateY(-4px);
+      padding: 40px 20px;
     }
 
     nav {
-      max-width: 400px;
-    }
-
-    article {
-      max-width: 840px;
-    }
-
-    nav.img {
-      width: 100%;
+      max-width: 300px;
+      background-color: var(--dark-panel);
+      padding: 20px;
       border-radius: 12px;
-      margin: 18px 0;
+      margin-right: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    h1, h2, h3 {
-      color: var(--green);
-      margin-bottom: 15px;
+    nav:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 255, 102, 0.4);
     }
 
-    p, ul, ol {
-      font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 14px;
+    nav h3 {
+      color: var(--earth);
+      margin-bottom: 10px;
+      text-align: center;
     }
 
-    ul {
-      padding-left: 20px;
+    nav img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     }
 
     nav a {
       display: block;
       background: linear-gradient(to right, var(--orange), var(--green));
       color: #1b1b1b;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 12px;
       border-radius: 8px;
       text-align: center;
-      text-decoration: none;
       font-weight: bold;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
       background: linear-gradient(to right, var(--green), var(--teal));
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px #81c784;
+    }
+nav img:hover {
+      transform: scale(1.03);
     }
 
-    .plant-button {
-      display: inline-block;
-      margin-top: 10px;
-      background: linear-gradient(to right, var(--teal), var(--green));
-      color: #fff;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-      transition: background 0.3s ease;
+    article {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 255, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .plant-button:hover {
-      background: linear-gradient(to right, var(--green), var(--orange));
-      color: var(--earth);
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
     }
 
+    article h2, article h3 {
+      color: #c5e1a5;
+      margin-bottom: 10px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0f2f1;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.03);
+    }
+
+    ol {
+      margin-left: 20px;
+      color: #a5d6a7;
+      font-size: 17px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #66bb6a, #aed581);
+      margin: 30px 0;
+    }
 
     footer {
-      background: linear-gradient(to right, var(--green), var(--rose));
+      background: linear-gradient(to right, #ff4081, #fbc02d, #4dd0e1);
       padding: 20px;
       text-align: center;
-      font-size: 16px;
-      font-style: italic;
       color: white;
+      font-style: italic;
+      font-size: 18px;
+      box-shadow: 0 -4px 10px rgba(0, 255, 0, 0.3);
     }
 
-    .footer-button {
-      display: inline-block;
+    .footer-links a {
       background: linear-gradient(to right, var(--teal), var(--orange));
-      padding: 8px 14px;
-      margin: 10px;
+      padding: 10px 16px;
       border-radius: 8px;
       color: white;
       text-decoration: none;
       font-weight: bold;
+      margin: 10px 8px;
+      display: inline-block;
       transition: 0.3s ease;
     }
 
-    .footer-button:hover {
+    .footer-links a:hover {
       background: linear-gradient(to right, var(--orange), var(--green));
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       section {
         flex-direction: column;
         align-items: center;
       }
 
       nav {
-        margin-bottom: 30px;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .header-buttons {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        flex-direction: column;
       }
     }
-@keyframes fall {
-      0% {
-        opacity: 0;
-        transform: translateY(-150px) scale(0.9);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    }
-
-    .falling-image {
-      animation: fall 1.2s ease-out;
-    }
-header, footer {
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
   </style>
 </head>
 
@@ -363,6 +388,7 @@ It consists of a set of organs that filter blood, produce urine, and eliminate i
 
 </body>
 </html>
+
 
 
 
